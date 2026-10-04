@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lietuvių gramatika — тренажёр</title>
+  <title>Spragos — тренажёр литовской грамматики</title>
   <link rel="stylesheet" href="style.css">
   <script type="module" src="js/app.js"></script>
 </head>
 <body>
   <header class="topbar">
-    <h1 class="logo">Lietuvių <span>gramatika</span></h1>
+    <h1 class="logo"><a href="#" id="logo" title="На главную">Spra<span>gos</span></a></h1>
     <nav>
       <button class="nav-btn" data-nav="setup">Упражнение</button>
       <button class="nav-btn" data-nav="refs">Справка</button>
@@ -18,6 +18,45 @@
   </header>
 
   <main>
+    <!-- Главная -->
+    <section id="screen-home" class="screen home" hidden>
+      <div class="hero">
+        <p class="hero-kicker">мини-тренажёр литовской грамматики</p>
+        <h2 class="hero-title">Spra<span>gos</span></h2>
+        <p class="hero-lead"><em>Spragos</em> по-литовски значит «пропуски»: и в тексте, и в знаниях. Предложения с пропусками: перетащите в каждый пропуск слово в правильной форме. Сейчас здесь склонение местоимений, числительных и прилагательных, около 300 пропусков на тему.</p>
+        <div class="actions">
+          <button class="btn primary" id="home-start" type="button">Начать упражнение</button>
+          <button class="btn" id="home-refs" type="button">Грамматическая справка</button>
+        </div>
+      </div>
+
+      <div class="panel prose">
+        <h2>Что это</h2>
+        <p>Небольшой тренажёр, который я сделал для собственной подготовки к экзамену по литовскому языку. Им может пользоваться кто угодно.</p>
+        <ul>
+          <li><strong>Без регистрации.</strong> Аккаунт не нужен, никакие данные никуда не отправляются.</li>
+          <li><strong>Статистика хранится только в вашем браузере.</strong> На другом устройстве или в другом браузере она будет своя; очистка данных сайта её сотрёт.</li>
+          <li><strong>Работает на телефоне:</strong> слова можно перетаскивать пальцем или просто нажать на слово, а потом на пропуск.</li>
+        </ul>
+      </div>
+
+      <div class="panel prose warn-note">
+        <h2>Важно о материалах</h2>
+        <p>Задания и справки <strong>полностью сгенерированы ИИ</strong> и <strong>не проверялись носителями языка</strong>. Каждая форма в ответах автоматически сверена с таблицами склонения из учебников, но ошибки в выборе падежа или неестественные фразы всё же возможны.</p>
+        <p>Чтобы примеры были как можно правильнее, часть предложений взята из учебников <strong>дословно или почти дословно</strong>. Права на них принадлежат авторам этих книг, поэтому при копировании и использовании материалов будьте осторожны.</p>
+        <p class="muted small">Источники: Žingsnis I–II, Sėkmės, Langas į lietuvių kalbą, Lietuvių kalba dialoguose, Ne dienos be lietuvių kalbos, Skaitome ir klausome lietuviškai, Mano ir tavo šalis Lietuva, Complete Lithuanian, Colloquial Lithuanian.</p>
+      </div>
+
+      <div class="panel prose">
+        <h2>Лицензия</h2>
+        <p>Пользоваться, копировать и переделывать можно как угодно.</p>
+        <ul>
+          <li><strong>Код</strong> — лицензия <a href="https://opensource.org/license/mit" target="_blank" rel="noopener">MIT</a>.</li>
+          <li><strong>Задания и справки</strong> — <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.ru" target="_blank" rel="noopener">CC0 1.0</a> (общественное достояние), кроме фраз, взятых из учебников: на них права сохраняются за авторами.</li>
+        </ul>
+      </div>
+    </section>
+
     <!-- Экран настроек -->
     <section id="screen-setup" class="screen" hidden>
       <div id="load-errors"></div>

@@ -101,6 +101,10 @@ function show(name) {
   }
   if (name === "stats") renderStats();
   if (name === "refs") renderRefList();
+  if (name === "home" && !state.settings.homeSeen) {
+    state.settings.homeSeen = true; // при следующих заходах сразу открывается упражнение
+    store.saveSettings(state.settings);
+  }
   // На телефоне раунд занимает ровно экран и прокручивается только список заданий (см. style.css)
   document.body.classList.toggle("in-round", name === "round");
   window.scrollTo(0, 0);
@@ -552,6 +556,15 @@ async function init() {
       show(b.dataset.nav);
     });
   }
+  $("#logo").addEventListener("click", (e) => {
+    e.preventDefault();
+    show("home");
+  });
+  $("#home-start").addEventListener("click", () => {
+    renderTopicList();
+    show("setup");
+  });
+  $("#home-refs").addEventListener("click", () => show("refs"));
   $("#select-all").addEventListener("click", () => {
     state.settings.topics = state.topics.map((t) => t.file);
     renderTopicList();
@@ -597,7 +610,7 @@ async function init() {
   renderLoadErrors();
   renderTopicList();
   renderOptions();
-  show("setup");
+  show(state.settings.homeSeen ? "setup" : "home");
 }
 
 init();
