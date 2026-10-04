@@ -38,12 +38,21 @@ const state = {
 // ---------- Загрузка базы ----------
 
 async function loadTopics() {
-  let files;
-  try {
-    const res = await fetch("api/files");
-    if (!res.ok) throw new Error(res.status);
-    files = await res.json();
-  } catch {
+  // Список файлов: локально его отдаёт serve.py (/api/files), на статическом хостинге —
+  // data/index.json, который создаёт build.py.
+  let files = null;
+  for (const url of ["api/files", "data/index.json"]) {
+    try {
+      const res = await fetch(url);
+      if (res.ok) {
+        files = await res.json();
+        break;
+      }
+    } catch {
+      /* пробуем следующий источник */
+    }
+  }
+  if (!Array.isArray(files)) {
     state.loadErrors.push({
       file: "",
       line: 0,

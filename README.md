@@ -17,6 +17,23 @@ python3 serve.py
 
 Статистика и настройки хранятся в браузере (localStorage), отдельно для каждого браузера и устройства.
 
+## Публикация
+
+Сайт: **https://jekhor.github.io/spragos/**
+
+Сайт обновляется сам при каждом push в `main`. Workflow `.github/workflows/pages.yml`:
+1. прогоняет тесты (`node --test`);
+2. собирает статическую версию командой `python3 build.py`. Она складывает `web/` и `data/` в одну папку и создаёт `data/index.json` со списком файлов базы вместо `/api/files`;
+3. публикует результат на GitHub Pages.
+
+Если тесты падают, сайт не обновляется.
+
+Собрать статическую версию локально, например для другого хостинга:
+
+```bash
+python3 build.py _site
+```
+
 ## Как пополнять базу
 
 Чтобы сгенерировать новые задания с помощью LLM, передайте ей [MATERIALS_GUIDE.md](MATERIALS_GUIDE.md) и в конце напишите тему. Шаблон запроса — в конце файла.
@@ -109,6 +126,8 @@ Aš {jai|ji} dažnai skambinu.
 
 ```
 serve.py            сервер: раздаёт web/ и data/, GET /api/files — список тем и справок
+build.py            сборка статической версии для GitHub Pages (_site/)
+.github/workflows/  тесты и публикация на GitHub Pages
 web/index.html      страница
 web/style.css
 web/js/parser.js    разбор файлов тем
