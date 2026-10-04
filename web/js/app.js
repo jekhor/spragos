@@ -258,6 +258,7 @@ function renderRound() {
   }
   r.chipEls = chipEls;
 
+  $("#bank").replaceChildren(); // плашки прошлого раунда (их id совпадают с новыми)
   const units = $("#units");
   units.replaceChildren();
   r.gapEls = new Map();
