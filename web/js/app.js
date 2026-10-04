@@ -94,17 +94,29 @@ function resolveRef(topic) {
 
 // ---------- Экраны ----------
 
-function show(name) {
+// Экран кодируется в адресе: «/» — главная, «#setup», «#round», «#refs», «#stats».
+// Так работают кнопка «назад» и перезагрузка страницы.
+function screenFromHash() {
+  const h = location.hash.slice(1);
+  if (["setup", "refs", "stats"].includes(h)) return h;
+  if (h === "round") return state.round ? "round" : "setup"; // раунд после перезагрузки не восстановить
+  return "home";
+}
+
+function show(name, { push = true } = {}) {
+  if (name === "setup") renderTopicList();
+  const hash = name === "home" ? "" : "#" + name;
+  if (location.hash !== hash) {
+    const url = hash || location.pathname + location.search;
+    if (push) history.pushState(null, "", url);
+    else history.replaceState(null, "", url);
+  }
   for (const s of document.querySelectorAll(".screen")) s.hidden = s.id !== "screen-" + name;
   for (const b of document.querySelectorAll(".nav-btn")) {
     b.classList.toggle("active", b.dataset.nav === name || (name === "round" && b.dataset.nav === "setup"));
   }
   if (name === "stats") renderStats();
   if (name === "refs") renderRefList();
-  if (name === "home" && !state.settings.homeSeen) {
-    state.settings.homeSeen = true; // при следующих заходах сразу открывается упражнение
-    store.saveSettings(state.settings);
-  }
   // На телефоне раунд занимает ровно экран и прокручивается только список заданий (см. style.css)
   document.body.classList.toggle("in-round", name === "round");
   window.scrollTo(0, 0);
@@ -552,7 +564,6 @@ function renderStats() {
 async function init() {
   for (const b of document.querySelectorAll(".nav-btn")) {
     b.addEventListener("click", () => {
-      if (b.dataset.nav === "setup") renderTopicList();
       show(b.dataset.nav);
     });
   }
@@ -560,10 +571,7 @@ async function init() {
     e.preventDefault();
     show("home");
   });
-  $("#home-start").addEventListener("click", () => {
-    renderTopicList();
-    show("setup");
-  });
+  $("#home-start").addEventListener("click", () => show("setup"));
   $("#home-refs").addEventListener("click", () => show("refs"));
   $("#select-all").addEventListener("click", () => {
     state.settings.topics = state.topics.map((t) => t.file);
@@ -581,10 +589,7 @@ async function init() {
   $("#fix").addEventListener("click", fixMistakes);
   $("#reveal").addEventListener("click", reveal);
   $("#again").addEventListener("click", startRound);
-  $("#to-setup").addEventListener("click", () => {
-    renderTopicList();
-    show("setup");
-  });
+  $("#to-setup").addEventListener("click", () => show("setup"));
   $("#round-ref").addEventListener("click", () => openRefs(state.round.refPaths));
   const dlg = $("#ref-dialog");
   $("#ref-close").addEventListener("click", () => dlg.close());
@@ -610,7 +615,8 @@ async function init() {
   renderLoadErrors();
   renderTopicList();
   renderOptions();
-  show(state.settings.homeSeen ? "setup" : "home");
+  window.addEventListener("popstate", () => show(screenFromHash(), { push: false }));
+  show(screenFromHash(), { push: false });
 }
 
 init();
