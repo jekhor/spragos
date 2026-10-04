@@ -19,10 +19,23 @@ const PRON = {
   tas: ["tas", "to", "tam", "tą", "tuo", "tame", "tie", "tų", "tiems", "tuos", "tais", "tuose"],
   ta: ["ta", "tos", "tai", "tą", "toje", "tų", "toms", "tas", "tomis", "tose"],
 };
+// kuris склоняется как jis / ji (kuriuo, kuriuos) — Žingsnis II, Complete Lithuanian
+PRON.kuris = ["kuris", "kurio", "kuriam", "kurį", "kuriuo", "kuriame", "kurie", "kurių", "kuriems", "kuriuos", "kuriais", "kuriuose",
+  "kuri", "kurios", "kuriai", "kurią", "kuria", "kurioje", "kurioms", "kurias", "kuriomis", "kuriose"];
+// koks, toks, joks: им. koks, вин. kokį, мн. kokie; остальное как žalias (Žingsnis I)
+for (const b of ["kok", "tok", "jok"]) {
+  PRON[b + "s"] = [b + "s", b + "io", b + "iam", b + "į", b + "iu", b + "iame", b + "ie", b + "ių", b + "iems", b + "ius", b + "iais", b + "iuose",
+    b + "ia", b + "ios", b + "iai", b + "ią", b + "ioje", b + "ioms", b + "ias", b + "iomis", b + "iose"];
+}
+// pats (Žingsnis I)
+PRON.pats = ["pats", "paties", "pačiam", "patį", "pačiu", "pačiame", "patys", "pačių", "patiems", "pačius", "pačiais", "pačiuose",
+  "pati", "pačios", "pačiai", "pačią", "pačia", "pačioje", "pačioms", "pačias", "pačiomis", "pačiose"];
 // šitas склоняется как tas (šitie, šituos), kitas во мн. ч. — как прилагательное (kiti, kitus)
 PRON.šitas = ["šitas", "šito", "šitam", "šitą", "šitu", "šitame", "šitie", "šitų", "šitiems", "šituos", "šitais", "šituose"];
 PRON.kitas = ["kitas", "kito", "kitam", "kitą", "kitu", "kitame", "kiti", "kitų", "kitiems", "kitus", "kitais", "kituose"];
-for (const b of ["šit", "kit"]) {
+// anas склоняется как tas (Žingsnis I): ano, anam, aną, anuo, aname; anie, anuos
+PRON.anas = ["anas", "ano", "anam", "aną", "anuo", "aname", "anie", "anų", "aniems", "anuos", "anais", "anuose"];
+for (const b of ["šit", "kit", "an"]) {
   PRON[b + "a"] = [b + "a", b + "os", b + "ai", b + "ą", b + "oje", b + "ų", b + "oms", b + "as", b + "omis", b + "ose"];
 }
 
@@ -105,8 +118,13 @@ function adjForms(lemma) {
   return out;
 }
 
+// Лемма мужского рода указательного местоимения покрывает и женский род: в теме «kuris, koks…»
+// подсказка всегда мужского рода (šis → ši, šios). Лемма женского рода — только женский.
+const WITH_FEMININE = { šis: "ši", tas: "ta", šitas: "šita", kitas: "kita", anas: "ana" };
+
 export function formsOf(lemma) {
   const l = lemma.toLocaleLowerCase("lt");
+  if (WITH_FEMININE[l]) return new Set([...PRON[l], ...PRON[WITH_FEMININE[l]]]);
   if (PRON[l]) return new Set(PRON[l]);
   if (NUM[l]) return new Set(NUM[l]);
   return adjForms(l);
@@ -114,5 +132,5 @@ export function formsOf(lemma) {
 
 // Все формы указательных местоимений: для альтернатив вида {šį/tą|šis}.
 export const DEMONSTRATIVE_FORMS = new Set(
-  ["šis", "ši", "tas", "ta", "šitas", "šita", "kitas", "kita"].flatMap((k) => PRON[k])
+  ["šis", "ši", "tas", "ta", "šitas", "šita", "kitas", "kita", "anas", "ana"].flatMap((k) => PRON[k])
 );

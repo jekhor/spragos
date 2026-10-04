@@ -1,0 +1,357 @@
+# Формы сверены с таблицами Žingsnis I (koks, joks, pats, toks pats, tas pats, šis, tas, anas, kitas), Žingsnis II и
+# Complete Lithuanian (kuris). Предложения составлены автоматически — по возможности покажите их носителю.
+# Подсказка — форма мужского рода единственного числа: род и число нужно взять у поясняемого слова.
+# Подсказка показывается всегда: в вопросах kuris и koks часто взаимозаменяемы.
+@title: Kuris, koks, pats… — местоимения
+@group: Склонение
+@description: Kuris, koks, toks, joks, pats (tas pats, toks pats), šis, tas, anas, kitas, visas, kiekvienas
+@hints: always
+@distractors: kuris, kurio, kuriam, kurį, kuriuo, kuriame, kuri, kurios, kuriai, kurią, kuria, kurioje
+
+# --- kuris: именительный ---
+Žmogus, {kuris|kuris} sėdi prie lango, — mano dėdė.
+Pažįstu merginą, {kuri|kuris} kalba penkiomis kalbomis.
+Vaikai, {kurie|kuris} žaidžia kieme, — mūsų kaimynų.
+Gėlės, {kurios|kuris} auga sode, labai gražios.
+Knyga, {kuri|kuris} guli ant stalo, yra mano.
+Studentai, {kurie|kuris} gerai mokosi, gauna stipendiją.
+Parduotuvė, {kuri|kuris} yra už kampo, dirba iki vėlumos.
+Mano draugės, {kurios|kuris} gyvena Vilniuje, atvažiuos rytoj.
+Nupirkau dovaną draugei, {kuri|kuris} rytoj švenčia gimtadienį.
+Padėkojau kaimynams, {kurie|kuris} man padėjo.
+Žmonės, {kurie|kuris} gyvena kaime, dažnai keliasi anksti.
+
+# --- kuris: родительный ---
+Tai draugas, {kurio|kuris} seniai nemačiau.
+Ar radai knygą, {kurios|kuris} ieškojai?
+Tai miestas, {kurio|kuris} centre stovi pilis.
+Moteris, {kurios|kuris} sūnus yra gydytojas, gyvena šalia.
+Žmonės, {kurių|kuris} laukėme, jau atvyko.
+Tai mokytoja, be {kurios|kuris} nebūčiau išmokęs lietuviškai.
+Namas, prie {kurio|kuris} auga liepa, yra labai senas.
+Draugai, iš {kurių|kuris} gavau laišką, gyvena Anglijoje.
+Upė, prie {kurios|kuris} stovėjome, vadinasi Neris.
+Knygos, {kurių|kuris} dar neperskaičiau, guli lentynoje.
+Ten stovi vyras, {kurio|kuris} vardo nežinau.
+Susipažinau su menininke, {kurios|kuris} paveikslai kabo muziejuje.
+Čia gyvena šeima, {kurios|kuris} vaikai lanko mūsų mokyklą.
+Paskambink tam žmogui, {kurio|kuris} numerį tau daviau.
+Mūsų kaimynai, {kurių|kuris} šuo visą naktį lojo, išvažiavo atostogauti.
+Žodžiai, {kurių|kuris} nesupranti, yra žodyne.
+Kėdė, ant {kurios|kuris} sėdi, yra sulūžusi.
+Stalas, prie {kurio|kuris} dirbu, stovi prie lango.
+
+# --- kuris: дательный ---
+Tai kolega, {kuriam|kuris} visada padedu.
+Mergaitė, {kuriai|kuris} padovanojau gėlių, labai apsidžiaugė.
+Vaikai, {kuriems|kuris} patinka sportas, lanko baseiną.
+Mano draugės, {kurioms|kuris} parašiau laišką, dar neatsakė.
+Žmogus, {kuriam|kuris} paskambinau, nekalba lietuviškai.
+Ar pažįsti moterį, {kuriai|kuris} priklauso šis šuo?
+Turistai, {kuriems|kuris} parodžiau kelią, man padėkojo.
+Tai mokytojas, {kuriam|kuris} esu labai dėkingas.
+Draugai, {kuriems|kuris} papasakojau naujieną, labai nustebo.
+Draugė, {kuriai|kuris} skambinau, neatsiliepė.
+
+# --- kuris: винительный ---
+Tai filmas, {kurį|kuris} mačiau vakar.
+Knyga, {kurią|kuris} skaitau, labai įdomi.
+Batai, {kuriuos|kuris} nusipirkau, per maži.
+Gėlės, {kurias|kuris} man padovanojai, jau nuvyto.
+Miestas, į {kurį|kuris} važiuojame, yra prie jūros.
+Žmonės, apie {kuriuos|kuris} kalbėjome, gyvena kaime.
+Mergina, {kurią|kuris} sutikau parke, yra studentė.
+Laiškai, {kuriuos|kuris} rašė senelis, labai įdomūs.
+Kelionė, apie {kurią|kuris} svajojau, pagaliau įvyko.
+Dainos, {kurias|kuris} dainuojame, yra lietuvių liaudies dainos.
+Draugas, pas {kurį|kuris} važiuoju, gyvena Klaipėdoje.
+Kavinė, į {kurią|kuris} einame, labai jauki.
+Tai nuotrauka, {kurią|kuris} padariau Paryžiuje.
+Ar gavai laišką, {kurį|kuris} tau atsiunčiau?
+Aplankėme pilį, {kurią|kuris} pastatė kunigaikštis Vytautas.
+Klausausi dainos, {kurią|kuris} išmokau vaikystėje.
+Vaikai, {kuriuos|kuris} mačiau parke, žaidė futbolą.
+Užduotys, {kurias|kuris} gavome, buvo labai sunkios.
+Tiltas, per {kurį|kuris} einame, pastatytas prieš šimtą metų.
+Kompiuteris, {kurį|kuris} nusipirkau, labai greitas.
+
+# --- kuris: творительный ---
+Autobusas, {kuriuo|kuris} važiuoju į darbą, visada vėluoja.
+Mergina, su {kuria|kuris} šokau, yra mano kaimynė.
+Draugai, su {kuriais|kuris} keliavome, jau grįžo namo.
+Kolegės, su {kuriomis|kuris} dirbu, labai draugiškos.
+Rašiklis, {kuriuo|kuris} rašau, yra mano tėčio.
+Žmogus, su {kuriuo|kuris} kalbėjausi, yra profesorius.
+Kalbos, {kuriomis|kuris} jis kalba, — anglų ir vokiečių.
+Dalykai, {kuriais|kuris} domiuosi, — istorija ir muzika.
+Sūnus, {kuriuo|kuris} tėvai didžiuojasi, baigė universitetą.
+Tos merginos, su {kuriomis|kuris} mokiausi, dabar gyvena užsienyje.
+Medžiai, po {kuriais|kuris} sėdėjome, labai seni.
+Gatvė, {kuria|kuris} einu į darbą, labai triukšminga.
+
+# --- kuris: местный ---
+Namas, {kuriame|kuris} gyvenu, yra labai senas.
+Mokykla, {kurioje|kuris} mokiausi, buvo netoli namų.
+Miestai, {kuriuose|kuris} buvau, man labai patiko.
+Parduotuvės, {kuriose|kuris} perku maistą, yra netoli.
+Kambarys, {kuriame|kuris} miegu, yra mažas.
+Įmonė, {kurioje|kuris} dirbu, yra tarptautinė.
+Kaimas, {kuriame|kuris} užaugau, stovi prie ežero.
+Knygos, {kuriose|kuris} rašoma apie Lietuvą, man įdomios.
+Tai ežeras, {kuriame|kuris} vasarą maudomės.
+Pamiršau skėtį kavinėje, {kurioje|kuris} pietavome.
+Ieškau darbo, {kuriame|kuris} galėčiau kalbėti lietuviškai.
+Atsimeni restoraną, {kuriame|kuris} pirmą kartą susitikome?
+Šalys, {kuriose|kuris} kalbama vokiškai, — Vokietija, Austrija ir Šveicarija.
+
+# --- kuris в вопросах ---
+{Kuris|kuris} iš jūsų yra Tomas?
+{Kuriame|kuris} aukšte tu gyveni?
+{Kurią|kuris} knygą nori pasiimti — šitą ar aną?
+{Kurie|kuris} iš šių batų tau labiau patinka?
+{Kurio|kuris} autobuso laukiate?
+Su {kuriuo|kuris} draugu eisi į kiną?
+{Kuria|kuris} gatve geriau eiti į centrą?
+{Kurioje|kuris} parduotuvėje pirkai šią suknelę?
+{Kuriems|kuris} studentams reikia bendrabučio?
+{Kurias|kuris} gėles nupirkti mamai?
+{Kuri|kuris} iš šių suknelių tau labiau patinka?
+{Kurių|kuris} knygų tau dar trūksta?
+{Kuriai|kuris} draugei paskambinsi pirmiausia?
+{Kuriuose|kuris} miestuose esi buvęs?
+{Kuriomis|kuris} kalbomis kalbate?
+{Kuriais|kuris} metais gimei?
+
+# --- koks ---
+{Kokia|koks} šiandien savaitės diena?
+{Kokį|koks} filmą žiūrėjai vakar?
+{Kokiame|koks} mieste tu gyveni?
+{Kokios|koks} spalvos tavo naujas automobilis?
+{Kokią|koks} muziką mėgsti?
+{Kokie|koks} tavo planai savaitgaliui?
+{Kokiu|koks} transportu važiuoji į darbą?
+{Kokių|koks} vaisių nupirkti?
+{Kokiam|koks} žmogui tinka ši profesija?
+{Kokias|koks} kalbas moki?
+{Kokiomis|koks} sporto šakomis domiesi?
+{Kokiose|koks} šalyse esi buvęs?
+{Kokiuose|koks} namuose gyvena tavo tėvai?
+{Kokioje|koks} gatvėje yra tavo mokykla?
+{Kokio|koks} dydžio batus nešioji?
+{Kokioms|koks} šeimoms skirta ši programa?
+{Kokiems|koks} vaikams tinka šis žaidimas?
+Nežinau, {kokią|koks} dovaną nupirkti mamai.
+Papasakok, {kokiame|koks} name gyveni.
+{Kokia|koks} nuostabi diena!
+{Kokios|koks} gražios gėlės!
+{Kokį|koks} gražų namą pasistatė kaimynai!
+{Kokiu|koks} metu tau patogu susitikti?
+
+# --- toks, toks pats ---
+Niekada nemačiau {tokio|toks} gražaus ežero.
+Nenoriu {tokios|toks} brangios suknelės.
+Mūsų mieste nėra {tokių|toks} aukštų namų.
+{Tokiu|toks} oru geriau likti namie.
+Niekada neskaičiau {tokios|toks} įdomios knygos.
+{Tokie|toks} mieli žmonės!
+Su {tokiomis|toks} draugėmis niekada nenuobodu.
+{Tokiems|toks} žmonėms visada malonu padėti.
+{Tokioje|toks} gražioje vietoje norisi pasilikti ilgiau.
+{Tokiam|toks} protingam vaikui reikia sunkesnių užduočių.
+Gyvenu {tokiame|toks} {pačiame|pats} name kaip tu.
+Nusipirkau {tokią|toks} {pačią|pats} suknelę kaip sesuo.
+Prašau ir man {tokio|toks} {paties|pats} pyrago.
+Mano brolis turi {tokius|toks} {pačius|pats} batus kaip aš.
+Mes su sese turime {tokias|toks} {pačias|pats} kuprines.
+
+# --- joks ---
+Neturiu {jokio|joks} noro dirbti.
+Čia nėra {jokios|joks} parduotuvės.
+Jis neturi {jokių|joks} draugų.
+Nėra {jokių|joks} problemų!
+Nematau {jokio|joks} skirtumo.
+Šiandien negavau {jokio|joks} laiško.
+Neturime {jokios|joks} informacijos.
+{Jokiu|joks} būdu!
+{Jokia|joks} kita kavinė neturi tokių pyragų.
+{Jokie|joks} pinigai čia nepadės.
+Jis nebijo {jokio|joks} darbo.
+Apie tai nėra {jokios|joks} abejonės.
+Ji nevalgo {jokios|joks} mėsos.
+{Jokiam|joks} žmogui apie tai nepasakok.
+{Jokioje|joks} parduotuvėje neradau tokių batų.
+{Jokiose|joks} knygose apie tai nerašoma.
+Nesutinku su {jokiomis|joks} sąlygomis.
+
+# --- pats, tas pats ---
+Ona sako: „Šią suknelę aš {pati|pats} pasiuvau.“
+Mes su broliu {patys|pats} pasidarėme pietus.
+Mergaitės {pačios|pats} sutvarkė kambarį.
+Gyvename tame {pačiame|pats} name.
+Mano tėvai mokėsi tame {pačiame|pats} universitete.
+Abi seserys dirba toje {pačioje|pats} ligoninėje.
+Jis visada sako tą {patį|pats}.
+Kasdien valgau tuos {pačius|pats} pusryčius.
+Ji visada vilki tą {pačią|pats} suknelę.
+Mes gimėme tą {pačią|pats} dieną.
+Tie {patys|pats} žmonės ateina kiekvieną savaitę.
+Tos {pačios|pats} problemos kartojasi kasmet.
+Važiavome tuo {pačiu|pats} autobusu.
+Tai buvo tos {pačios|pats} dienos vakaras.
+Tiems {patiems|pats} žmonėms vėl pasisekė.
+Toms {pačioms|pats} studentėms vėl reikia pagalbos.
+Tomis {pačiomis|pats} gatvėmis vaikščiojo mano seneliai.
+Tuose {pačiuose|pats} namuose gyvena jau trečia karta.
+Tais {pačiais|pats} metais gimė ir mano brolis.
+Ar tai to {paties|pats} autoriaus knyga?
+Paklausk {paties|pats} direktoriaus.
+Tai pasakė {pati|pats} mokytoja.
+Vakar kalbėjau su {pačiu|pats} prezidentu!
+Laišką perdaviau {pačiai|pats} direktorei.
+Paukštis tupi {pačiame|pats} medžio viršuje.
+Gyvenu {pačiame|pats} miesto centre.
+Tai įvyko {pačioje|pats} kelionės pradžioje.
+
+# --- visas ---
+{Visą|visas} dieną lijo.
+{Visi|visas} studentai išlaikė egzaminą.
+{Visos|visas} parduotuvės sekmadienį uždarytos.
+Pasakyk {visiems|visas} draugams, kad vėluosiu.
+Su {visais|visas} kaimynais gerai sutariu.
+{Visose|visas} klasėse yra kompiuteriai.
+Perskaičiau {visą|visas} knygą per vieną vakarą.
+Per savaitgalį aplankėme {visus|visas} muziejus.
+Ačiū {visoms|visas} mokytojoms!
+{Viso|visas} pasaulio vaikai mėgsta saldainius.
+{Visoje|visas} Lietuvoje šiandien šilta.
+{Visame|visas} name dingo elektra.
+Su {visa|visas} šeima važiuojame prie jūros.
+{Visomis|visas} jėgomis stengiausi laimėti.
+Apie tai jau žino {visa|visas} klasė.
+Beveik {visuose|visas} miestuose yra bažnyčia.
+Pamatęs šunį, jis {visu|visas} greičiu bėgo namo.
+{Visam|visas} pasauliui reikia taikos.
+{Visai|visas} šeimai patiko kelionė.
+{Visų|visas} studentų pažymiai geri.
+
+# --- kiekvienas ---
+{Kiekvieną|kiekvienas} rytą bėgioju parke.
+{Kiekvienam|kiekvienas} vaikui nupirkome dovaną.
+{Kiekviename|kiekvienas} kambaryje yra langas.
+{Kiekvienoje|kiekvienas} klasėje mokosi dvidešimt mokinių.
+{Kiekvienai|kiekvienas} mokinei mokytoja davė knygą.
+{Kiekviena|kiekvienas} diena yra nauja pradžia.
+{Kiekvieno|kiekvienas} žmogaus gyvenime būna sunkumų.
+{Kiekvienos|kiekvienas} savaitės pabaigoje einame į kiną.
+Su {kiekvienu|kiekvienas} mokiniu mokytojas kalbasi atskirai.
+Su {kiekviena|kiekvienas} diena darosi šilčiau.
+Iš {kiekvienos|kiekvienas} kelionės parvežu magnetuką.
+
+# --- šis («этот»), tas («тот»), anas («тот, дальний»), kitas («другой») ---
+{Ši|šis} knyga — mano mėgstamiausia.
+{Šie|šis} obuoliai labai saldūs.
+{Šios|šis} gėlės skirtos mamai.
+{Šio|šis} namo stogas visai naujas.
+{Šios|šis} savaitės pabaigoje važiuosiu pas tėvus.
+{Šiam|šis} vaikui reikia pagalbos.
+{Šiai|šis} mergaitei labai patinka piešti.
+Ar pažįsti {šį|šis} žmogų?
+Vakar nusipirkau {šią|šis} suknelę.
+{Šiuos|šis} laiškus parašė mano senelis.
+{Šias|šis} knygas reikia grąžinti į biblioteką.
+{Šiuo|šis} metu esu labai užsiėmęs.
+Su {šia|šis} drauge mokiausi mokykloje.
+{Šiais|šis} metais daug keliavau.
+{Šiomis|šis} dienomis labai karšta.
+{Šiame|šis} name gyvena mano draugas.
+{Šioje|šis} gatvėje auga daug liepų.
+{Šiuose|šis} miškuose auga daug grybų.
+{Šiose|šis} parduotuvėse viskas pigiau.
+{Šių|šis} metų vasara buvo labai karšta.
+{Šiems|šis} žmonėms reikia mūsų pagalbos.
+{Šioms|šis} studentėms labai patinka Vilnius.
+{Ta|tas} mergina prie lango — mano sesuo.
+{Tie|tas} žmonės gyvena kaime.
+{Tos|tas} dienos buvo laimingiausios mano gyvenime.
+Gerai prisimenu {to|tas} vakaro koncertą.
+{Tos|tas} knygos autorius — lietuvis.
+{Tam|tas} žmogui nieko nesakyk.
+{Tai|tas} senai moteriai reikia padėti.
+Ar matai {tą|tas} namą ant kalno?
+Paduok man {tą|tas} puodelį.
+{Tuos|tas} batus pirkau Italijoje.
+{Tuo|tas} metu smarkiai lijo.
+Su {ta|tas} drauge susitinku kiekvieną savaitę.
+{Tais|tas} metais gimė mano sūnus.
+{Tomis|tas} dienomis daug dirbau.
+{Tame|tas} kaime gyveno mano seneliai.
+{Toje|tas} gatvėje visada daug žmonių.
+{Tuose|tas} namuose jau niekas negyvena.
+{Tose|tas} šalyse vasarą labai karšta.
+{Tų|tas} knygų bibliotekoje nėra.
+{Tiems|tas} vaikams reikia naujų knygų.
+{Toms|tas} moterims labai patiko koncertas.
+Šis namas naujas, o {ana|anas} bažnyčia — labai sena.
+Gyvenome {anoje|anas} upės pusėje.
+{Anais|anas} laikais žmonės gyveno kitaip.
+{Aną|anas} dieną sutikau seną draugą.
+{Anuo|anas} metu Lietuvoje viskas buvo kitaip.
+Noriu ne šios, o {anos|anas} knygos.
+Šie vaikai — mano, o {anie|anas} — kaimynų.
+Šios gėlės raudonos, o {anos|anas} — baltos.
+Ar matai {aną|anas} kalną tolumoje?
+Kas gyvena {aname|anas} name ant kalvos?
+Pažiūrėk į {anuos|anas} debesis!
+{Kita|kitas} mano sesuo gyvena Kaune.
+{Kiti|kitas} studentai jau išėjo namo.
+{Kitos|kitas} mergaitės žaidžia kieme.
+{Kito|kitas} žmogaus nuomonė man nesvarbi.
+Neturiu {kitos|kitas} išeities.
+{Kitam|kitas} žmogui to nepasakyčiau.
+{Kitai|kitas} draugei parašysiu rytoj.
+Duok man {kitą|kitas} puodelį — šitas įskilęs.
+{Kitus|kitas} klausimus aptarsime rytoj.
+Susitikime {kitu|kitas} laiku.
+Važiuosime {kita|kitas} gatve, ten mažiau mašinų.
+Su {kitais|kitas} vaikais jis nežaidžia.
+Jie kalba {kitomis|kitas} kalbomis.
+Jis dirba {kitame|kitas} skyriuje.
+Ji gyvena {kitoje|kitas} gatvės pusėje.
+{Kituose|kitas} miestuose kainos mažesnės.
+{Kitose|kitas} šalyse švenčiamos kitos šventės.
+Apie {kitų|kitas} žmonių gyvenimą mažai žinome.
+{Kitiems|kitas} studentams egzaminas atrodė lengvas.
+{Kitoms|kitas} šeimoms padėjo kaimynai.
+
+--- Senamiestyje
+— Pažiūrėk į {šį|šis} namą — čia gyveno garsus rašytojas.
+— O kas gyveno {aname|anas} name, kitoje gatvės pusėje?
+— Nežinau, {tos|tas} gatvės istorijos dar neskaičiau.
+— Eime į {kitą|kitas} kiemą, ten yra jauki kavinė.
+— Gerai, bet {šioje|šis} kavinėje kava pigesnė!
+---
+
+--- Mano miestas
+Gyvenu Kaune — mieste, {kuriame|kuris} gimiau.
+Mano namas stovi gatvėje, {kuri|kuris} veda prie upės.
+Kaimynai, {kurie|kuris} gyvena šalia, labai draugiški.
+Netoli yra kavinė, {kurioje|kuris} {kiekvieną|kiekvienas} rytą geriu kavą.
+Barista, su {kuriuo|kuris} jau susidraugavome, visada žino, {kokios|koks} kavos noriu.
+---
+
+--- Nauja kaimynė
+Vakar susipažinau su nauja kaimyne, {kuri|kuris} atsikraustė iš Rygos.
+Ji gyvena tame {pačiame|pats} aukšte kaip aš.
+Kaimynė pasakojo apie miestą, {kuriame|kuris} užaugo, ir apie darbą, {kurį|kuris} čia rado.
+Ji dar neturi {jokių|joks} draugų Kaune, todėl pakviečiau ją į svečius.
+Paaiškėjo, kad mes mėgstame {tokią|toks} {pačią|pats} muziką!
+---
+
+--- Batų parduotuvėje
+— Laba diena. {Kokių|koks} batų ieškote?
+— Ieškau batų, {kuriais|kuris} būtų patogu vaikščioti po miestą.
+— {Kokio|koks} dydžio?
+— Trisdešimt aštunto.
+— Pasimatuokite šiuos. Šį modelį perka beveik {visi|visas} mūsų klientai.
+— Puiku, imsiu {tokius|toks} {pačius|pats}, tik juodus.
+---

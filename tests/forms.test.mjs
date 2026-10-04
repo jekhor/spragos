@@ -29,6 +29,13 @@ test("парадигмы совпадают со сверенными табли
   has("du", "dviejų", "dviem"); has("trys", "tris", "trimis", "trijose");
   has("tas", "to", "tą", "tuo", "tų", "tuos"); has("ji", "jos", "jai", "ją", "ja", "joje");
   has("kitas", "kiti", "kitiems", "kitus"); has("šitas", "šitie", "šituos");
+  has("kuris", "kurio", "kuriuo", "kuriuos", "kurią", "kuria", "kuriomis");
+  has("koks", "kokį", "kokie", "kokiu", "kokią", "kokiose"); has("joks", "jokio", "jokių");
+  has("pats", "paties", "patį", "patys", "patiems", "pačius", "pati", "pačią");
+  has("visas", "visi", "visiems", "visą", "visoje"); has("kiekvienas", "kiekvieną", "kiekvienoje");
+  has("anas", "ano", "aną", "anuo", "anie", "anuos", "ana", "anoje", "anomis");
+  has("šis", "šį", "šie", "ši", "šią", "šioms"); has("tas", "tie", "tai", "toje"); has("kitas", "kiti", "kitai");
+  assert.ok(!formsOf("ši").has("šį")); // женская лемма не покрывает мужской род
   assert.ok(!formsOf("kitas").has("kitie"));
   assert.ok(!formsOf("didelis").has("dideliai"));
   assert.ok(!formsOf("medinis").has("medini"));
