@@ -150,6 +150,10 @@ test("фильтр по типу и проверка ответа", () => {
   assert.ok(isCorrect(s.gaps[0], "Jį patį"));
   assert.ok(!isCorrect(s.gaps[0], "jam"));
   assert.ok(!isCorrect(s.gaps[0], undefined));
+  // режим ввода: регистр и пробелы по краям не важны, диакритика важна
+  assert.ok(isCorrect(s.gaps[0], "  JĮ  "));
+  assert.ok(!isCorrect(s.gaps[0], "ji"));
+  assert.ok(!isCorrect(s.gaps[0], ""));
 });
 
 test("файлы базы data/ разбираются без ошибок", () => {

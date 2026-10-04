@@ -23,7 +23,7 @@
       <div class="hero">
         <p class="hero-kicker">мини-тренажёр литовской грамматики</p>
         <h2 class="hero-title">Spra<span>gos</span></h2>
-        <p class="hero-lead"><em>Spragos</em> по-литовски значит «пропуски»: и в тексте, и в знаниях. Основная механика на данный момент — предложения с пропусками: перетащите в каждый пропуск слово в правильной форме. Сейчас есть упражнения на склонение местоимений, числительных и прилагательных, около 300 пропусков на каждую тему.</p>
+        <p class="hero-lead"><em>Spragos</em> по-литовски значит «пропуски»: и в тексте, и в знаниях. Основная механика на данный момент — предложения с пропусками: перетащите в каждый пропуск слово в правильной форме или впишите его с клавиатуры. Сейчас есть упражнения на склонение местоимений, числительных и прилагательных, около 300 пропусков на каждую тему.</p>
         <div class="actions">
           <button class="btn primary" id="home-start" type="button">Начать упражнение</button>
           <button class="btn" id="home-refs" type="button">Грамматическая справка</button>
@@ -37,6 +37,7 @@
           <li><strong>Без регистрации.</strong> Аккаунт не нужен, никакие данные никуда не отправляются.</li>
           <li><strong>Статистика хранится только в вашем браузере.</strong> На другом устройстве или в другом браузере она будет своя; очистка данных сайта её сотрёт.</li>
           <li><strong>Работает на телефоне:</strong> слова можно перетаскивать пальцем или просто нажать на слово, а потом на пропуск.</li>
+          <li><strong>Два режима:</strong> перетаскивание слов из банка или ввод с клавиатуры. Для литовских букв (ą, č, ę, ė, į, š, ų, ū, ž) есть панель, если их нет на клавиатуре.</li>
         </ul>
       </div>
 
@@ -75,6 +76,13 @@
 
       <div class="panel options">
         <h2>Раунд</h2>
+        <div class="row">
+          <span>Режим</span>
+          <div class="seg" role="radiogroup">
+            <label><input type="radio" name="mode" value="drag"><span>перетаскивание</span></label>
+            <label><input type="radio" name="mode" value="type"><span>ввод с клавиатуры</span></label>
+          </div>
+        </div>
         <label class="row">
           <span>Сколько пропусков (примерно)</span>
           <input type="number" id="opt-count" min="1" max="100" step="1">
@@ -87,7 +95,7 @@
             <label><input type="radio" name="kind" value="text"><span>тексты</span></label>
           </div>
         </div>
-        <div class="row">
+        <div class="row" id="row-bank">
           <span>Банк слов</span>
           <div class="seg" role="radiogroup">
             <label><input type="radio" name="bank" value="answers"><span>только ответы</span></label>

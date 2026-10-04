@@ -10,6 +10,7 @@ const DEFAULT_SETTINGS = {
   kind: "all",
   bank: "answers",
   hints: true,
+  mode: "drag", // "drag" — перетаскивание из банка, "type" — ввод с клавиатуры
 };
 
 const $ = (sel) => document.querySelector(sel);
@@ -210,6 +211,8 @@ function renderOptions() {
   $("#opt-hints").checked = s.hints;
   for (const r of document.querySelectorAll('input[name="kind"]')) r.checked = r.value === s.kind;
   for (const r of document.querySelectorAll('input[name="bank"]')) r.checked = r.value === s.bank;
+  for (const r of document.querySelectorAll('input[name="mode"]')) r.checked = r.value === s.mode;
+  $("#row-bank").hidden = s.mode === "type"; // в режиме ввода банка нет
   updatePoolInfo();
 }
 
@@ -219,6 +222,8 @@ function readOptions() {
   s.hints = $("#opt-hints").checked;
   s.kind = document.querySelector('input[name="kind"]:checked')?.value || "all";
   s.bank = document.querySelector('input[name="bank"]:checked')?.value || "answers";
+  s.mode = document.querySelector('input[name="mode"]:checked')?.value || "drag";
+  $("#row-bank").hidden = s.mode === "type";
   saveSettings();
 }
 
@@ -256,10 +261,16 @@ function updatePoolInfo() {
 function startRound() {
   readOptions();
   const topics = selectedTopics();
-  const r = buildRound(topics, state.settings, store.loadStats().items);
+  const mode = state.settings.mode === "type" ? "type" : "drag";
+  // в режиме ввода банка нет, поэтому и лишние формы не нужны
+  const opts = mode === "type" ? { ...state.settings, bank: "answers" } : state.settings;
+  const r = buildRound(topics, opts, store.loadStats().items);
   if (!r.units.length) return;
   state.round = {
     ...r,
+    mode,
+    typed: new Map(), // gapId → введённый текст (режим ввода)
+    activeInput: null, // последнее поле ввода в фокусе — туда вставляются буквы с панели
     gapById: new Map(r.gaps.map((g) => [g.id, g])),
     chipById: new Map(r.chips.map((c) => [c.id, c])),
     placement: new Map(), // gapId → chipId
@@ -280,12 +291,23 @@ function renderRound() {
   $("#round-ref").hidden = !r.refPaths.length;
 
   const chipEls = new Map();
-  for (const c of r.chips) {
-    chipEls.set(c.id, h("button", { type: "button", class: "chip", dataset: { chip: c.id } }, c.text));
+  if (r.mode === "drag") {
+    for (const c of r.chips) {
+      chipEls.set(c.id, h("button", { type: "button", class: "chip", dataset: { chip: c.id } }, c.text));
+    }
   }
   r.chipEls = chipEls;
 
-  $("#bank").replaceChildren(); // плашки прошлого раунда (их id совпадают с новыми)
+  const bank = $("#bank");
+  bank.replaceChildren(); // плашки прошлого раунда (их id совпадают с новыми)
+  bank.classList.toggle("letters", r.mode === "type");
+  bank.setAttribute("aria-label", r.mode === "type" ? "Литовские буквы" : "Банк слов");
+  if (r.mode === "type") {
+    bank.append(
+      h("span", { class: "letters-label" }, "Литовские буквы:"),
+      ...LT_LETTERS.map((ch) => h("button", { type: "button", class: "letter", dataset: { letter: ch }, tabindex: "-1" }, ch))
+    );
+  }
   const units = $("#units");
   units.replaceChildren();
   $("#round-scroll").scrollTop = 0;
@@ -296,15 +318,31 @@ function renderRound() {
       h("p", {}, segs.map((s) => {
         if (!s.gap) return s;
         const gap = r.gapById.get(unit.gapIds[gi++]);
-        const el = h("span", {
-          class: "gap",
-          role: "button",
-          tabindex: "0",
-          "aria-label": "пропуск",
-          dataset: { gap: gap.id },
-        },
-          h("span", { class: "slot" }),
-          showHint(unit.topic) && gap.hint ? h("span", { class: "hint" }, gap.hint) : null);
+        const hint = showHint(unit.topic) && gap.hint ? h("span", { class: "hint" }, gap.hint) : null;
+        const el = r.mode === "type"
+          ? h("span", { class: "gap typed", dataset: { gap: gap.id } },
+              h("input", {
+                type: "text",
+                class: "gap-input",
+                autocomplete: "off",
+                autocapitalize: "off",
+                autocorrect: "off",
+                spellcheck: "false",
+                enterkeyhint: "next",
+                "aria-label": gap.hint ? `пропуск, начальная форма: ${gap.hint}` : "пропуск",
+                dataset: { gap: gap.id },
+                style: `width:${inputWidth("", gap)}ch`,
+              }),
+              hint)
+          : h("span", {
+              class: "gap",
+              role: "button",
+              tabindex: "0",
+              "aria-label": "пропуск",
+              dataset: { gap: gap.id },
+            },
+              h("span", { class: "slot" }),
+              hint);
         r.gapEls.set(gap.id, el);
         return el;
       })));
@@ -321,20 +359,21 @@ function showHint(topic) {
   return state.settings.hints || topic.hints === "always";
 }
 
-// Разложить плашки по пропускам и банку согласно состоянию.
+const LT_LETTERS = ["ą", "č", "ę", "ė", "į", "š", "ų", "ū", "ž"];
+
+// Ширина поля в символах: растёт по мере ввода, но не выдаёт длину ответа.
+function inputWidth(value, gap) {
+  return Math.max(6, (gap.hint || "").length + 2, value.length + 2);
+}
+
+// Обновить пропуски (и банк) согласно состоянию раунда.
 function layout() {
   const r = state.round;
-  const placedIn = new Map([...r.placement].map(([g, c]) => [c, g]));
-  const bank = $("#bank");
   for (const [gid, el] of r.gapEls) {
     const st = r.status.get(gid);
-    el.classList.toggle("filled", r.placement.has(gid));
     el.classList.toggle("correct", st === "correct");
     el.classList.toggle("wrong", st === "wrong");
     el.classList.toggle("locked", st === "correct");
-    el.classList.toggle("target", r.selected != null && st !== "correct");
-    el.setAttribute("aria-label", r.placement.has(gid) ? "пропуск: " + r.chipById.get(r.placement.get(gid)).text : "пустой пропуск");
-    const slot = el.querySelector(".slot");
     const reveal = el.querySelector(".reveal");
     if (r.revealed && st !== "correct") {
       const answer = r.gapById.get(gid).answers.join(" / ");
@@ -342,7 +381,41 @@ function layout() {
     } else {
       reveal?.remove();
     }
-    if (!r.placement.has(gid)) slot.replaceChildren();
+  }
+  const filled = r.mode === "type" ? layoutTyped() : layoutChips();
+  $("#round-progress").textContent = `заполнено ${filled} из ${r.gaps.length}`;
+
+  const allCorrect = r.gaps.every((g) => r.status.get(g.id) === "correct");
+  const hasWrong = [...r.status.values()].includes("wrong");
+  $("#check").hidden = allCorrect;
+  $("#fix").hidden = !hasWrong;
+  $("#reveal").hidden = !r.recorded || allCorrect || r.revealed;
+}
+
+// Режим ввода: поля заполнены тем, что ввёл пользователь; верные блокируются.
+function layoutTyped() {
+  const r = state.round;
+  let filled = 0;
+  for (const [gid, el] of r.gapEls) {
+    const value = r.typed.get(gid) || "";
+    if (value.trim()) filled++;
+    el.classList.toggle("filled", !!value.trim());
+    el.querySelector(".gap-input").readOnly = r.status.get(gid) === "correct";
+  }
+  return filled;
+}
+
+// Режим перетаскивания: разложить плашки по пропускам и банку.
+function layoutChips() {
+  const r = state.round;
+  const placedIn = new Map([...r.placement].map(([g, c]) => [c, g]));
+  const bank = $("#bank");
+  for (const [gid, el] of r.gapEls) {
+    const st = r.status.get(gid);
+    el.classList.toggle("filled", r.placement.has(gid));
+    el.classList.toggle("target", r.selected != null && st !== "correct");
+    el.setAttribute("aria-label", r.placement.has(gid) ? "пропуск: " + r.chipById.get(r.placement.get(gid)).text : "пустой пропуск");
+    if (!r.placement.has(gid)) el.querySelector(".slot").replaceChildren();
   }
   for (const c of r.chips) {
     const el = r.chipEls.get(c.id);
@@ -357,14 +430,7 @@ function layout() {
     }
   }
   bank.classList.toggle("empty", ![...r.chips].some((c) => !placedIn.has(c.id)));
-  const filled = r.placement.size;
-  $("#round-progress").textContent = `заполнено ${filled} из ${r.gaps.length}`;
-
-  const allCorrect = r.gaps.every((g) => r.status.get(g.id) === "correct");
-  const hasWrong = [...r.status.values()].includes("wrong");
-  $("#check").hidden = allCorrect;
-  $("#fix").hidden = !hasWrong;
-  $("#reveal").hidden = !r.recorded || allCorrect || r.revealed;
+  return r.placement.size;
 }
 
 function placeChip(chipId, gapId) {
@@ -405,6 +471,12 @@ function onDrop(chipId, target) {
 function onRoundClick(e) {
   const r = state.round;
   if (!r) return;
+  if (r.mode === "type") {
+    const letter = e.target.closest(".letter");
+    if (letter) insertLetter(letter.dataset.letter);
+    else if (!e.target.closest(".gap-input")) e.target.closest(".gap.typed")?.querySelector(".gap-input").focus();
+    return;
+  }
   const gapEl = e.target.closest(".gap");
   const chipEl = e.target.closest(".chip");
   if (gapEl) {
@@ -427,6 +499,11 @@ function onRoundClick(e) {
 }
 
 function onRoundKey(e) {
+  if (e.key === "Enter" && e.target.classList.contains("gap-input")) {
+    e.preventDefault();
+    focusNextInput(e.target);
+    return;
+  }
   if ((e.key === "Enter" || e.key === " ") && e.target.classList.contains("gap")) {
     e.preventDefault();
     e.target.click();
@@ -439,8 +516,8 @@ function onRoundKey(e) {
 function check() {
   const r = state.round;
   for (const g of r.gaps) {
-    const chip = r.chipById.get(r.placement.get(g.id));
-    r.status.set(g.id, isCorrect(g, chip?.text) ? "correct" : "wrong");
+    const answer = r.mode === "type" ? r.typed.get(g.id) : r.chipById.get(r.placement.get(g.id))?.text;
+    r.status.set(g.id, isCorrect(g, answer) ? "correct" : "wrong");
   }
   r.selected = null;
   const correct = r.gaps.filter((g) => r.status.get(g.id) === "correct").length;
@@ -473,14 +550,55 @@ function check() {
 
 function fixMistakes() {
   const r = state.round;
-  for (const [g, st] of [...r.status]) {
-    if (st === "wrong") {
-      r.placement.delete(g);
-      r.status.delete(g);
-    }
+  const wrong = [...r.status].filter(([, st]) => st === "wrong").map(([g]) => g);
+  for (const g of wrong) {
+    r.placement.delete(g); // в режиме ввода текст остаётся — его удобнее поправить, чем набирать заново
+    r.status.delete(g);
   }
   $("#result").hidden = true;
   layout();
+  if (r.mode === "type" && wrong.length) {
+    const input = r.gapEls.get(wrong[0]).querySelector(".gap-input");
+    input.focus();
+    input.select();
+  }
+}
+
+// ---------- Режим ввода ----------
+
+function onTypedInput(e) {
+  const input = e.target;
+  if (!input.classList?.contains("gap-input")) return;
+  const r = state.round;
+  const gid = input.dataset.gap;
+  r.typed.set(gid, input.value);
+  input.style.width = inputWidth(input.value, r.gapById.get(gid)) + "ch";
+  if (r.status.get(gid) === "wrong") r.status.delete(gid); // правка снимает красную подсветку
+  layout();
+}
+
+function insertLetter(ch) {
+  const r = state.round;
+  let input = r.activeInput;
+  if (!input || !input.isConnected || input.readOnly) {
+    input = [...document.querySelectorAll("#units .gap-input")].find((i) => !i.readOnly);
+    if (!input) return;
+  }
+  input.focus();
+  input.setRangeText(ch, input.selectionStart ?? input.value.length, input.selectionEnd ?? input.value.length, "end");
+  input.dispatchEvent(new Event("input", { bubbles: true }));
+}
+
+// Enter: к следующему незаполненному полю; если таких нет — проверить.
+function focusNextInput(current) {
+  const inputs = [...document.querySelectorAll("#units .gap-input")].filter((i) => !i.readOnly);
+  const after = inputs.slice(inputs.indexOf(current) + 1).concat(inputs.slice(0, inputs.indexOf(current)));
+  const next = after.find((i) => !i.value.trim());
+  if (next) next.focus();
+  else {
+    current.blur();
+    check();
+  }
 }
 
 function reveal() {
@@ -615,6 +733,14 @@ async function init() {
   const area = $("#round-area");
   area.addEventListener("click", onRoundClick);
   area.addEventListener("keydown", onRoundKey);
+  area.addEventListener("input", onTypedInput);
+  area.addEventListener("focusin", (e) => {
+    if (e.target.classList?.contains("gap-input") && state.round) state.round.activeInput = e.target;
+  });
+  // нажатие на кнопку буквы не должно уводить фокус из поля ввода
+  area.addEventListener("mousedown", (e) => {
+    if (e.target.closest(".letter")) e.preventDefault();
+  });
   enableDragAndDrop(area, onDrop);
 
   await loadTopics();
