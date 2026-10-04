@@ -2,7 +2,7 @@
 # Complete Lithuanian (kuris). Предложения составлены автоматически — по возможности покажите их носителю.
 # Подсказка — форма мужского рода единственного числа: род и число нужно взять у поясняемого слова.
 # Подсказка показывается всегда: в вопросах kuris и koks часто взаимозаменяемы.
-@title: Kuris, koks, pats… — местоимения
+@title: Другие местоимения
 @group: Склонение
 @description: Kuris, koks, toks, joks, pats (tas pats, toks pats), šis, tas, anas, kitas, visas, kiekvienas
 @hints: always

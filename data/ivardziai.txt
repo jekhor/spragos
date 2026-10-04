@@ -2,7 +2,7 @@
 # Предложения составлены автоматически — по возможности покажите их носителю.
 @title: Įvardžiai — местоимения
 @group: Склонение
-@description: Личные (aš, tu, jis, ji, mes, jūs, jie, jos, savęs) и вопросительное kas. Указательные šis, tas — в теме «Kuris, koks, pats…»
+@description: Личные (aš, tu, jis, ji, mes, jūs, jie, jos, savęs) и вопросительное kas
 @distractors: manęs, man, mane, tavęs, tau, tave, jo, jam, jį, jos, jai, ją
 
 # --- Личные местоимения ---
