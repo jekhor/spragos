@@ -2,6 +2,7 @@ import { parseTopic, itemGaps } from "./parser.js";
 import { buildRound, countItems, isCorrect } from "./round.js";
 import { enableDragAndDrop } from "./dnd.js";
 import * as store from "./stats.js";
+import { renderMarkdown, markdownTitle, stripTitle } from "./markdown.js";
 
 const DEFAULT_SETTINGS = {
   topics: [],
@@ -28,6 +29,7 @@ function h(tag, attrs = {}, ...children) {
 
 const state = {
   topics: [],
+  refs: new Map(), // путь .md относительно data/ → { path, title, src }
   loadErrors: [],
   settings: store.loadSettings(DEFAULT_SETTINGS),
   round: null,
@@ -49,23 +51,45 @@ async function loadTopics() {
     });
     return;
   }
-  const topics = await Promise.all(
-    files.map(async (file) => {
-      try {
-        const res = await fetch("data/" + file.split("/").map(encodeURIComponent).join("/"));
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        return parseTopic(await res.text(), file);
-      } catch (e) {
-        state.loadErrors.push({ file, line: 0, message: "не удалось загрузить: " + e.message });
-        return null;
-      }
-    })
-  );
+  const fetchText = async (file) => {
+    try {
+      const res = await fetch("data/" + file.split("/").map(encodeURIComponent).join("/"));
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      return await res.text();
+    } catch (e) {
+      state.loadErrors.push({ file, line: 0, message: "не удалось загрузить: " + e.message });
+      return null;
+    }
+  };
+  const [topics, refs] = await Promise.all([
+    Promise.all(files.filter((f) => f.endsWith(".txt")).map(async (f) => {
+      const src = await fetchText(f);
+      return src == null ? null : parseTopic(src, f);
+    })),
+    Promise.all(files.filter((f) => f.endsWith(".md")).map(async (f) => {
+      const src = await fetchText(f);
+      return src == null ? null : { path: f, title: markdownTitle(src, f), src };
+    })),
+  ]);
+  for (const r of refs) if (r) state.refs.set(r.path, r);
   for (const t of topics) {
     if (!t) continue;
     state.loadErrors.push(...t.errors);
+    t.refPath = resolveRef(t);
     if (t.items.length) state.topics.push(t);
   }
+}
+
+// Справка темы: @reference (путь относительно data/) или файл .md с тем же именем.
+function resolveRef(topic) {
+  if (topic.reference) {
+    const path = topic.reference.replace(/^\/+/, "");
+    if (state.refs.has(path)) return path;
+    state.loadErrors.push({ file: topic.file, line: 0, message: `справка «${topic.reference}» не найдена в data/` });
+    return null;
+  }
+  const same = topic.file.replace(/\.txt$/, ".md");
+  return state.refs.has(same) ? same : null;
 }
 
 // ---------- Экраны ----------
@@ -76,6 +100,7 @@ function show(name) {
     b.classList.toggle("active", b.dataset.nav === name || (name === "round" && b.dataset.nav === "setup"));
   }
   if (name === "stats") renderStats();
+  if (name === "refs") renderRefList();
   window.scrollTo(0, 0);
 }
 
@@ -131,6 +156,17 @@ function renderTopicList() {
             t.description ? h("span", { class: "topic-desc" }, t.description) : null),
           h("span", { class: "topic-meta" },
             h("span", {}, parts.join(", ")),
+            t.refPath
+              ? h("button", {
+                  type: "button",
+                  class: "link ref-link",
+                  title: "Грамматическая справка",
+                  onclick: (e) => {
+                    e.preventDefault();
+                    openRefs([t.refPath]);
+                  },
+                }, "справка")
+              : null,
             st && st.gaps ? h("span", { class: "badge" }, pct(st.correct, st.gaps) + "%") : null)));
     }
   }
@@ -213,6 +249,8 @@ function startRound() {
 function renderRound() {
   const r = state.round;
   $("#round-topics").textContent = r.topicNames.join(" · ");
+  r.refPaths = [...new Set(r.units.map((u) => u.topic.refPath).filter(Boolean))];
+  $("#round-ref").hidden = !r.refPaths.length;
 
   const chipEls = new Map();
   for (const c of r.chips) {
@@ -421,6 +459,51 @@ function reveal() {
   layout();
 }
 
+// ---------- Справка ----------
+
+function openRefs(paths, active = 0) {
+  const dlg = $("#ref-dialog");
+  const refs = paths.map((p) => state.refs.get(p)).filter(Boolean);
+  if (!refs.length) return;
+  const show = (k) => {
+    const ref = refs[k];
+    $("#ref-title").textContent = ref.title;
+    const tabs = $("#ref-tabs");
+    tabs.replaceChildren(
+      ...(refs.length > 1
+        ? refs.map((x, i) =>
+            h("button", { type: "button", class: "ref-tab" + (i === k ? " active" : ""), onclick: () => show(i) }, x.title))
+        : [])
+    );
+    tabs.hidden = refs.length < 2;
+    const body = $("#ref-body");
+    body.innerHTML = renderMarkdown(stripTitle(ref.src));
+    body.scrollTop = 0;
+  };
+  show(active);
+  if (!dlg.open) dlg.showModal();
+}
+
+function renderRefList() {
+  const box = $("#ref-list");
+  box.replaceChildren();
+  if (!state.refs.size) {
+    box.append(h("p", { class: "muted" }, "В папке data/ пока нет ни одной справки (.md)."));
+    return;
+  }
+  const usedBy = new Map();
+  for (const t of state.topics) {
+    if (t.refPath) usedBy.set(t.refPath, [...(usedBy.get(t.refPath) || []), t.title]);
+  }
+  const refs = [...state.refs.values()].sort((a, b) => a.title.localeCompare(b.title, "lt"));
+  for (const ref of refs) {
+    box.append(
+      h("button", { type: "button", class: "ref-item", onclick: () => openRefs([ref.path]) },
+        h("span", { class: "topic-title" }, ref.title),
+        usedBy.has(ref.path) ? h("span", { class: "topic-desc" }, "к теме: " + usedBy.get(ref.path).join(", ")) : null));
+  }
+}
+
 // ---------- Статистика ----------
 
 function pct(a, b) {
@@ -484,6 +567,12 @@ async function init() {
   $("#to-setup").addEventListener("click", () => {
     renderTopicList();
     show("setup");
+  });
+  $("#round-ref").addEventListener("click", () => openRefs(state.round.refPaths));
+  const dlg = $("#ref-dialog");
+  $("#ref-close").addEventListener("click", () => dlg.close());
+  dlg.addEventListener("click", (e) => {
+    if (e.target === dlg) dlg.close(); // клик по фону вокруг окна
   });
   $("#stats-reset").addEventListener("click", () => {
     if (confirm("Сбросить всю статистику?")) {

@@ -12,6 +12,7 @@
     <h1 class="logo">Lietuvių <span>gramatika</span></h1>
     <nav>
       <button class="nav-btn" data-nav="setup">Упражнение</button>
+      <button class="nav-btn" data-nav="refs">Справка</button>
       <button class="nav-btn" data-nav="stats">Статистика</button>
     </nav>
   </header>
@@ -68,7 +69,10 @@
     <section id="screen-round" class="screen" hidden>
       <div class="round-head">
         <div class="muted" id="round-topics"></div>
-        <div class="muted" id="round-progress"></div>
+        <div class="round-head-right">
+          <button class="link" id="round-ref" type="button" hidden>справка</button>
+          <span class="muted" id="round-progress"></span>
+        </div>
       </div>
       <div id="round-area">
         <div class="bank" id="bank" aria-label="Банк слов"></div>
@@ -84,6 +88,14 @@
       </div>
     </section>
 
+    <!-- Экран справки -->
+    <section id="screen-refs" class="screen" hidden>
+      <div class="panel">
+        <h2>Грамматическая справка</h2>
+        <div id="ref-list"></div>
+      </div>
+    </section>
+
     <!-- Экран статистики -->
     <section id="screen-stats" class="screen" hidden>
       <div class="panel">
@@ -96,5 +108,14 @@
       </div>
     </section>
   </main>
+
+  <dialog id="ref-dialog" aria-labelledby="ref-title">
+    <div class="ref-head">
+      <h1 id="ref-title"></h1>
+      <button type="button" class="ref-close" id="ref-close" aria-label="Закрыть">×</button>
+    </div>
+    <div class="ref-tabs" id="ref-tabs" hidden></div>
+    <div class="ref-body" id="ref-body"></div>
+  </dialog>
 </body>
 </html>

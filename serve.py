@@ -19,7 +19,9 @@ DATA_DIR = ROOT / "data"
 
 def list_data_files():
     files = []
-    for path in DATA_DIR.rglob("*.txt"):
+    for path in DATA_DIR.rglob("*"):
+        if path.suffix not in (".txt", ".md") or not path.is_file():
+            continue
         if any(part.startswith(".") for part in path.relative_to(DATA_DIR).parts):
             continue
         files.append(path.relative_to(DATA_DIR).as_posix())
@@ -29,6 +31,7 @@ def list_data_files():
 class Handler(SimpleHTTPRequestHandler):
     extensions_map = {
         **SimpleHTTPRequestHandler.extensions_map,
+        ".md": "text/markdown; charset=utf-8",
         ".js": "text/javascript; charset=utf-8",
         ".mjs": "text/javascript; charset=utf-8",
         ".css": "text/css; charset=utf-8",

@@ -1,7 +1,7 @@
 // Разбор файла темы (data/*.txt) в объект темы.
 // Формат описан в README.md. Модуль не зависит от DOM — его можно тестировать в node.
 
-const KNOWN_KEYS = new Set(["title", "group", "description", "distractors", "hints"]);
+const KNOWN_KEYS = new Set(["title", "group", "description", "distractors", "hints", "reference"]);
 
 // Нормализация для сравнения ответов: NFC, схлопывание пробелов, без учёта регистра.
 export function normalize(s) {
@@ -74,6 +74,7 @@ export function parseTopic(source, file = "") {
     description: "",
     distractors: [],
     hints: "", // "always" — подсказки в этой теме показываются всегда
+    reference: "", // путь к справке .md относительно data/ (по умолчанию — файл с тем же именем)
     items: [],
     errors: [],
   };
