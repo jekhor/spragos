@@ -53,3 +53,300 @@ Vakare dvi valandas mokausi su {dviem|dvi} draugėmis.
 Dar paėmiau {dvejas|dvejos} šiltas pirštines.
 Pardavėja man grąžino {penkis|penki} eurus.
 ---
+
+# ======================================================================
+# Дополнение. Формы — по таблицам Žingsnis I; выражение времени — по Complete
+# Lithuanian и Colloquial Lithuanian.
+# ======================================================================
+
+# --- vienas, viena ---
+Mano brolis turi tik {vieną|vienas} vaiką.
+Prie {vieno|vienas} stalo sėdėjo trys žmonės.
+Šią paslaptį papasakojau tik {vienam|vienas} draugui.
+Gyvenu bute su {vienu|vienas} draugu.
+Per dieną išgeriu tik {vieną|vienas} puodelį kavos.
+Neturiu nė {vienos|viena} laisvos minutės.
+Mes visi dirbame {vienoje|viena} įmonėje.
+Tik {vienai|viena} mergaitei pavyko išspręsti uždavinį.
+Ji neparašė nė {vieno|vienas} laiško.
+Kasdien kalbu lietuviškai bent su {vienu|vienas} žmogumi.
+Kiekvieną dieną suvalgau po {vieną|vienas} obuolį.
+
+# --- du, dvi ---
+Mes laukėme {dviejų|du} draugų.
+Paskambinau {dviem|du} kolegoms.
+Pasiūliau pagalbą {dviem|du} keliautojams.
+Jis gyveno {dviejuose|du} miestuose.
+Mokinys gavo {dviejų|dvi} savaičių atostogas.
+Pas mus atvažiuos svečiai iš {dviejų|dvi} šalių.
+Ji dirba {dviejose|dvi} mokyklose.
+Mama davė {dviem|dvi} dukterims po obuolį.
+
+# --- trys ---
+Iš {trijų|trys} brolių jauniausias — Tomas.
+Mama paskambino {trims|trys} draugėms.
+Turiu {tris|trys} seseris.
+Gyvenome {trijuose|trys} skirtinguose miestuose.
+Vaikai sėdi {trijose|trys} eilėse.
+Susitikome su {trimis|trys} studentais.
+Po {trijų|trys} dienų grįšiu namo.
+Užsakiau kambarį {trims|trys} žmonėms.
+Perskaičiau {tris|trys} knygas per mėnesį.
+Per savaitgalį aplankėme {tris|trys} muziejus.
+Vaikams daviau po {tris|trys} saldainius.
+Kiekvienam iš {trijų|trys} vaikų nupirkome po dovaną.
+Ji gyveno su {trimis|trys} katėmis.
+Šeimininkė pavaišino mus {trimis|trys} rūšimis sūrio.
+
+# --- keturi, keturios ---
+Ji turi {keturis|keturi} brolius.
+Išmokau {keturias|keturios} lietuviškas dainas.
+Laukiau tavęs {keturias|keturios} valandas!
+Kelionė truko {keturias|keturios} dienas.
+Šis automobilis skirtas {keturiems|keturi} žmonėms.
+Paskambinau {keturioms|keturios} draugėms.
+Su {keturiais|keturi} draugais keliavome po Lenkiją.
+Su {keturiomis|keturios} kolegėmis dirbu viename kabinete.
+Jis dirbo {keturiose|keturios} įmonėse.
+Nuo {keturių|keturios} iki šešių dirbu namuose.
+Metai susideda iš {keturių|keturi} metų laikų.
+Ši sriuba skirta {keturioms|keturios} porcijoms.
+
+# --- penki, penkios ---
+Turime {penkis|penki} vaikus.
+Parduotuvė šiandien dirba iki {penkių|penkios}.
+Užsisakiau stalelį {penkiems|penki} žmonėms.
+Ji kalba {penkiomis|penkios} kalbomis.
+Gyvenau {penkiuose|penki} miestuose.
+Mokiausi {penkiose|penkios} mokyklose.
+Bilietas į muziejų kainuoja {penkis|penki} eurus.
+Aš grįšiu po {penkių|penkios} minučių.
+Lėktuvas vėlavo {penkias|penkios} valandas.
+Su {penkiais|penki} kolegomis važiavome į konferenciją.
+Lietuva skirstoma į {penkis|penki} etnografinius regionus.
+Bibliotekoje galima pasiimti ne daugiau kaip {penkias|penkios} knygas.
+Vaikai sulipdė {penkis|penki} senius besmegenius.
+
+# --- šeši, šešios ---
+Ji turi {šešis|šeši} anūkus.
+Kiekvieną rytą bėgioju {šešis|šeši} kilometrus.
+Kelionė traukiniu trunka {šešias|šešios} valandas.
+Prie stalo yra vietos {šešiems|šeši} svečiams.
+Mama iškepė pyragą {šešioms|šešios} draugėms.
+Po {šešių|šeši} mėnesių jis grįžo iš Amerikos.
+Nupirkau {šešis|šeši} kiaušinius ir {tris|trys} bandeles.
+Su {šešiais|šeši} draugais žaidžiame krepšinį.
+Stalas sukaltas iš {šešių|šešios} lentų.
+
+# --- septyni, septynios ---
+Savaitė turi {septynias|septynios} dienas.
+Laukėme traukinio {septynias|septynios} minutes.
+Per atostogas perskaičiau {septynis|septyni} romanus.
+Laiškus išsiunčiau {septyniems|septyni} draugams.
+Su {septyniomis|septynios} draugėmis važiavome prie jūros.
+Po {septynių|septynios} valandų lėktuvas nusileido.
+Pasaulis susideda iš {septynių|septyni} žemynų.
+Lietuvių kalbos daiktavardžiai turi {septynis|septyni} linksnius.
+Vaivorykštė turi {septynias|septynios} spalvas.
+Sriubą išviriau iš {septynių|septynios} daržovių.
+
+# --- aštuoni, aštuonios ---
+Dirbu {aštuonias|aštuonios} valandas per dieną.
+Šis namas turi {aštuonis|aštuoni} aukštus.
+Iki {aštuonių|aštuonios} vakaro būsiu darbe.
+Stalą padengėme {aštuoniems|aštuoni} svečiams.
+Mūsų įmonė bendradarbiauja su {aštuoniomis|aštuonios} bendrovėmis.
+Laukiame {aštuonių|aštuoni} svečių.
+Senelis turi {aštuonis|aštuoni} anūkus ir {tris|trys} proanūkius.
+Mama nupirko {devynis|devyni} obuolius ir {aštuonias|aštuonios} kriaušes.
+Mokytoja parašė pažymius {aštuoniems|aštuoni} mokiniams.
+
+# --- devyni, devynios ---
+Lauksiu tavęs nuo {devynių|devynios} ryto.
+Jis turi {devynis|devyni} anūkus.
+Nupirkau mamai {devynias|devynios} rožes.
+Su {devyniais|devyni} draugais žaidėme futbolą.
+Dovanas išdalijome {devyniems|devyni} vaikams.
+Ji jau {devynias|devynios} dienas serga.
+Bibliotekoje yra knygų {devyniomis|devynios} kalbomis.
+Iš {devynių|devyni} mokinių tik vienas neatliko užduoties.
+
+# --- 11–19, šimtas, tūkstantis ---
+Tai {dvylikos|dvylika} metų mergaitė.
+Sūnus grįžo po {penkiolikos|penkiolika} minučių.
+Užsakiau stalą {trylikai|trylika} žmonių.
+Nuo {vienuolikos|vienuolika} iki dvylikos turiu pertrauką.
+Ši knyga skirta {keturiolikos|keturiolika} metų paaugliams.
+Lietuvių bendruomenės veikia {aštuoniolikoje|aštuoniolika} šalių.
+Paštas uždaromas po {penkiolikos|penkiolika} minučių.
+Mano brolis gyvena už {septyniolikos|septyniolika} kilometrų nuo miesto.
+Kūčių vakarienė susideda iš {dvylikos|dvylika} patiekalų.
+Šiame kaime nėra nė {šimto|šimtas} gyventojų.
+Šiais metais miestas švenčia {tūkstančio|tūkstantis} metų jubiliejų.
+Automobilis kainavo {tūkstantį|tūkstantis} eurų.
+Iš {tūkstančio|tūkstantis} žmonių tik dešimt atsakė į anketą.
+Lietuvą kasmet aplanko šimtai {tūkstančių|tūkstantis} turistų.
+
+# --- Собирательные (metai, durys, kelnės, akiniai, marškiniai, rogės, žirklės) ---
+Gyvenu Vilniuje jau {trejus|treji} metus.
+Prieš {dvejus|dveji} metus aš buvau Paryžiuje.
+Po {trejų|treji} metų baigsiu universitetą.
+Nupirkau sūnui {dvejus|dveji} marškinius.
+Turiu {trejus|treji} akinius: skaityti, vairuoti ir nuo saulės.
+Šis kambarys su {dvejomis|dvejos} durimis.
+Į kelionę pasiėmiau {trejas|trejos} kelnes.
+Vaikas ką tik atšventė {ketverių|ketveri} metų gimtadienį.
+Kai kurie {penkerių|penkeri} metų vaikai jau moka skaityti.
+Jis dirbo užsienyje {septynerius|septyneri} metus.
+Mes gyvename kartu jau {devynerius|devyneri} metus.
+Parduotuvėje nupirkau {vienerias|vienerios} žirkles.
+Vaikams nupirkome {dvejas|dvejos} roges.
+Po karo senelė {penkerius|penkeri} metus gyveno kaime.
+Jau {aštuonerius|aštuoneri} metus gyvenu Lietuvoje.
+Šventėme sūnaus {šešerių|šešeri} metų gimtadienį.
+Prieš {ketverius|ketveri} metus persikėlėme į Vilnių.
+Studijos universitete trunka {ketverius|ketveri} metus.
+Per {trejus|treji} metus išmokau kalbėti lietuviškai.
+Švęsime dukros {vienerių|vieneri} metų gimtadienį.
+Kambarys su {trejomis|trejos} durimis — tikras labirintas!
+
+# --- Порядковые ---
+Mano biuras yra {penktame|penktas} aukšte.
+Lipk į {trečią|trečias} aukštą.
+Iki stoties važiuok {ketvirtu|ketvirtas} troleibusu.
+Mano sūnus mokosi {antroje|antras} klasėje.
+Ji gimė gegužės {pirmą|pirmas}.
+Susitikime {devintą|devintas} valandą ryto.
+Kelinta dabar valanda? — Jau {dešimta|dešimtas}.
+Tai jau mano {trečia|trečias} kelionė į Lietuvą.
+Lietuvoje esu {antrą|antras} kartą.
+Apie tai skaičiau {pirmame|pirmas} skyriuje.
+Važiuosiu {septintu|septintas} troleibusu.
+Pamoka baigiasi {dvyliktą|dvyliktas} valandą.
+Sėdėjome {dešimtoje|dešimtas} eilėje.
+Atsakymas yra {aštuntame|aštuntas} puslapyje.
+Mūsų komanda užėmė {antrą|antras} vietą.
+Mano dukra gimė gegužės {devynioliktą|devynioliktas}.
+Nuo {pirmos|pirmas} dienos jam čia patiko.
+Iki {antros|antras} valandos būsiu namie.
+Susitikime pusę {dešimtos|dešimtas} prie kino teatro.
+Dabar dvidešimt minučių po {septynių|septynios}.
+Tai jau {antri|antras} metai, kai gyvenu Kaune.
+Jau {treti|trečias} metai mokausi lietuvių kalbos.
+Mano dukra {pirmus|pirmas} metus lanko mokyklą.
+Ji gyvena {antrame|antras} aukšte, o aš — {penktame|penktas}.
+Paskaita prasidės {pirmą|pirmas} valandą.
+Koncertas prasideda {aštuntą|aštuntas} vakaro.
+Mano sūnus lanko {ketvirtą|ketvirtas} klasę.
+Gyvenu {trečiame|trečias} name nuo kampo.
+Į centrą važiuok {antru|antras} autobusu.
+Tai jau {šešta|šeštas} pamoka šiandien.
+Susitiksime prie {penkto|penktas} namo.
+{Antrą|antras} dieną pradėjo lyti.
+Šią knygą skaitau jau {trečią|trečias} kartą.
+Kabinetas yra {ketvirtame|ketvirtas} aukšte, kairėje.
+
+--- Mano šeima skaičiais
+Mano tėvai turi {penkis|penki} vaikus — {tris|trys} sūnus ir dvi dukteris.
+Mūsų šuo gyvena su mumis jau {devynerius|devyneri} metus.
+Seneliai turi {aštuonis|aštuoni} anūkus.
+Per Kūčias mama ruošia vakarienę iš {dvylikos|dvylika} patiekalų.
+---
+
+--- Darbo diena
+Mano darbo diena prasideda {aštuntą|aštuntas} valandą.
+Į biurą važiuoju {trečiu|trečias} troleibusu.
+Biuras yra {devintame|devintas} aukšte.
+Iki pietų turiu {tris|trys} susitikimus.
+Pietauju su {dviem|dvi} kolegėmis.
+Dirbu iki {penkių|penkios}, o vakare sportuoju.
+---
+
+--- Parduotuvėje
+— Laba diena. Prašyčiau {dviejų|du} kilogramų bulvių.
+— Prašom. Ko dar norėtumėte?
+— Dar {penkių|penkios} bandelių ir {vieno|vienas} sūrio.
+— Viskas kainuoja {aštuonis|aštuoni} eurus.
+---
+
+--- Atostogos
+Šią vasarą atostogavome {tris|trys} savaites.
+{Pirmą|pirmas} savaitę gyvenome prie jūros.
+Viešbutis buvo {penkių|penkios} žvaigždučių.
+Mūsų kambarys buvo {šeštame|šeštas} aukšte, iš jo matėsi jūra.
+{Antrą|antras} savaitę keliavome po Latviją ir aplankėme {keturis|keturi} miestus.
+---
+
+--- Gimtadienis
+Rytoj švęsime dukros {septynerių|septyneri} metų gimtadienį.
+Pakvietėme {šešis|šeši} jos draugus ir {keturias|keturios} drauges.
+Nupirkau tortą su {septyniomis|septynios} žvakutėmis.
+Šventė prasidės {trečią|trečias} valandą.
+---
+
+--- Mūsų namas
+Mūsų namas turi {tris|trys} aukštus.
+{Pirmame|pirmas} aukšte yra virtuvė ir svetainė.
+{Antrame|antras} aukšte miega visa šeima.
+{Trečiame|trečias} aukšte yra senelio kabinetas.
+Į namą galima įeiti pro {dvejas|dvejos} duris.
+---
+
+# --- Время, даты ---
+Dabar be {penkiolikos|penkiolika} devynios.
+Pamokos prasideda pusę {aštuntos|aštuntas}.
+Atvažiuosiu penkiolika minučių po {trečios|trečias}.
+Ji grįš apie {šeštą|šeštas} valandą.
+Paštas dirba nuo {aštuntos|aštuntas} iki {septynioliktos|septynioliktas} valandos.
+Parduotuvė atidaroma {dešimtą|dešimtas} valandą.
+Mano sesuo gimė spalio {šeštą|šeštas} dieną.
+Mūsų vestuvės buvo birželio {aštuonioliktą|aštuonioliktas}.
+Kelintą valandą prasideda filmas? — {Septintą|septintas}.
+
+# --- Ещё порядковые ---
+Atsakykite į {pirmus|pirmas} penkis klausimus.
+{Antrame|antras} sakinyje yra klaida.
+Mano vieta yra {penktoje|penktas} eilėje.
+Ji jau {trečią|trečias} dieną serga.
+Ar jūs Lietuvoje {pirmą|pirmas} kartą?
+Mano brolis — {dešimtos|dešimtas} klasės mokinys.
+{Ketvirtą|ketvirtas} dieną pagaliau pasirodė saulė.
+Šie akiniai jau {treti|trečias}, kuriuos pametu šiais metais.
+
+# --- Ещё количественные ---
+Prie {trylikos|trylika} stalų sėdėjo svečiai.
+Bilietus išdalijome {penkiolikai|penkiolika} mokinių.
+{Šešiolikos|šešiolika} metų jaunuoliai jau gali dirbti.
+Iš {devyniolikos|devyniolika} kandidatų išrinkome tris.
+Mano prosenelė gyveno iki {šimto|šimtas} metų.
+Šis tiltas yra {šimto|šimtas} metrų ilgio.
+Mūsų mokykloje mokosi apie {tūkstantį|tūkstantis} vaikų.
+Su {šimtu|šimtas} eurų galima nuvažiuoti į Rygą.
+Lietuvių kalbos mokausi {tris|trys} kartus per savaitę.
+Vaistus reikia gerti po {vieną|viena} tabletę.
+Nupirkau {keturis|keturi} bilietus į teatrą.
+Papasakok apie {penkis|penki} savo pomėgius.
+Ant stalo padėjau {šešias|šešios} lėkštes.
+Šiandien išmokau {aštuonis|aštuoni} naujus žodžius.
+Grupėje mokosi studentai iš {septynių|septynios} šalių.
+Kelionė autobusu kainuoja {devynis|devyni} eurus.
+{Keturiems|keturi} studentams reikia bendrabučio.
+Ji dar tik {dvejų|dveji} metų.
+Vaikai nuo {trejų|treji} metų lanko darželį.
+Ši stovykla skirta {aštuonerių|aštuoneri} metų vaikams.
+
+--- Kelinta valanda?
+— Atsiprašau, kelinta dabar valanda?
+— Jau {pirma|pirmas}. Tiksliau, penkiolika minučių po {pirmos|pirmas}.
+— O kada išvyksta autobusas į Kauną?
+— Kitas išvyksta pusę {antros|antras}.
+— Ačiū! Dar spėsiu išgerti kavos.
+---
+
+--- Universitete
+Studijuoju {antrame|antras} kurse.
+Mūsų grupėje mokosi studentai iš {keturių|keturios} šalių.
+Paskaitos vyksta {trečiame|trečias} universiteto pastate.
+Per savaitę turime {aštuonias|aštuonios} paskaitas ir {tris|trys} seminarus.
+Bakalauro studijos trunka {ketverius|ketveri} metus, o magistrantūros — {dvejus|dveji}.
+---

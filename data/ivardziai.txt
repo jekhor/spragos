@@ -74,3 +74,296 @@ Lauksime {tavęs|tu} vasarą!
 — O ar jau valgei {šį/tą|šis} pyragą?
 — Taip! Paragauk {jo|jis} — nesigailėsi.
 ---
+
+# ======================================================================
+# Дополнение. Часть предложений взята из учебников (Žingsnis, Sėkmės,
+# Lietuvių kalba dialoguose, Complete Lithuanian) и адаптирована.
+# ======================================================================
+
+# --- Родительный: manęs, tavęs, jo, jos, mūsų, jūsų, jų ---
+Aš vėluoju, nelaukite {manęs|aš}.
+Padarysiu viską, kas nuo {manęs|aš} priklauso.
+Aš sėdžiu čia, sėsk šalia {manęs|aš}.
+Kodėl tu {manęs|aš} neklausai?
+Kai {manęs|aš} nėra namie, mano katę šeria kaimynė.
+Brangioji, aš labai {tavęs|tu} pasiilgau.
+Tomai, kažkas {tavęs|tu} ieškojo prieš pietus.
+Aš skambinau tau vakar, bet {tavęs|tu} nebuvo namie.
+Tu sėsk čia, o aš atsisėsiu šalia {tavęs|tu}.
+Ona, aš labai jaudinausi dėl {tavęs|tu}.
+Brangusis, kai {tavęs|tu} nėra šalia, man liūdna.
+Petras serga, todėl {jo|jis} šiandien nėra darbe.
+Mano brolis gyvena Londone, aš {jo|jis} seniai nemačiau.
+Tomas — mano geriausias draugas, be {jo|jis} man nuobodu.
+Senelis pasakoja istorijas, o vaikai {jo|jis} klausosi.
+Kur Rūta? Aš {jos|ji} niekur nerandu.
+Mama išvažiavo, ir vaikai labai {jos|ji} laukia.
+Šiandien šalta, apsivilk šiltą striukę ir neišeik be {jos|ji}.
+Ar tu {mūsų|mes} nepažįsti? Mes gyvename kaimynystėje.
+Mes jau einame — palaukite {mūsų|mes}!
+Ponia Ona, ar galiu {jūsų|jūs} paklausti?
+Ačiū, kad atėjote, mes {jūsų|jūs} labai laukėme.
+Nebijokite šuns, jis {jūsų|jūs} nekąs.
+Mieli svečiai, be {jūsų|jūs} šventė neprasidės.
+Mūsų kaimynai labai triukšmingi, mes {jų|jie} nemėgstame.
+Mano draugai dar neatėjo, palaukime {jų|jie}.
+Mano tėvai atvažiuoja rytoj, aš {jų|jie} lauksiu stotyje.
+Šie obuoliai labai skanūs, paragauk {jų|jie}!
+Ar matei mano akinius? Negaliu {jų|jie} rasti.
+Mano draugės — studentės, nė viena iš {jų|jos} nedirba.
+Tos gėlės labai gražios, nepamiršk {jų|jos} palaistyti.
+
+# --- Дательный: man, tau, jam, jai, mums, jums, jiems, joms, sau ---
+Mano gimtadienis rytoj. Ką tu {man|aš} padovanosi?
+Aš alkanas — ar duosi {man|aš} sumuštinį?
+{Man|aš} skauda galvą, todėl einu miegoti.
+Ona, ar {tau|tu} patinka cepelinai?
+Tomai, aš {tau|tu} parašysiu laišką.
+Labos nakties, mažyli, aš {tau|tu} paskaitysiu pasaką.
+Aš {tau|tu} paskambinsiu, o tu {man|aš} parašyk žinutę.
+Jei {tau|tu} reikės pagalbos, kreipkis į {mane|aš}.
+Jonas serga, {jam|jis} reikia gydytojo.
+Petras laukia skambučio, paskambink {jam|jis} šiandien.
+Rytoj mano broliui gimtadienis, nupirksiu {jam|jis} knygą.
+Mama pavargo, padėkime {jai|ji} sutvarkyti namus.
+Mano sesuo mėgsta gėles, aš {jai|ji} nupirkau rožių.
+Ana nori išmokti lietuviškai, aš {jai|ji} padedu.
+Mes čia nauji. Gal galite {mums|mes} parodyti kelią?
+Mes su žmona mėgstame keliauti — {mums|mes} labai patinka Italija.
+Vaikai, aš {jums|jūs} papasakosiu įdomią istoriją.
+Mieli svečiai, ar {jums|jūs} patiko vakarienė?
+Pone Jonai, kiek {jums|jūs} metų?
+Draugai, ačiū {jums|jūs} už pagalbą!
+Studentai klausia, o mokytojas {jiems|jie} atsako.
+Mano tėvai gyvena toli, aš {jiems|jie} skambinu kiekvieną sekmadienį.
+Kaimynų vaikai triukšmauja, bet aš {jiems|jie} nieko nesakau.
+Mano dukterys mėgsta šokti, {joms|jos} patinka muzika.
+Močiutės kaimynės vienišos, mes {joms|jos} dažnai padedame.
+Aš nupirkau {sau|savęs} naują paltą, o broliui — kepurę.
+Jis pasidarė {sau|savęs} kavos ir atsisėdo prie lango.
+
+# --- Винительный: mane, tave, jį, ją, mus, jus, juos, jas, save ---
+Ar tu {mane|aš} girdi? Aš čia!
+Šeštadienį eisiu į vakarėlį — draugai {mane|aš} pakvietė.
+Kai tu būsi senas, aš {tave|tu} prižiūrėsiu.
+Rūta, aš {tave|tu} myliu.
+Ar galiu {tave|tu} pakviesti į kiną, Ona?
+Jonai, ar {tave|tu} kas nors palydės?
+Tai mano naujas telefonas, aš {jį|jis} nusipirkau vakar.
+Ar jūs pažįstate tą poną? — Taip, aš {jį|jis} pažįstu.
+Petras myli Oną, bet ji {jo|jis} nemyli.
+Ona myli Petrą, o jis {ją|ji} — ne.
+Kur mano knyga? Aš {ją|ji} padėjau ant stalo.
+Jeigu mėgstate mėsą, dažniau {ją|ji} virkite, ne kepkite.
+Mūsų mokytoja labai gera, visi {ją|ji} myli.
+Šiandien Rūtos gimtadienis, pasveikink {ją|ji}!
+Jeigu mėgstate sportuoti, ateikite dirbti pas {mus|mes}!
+Ačiū, kad pakvietėte {mus|mes} į svečius.
+Mano brolis ir aš — dvyniai, žmonės dažnai {mus|mes} painioja.
+Rytoj aš atvažiuosiu pas {jus|jūs}, gerai?
+Ponia, aš {jus|jūs} matau pirmą kartą.
+Vaikai, mama {jus|jūs} kviečia valgyti!
+Šį kartą mes {jus|jūs} vaišiname, o kitą kartą jūs vaišinsite {mus|mes}.
+Nusipirkau du skėčius, nes nuolat {juos|jie} pametu.
+Laiškus perskaičiau ir atsakiau į {juos|jie}.
+Vaikai žaidžia kieme, pašauk {juos|jie} pietų.
+Kur mano raktai? Gal {juos|jie} paėmei tu?
+Tavo batai labai gražūs, kur {juos|jie} pirkai?
+Jonas surinko šiukšles, o Tomas {jas|jos} išnešė.
+Tavo seserys labai malonios, aš {jas|jos} gerai pažįstu.
+Gėlės nuvyto, išmesk {jas|jos}.
+Mano kelnės per ilgos, reikia {jas|jos} patrumpinti.
+Mano seserys gyvena Vilniuje, aš dažnai pas {jas|jos} važiuoju.
+Narcizas mylėjo tik {save|savęs}.
+Ką jūs pati apie {save|savęs} galėtumėte pasakyti?
+
+# --- Творительный: manimi, tavimi, juo, ja, mumis, jumis, jais, jomis, savimi ---
+Gal norėtum nueiti su {manimi|aš} į teatrą?
+Mano kaimynė kalba su {manimi|aš} prancūziškai.
+Aš labai noriu su {tavimi|tu} susitikti.
+Jonai, visada norėjau pasikalbėti su {tavimi|tu}.
+Tu esi mano geriausias draugas, aš {tavimi|tu} visiškai pasitikiu.
+Tai mano draugas Tomas, rytoj žaisiu su {juo|jis} krepšinį.
+Mano sūnus gerai mokosi, aš {juo|jis} didžiuojuosi.
+Tai Tomo dviratis, nevažiuok {juo|jis} be leidimo.
+Mano rašiklis sulūžo, todėl {juo|jis} rašyti negaliu.
+Atvažiuoja mano draugė Rūta. Mes kartu su {ja|ji} aplankysime Trakus.
+Ona labai protinga, su {ja|ji} įdomu kalbėtis.
+Kas yra Rūta? Aš su {ja|ji} mokiausi mokykloje.
+Ar tu eisi į kavinę su {mumis|mes}?
+Mes dar maži, tėvai {mumis|mes} rūpinasi.
+Sutinku su {jumis|jūs}, pone profesoriau.
+Mums labai patiko pasivaikščiojimas su {jumis|jūs}.
+Mano tėvai jau seni, aš {jais|jie} rūpinuosi.
+Studentai paskambino, ir aš susitariau su {jais|jie} susitikti.
+Mano draugės labai linksmos, mėgstu su {jomis|jos} paplepėti.
+Pirštinės labai šiltos, žiemą su {jomis|jos} nešalta.
+Turiu dvi kates. {Jomis|jos} rūpinasi mano dukra.
+Kai keliauju, visada pasiimu fotoaparatą su {savimi|savęs}.
+Kai randame naujų draugų, labiau pasitikime {savimi|savęs}.
+
+# --- Местный: jame, joje, juose, jose, savyje ---
+Tai mano kambarys. {Jame|jis} stovi lova ir stalas.
+Netoli yra ežeras, vasarą mes {jame|jis} maudomės.
+Tai mūsų namas. {Jame|jis} gyvena keturios šeimos.
+Mūsų mokykla didelė, {joje|ji} mokosi daug vaikų.
+Tai mano rankinė. {Joje|ji} yra raktai ir piniginė.
+Kavinė maža, bet {joje|ji} labai jauku.
+Lietuvoje daug miškų, {juose|jie} auga grybų ir uogų.
+Abu muziejai įdomūs, {juose|jie} daug senų daiktų.
+Senamiestyje daug gatvelių, {jose|jos} visada pilna turistų.
+Jis visada viską laiko {savyje|savęs}.
+
+# --- Вопросительное kas ---
+{Ko|kas} tu ieškai?
+{Kam|kas} tu skambini?
+{Kuo|kas} tu domiesi?
+{Ką|kas} tu matai?
+Su {kuo|kas} tu kalbiesi telefonu?
+Apie {ką|kas} jūs kalbate?
+Iš {ko|kas} gavai šią dovaną?
+{Kam|kas} priklauso šis dviratis?
+{Kuo|kas} tu nori būti, kai užaugsi?
+{Ko|kas} tau trūksta?
+
+# --- Указательные šis, tas, kitas ---
+Ar visi {šie/tie|šis} žmonės — tavo draugai?
+Kurie iš {šių/tų|šis} patarimų tau patinka?
+{Šiais|šis} metais aš baigiu universitetą.
+{Tais|tas} laikais žmonės gyveno kitaip.
+Ar jūs pažįstate {tą/šį|tas} poną su tamsiais akiniais?
+Į {šį/tą|šis} seansą aš nespėsiu, o kada kitas?
+Ateik {šį|šis} vakarą apie septynias.
+Paragauk gabaliuką {šio/to|šis} pyrago.
+Pakalbėkime apie {šio|šis} vakaro programą.
+Rodėsi, kad mes {šiam/tam|šis} šuniui niekaip negalėsime padėti.
+{Šioje/Toje|ši} parduotuvėje viskas brangu.
+{Šiose/Tose|ši} gražiose vietose žmonės gyveno nuo seno.
+Su {šia/ta|ši} mintimi aš nesutinku.
+Aš negaliu atsiminti {to/šio|tas} žodžio.
+{Tuo|tas} metu aš gyvenau Kaune.
+{Šiuo|šis} metu jis dirba bibliotekoje.
+Duok {tiems/šiems|tas} vaikams po obuolį.
+Senamiestyje yra siaurų gatvelių. {Tose|ta} gatvelėse visada daug turistų.
+Mūsų kaimynės — studentės. {Toms|ta} merginoms labai patinka Vilnius.
+{Šioms/Toms|ši} gėlėms reikia daug vandens.
+Nusipirkau {šias/tas|ši} pirštines turguje.
+Paimk {tuos/šiuos|tas} batus, jie tau tinka.
+Gyvenau {tame/šiame|tas} mieste penkerius metus.
+Ar matai {tą/šią|ta} merginą prie lango?
+Kokia {šios/tos|ši} knygos kaina?
+Šiandien negaliu, susitikime {kitą|kita} dieną.
+{Kitais|kitas} metais važiuosime į Ispaniją.
+Mano brolis gyvena {kitame|kitas} mieste.
+Nežinau, paklausk {kitų|kitas} žmonių.
+
+# --- Ещё задания ---
+Mano draugas Jonas — gydytojas, {juo|jis} visi pasitiki.
+Tai mūsų kaimynė Ona. {Jai|ji} jau devyniasdešimt metų.
+Mažoji sesutė bijo tamsos, todėl aš {jai|ji} palieku įjungtą šviesą.
+Mūsų šuo susirgo, ir veterinaras {jam|jis} davė vaistų.
+Aš labai pavargau, leiskite {man|aš} pailsėti.
+Aš labai laiminga: tėvai {man|aš} leido važiuoti į stovyklą.
+Tomai, kas {tau|tu} nutiko?
+Tu atrodai pavargęs, gal {tau|tu} reikia pailsėti?
+Vaikai, ar {jums|jūs} nešalta?
+Mes vėlavome, ir autobusas {mūsų|mes} nelaukė.
+Tėvai išvyko, ir vaikai {jų|jie} labai pasiilgo.
+Dukrytės dar mažos, aš {joms|jos} kas vakarą skaitau pasakas.
+Ar matai tuos paukščius? Pažiūrėk į {juos|jie}!
+Seneliai gyvena kaime, vasarą važiuojame pas {juos|jie}.
+Tomas sakė, kad tu {jį|jis} pakvietei į vakarėlį.
+Mano draugė Ieva gyvena Klaipėdoje, rytoj važiuosiu pas {ją|ji}.
+Mes su broliu dirbame kartu, ir viršininkas {mumis|mes} patenkintas.
+Ponia Rūta, mes {jumis|jūs} labai džiaugiamės.
+Mano tėvai — mokytojai, aš {jais|jie} labai didžiuojuosi.
+Ar tos knygos tavo? Ar galiu {jomis|jos} pasinaudoti?
+Turiu didelę spintą, {joje|ji} telpa visi drabužiai.
+Tai mano nauji batai — {juose|jie} labai patogu vaikščioti.
+Pažiūrėk į šias nuotraukas — ar matai {jose|jos} mane?
+Aš tau niekada nemelavau. Ar tu {manimi|aš} pasitiki?
+
+--- Telefonu
+— Labas, Rūta! Čia Tomas. Ar {tau|tu} patogu kalbėti?
+— Labas, Tomai! Taip, {man|aš} patogu.
+— Noriu {tave|tu} pakviesti į kiną. Ar eisi su {manimi|aš}?
+— Mielai! O ar Jonas eis su {mumis|mes}?
+— Ne, {jam|jis} šiandien reikia dirbti.
+— Gaila. Tada {tavęs|tu} lauksiu prie kino teatro.
+---
+
+--- Mano kaimynai
+Šalia {manęs|aš} gyvena sena pora — Jonas ir Elena.
+{Jiems|jie} jau daugiau nei aštuoniasdešimt metų.
+Aš dažnai {juos|jie} aplankau ir {jiems|jie} padedu.
+Elena labai mėgsta gėles, todėl aš {jai|ji} kartais atnešu tulpių.
+Jonas pasakoja {man|aš} apie savo jaunystę, ir aš mielai {jo|jis} klausausi.
+Kai aš išvažiuoju, jie {manęs|aš} pasiilgsta.
+---
+
+--- Dovana mamai
+Rytoj mano mamos gimtadienis.
+Mes su tėčiu norime {jai|ji} padovanoti kažką ypatingo.
+Tėtis siūlo laikrodį, bet aš žinau, kad mama {jo|jis} nenori.
+Galiausiai nusprendėme: nupirksime {jai|ji} gėlių ir nuvešime {ją|ji} į teatrą.
+Mama labai apsidžiaugė ir padėkojo {mums|mes}.
+---
+
+--- Laiškas mamai
+Mieloji mama, labai {tavęs|tu} pasiilgau!
+Studijos man sekasi gerai, dėstytojai {mane|aš} giria.
+Gyvenu bendrabutyje su dviem draugėmis. Su {jomis|jos} niekada nenuobodu.
+Savaitgaliais kas nors {mus|mes} pakviečia į svečius.
+Perduok linkėjimų tėčiui, aš {jam|jis} parašysiu rytoj.
+Bučiuoju {tave|tu}! Tavo Rūta
+---
+
+--- Kelionėje
+Praėjusią vasarą mes su draugais keliavome po Italiją.
+Ten {mus|mes} visur sutiko labai draugiškai.
+Viename kaime sutikome seną moterį.
+Mes {jos|ji} paklausėme kelio, o ji {mums|mes} viską paaiškino.
+Paskui ji pakvietė {mus|mes} į savo namus ir pavaišino vynu.
+Iki šiol {ją|ji} prisimename su šypsena.
+---
+
+--- Pas gydytoją
+— Laba diena, daktare. {Man|aš} labai skauda gerklę.
+— Kada {jums|jūs} pradėjo skaudėti?
+— Vakar vakare. Ir dar {mane|aš} krečia šaltis.
+— Leiskite {jus|jūs} apžiūrėti.
+— Ar tai rimta?
+— Ne, nesijaudinkite. Išrašysiu {jums|jūs} vaistų.
+---
+
+--- Mano šuo
+Turiu šunį, {jo|jis} vardas Reksas.
+Kiekvieną rytą aš vedu {jį|jis} pasivaikščioti.
+Reksas labai protingas, {jam|jis} patinka žaisti su kamuoliu.
+Vaikai {jį|jis} labai myli ir dažnai su {juo|jis} žaidžia kieme.
+Kai grįžtu namo, Reksas visada {manęs|aš} laukia prie durų.
+---
+
+--- Svečiai
+Šeštadienį pas {mus|mes} atvažiuos svečiai iš Lenkijos.
+Mes {juos|jie} pažįstame jau dešimt metų.
+Aš {jiems|jie} parodysiu senamiestį, o žmona paruoš {jiems|jie} lietuviškų patiekalų.
+Svečių duktė Ana mokosi lietuvių kalbos, todėl su {ja|ji} kalbėsime lietuviškai.
+Labai {jų|jie} laukiame!
+---
+
+--- Pokalbis su mokytoja
+— Mokytoja, ar galiu {jūsų|jūs} kai ko paklausti?
+— Žinoma, klausk.
+— Nesuprantu šito pratimo. Ar galėtumėte {man|aš} paaiškinti?
+— Gerai, ateik pas {mane|aš} po pamokų.
+— Ačiū {jums|jūs} labai!
+---
+
+--- Dvynės
+Mano sesės Ona ir Rūta — dvynės.
+{Jas|jos} sunku atskirti, net mokytojai {jas|jos} painioja.
+{Joms|jos} patinka vienodi drabužiai ir ta pati muzika.
+Su {jomis|jos} niekada nebūna nuobodu.
+Kai {jų|jos} nėra namie, namuose labai tylu.
+---
