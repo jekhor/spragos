@@ -41,10 +41,12 @@ const state = {
 async function loadTopics() {
   // Список файлов: локально его отдаёт serve.py (/api/files), на статическом хостинге —
   // data/index.json, который создаёт build.py.
+  // cache: "no-cache" — браузер всегда сверяется с сервером (GitHub Pages отдаёт max-age=600,
+  // и без этого правки базы были бы видны только через 10 минут); неизменённые файлы приходят как 304.
   let files = null;
   for (const url of ["api/files", "data/index.json"]) {
     try {
-      const res = await fetch(url);
+      const res = await fetch(url, { cache: "no-cache" });
       if (res.ok) {
         files = await res.json();
         break;
@@ -63,7 +65,7 @@ async function loadTopics() {
   }
   const fetchText = async (file) => {
     try {
-      const res = await fetch("data/" + file.split("/").map(encodeURIComponent).join("/"));
+      const res = await fetch("data/" + file.split("/").map(encodeURIComponent).join("/"), { cache: "no-cache" });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       return await res.text();
     } catch (e) {
