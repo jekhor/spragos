@@ -323,6 +323,45 @@ Apie {kitų|kitas} žmonių gyvenimą mažai žinome.
 {Kitiems|kitas} studentams egzaminas atrodė lengvas.
 {Kitoms|kitas} šeimoms padėjo kaimynai.
 
+# --- šis, tas, kitas: ещё задания (перенесены из темы «Įvardžiai») ---
+Ar visi {šie|šis} žmonės — tavo draugai?
+Kurie iš {šių|šis} patarimų tau patinka?
+{Šiais|šis} metais aš baigiu universitetą.
+{Tais|tas} laikais žmonės gyveno kitaip.
+Ar jūs pažįstate {tą|tas} poną su tamsiais akiniais?
+Į {šį|šis} seansą aš nespėsiu, o kada kitas?
+Ateik {šį|šis} vakarą apie septynias.
+Paragauk gabaliuką {šio|šis} pyrago.
+Pakalbėkime apie {šio|šis} vakaro programą.
+Rodėsi, kad mes {šiam|šis} šuniui niekaip negalėsime padėti.
+{Šioje|šis} parduotuvėje viskas brangu.
+{Šiose|šis} gražiose vietose žmonės gyveno nuo seno.
+Su {šia|šis} mintimi aš nesutinku.
+Aš negaliu atsiminti {to|tas} žodžio.
+{Tuo|tas} metu aš gyvenau Kaune.
+{Šiuo|šis} metu jis dirba bibliotekoje.
+Duok {tiems|tas} vaikams po obuolį.
+Senamiestyje yra siaurų gatvelių. {Tose|tas} gatvelėse visada daug turistų.
+Mūsų kaimynės — studentės. {Toms|tas} merginoms labai patinka Vilnius.
+{Šioms|šis} gėlėms reikia daug vandens.
+Nusipirkau {šias|šis} pirštines turguje.
+Paimk {tuos|tas} batus, jie tau tinka.
+Gyvenau {tame|tas} mieste penkerius metus.
+Ar matai {tą|tas} merginą prie lango?
+Kokia {šios|šis} knygos kaina?
+Šiandien negaliu, susitikime {kitą|kitas} dieną.
+{Kitais|kitas} metais važiuosime į Ispaniją.
+Mano brolis gyvena {kitame|kitas} mieste.
+Nežinau, paklausk {kitų|kitas} žmonių.
+Ar tu jau matei {šį|šis} filmą?
+Gyvenu {šiame|šis} name jau penkerius metus.
+Ši knyga priklauso {tai|tas} mergaitei.
+Nusipirkau {tą|tas} kompiuterį, apie kurį kalbėjome.
+{Tų|tas} žmonių aš nepažįstu.
+Ant {to|tas} stalo guli jūsų raktai.
+Su {šiuo|šis} draugu susipažinau Vilniuje.
+{Šioje|šis} gatvėje yra daug kavinių.
+
 --- Senamiestyje
 — Pažiūrėk į {šį|šis} namą — čia gyveno garsus rašytojas.
 — O kas gyveno {aname|anas} name, kitoje gatvės pusėje?

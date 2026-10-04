@@ -2,7 +2,7 @@
 # Предложения составлены автоматически — по возможности покажите их носителю.
 @title: Įvardžiai — местоимения
 @group: Склонение
-@description: Личные (aš, tu, jis, ji, mes, jūs, jie, jos, savęs), указательные (šis, tas) и вопросительное kas
+@description: Личные (aš, tu, jis, ji, mes, jūs, jie, jos, savęs) и вопросительное kas. Указательные šis, tas — в теме «Kuris, koks, pats…»
 @distractors: manęs, man, mane, tavęs, tau, tave, jo, jam, jį, jos, jai, ją
 
 # --- Личные местоимения ---
@@ -41,17 +41,6 @@ Su {kuo|kas} tu eini į kiną?
 {Ko|kas} tu bijai?
 {Ką|kas} veiki šį vakarą?
 
-# --- Указательные šis, ši, tas, ta ---
-# Где по смыслу годятся оба местоимения, засчитываются оба (через «/»).
-Ar tu jau matei {šį/tą|šis} filmą?
-Gyvenu {šiame/tame|šis} name jau penkerius metus.
-Ši knyga priklauso {tai/šiai|ta} mergaitei.
-Nusipirkau {tą/šį|tas} kompiuterį, apie kurį kalbėjome.
-{Tų/Šių|tas} žmonių aš nepažįstu.
-Ant {to/šio|tas} stalo guli jūsų raktai.
-Su {šiuo/tuo|šis} draugu susipažinau Vilniuje.
-{Šioje/Toje|ši} gatvėje yra daug kavinių.
-
 --- Mano šeima
 Tai mano sesuo Ona. {Ji|ji} gyvena Kaune.
 Aš {jai|ji} dažnai skambinu, o savaitgaliais važiuoju pas {ją|ji}.
@@ -71,7 +60,7 @@ Lauksime {tavęs|tu} vasarą!
 --- Kavinėje
 — {Ką|kas} užsisakysi?
 — Kavos. Čia ji labai gera, aš {ją|ji} visada geriu be cukraus.
-— O ar jau valgei {šį/tą|šis} pyragą?
+— O ar jau valgei šį pyragą?
 — Taip! Paragauk {jo|jis} — nesigailėsi.
 ---
 
@@ -225,37 +214,6 @@ Iš {ko|kas} gavai šią dovaną?
 {Kam|kas} priklauso šis dviratis?
 {Kuo|kas} tu nori būti, kai užaugsi?
 {Ko|kas} tau trūksta?
-
-# --- Указательные šis, tas, kitas ---
-Ar visi {šie/tie|šis} žmonės — tavo draugai?
-Kurie iš {šių/tų|šis} patarimų tau patinka?
-{Šiais|šis} metais aš baigiu universitetą.
-{Tais|tas} laikais žmonės gyveno kitaip.
-Ar jūs pažįstate {tą/šį|tas} poną su tamsiais akiniais?
-Į {šį/tą|šis} seansą aš nespėsiu, o kada kitas?
-Ateik {šį|šis} vakarą apie septynias.
-Paragauk gabaliuką {šio/to|šis} pyrago.
-Pakalbėkime apie {šio|šis} vakaro programą.
-Rodėsi, kad mes {šiam/tam|šis} šuniui niekaip negalėsime padėti.
-{Šioje/Toje|ši} parduotuvėje viskas brangu.
-{Šiose/Tose|ši} gražiose vietose žmonės gyveno nuo seno.
-Su {šia/ta|ši} mintimi aš nesutinku.
-Aš negaliu atsiminti {to/šio|tas} žodžio.
-{Tuo|tas} metu aš gyvenau Kaune.
-{Šiuo|šis} metu jis dirba bibliotekoje.
-Duok {tiems/šiems|tas} vaikams po obuolį.
-Senamiestyje yra siaurų gatvelių. {Tose|ta} gatvelėse visada daug turistų.
-Mūsų kaimynės — studentės. {Toms|ta} merginoms labai patinka Vilnius.
-{Šioms/Toms|ši} gėlėms reikia daug vandens.
-Nusipirkau {šias/tas|ši} pirštines turguje.
-Paimk {tuos/šiuos|tas} batus, jie tau tinka.
-Gyvenau {tame/šiame|tas} mieste penkerius metus.
-Ar matai {tą/šią|ta} merginą prie lango?
-Kokia {šios/tos|ši} knygos kaina?
-Šiandien negaliu, susitikime {kitą|kita} dieną.
-{Kitais|kitas} metais važiuosime į Ispaniją.
-Mano brolis gyvena {kitame|kitas} mieste.
-Nežinau, paklausk {kitų|kitas} žmonių.
 
 # --- Ещё задания ---
 Mano draugas Jonas — gydytojas, {juo|jis} visi pasitiki.

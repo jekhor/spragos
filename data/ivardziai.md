@@ -35,27 +35,7 @@
 - Jis galvoja tik apie **save**. — Он думает только о себе.
 - Nupirkau **sau** knygą. — Я купил себе книгу.
 
-## Указательные местоимения: šis («этот»), tas («тот»)
-
-| Падеж | šis | ši | šie | šios |
-|---|---|---|---|---|
-| Vard. | šis | ši | šie | šios |
-| Kilm. | šio | šios | šių | šių |
-| Naud. | šiam | šiai | šiems | šioms |
-| Gal. | šį | šią | šiuos | šias |
-| Įnag. | šiuo | šia | šiais | šiomis |
-| Viet. | šiame | šioje | šiuose | šiose |
-
-| Падеж | tas | ta | tie | tos |
-|---|---|---|---|---|
-| Vard. | tas | ta | tie | tos |
-| Kilm. | to | tos | tų | tų |
-| Naud. | tam | tai | tiems | toms |
-| Gal. | tą | tą | tuos | tas |
-| Įnag. | tuo | ta | tais | tomis |
-| Viet. | tame | toje | tuose | tose |
-
-Так же склоняются **šitas / šita** («вот этот») и **kitas / kita** («другой»).
+> Указательные местоимения **šis, tas, anas, kitas** вынесены в отдельную тему и справку «Kuris, koks, pats…» вместе с другими местоимениями, которые склоняются как прилагательные.
 
 ## Вопросительное kas («кто, что»)
 
