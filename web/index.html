@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lietuvių gramatika — тренажёр</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <h1 class="logo">Lietuvių <span>gramatika</span></h1>
+    <nav>
+      <button class="nav-btn" data-nav="setup">Упражнение</button>
+      <button class="nav-btn" data-nav="stats">Статистика</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Экран настроек -->
+    <section id="screen-setup" class="screen" hidden>
+      <div id="load-errors"></div>
+
+      <div class="panel">
+        <div class="panel-head">
+          <h2>Темы</h2>
+          <div class="links">
+            <button class="link" id="select-all">выбрать все</button>
+            <button class="link" id="select-none">снять</button>
+          </div>
+        </div>
+        <div id="topic-list"></div>
+      </div>
+
+      <div class="panel options">
+        <h2>Раунд</h2>
+        <label class="row">
+          <span>Сколько пропусков (примерно)</span>
+          <input type="number" id="opt-count" min="1" max="100" step="1">
+        </label>
+        <div class="row">
+          <span>Что включать</span>
+          <div class="seg" role="radiogroup">
+            <label><input type="radio" name="kind" value="all"><span>всё</span></label>
+            <label><input type="radio" name="kind" value="sentence"><span>предложения</span></label>
+            <label><input type="radio" name="kind" value="text"><span>тексты</span></label>
+          </div>
+        </div>
+        <div class="row">
+          <span>Банк слов</span>
+          <div class="seg" role="radiogroup">
+            <label><input type="radio" name="bank" value="answers"><span>только ответы</span></label>
+            <label><input type="radio" name="bank" value="distractors"><span>+ лишние формы</span></label>
+          </div>
+        </div>
+        <label class="row check">
+          <input type="checkbox" id="opt-hints">
+          <span>Показывать начальную форму под пропуском</span>
+        </label>
+        <div class="actions">
+          <button class="btn primary" id="start">Начать</button>
+          <span class="muted" id="pool-info"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Экран раунда -->
+    <section id="screen-round" class="screen" hidden>
+      <div class="round-head">
+        <div class="muted" id="round-topics"></div>
+        <div class="muted" id="round-progress"></div>
+      </div>
+      <div id="round-area">
+        <div class="bank" id="bank" aria-label="Банк слов"></div>
+        <ol class="units" id="units"></ol>
+      </div>
+      <div class="actions round-actions">
+        <div class="result" id="result" hidden></div>
+        <button class="btn primary" id="check">Проверить</button>
+        <button class="btn" id="fix" hidden>Исправить ошибки</button>
+        <button class="btn" id="reveal" hidden>Показать ответы</button>
+        <button class="btn" id="again">Новый раунд</button>
+        <button class="btn ghost-btn" id="to-setup">К настройкам</button>
+      </div>
+    </section>
+
+    <!-- Экран статистики -->
+    <section id="screen-stats" class="screen" hidden>
+      <div class="panel">
+        <div class="panel-head">
+          <h2>Статистика по темам</h2>
+          <button class="link danger" id="stats-reset">сбросить</button>
+        </div>
+        <p class="muted small">Считаются ответы при первой проверке каждого раунда. Хранится в этом браузере.</p>
+        <div id="stats-table"></div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

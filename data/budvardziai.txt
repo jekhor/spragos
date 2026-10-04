@@ -1,0 +1,55 @@
+# Формы сверены с таблицами Complete Lithuanian (šiltas, gražus, didelis) и Žingsnis.
+# Предложения составлены автоматически — по возможности покажите их носителю.
+# Подсказка показывается всегда: без неё не понять, какое прилагательное имеется в виду.
+@title: Būdvardžiai — прилагательные
+@group: Склонение
+@hints: always
+@description: Прилагательные на -as/-a, -us/-i, -is/-ė (didelis), ед. и мн. число. Подсказка — форма м. р. ед. ч.
+
+# --- -as / -a ---
+Mama geria {karštą|karštas} arbatą.
+Vaikai žaidžia {žaliame|žalias} parke.
+Prie {seno|senas} namo auga liepa.
+Aš rašau {mėlynu|mėlynas} rašikliu.
+Kalbėjau su {jauna|jaunas} mokytoja.
+Ant stalo stovi vaza su {baltomis|baltas} rožėmis.
+Turistai vaikščiojo {siauromis|siauras} senamiesčio gatvėmis.
+Mano seneliai gyvena {mažame|mažas} kaime.
+Ji padovanojo {mažam|mažas} berniukui knygą.
+Nemėgstu {šalto|šaltas} oro.
+Duok vaikui {šilto|šiltas} pieno.
+Mūsų mieste yra daug {aukštų|aukštas} namų.
+Jie gyvena {naujuose|naujas} namuose.
+Vakar kalbėjome apie {naują|naujas} filmą.
+Nusipirkau {žalių|žalias} obuolių.
+Kambarys pilnas {senų|senas} baldų.
+
+# --- -us / -i ---
+Ji nupirko {gražią|gražus} suknelę.
+Mama iškepė {skanų|skanus} pyragą.
+Lietuvoje daug {gražių|gražus} ežerų.
+Mes padėkojome {maloniems|malonus} žmonėms.
+Studentai skaito {įdomias|įdomus} knygas.
+Vakare vaikščiojome {tamsiu|tamsus} mišku.
+Negaliu pakelti {sunkaus|sunkus} lagamino.
+
+# --- -is / -ė, -ias / -ia ---
+Aš gyvenu {dideliame|didelis} mieste.
+Kaimynai turi {didelį|didelis} šunį.
+Sesuo dirba {didelėje|didelis} ligoninėje.
+Pirkau {šviežios|šviežias} duonos.
+
+--- Mano miestas
+Gyvenu {nedideliame|nedidelis} mieste prie upės.
+Mieste yra {sena|senas} bažnyčia ir daug {gražių|gražus} namų.
+Vasarą maudomės {švariame|švarus} ežere.
+Žiemą čia būna daug {balto|baltas} sniego.
+Labai myliu savo {mažą|mažas} ir {jaukų|jaukus} miestą.
+---
+
+--- Gimtadienis
+Vakar buvo mano draugės gimtadienis.
+Aš jai padovanojau {raudoną|raudonas} skarelę ir {įdomią|įdomus} knygą.
+Svečiai valgė {skanius|skanus} pyragus ir gėrė {karštą|karštas} kavą.
+Visi buvo {linksmi|linksmas} ir {laimingi|laimingas}.
+---

@@ -1,0 +1,76 @@
+# Формы сверены с таблицами учебников (Langas į lietuvių kalbą, Žingsnis I, Sėkmės).
+# Предложения составлены автоматически — по возможности покажите их носителю.
+@title: Įvardžiai — местоимения
+@group: Склонение
+@description: Личные (aš, tu, jis, ji, mes, jūs, jie, jos, savęs), указательные (šis, tas) и вопросительное kas
+@distractors: manęs, man, mane, tavęs, tau, tave, jo, jam, jį, jos, jai, ją
+
+# --- Личные местоимения ---
+# Контекст подобран так, чтобы и без подсказки было понятно, о ком речь.
+Tai mano brolis. Aš {jį|jis} matau kiekvieną dieną.
+Ar kalbėjai su Ona? — Taip, kalbėjau su {ja|ji} vakar.
+Aš daug skaitau. {Man|aš} labai patinka ši knyga.
+Labas, Tomai! Ar galiu {tau|tu} paskambinti vakare?
+Mes su broliu neturėjome stalo, todėl mama {mums|mes} nupirko naują.
+Paskambinau Tomui, bet {jo|jis} nebuvo namie.
+Tomai, aš {tavęs|tu} laukiu prie stoties.
+Mūsų tėvai jau seni, todėl gyvename kartu su {jais|jie}.
+Mokytojas paklausė {mūsų|mes}, kur gyvename.
+— Ar jūs mus girdite? — Taip, mes {jus|jūs} gerai girdime.
+Mokytojai buvo gimtadienis, todėl vaikai padovanojo {jai|ji} gėlių.
+Kalbu lėtai. Ar tu {mane|aš} supranti?
+Mažyli, kiek {tau|tu} metų?
+Mūsų kaimynai turi sodą. Prie {jų|jie} namo auga didelis ąžuolas.
+Mano mieloji, visą dieną galvoju apie {tave|tu}.
+Egoistas galvoja tik apie {save|savęs}.
+Jei draugai skambins, pasakyk {jiems|jie}, kad vėluosiu.
+Mama ir sesuo ruošė vakarienę, o aš {joms|jos} padėjau.
+Mes nežinome, kur stotis. Ar galėtum {mums|mes} padėti?
+Vaikai, tėvai labai didžiuojasi {jumis|jūs}.
+Neik vienas — rytoj eisiu su {tavimi|tu} į parduotuvę.
+Kur Ona? Be {jos|ji} mes niekur neisime.
+Aš čia naujas, šiame mieste {manęs|aš} niekas nepažįsta.
+Mūsų seneliai labai geri, visi {juos|jie} myli.
+Mano draugės atvažiavo į Vilnių, ir aš {jas|jos} pakviečiau į svečius.
+Tai senas miestas. {Jame|jis} gyvena daug studentų.
+Jonas niekada nemeluoja, mes {juo|jis} visiškai pasitikime.
+
+# --- Вопросительное kas ---
+{Kam|kas} tu rašai laišką?
+Su {kuo|kas} tu eini į kiną?
+{Ko|kas} tu bijai?
+{Ką|kas} veiki šį vakarą?
+
+# --- Указательные šis, ši, tas, ta ---
+# Где по смыслу годятся оба местоимения, засчитываются оба (через «/»).
+Ar tu jau matei {šį/tą|šis} filmą?
+Gyvenu {šiame/tame|šis} name jau penkerius metus.
+Ši knyga priklauso {tai/šiai|ta} mergaitei.
+Nusipirkau {tą/šį|tas} kompiuterį, apie kurį kalbėjome.
+{Tų/Šių|tas} žmonių aš nepažįstu.
+Ant {to/šio|tas} stalo guli jūsų raktai.
+Su {šiuo/tuo|šis} draugu susipažinau Vilniuje.
+{Šioje/Toje|ši} gatvėje yra daug kavinių.
+
+--- Mano šeima
+Tai mano sesuo Ona. {Ji|ji} gyvena Kaune.
+Aš {jai|ji} dažnai skambinu, o savaitgaliais važiuoju pas {ją|ji}.
+Onos vyras vardu Jonas. {Jį|jis} visi vadina Jonuku.
+Su {juo|jis} visada linksma, nes {jis|jis} mėgsta juokauti.
+Jų vaikai dar maži. {Jiems|jie} labai patinka žaisti su {manimi|aš}.
+---
+
+--- Laiškas draugui
+Labas, Tomai! Ačiū, kad parašei {man|aš} laišką.
+{Tavęs|tu} čia labai trūksta.
+Kai atvažiuosi, aš {tave|tu} supažindinsiu su savo draugais.
+Jie jau daug girdėjo apie {tave|tu}.
+Lauksime {tavęs|tu} vasarą!
+---
+
+--- Kavinėje
+— {Ką|kas} užsisakysi?
+— Kavos. Čia ji labai gera, aš {ją|ji} visada geriu be cukraus.
+— O ar jau valgei {šį/tą|šis} pyragą?
+— Taip! Paragauk {jo|jis} — nesigailėsi.
+---

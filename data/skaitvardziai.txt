@@ -1,0 +1,55 @@
+# Формы сверены с таблицами числительных из приложения Žingsnis I (количественные, собирательные,
+# порядковые) и Complete Lithuanian (время).
+# Предложения составлены автоматически — по возможности покажите их носителю.
+# Подсказка показывается всегда: без неё не понять, какое число имеется в виду.
+@title: Skaitvardžiai — числительные
+@group: Склонение
+@description: Количественные (vienas, du/dvi, trys, keturi…), собирательные (dveji, treji) и порядковые
+@hints: always
+@distractors: du, dvi, dviejų, dviem, trys, trijų, trims, tris, trimis
+
+# --- Количественные ---
+Ji turi tik {vieną|viena} seserį.
+Kambarys su {vienu|vienas} langu.
+Aš gyvenu {viename|vienas} kambaryje su broliu.
+Kavinėje nėra nė {vieno|vienas} laisvo stalo.
+Turiu {du|du} brolius ir {dvi|dvi} seseris.
+Susitikime po {dviejų|dvi} valandų.
+Su {dviem|du} draugais važiavome į pajūrį.
+Praėjusią savaitę buvome {dviejose|dvi} parodose.
+Tai {trijų|trys} aukštų namas.
+Knygos sudėtos {trijose|trys} lentynose.
+Aš paskambinau {keturiems|keturi} draugams.
+Iš {keturių|keturi} brolių tik vienas gyvena Lietuvoje.
+Ji nupirko {penkis|penki} obuolius ir dvi kriaušes.
+Kiekvieną dieną išmokstu po {penkis|penki} naujus žodžius.
+Parduotuvė dirba nuo {devynių|devyni} iki {šešių|šeši}.
+Mama kalbėjosi su {šešiomis|šešios} kaimynėmis.
+Mokytoja davė knygas {septyniems|septyni} mokiniams.
+Sodininkas pasodino {aštuonias|aštuonios} obelis.
+Šis bilietas kainuoja {šimtą|šimtas} eurų.
+
+# --- Собирательные (с pluralia tantum: metai, kelnės, marškiniai…) ---
+Lietuvoje gyvenu jau {dvejus|dveji} metus.
+Šis vaikas jau {trejų|treji} metų.
+Nusipirkau {dvejas|dvejos} kelnes.
+Lagamine turiu tik {vienerius|vieneri} marškinius.
+
+# --- Порядковые ---
+Mes gyvename {trečiame|trečias} aukšte.
+Pamoka prasideda {aštuntą|aštuntas} valandą.
+Traukinys išvyksta {vienuoliktą|vienuoliktas} valandą.
+
+--- Mano diena
+Kiekvieną rytą keliuosi {septintą|septintas} valandą.
+Į darbą važiuoju {dviem|du} autobusais.
+Dirbu nuo {devynių|devyni} iki {penkių|penki}.
+Per pietus valgau su {trimis|trys} kolegomis.
+Vakare dvi valandas mokausi su {dviem|dvi} draugėmis.
+---
+
+--- Turguje
+Šiandien nupirkau {tris|trys} kilogramus bulvių ir {vieną|vienas} kopūstą.
+Dar paėmiau {dvejas|dvejos} šiltas pirštines.
+Pardavėja man grąžino {penkis|penki} eurus.
+---
