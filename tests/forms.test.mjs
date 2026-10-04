@@ -28,6 +28,8 @@ test("парадигмы совпадают со сверенными табли
   has("vieneri", "vienerius"); has("penkerios", "penkerias");
   has("du", "dviejų", "dviem"); has("trys", "tris", "trimis", "trijose");
   has("tas", "to", "tą", "tuo", "tų", "tuos"); has("ji", "jos", "jai", "ją", "ja", "joje");
+  has("kitas", "kiti", "kitiems", "kitus"); has("šitas", "šitie", "šituos");
+  assert.ok(!formsOf("kitas").has("kitie"));
   assert.ok(!formsOf("didelis").has("dideliai"));
   assert.ok(!formsOf("medinis").has("medini"));
   assert.equal(formsOf("rašyti"), null);

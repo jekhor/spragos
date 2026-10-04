@@ -19,9 +19,10 @@ const PRON = {
   tas: ["tas", "to", "tam", "tą", "tuo", "tame", "tie", "tų", "tiems", "tuos", "tais", "tuose"],
   ta: ["ta", "tos", "tai", "tą", "toje", "tų", "toms", "tas", "tomis", "tose"],
 };
+// šitas склоняется как tas (šitie, šituos), kitas во мн. ч. — как прилагательное (kiti, kitus)
+PRON.šitas = ["šitas", "šito", "šitam", "šitą", "šitu", "šitame", "šitie", "šitų", "šitiems", "šituos", "šitais", "šituose"];
+PRON.kitas = ["kitas", "kito", "kitam", "kitą", "kitu", "kitame", "kiti", "kitų", "kitiems", "kitus", "kitais", "kituose"];
 for (const b of ["šit", "kit"]) {
-  PRON[b + "as"] = [b + "as", b + "o", b + "am", b + "ą", b + "u", b + "ame",
-    b + "ie", b + "ų", b + "iems", b + "uos", b + "ais", b + "uose"];
   PRON[b + "a"] = [b + "a", b + "os", b + "ai", b + "ą", b + "oje", b + "ų", b + "oms", b + "as", b + "omis", b + "ose"];
 }
 
@@ -50,7 +51,7 @@ for (const b of ["viener", "ketver", "penker", "šešer", "septyner", "aštuoner
   NUM[b + "i"] = [b + "i", b + "ių", b + "iems", b + "ius", b + "iais", b + "iuose"];
   NUM[b + "ios"] = [b + "ios", b + "ių", b + "ioms", b + "ias", b + "iomis", b + "iose"];
 }
-// 11–19; винительный не включён — источники расходятся (vienuolika / vienuoliką)
+// 11–19; винительный совпадает с именительным (Žingsnis I)
 for (const w of ["vienuolika", "dvylika", "trylika", "keturiolika", "penkiolika", "šešiolika",
   "septyniolika", "aštuoniolika", "devyniolika"]) {
   const b = w.slice(0, -1);

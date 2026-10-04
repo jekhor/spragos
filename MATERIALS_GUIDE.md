@@ -152,6 +152,8 @@ Prie {lango|langas} stovi stalas, o ant {stalo|stalas} — kompiuteris.
    - `petrasiuniene_e_langas_i_lietuviu_kalba.pdf` и `2014_Žingsnis_I.pdf`, `2014_Žingsnis_II.pdf` — местоимения, существительные, прилагательные, причастия;
    - `Complete_Lithuanian.pdf`, `Press_I_J__Ramoniene_M_-_Colloquial_Lithuanian_-_2011.pdf` — таблицы с английскими пояснениями;
    - `2015_365_lietuvių_kalbos_veiksmažodžiai_rusų_kalba.pdf` — спряжение глаголов.
+
+   **Не используй материалы Šaunuolė** (файлы `Saunuole-*.pdf`, сайт saunuole.lt): ни таблицы, ни примеры, ни структуру объяснений.
 2. **Сверь управление:** какой падеж требует предлог или глагол.
 3. **Прочитай каждое предложение целиком** с подставленным ответом. Оно должно быть верным и естественным.
 4. **Проверь однозначность** (§4.1): не подходит ли в пропуск другая форма из банка.
