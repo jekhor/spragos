@@ -101,6 +101,8 @@ function show(name) {
   }
   if (name === "stats") renderStats();
   if (name === "refs") renderRefList();
+  // На телефоне раунд занимает ровно экран и прокручивается только список заданий (см. style.css)
+  document.body.classList.toggle("in-round", name === "round");
   window.scrollTo(0, 0);
 }
 
@@ -261,6 +263,7 @@ function renderRound() {
   $("#bank").replaceChildren(); // плашки прошлого раунда (их id совпадают с новыми)
   const units = $("#units");
   units.replaceChildren();
+  $("#round-scroll").scrollTop = 0;
   r.gapEls = new Map();
   for (const unit of r.units) {
     let gi = 0;

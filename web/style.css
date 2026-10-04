@@ -354,6 +354,25 @@ table.stats { width: 100%; border-collapse: collapse; font-size: .93rem; }
 
 @media (max-width: 420px) {
   .logo span { display: none; }
+  nav { gap: 0; }
+  .nav-btn { padding: 5px 7px; font-size: .9rem; }
+}
+
+/* Телефон: страница раунда не прокручивается целиком — банк слов стоит на месте,
+   прокручивается только список заданий вместе с кнопками. Иначе в мобильном Firefox при появлении панели
+   адреса закреплённый (sticky) банк уезжает за верхний край экрана. */
+@media (max-width: 600px) {
+  body.in-round { height: 100vh; height: 100dvh; overflow: hidden; display: flex; flex-direction: column; }
+  body.in-round .topbar { flex: none; }
+  body.in-round main { flex: 1; min-height: 0; width: 100%; display: flex; flex-direction: column; padding-bottom: 0; }
+  body.in-round #screen-round { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+  body.in-round .round-head { flex: none; flex-wrap: nowrap; align-items: baseline; }
+  body.in-round #round-topics { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  body.in-round .round-head-right { flex: none; }
+  body.in-round #round-area { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+  body.in-round .bank { position: static; flex: none; margin-bottom: 10px; }
+  body.in-round .round-scroll { flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; }
+  body.in-round .round-actions { position: static; margin-top: 0; padding: 4px 0 14px; background: none; }
 }
 
 @media (max-width: 600px) {
@@ -370,7 +389,6 @@ table.stats { width: 100%; border-collapse: collapse; font-size: .93rem; }
   .topbar { padding: 8px 12px; }
   .round-actions .btn { padding: 7px 12px; font-size: .92rem; }
   .round-actions { gap: 6px; }
-  #to-setup { display: none; }
   .logo { font-size: 1rem; white-space: nowrap; }
   .nav-btn { padding: 6px 8px; }
   .bank { gap: 6px; padding: 8px; max-height: 32vh; }
