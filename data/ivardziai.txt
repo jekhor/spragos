@@ -241,6 +241,286 @@ Tai mano nauji batai — {juose|jie} labai patogu vaikščioti.
 Pažiūrėk į šias nuotraukas — ar matai {jose|jos} mane?
 Aš tau niekada nemelavau. Ar tu {manimi|aš} pasitiki?
 
+# ======================================================================
+# Дополнение до ~50 примеров на каждое слово.
+# ======================================================================
+
+# --- aš ---
+Aš sergu, todėl draugai {mane|aš} lanko ligoninėje.
+Rytoj švenčiu gimtadienį — ar ateisi pas {mane|aš}?
+Kai buvau mažas, tėtis {mane|aš} mokė plaukti.
+Aš pavėlavau, ir mokytoja {manęs|aš} paklausė, kodėl.
+Aš dar tik mokausi, todėl {man|aš} kartais sunku suprasti.
+Aš labai mėgstu lietuvišką virtuvę, {man|aš} patinka ir cepelinai, ir šaltibarščiai.
+Mano tėvai gyvena toli, todėl jie dažnai {man|aš} rašo laiškus.
+Aš nemoku vairuoti — gal {mane|aš} pavėžėsi?
+Aš čia naujokas, ar galite {man|aš} padėti?
+Rytoj išvažiuoju, palydėk {mane|aš} į oro uostą.
+Kai aš kalbu, prašau {manęs|aš} nepertraukti.
+Aš esu jūsų mokytoja, galite {manęs|aš} klausti bet ko.
+Aš keliauju ne vienas — su {manimi|aš} keliauja mano šuo.
+Nežinau, kas {manyje|aš} pasikeitė, bet jaučiuosi laimingesnis.
+Aš nekalbu angliškai, todėl kalbėkite su {manimi|aš} lietuviškai.
+Ko tu iš {manęs|aš} nori? Aš nieko neturiu!
+Aš tau padėjau, o tu {man|aš} net nepadėkojai.
+
+# --- tu ---
+Tomai, kur tu buvai? Visi {tavęs|tu} ieškojo!
+Tu toks protingas — aš {tavimi|tu} žaviuosi.
+Tu vėl pavėlavai! Kiek galima {tavęs|tu} laukti?
+Tu atrodai išbalęs. Ar {tau|tu} viskas gerai?
+Tu dar nevalgei? Aš {tau|tu} paruošiau sumuštinių.
+Mano mielas sūnau, aš {tavimi|tu} labai didžiuojuosi.
+Ona, ar galiu {tave|tu} apkabinti?
+Tu man labai patinki — ar galiu {tave|tu} pakviesti šokti?
+Petrai, pas {tave|tu} labai jauku!
+Tu taip gražiai dainuoji — {tavyje|tu} slypi tikras talentas!
+Tu nori kavos? Aš {tau|tu} išvirsiu.
+Tu išvažiuoji? Mes {tavęs|tu} labai pasiilgsime.
+Rūta, kas {tau|tu} padovanojo tokią gražią suknelę?
+Jonai, kodėl tu vienas? Ar niekas su {tavimi|tu} nežaidžia?
+Tu teisus, aš su {tavimi|tu} sutinku.
+Tu sergi? Tada {tave|tu} reikia nuvežti pas gydytoją.
+Brolau, be {tavęs|tu} namuose labai tuščia.
+
+# --- jis ---
+Tomas serga, todėl mes {jį|jis} aplankysime ligoninėje.
+Tavo brolis labai juokingas — su {juo|jis} visada smagu.
+Petras pametė raktus, todėl aš {jam|jis} paskolinau savo.
+Ar matei Joną? Aš {jo|jis} visą dieną ieškau.
+Senelis jau senas, todėl mes {juo|jis} rūpinamės.
+Mūsų mokytojas griežtas, bet visi {jį|jis} gerbia.
+Tai mano dėdė — {jo|jis} namas stovi prie ežero.
+Mano šuo bijo griaustinio, per audrą {jam|jis} labai baisu.
+Mūsų sodas didelis, {jame|jis} auga obelys ir kriaušės.
+Jonas rytoj švenčia gimtadienį, nepamiršk {jį|jis} pasveikinti.
+Tėtis grįžo iš kelionės, ir vaikai {juo|jis} labai džiaugiasi.
+Mano senelis buvo gydytojas, aš noriu būti panašus į {jį|jis}.
+Tomas — mano kaimynas, aš {jį|jis} pažįstu nuo vaikystės.
+
+# --- ji ---
+Rūta labai linksma, visi {ją|ji} mėgsta.
+Mano sesuo išvyko studijuoti, aš {jos|ji} labai pasiilgstu.
+Močiutė jau sena, todėl aš {jai|ji} padedu apsipirkti.
+Ar pažįsti Oną? Aš su {ja|ji} dirbu viename biure.
+Mūsų virtuvė maža, bet {joje|ji} viskas telpa.
+Mama šiandien pavargusi, leiskime {jai|ji} pailsėti.
+Ieva puikiai piešia, mes {ja|ji} žavimės.
+Tai mano knyga — prašau {jos|ji} nepamesti.
+Mano draugė gyvena Paryžiuje, aš {ją|ji} aplankysiu vasarą.
+Ši gatvė labai triukšminga, {joje|ji} visada daug mašinų.
+Kur tavo kepurė? Be {jos|ji} sušalsi!
+Mano dukra rytoj laiko egzaminą, palinkėkime {jai|ji} sėkmės.
+Tavo sesuo labai protinga, su {ja|ji} galima kalbėti apie viską.
+Kai mokytoja įėjo, visi vaikai {ją|ji} pasveikino.
+Ponia Elena paskambino, nes {jai|ji} reikia pagalbos.
+
+# --- jie ---
+Mano draugai atvažiavo — aš {juos|jie} pasitikau stotyje.
+Vaikai labai triukšmauja, nuramink {juos|jie}!
+Kaimynai išvažiavo, todėl aš prižiūriu {jų|jie} katę.
+Seneliai labai mėgsta svečius, nuvažiuokime pas {juos|jie}.
+Mano kolegos labai malonūs, su {jais|jie} smagu dirbti.
+Studentai laukia egzamino rezultatų, pasakyk {jiems|jie} gerą žinią.
+Mano broliai gyvena užsienyje, aš {jų|jie} seniai nemačiau.
+Šie batai man per maži, aš {jų|jie} nebenešioju.
+Šie miškai labai seni, {juose|jie} gyvena daug žvėrių.
+Tėvai mums visada padeda, mes {jais|jie} pasitikime.
+Svečiai jau atvyko, pasiūlyk {jiems|jie} kavos.
+Mano anūkai — tikri angelai, aš {jais|jie} džiaugiuosi.
+Kur mano akiniai? Be {jų|jie} nieko nematau.
+Turistai pasiklydo, todėl mes {jiems|jie} parodėme kelią.
+Šie batai labai patogūs — {juose|jie} galiu vaikščioti visą dieną.
+Mano tėvai seniai nori šuns, nupirkime {jiems|jie} šuniuką.
+
+# --- jos ---
+Mano seserys atvažiuoja, aš {jas|jos} pasitiksiu oro uoste.
+Kur mano pirštinės? Aš {jų|jos} niekur nerandu.
+Mergaitės nori žaisti, duok {joms|jos} kamuolį.
+Mano kolegės labai protingos, su {jomis|jos} įdomu diskutuoti.
+Tulpės jau pražydo, nuskink {jas|jos} mamai.
+Močiutės gyvena kaime, mes pas {jas|jos} važiuojame kiekvieną vasarą.
+Studentės ilgai laukia autobuso, {joms|jos} šalta.
+Šios kelnės per ilgos, aš {jų|jos} nenešioju.
+Mano dukros labai gabios, aš {jomis|jos} didžiuojuosi.
+Tos parduotuvės didelės, {jose|jos} galima rasti viską.
+Senamiesčio gatvės siauros, {jomis|jos} sunku važiuoti automobiliu.
+Tavo knygos labai įdomios, gal paskolinsi {jas|jos} man?
+Mano tetos atsiuntė dovanų, reikia {joms|jos} padėkoti.
+Šios mergaitės — dvynės, net mokytoja {jų|jos} neatskiria.
+Kur mano šlepetės? Be {jų|jos} šąla kojos.
+Mūsų mokyklos senos, bet {jose|jos} mokytis įdomu.
+Kaimynės pakvietė mus į svečius, ir mes {joms|jos} nunešėme pyragą.
+Šios knygos — mano mėgstamiausios, aš {jas|jos} skaitau jau trečią kartą.
+Mano seserys dar mažos, aš {jomis|jos} rūpinuosi.
+Tos durys sugedusios, nesinaudok {jomis|jos}.
+Turiu dvi kates, {joms|jos} labai patinka žuvis.
+Šios pirštinės labai šiltos, {jose|jos} rankos nešąla.
+Mergaitės dainavo taip gražiai, kad visi {jų|jos} klausėsi.
+Studentės paprašė pagalbos, ir mokytojas {joms|jos} padėjo.
+Mano pusseserės gyvena Kaune, rytoj aplankysiu {jas|jos}.
+Šiandien skaičiau naujienas — {jose|jos} nieko gero.
+
+# --- jūs ---
+Pone direktoriau, ar galiu {jus|jūs} trumpam sutrukdyti?
+Vaikai, aš {jus|jūs} labai myliu.
+Mieli svečiai, sveiki atvykę — mes taip {jūsų|jūs} pasiilgome!
+Ponia Rūta, ar {jums|jūs} patinka šis vynas?
+Studentai, rytoj aš {jums|jūs} duosiu kontrolinį darbą.
+Draugai, ar galiu su {jumis|jūs} pasikalbėti?
+Vaikai, eikite namo, mama {jūsų|jūs} laukia.
+Pone, {jūsų|jūs} bilietas, prašom.
+Atsiprašau, ar {jums|jūs} nešalta? Galiu uždaryti langą.
+Mieli tėvai, mes {jums|jūs} labai dėkingi.
+Ponia, aš {jus|jūs} pažįstu — jūs gyvenate šalia manęs.
+Draugai, aš su {jumis|jūs} eisiu į kiną.
+Vaikai, kas {jus|jūs} išmokė taip gražiai dainuoti?
+Mokytoja, mes {jumis|jūs} labai žavimės.
+Pone daktare, prašau {jūsų|jūs} patarimo.
+Ponai, ar {jums|jūs} reikia pagalbos?
+Gerbiami klientai, dėkojame {jums|jūs} už pirkinius.
+Vaikai, rytoj aš {jus|jūs} nuvešiu į zoologijos sodą.
+Ponia, ar {jus|jūs} kas nors pasitiks stotyje?
+Draugai, mes {jumis|jūs} visiškai pasitikime.
+Pone Petrai, ar {jūsų|jūs} žmona taip pat atvyks?
+Mieli studentai, linkiu {jums|jūs} sėkmės egzamine.
+Vaikai, aš {jumyse|jūs} matau būsimus čempionus!
+Ponia, ar galiu {jus|jūs} palydėti iki namų?
+Draugai, be {jūsų|jūs} man būtų buvę labai sunku.
+Gerbiama mokytoja, ar {jums|jūs} patogu susitikti rytoj?
+Vaikai, su {jumis|jūs} niekada nenuobodu!
+
+# --- mes ---
+Mes su žmona vėluojame — nelaukite {mūsų|mes}.
+Mes čia nauji, todėl kaimynai {mus|mes} pakvietė į svečius.
+Mes nemokame lietuviškai — ar galite {mums|mes} išversti?
+Mes keliavome po Italiją, ir {mums|mes} labai patiko maistas.
+Mes vėlavome į traukinį, bet konduktorius {mūsų|mes} palaukė.
+Kai mes buvome maži, močiutė {mums|mes} sekdavo pasakas.
+Mes kraustomės — ar padėsite {mums|mes} nešti baldus?
+Mes su draugais einame į kiną — gal eisi su {mumis|mes}?
+Mes baigėme universitetą, ir tėvai {mumis|mes} labai didžiuojasi.
+Mes gyvename prie jūros — atvažiuokite pas {mus|mes} vasarą!
+Mes laukiame svečių, todėl {mums|mes} reikia daug maisto.
+Mes nesame turtingi, bet {mūsų|mes} šeima laiminga.
+Mes žaidėme kieme, kai {mus|mes} užklupo lietus.
+Mes sergame, todėl gydytojas {mums|mes} liepė gulėti lovoje.
+Mes su sese labai panašios — net senelė {mus|mes} kartais supainioja.
+Mes ieškome darbo — gal galite {mums|mes} ką nors pasiūlyti?
+Mes rytoj išvažiuojame, palinkėkite {mums|mes} geros kelionės!
+Mes kartu mokėmės, todėl mokytoja {mus|mes} gerai pažįsta.
+Mes visada laikomės pažadų — galite {mumis|mes} pasitikėti.
+Mes nedalyvavome susirinkime, todėl niekas neklausė {mūsų|mes} nuomonės.
+Mes labai pavargome — leiskite {mums|mes} pailsėti.
+Mes nežinome kelio — gal {mus|mes} palydėsite?
+Mes su draugais organizuojame šventę, prisijunk prie {mūsų|mes}!
+Mes ilgai gyvenome užsienyje, bet {mumyse|mes} išliko lietuviška dvasia.
+Mes atsisėdome prie stalo, ir padavėja {mums|mes} atnešė meniu.
+Mes nevalgome mėsos, todėl virėjas {mums|mes} paruošė daržovių.
+Mes neturėjome bilietų, todėl {mūsų|mes} neįleido į koncertą.
+Mes gyvename šalia mokyklos, todėl vaikai pas {mus|mes} dažnai užsuka.
+
+# --- kas ---
+{Ko|kas} tu lauki?
+{Kam|kas} skirta ši dovana?
+{Ką|kas} tu valgei pusryčiams?
+{Kuo|kas} tu važiuoji į darbą?
+Su {kuo|kas} gyveni bute?
+Apie {ką|kas} galvoji?
+{Ko|kas} nori gimtadienio proga?
+{Kam|kas} tu papasakojai šią paslaptį?
+{Ką|kas} matei filme?
+Iš {ko|kas} išmokai groti gitara?
+{Kuo|kas} tu dirbi?
+Prie {ko|kas} sėdi Tomas?
+Už {ką|kas} tu man dėkoji?
+Be {ko|kas} tu negali gyventi?
+{Kame|kas} slypi tavo sėkmės paslaptis?
+{Kam|kas} tau reikia tiek pinigų?
+Pas {ką|kas} eini šį vakarą?
+{Ką|kas} veiki savaitgaliais?
+{Ko|kas} klausei mokytojo?
+{Kuo|kas} domisi tavo brolis?
+{Kam|kas} paskolinai mano knygą?
+Nežinau, {ką|kas} daryti.
+Pasakyk, {ko|kas} tau reikia.
+Nesuprantu, apie {ką|kas} jūs kalbate.
+Paklausk, {kam|kas} skambino mama.
+Nežinau, su {kuo|kas} jis susitiks.
+Atspėk, {ką|kas} tau nupirkau!
+Įdomu, {kuo|kas} baigsis šis filmas.
+Nežinau, {ko|kas} jis bijo.
+Viskas, {ko|kas} reikia kelionei, jau sukrauta.
+Tai viskas, {ką|kas} žinau.
+Kiekvienas, {kam|kas} patinka muzika, ateis į koncertą.
+Daryk, {ką|kas} nori.
+Nėra nieko, {kuo|kas} galėčiau tau padėti.
+Pasakyk, iš {ko|kas} sužinojai šią naujieną.
+
+# --- savęs (sau, save, savimi, savyje) ---
+Jis labai rūpinasi {savimi|savęs}: sportuoja ir sveikai maitinasi.
+Ji nupirko {sau|savęs} naują suknelę.
+Aš dažnai kalbuosi su {savimi|savęs}.
+Pasižiūrėk į {save|savęs} veidrodyje!
+Jie nori viską pasilikti {sau|savęs}.
+Būk {savimi|savęs} — nemėgdžiok kitų!
+Tomas visada kalba tik apie {save|savęs}.
+Ji labai pasitiki {savimi|savęs}.
+Pasiimk vandens su {savimi|savęs} — bus karšta.
+Kiekvienas žmogus turi rūpintis {savimi|savęs}.
+Vaikas pats {sau|savęs} pasidarė sumuštinį.
+Jis nusipirko {sau|savęs} naują dviratį.
+Aš nupiešiau {save|savęs} su šunimi.
+Jie pasistatė {sau|savęs} namą prie ežero.
+Kartais leidžiame {sau|savęs} ilgiau pamiegoti.
+Jis daug papasakojo apie {save|savęs}.
+Ji visada nešiojasi knygą su {savimi|savęs}.
+Pirmiausia pažink {save|savęs}.
+Kiekvienas turi tikėti {savimi|savęs}.
+Jis užsidarė {savyje|savęs} ir su niekuo nekalba.
+Ji rado {savyje|savęs} jėgų tęsti darbą.
+Nupirkau gėlių ir {sau|savęs}, ir mamai.
+Jie labai didžiuojasi {savimi|savęs}.
+Ji fotografuoja {save|savęs} prieš kiekvieną kelionę.
+Studentas pasiliko {sau|savęs} vieną egzempliorių.
+Aš negaliu atleisti {sau|savęs} šios klaidos.
+Ji visus jausmus laiko {savyje|savęs}.
+Kiekvienas turi nuolat tobulinti {save|savęs}.
+Mes pasiėmėme maisto su {savimi|savęs}.
+Jie nusipirko {sau|savęs} bilietus į koncertą.
+Pagalvok ir apie {save|savęs}, o ne tik apie kitus.
+Ar tu esi patenkintas {savimi|savęs}?
+Ji paruošė {sau|savęs} karštą vonią.
+Aš visada nešiojuosi telefoną su {savimi|savęs}.
+Jis išmoko valdyti {save|savęs}.
+Kartais reikia skirti laiko {sau|savęs}.
+Kiekvienas turi {savyje|savęs} kažką ypatingo.
+
+# --- Ответ совпадает с подсказкой: здесь нужна начальная форма ---
+Kas ten? — Tai {aš|aš}, tavo kaimynas.
+{Aš|aš} vadinuosi Tomas, o kaip tu?
+Tomai, {tu|tu} esi mano geriausias draugas.
+Ar {tu|tu} kalbi lietuviškai?
+Tomas negali ateiti, nes {jis|jis} serga.
+Mano brolis gyvena Vilniuje, {jis|jis} dirba gydytoju.
+Mano mama — mokytoja, {ji|ji} dirba mokykloje.
+Ona vėluoja, nes {ji|ji} pamiršo laikrodį namie.
+{Mes|mes} su draugais einame į kiną.
+Ar {mes|mes} spėsime į traukinį?
+Ponia, ar {jūs|jūs} kalbate angliškai?
+Vaikai, ką {jūs|jūs} veikiate?
+Mano tėvai gyvena kaime — {jie|jie} augina bites.
+Kaimynai išvažiavo, {jie|jie} grįš tik rytoj.
+Mano seserys — studentės, {jos|jos} mokosi Kaune.
+Mergaitės dainuoja, nes {jos|jos} laimingos.
+{Kas|kas} tau padovanojo šią knygą?
+{Kas|kas} ten beldžiasi?
+Nereikia {savęs|savęs} gailėti.
+Jis visai {savęs|savęs} nemyli.
+Neapgaudinėk {savęs|savęs}.
+Paklausk {savęs|savęs}: ko tu iš tikrųjų nori?
+Vaikas pasisodino šunį šalia {savęs|savęs}.
+
 --- Telefonu
 — Labas, Rūta! Čia Tomas. Ar {tau|tu} patogu kalbėti?
 — Labas, Tomai! Taip, {man|aš} patogu.

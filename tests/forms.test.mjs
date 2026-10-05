@@ -9,7 +9,8 @@ import { parseTopic, itemGaps, normalize } from "../web/js/parser.js";
 import { formsOf, DEMONSTRATIVE_FORMS } from "./paradigms.mjs";
 
 const DATA = join(dirname(fileURLToPath(import.meta.url)), "..", "data");
-const MAX_TRIVIAL = 2; // пропусков, где ответ совпадает с подсказкой (см. MATERIALS_GUIDE.md §4.3)
+// Доля пропусков, где ответ совпадает с подсказкой (см. MATERIALS_GUIDE.md §4.3): немного — полезно, много — скучно.
+const MAX_TRIVIAL_SHARE = 0.1;
 
 test("парадигмы совпадают со сверенными таблицами", () => {
   const has = (lemma, ...forms) => {
@@ -48,8 +49,10 @@ for (const file of readdirSync(DATA, { recursive: true }).filter((f) => f.endsWi
     const bad = [];
     const unknown = new Set();
     let trivial = 0;
+    let total = 0;
     for (const item of topic.items) {
       for (const gap of itemGaps(item)) {
+        total++;
         if (!gap.hint) continue;
         if (normalize(gap.answers[0]) === normalize(gap.hint)) trivial++;
         const forms = formsOf(gap.hint);
@@ -66,7 +69,8 @@ for (const file of readdirSync(DATA, { recursive: true }).filter((f) => f.endsWi
     }
     if (unknown.size) t.diagnostic(`леммы без парадигмы (не проверялись): ${[...unknown].join(", ")}`);
     assert.deepEqual(bad, []);
-    assert.ok(trivial <= MAX_TRIVIAL, `тривиальных пропусков ${trivial}, допустимо не больше ${MAX_TRIVIAL}`);
+    const max = Math.max(2, Math.floor(total * MAX_TRIVIAL_SHARE));
+    assert.ok(trivial <= max, `тривиальных пропусков ${trivial} из ${total}, допустимо не больше ${max}`);
   });
 
   test(`в ${file} нет повторяющихся предложений`, () => {

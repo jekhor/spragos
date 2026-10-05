@@ -122,9 +122,18 @@ function adjForms(lemma) {
 // подсказка всегда мужского рода (šis → ši, šios). Лемма женского рода — только женский.
 const WITH_FEMININE = { šis: "ši", tas: "ta", šitas: "šita", kitas: "kita", anas: "ana" };
 
+// Числительные: подсказка мужского рода покрывает и женский (keturi → keturios, du → dvi).
+const NUM_FEMININE = {
+  vienas: "viena", du: "dvi", keturi: "keturios", penki: "penkios", šeši: "šešios", septyni: "septynios",
+  aštuoni: "aštuonios", devyni: "devynios", vieneri: "vienerios", dveji: "dvejos", treji: "trejos",
+  ketveri: "ketverios", penkeri: "penkerios", šešeri: "šešerios", septyneri: "septynerios",
+  aštuoneri: "aštuonerios", devyneri: "devynerios",
+};
+
 export function formsOf(lemma) {
   const l = lemma.toLocaleLowerCase("lt");
   if (WITH_FEMININE[l]) return new Set([...PRON[l], ...PRON[WITH_FEMININE[l]]]);
+  if (NUM_FEMININE[l]) return new Set([...NUM[l], ...NUM[NUM_FEMININE[l]]]);
   if (PRON[l]) return new Set(PRON[l]);
   if (NUM[l]) return new Set(NUM[l]);
   return adjForms(l);

@@ -277,6 +277,379 @@ Gyvename {ramioje|ramus} gatvėje.
 Į Kauną važiavome {greitu|greitas} traukiniu.
 Ji kalba {tyliu|tylus} balsu.
 
+# ======================================================================
+# Дополнение до ~50 примеров на прилагательные-образцы каждого типа:
+# geras, naujas (-as), žalias, šviežias (-ias), gražus, saldus (-us),
+# didelis, medinis (-is).
+# ======================================================================
+
+# --- geras ---
+Tai {gera|geras} idėja!
+{Gero|geras} apetito!
+Šiandien {gera|geras} diena.
+Jis — {gero|geras} būdo žmogus.
+Padėkojau {geram|geras} kaimynui už pagalbą.
+Turiu tau {gerą|geras} naujieną.
+Ji yra labai {gera|geras} mokytoja.
+Su {geru|geras} draugu laikas bėga greitai.
+Gyvename {gerame|geras} rajone.
+Mes — {geri|geras} draugai.
+Lietuvoje daug {gerų|geras} restoranų.
+{Geriems|geras} mokiniams mokytoja įteikė prizus.
+Turime labai {gerus|geras} kaimynus.
+Su {gerais|geras} draugais smagu keliauti.
+{Geruose|geras} restoranuose reikia rezervuoti stalą.
+Mano draugės — labai {geros|geras} šeimininkės.
+Šiandien neturiu {geros|geras} nuotaikos.
+{Gerai|geras} draugei visada padėsiu.
+{Geroms|geras} mokinėms skirtos stipendijos.
+Su {geromis|geras} žiniomis grįžau namo.
+{Gerose|geras} parduotuvėse kainos didesnės.
+Gyvenu {geroje|geras} vietoje.
+Su {gera|geras} nuotaika viskas sekasi.
+Ieškau {gero|geras} darbo.
+{Gerų|geras} knygų niekada nebūna per daug.
+Jis gavo {gerą|geras} pažymį.
+{Gerą|geras} orą išnaudokime pasivaikščiojimui.
+Su {geru|geras} oru grįžo ir gera nuotaika.
+{Geram|geras} žmogui viskas sekasi.
+{Geros|geras} kelionės!
+Šuo atsidūrė {gerose|geras} rankose.
+{Geri|geras} batai tarnauja ilgai.
+{Gerus|geras} batus reikia prižiūrėti.
+Su {gerais|geras} batais galima eiti į kalnus.
+{Gero|geras} vėjo!
+Ji turi daug {gerų|geras} draugų.
+Jis į pasaulį žiūri {geromis|geras} akimis.
+{Gerame|geras} viešbutyje visada švaru.
+Tai istorija su {gera|geras} pabaiga.
+{Geriems|geras} draugams nieko negaila.
+Šis vynas tinka prie {gero|geras} kepsnio.
+{Gerų|geras} švenčių!
+{Gerą|geras} savaitgalį!
+Tark {gerą|geras} žodį už mane.
+Vakar mačiau labai {gerą|geras} filmą.
+Tokiam darbui reikia {gerų|geras} įrankių.
+
+# --- naujas ---
+Nusipirkau {naują|naujas} telefoną.
+Ji vilki {naują|naujas} suknelę.
+Tai {nauja|naujas} parduotuvė.
+Kur pirkai {naujus|naujas} batus?
+Gyvename {naujame|naujas} name.
+Mano {nauji|naujas} kaimynai labai malonūs.
+Mokykloje dirba {nauja|naujas} mokytoja.
+Dar nežinau jo {naujo|naujas} adreso.
+{Naujam|naujas} darbuotojui reikia pagalbos.
+Su {nauju|naujas} automobiliu važiuoti malonu.
+{Naujoje|naujas} mokykloje daug kompiuterių.
+Su {nauja|naujas} drauge susipažinau parke.
+{Naujos|naujas} knygos kvepia popieriumi.
+Nekantriai laukiu {naujos|naujas} knygos.
+{Naujai|naujas} mokinei padėjo klasės draugai.
+{Naujų|naujas} žodžių kasdien išmokstu po dešimt.
+{Naujiems|naujas} studentams surengė ekskursiją.
+{Naujoms|naujas} idėjoms reikia laiko.
+Domiuosi {naujomis|naujas} technologijomis.
+Vaikai žaidžia su {naujais|naujas} žaislais.
+{Naujuose|naujas} rajonuose daug parkų.
+{Naujose|naujas} parduotuvėse kainos mažesnės.
+Ar jau matei {naują|naujas} jo filmą?
+Ji prisistatė {naujam|naujas} kolektyvui.
+{Naujo|naujas} buto ieškome jau mėnesį.
+{Naujame|naujas} biure labai šviesu.
+Šiandien prasideda {nauja|naujas} savaitė.
+Mums reikia {naujų|naujas} idėjų.
+{Nauji|naujas} batai visada spaudžia.
+Labai džiaugiamės {nauju|naujas} butu.
+Po atostogų grįžau su {naujomis|naujas} jėgomis.
+Susipažinau su {naujais|naujas} kolegomis.
+{Naujos|naujas} mokyklos statyba užtruks metus.
+{Naujoje|naujas} vietoje sunku užmigti.
+Vaikai labai džiaugiasi {naujais|naujas} drabužiais.
+Turime {naują|naujas} katiną.
+Papasakok apie {naują|naujas} darbą.
+{Naujiems|naujas} gyventojams — nuolaidos.
+Ar jau pažįsti {naujus|naujas} kaimynus?
+{Naujai|naujas} kaimynei atnešėme pyrago.
+Šiame {naujame|naujas} parke daug suolelių.
+Kalbėjome apie {naujus|naujas} planus.
+{Nauja|naujas} mada — ilgi paltai.
+{Naujomis|naujas} gatvėmis važiuoti malonu.
+
+# --- žalias ---
+Mėgstu {žalią|žalias} arbatą.
+Pavasarį medžiai {žali|žalias}.
+Ji vilki {žalią|žalias} suknelę.
+Mūsų namas su {žaliu|žalias} stogu.
+Prašyčiau {žalios|žalias} arbatos.
+{Žalia|žalias} spalva — mano mėgstamiausia.
+Sėdime {žaliame|žalias} sode.
+{Žalioje|žalias} pievoje ganosi karvės.
+Salotoms reikia {žalių|žalias} svogūnų.
+Jo akys — {žalios|žalias}.
+Su {žalia|žalias} kepure atrodai juokingai.
+{Žaliai|žalias} spalvai tinka geltona.
+{Žaliam|žalias} automobiliui reikia naujų padangų.
+Nusipirkau {žalius|žalias} batus.
+Stalą papuošėme {žaliais|žalias} lapais.
+{Žaliuose|žalias} miškuose gyvena daug paukščių.
+Pievos {žalios|žalias} ir gražios.
+{Žalioms|žalias} daržovėms reikia daug vandens.
+Nusipirkau puodelį su {žaliomis|žalias} juostelėmis.
+{Žaliose|žalias} pievose ganosi avys.
+Eik, kai dega {žalia|žalias} šviesa.
+Laukiame {žalios|žalias} šviesos.
+Užsidegus {žaliai|žalias} šviesai, galima eiti.
+{Žali|žalias} pomidorai dar neprinokę.
+Nevalgyk {žalių|žalias} vaisių — skaudės pilvą.
+{Žaliems|žalias} augalams reikia šviesos.
+Sienas nudažėme {žalia|žalias} spalva.
+Jis važiuoja {žaliu|žalias} dviračiu.
+Iš {žalio|žalias} audinio pasiuvau suknelę.
+Vaikas nupiešė {žalią|žalias} medį.
+{Žaliame|žalias} kalne stovi pilis.
+{Žaliuose|žalias} vazonuose auga prieskoniai.
+Stiklą mesk į {žalius|žalias} konteinerius.
+Žolę piešiame {žaliais|žalias} pieštukais.
+Mergaitė {žaliomis|žalias} akimis — mano sesuo.
+{Žalios|žalias} paprikos ne tokios saldžios kaip raudonos.
+Prie {žalios|žalias} tvoros stovi dviratis.
+{Žaliam|žalias} miestui reikia daugiau parkų.
+Ant {žalio|žalias} stalo guli knygos.
+{Žalių|žalias} arbatų yra daug rūšių.
+Gyvename {žaliame|žalias} rajone.
+{Žalia|žalias} arbata sveikesnė už kavą.
+{Žalioje|žalias} spintoje laikome drabužius.
+
+# --- šviežias ---
+Kepykloje visada yra {šviežios|šviežias} duonos.
+Mėgstu {šviežią|šviežias} duoną.
+Pusryčiams valgau {šviežių|šviežias} vaisių.
+Išgerk {šviežio|šviežias} pieno.
+Ar ši žuvis {šviežia|šviežias}?
+Pomidorai {švieži|šviežias}, ką tik nuskinti.
+Turguje parduoda {šviežius|šviežias} kiaušinius.
+Kepame mėsą su {šviežiais|šviežias} grybais.
+Mėgstu salotas su {šviežiomis|šviežias} daržovėmis.
+Išeik į {šviežią|šviežias} orą!
+Kambaryje trūksta {šviežio|šviežias} oro.
+{Šviežiame|šviežias} ore miegas geresnis.
+{Šviežioje|šviežias} sriuboje daug daržovių.
+Su {šviežia|šviežias} duona sriuba skanesnė.
+Ūkininkas pavaišino mus {šviežiu|šviežias} pienu.
+Šiai {šviežiai|šviežias} žuviai nereikia daug prieskonių.
+{Šviežiems|šviežias} vaisiams reikia šaldytuvo.
+{Šviežioms|šviežias} uogoms laikyti reikia vėsos.
+{Šviežiuose|šviežias} vaisiuose daug vitaminų.
+{Šviežiose|šviežias} daržovėse daug vitaminų.
+{Šviežios|šviežias} braškės — vasaros skonis.
+Laikraštyje — {šviežios|šviežias} naujienos.
+Papasakok {šviežių|šviežias} naujienų!
+{Šviežiam|šviežias} sūriui reikia vėsios vietos.
+Nėra nieko geriau už {šviežią|šviežias} kavą.
+{Švieži|šviežias} agurkai traškūs.
+Nusipirkome {šviežios|šviežias} žuvies.
+Sriubą verdu iš {šviežių|šviežias} daržovių.
+Su {šviežiu|šviežias} vėju atėjo ruduo.
+{Šviežią|šviežias} pyragą suvalgėme per valandą.
+Ūkininkai prekiauja {šviežiais|šviežias} kiaušiniais.
+Kepyklėlėje kvepia {šviežiomis|šviežias} bandelėmis.
+Į arbatą įdėk {šviežios|šviežias} mėtos.
+Po atostogų grįžau su {šviežiomis|šviežias} jėgomis.
+{Šviežiame|šviežias} sūryje mažai druskos.
+Ant stalo — {šviežia|šviežias} gėlių puokštė.
+Prie {šviežio|šviežias} kepsnio tinka raudonasis vynas.
+{Šviežių|šviežias} gėlių kvapas pripildė kambarį.
+{Šviežiems|šviežias} kiaušiniams kaina didesnė.
+Šią {šviežią|šviežias} žinią sužinojau ryte.
+Kiemas nuklotas {šviežiu|šviežias} sniegu.
+{Šviežios|šviežias} kavos aromatas pažadino visus.
+Į salotas dėk tik {šviežius|šviežias} lapus.
+Prie {šviežios|šviežias} duonos tinka sviestas.
+
+# --- gražus ---
+Tavo sesuo labai {graži|gražus}.
+Gyvename {gražiame|gražus} mieste.
+Nupirkau {gražų|gražus} paveikslą.
+Šiandien nemačiau nieko {gražaus|gražus}.
+{Gražiam|gražus} vakarui baigiantis, išėjome namo.
+Šiame mieste daug {gražių|gražus} parkų.
+Turistai fotografavo {gražius|gražus} pastatus.
+Ji pasirodė su {gražia|gražus} nauja suknele.
+Namą pastatėme {gražioje|gražus} vietoje.
+Pro langą matyti {gražūs|gražus} vaizdai.
+{Gražios|gražus} gėlės papuošė stalą.
+Nusipirkau {gražių|gražus} gėlių.
+Ji padovanojo man {gražią|gražus} vazą.
+{Gražiai|gražus} šventei reikia gražių drabužių.
+Vaikščiojome {gražiais|gražus} takeliais.
+{Gražiuose|gražus} namuose gyvena turtingi žmonės.
+{Gražiems|gražus} prisiminimams — nuotraukų albumas.
+{Gražioms|gražus} dovanoms išleidau daug pinigų.
+Kambarys papuoštas {gražiomis|gražus} užuolaidomis.
+{Gražiose|gražus} gatvėse visada daug turistų.
+Prisimenu {gražias|gražus} vasaras pas senelius.
+Laukiame {gražaus|gražus} oro.
+Su {gražiu|gražus} oru pakilo ir nuotaika.
+{Gražų|gražus} rytą išėjome į mišką.
+Šis kostiumas tinka {gražiam|gražus} vakarėliui.
+Ar matei {gražią|gražus} vaivorykštę?
+{Graži|gražus} muzika skambėjo visą vakarą.
+{Gražūs|gražus} prisiminimai lieka visam gyvenimui.
+Prie {gražios|gražus} upės stovi sena pilis.
+Su {gražiomis|gražus} dovanomis grįžome iš kelionės.
+Aplankėme daug {gražių|gražus} vietų.
+Laiškas parašytas {gražiu|gražus} braižu.
+Susitikome {gražiame|gražus} parke prie upės.
+
+# --- saldus ---
+Ši arbata per {saldi|saldus}.
+Šios vyšnios labai {saldžios|saldus}.
+Mėgstu {saldų|saldus} vyną.
+Nemėgstu {saldaus|saldus} vyno.
+Vaikai mėgsta {saldžius|saldus} gėrimus.
+Nevalgyk tiek {saldžių|saldus} dalykų!
+{Saldžiam|saldus} pyragui reikia daug cukraus.
+Kepiau pyragą su {saldžiu|saldus} įdaru.
+{Saldžiame|saldus} pyrage per daug cukraus.
+Prašyčiau {saldžios|saldus} kavos.
+{Saldžiai|saldus} kavai reikia daug cukraus.
+Nupirkau {saldžią|saldus} bandelę.
+Su {saldžia|saldus} arbata valgau sausainius.
+{Saldžioje|saldus} košėje daug medaus.
+{Saldūs|saldus} vaisiai — vasaros džiaugsmas.
+{Saldžiems|saldus} patiekalams reikia cukraus.
+Turguje pirkau {saldžius|saldus} pomidorus.
+Su {saldžiais|saldus} sausainiais gerti arbatą smagu.
+{Saldžiuose|saldus} gėrimuose daug cukraus.
+{Saldžios|saldus} uogos — mano mėgstamiausios.
+Iš virtuvės sklido {saldžių|saldus} braškių kvapas.
+{Saldžioms|saldus} uogoms reikia daug saulės.
+Mama verda {saldžias|saldus} uogienes.
+Kepiau pyragą su {saldžiomis|saldus} vyšniomis.
+{Saldžiose|saldus} bandelėse daug cukraus.
+{Saldžių|saldus} sapnų!
+Vaikas užmigo {saldžiu|saldus} miegu.
+Į salotas įdėk {saldžią|saldus} papriką.
+Iš {saldžių|saldus} obuolių išeina skanūs pyragai.
+{Saldžiam|saldus} vynui tinka sūris.
+Užsisakiau kavos su {saldžiu|saldus} sirupu.
+Ši kriaušė labai {saldi|saldus}.
+{Saldžios|saldus} kriaušės jau nunoko sode.
+Laikantis dietos, negalima {saldžių|saldus} patiekalų.
+Pyragėlis su {saldžia|saldus} grietinėle.
+Tortą papuošiau {saldžiomis|saldus} uogomis.
+Vaikams nupirkome {saldžių|saldus} sausainių.
+{Saldžiems|saldus} gėrimams vaikai sunkiai atsispiria.
+Šiuose {saldžiuose|saldus} pyraguose daug kalorijų.
+Močiutė kepa {saldų|saldus} obuolių pyragą.
+Šiai {saldžiai|saldus} bandelei reikia daugiau cukraus.
+Rudenį moliūgai būna {saldūs|saldus}.
+
+# --- didelis ---
+Mūsų šeima {didelė|didelis}.
+Mieste daug {didelių|didelis} parduotuvių.
+Gyvename {dideliame|didelis} name prie upės.
+Nusipirkome {didelę|didelis} spintą.
+Netoli {didelio|didelis} ežero yra kaimas.
+Šios kelnės man per {didelės|didelis}.
+{Didelei|didelis} šeimai reikia didelio buto.
+{Dideliam|didelis} šuniui reikia daug vietos.
+Su {dideliu|didelis} malonumu priimu kvietimą.
+Su {didele|didelis} meile — tavo mama.
+{Didelėje|didelis} salėje vyko koncertas.
+{Dideli|didelis} vaikai jau patys eina į mokyklą.
+{Dideliems|didelis} miestams reikia daug transporto.
+Danguje matau {didelius|didelis} debesis.
+Su {dideliais|didelis} lagaminais sunku keliauti.
+{Dideliuose|didelis} miestuose daug triukšmo.
+{Didelės|didelis} parduotuvės dirba ir sekmadieniais.
+{Didelėms|didelis} šeimoms skirta parama.
+Ant stalo padėjau {dideles|didelis} lėkštes.
+Su {didelėmis|didelis} viltimis pradėjau naują darbą.
+{Didelėse|didelis} parduotuvėse lengva pasiklysti.
+Tai buvo {didelė|didelis} klaida.
+Neturiu {didelio|didelis} noro eiti.
+Mūsų komanda laimėjo {didelį|didelis} prizą.
+Kieme stovi {didelė|didelis} eglė.
+Gimtadieniui nupirkau {didelį|didelis} tortą.
+{Didelių|didelis} problemų neturime.
+Ačiū už {didelę|didelis} pagalbą!
+{Dideliame|didelis} lagamine telpa viskas.
+Kalbėjome apie {didelius|didelis} pokyčius.
+Vaikai žaidžia {dideliu|didelis} kamuoliu.
+Mano {didelei|didelis} nuostabai, jis atėjo laiku.
+{Dideliems|didelis} vaikams reikia didesnių kėdžių.
+Šiame {dideliame|didelis} parke lengva pasiklysti.
+
+# --- medinis ---
+Seneliai gyvena {mediniame|medinis} name kaime.
+Virtuvėje stovi {medinė|medinis} spinta.
+Senelis padarė {medinį|medinis} suoliuką.
+Vaikas žaidžia {medinėmis|medinis} kaladėlėmis.
+{Mediniai|medinis} žaislai saugūs vaikams.
+Kaime daug {medinių|medinis} namų.
+Sriubą maišau {mediniu|medinis} šaukštu.
+Ant {medinio|medinis} stalo stovi vaza.
+Prie {medinės|medinis} tvoros auga gėlės.
+{Medinei|medinis} terasai reikia priežiūros.
+Nupirkau {medinę|medinis} lovą.
+Ant {medinės|medinis} kėdės sėdi katė.
+Su {medine|medinis} lazda senelis vaikšto po mišką.
+Laiškus laikau {medinėje|medinis} dėžutėje.
+{Mediniams|medinis} baldams reikia ypatingos priežiūros.
+Mūsų name — {mediniai|medinis} langai.
+{Mediniuose|medinis} namuose šilta.
+{Medinės|medinis} grindys girgžda.
+Muziejuje daug {medinių|medinis} skulptūrų.
+{Medinėms|medinis} durims reikia naujų dažų.
+Turguje pirkau {medinius|medinis} šaukštus.
+Vaikas piešia ant {medinės|medinis} lentos.
+Obuolius laikome {medinėse|medinis} dėžėse.
+Prie ežero stovi {medinė|medinis} pirtis.
+Per {medinį|medinis} tiltą perėjome upę.
+{Mediniu|medinis} tiltu pervažiuoti negalima.
+Šio {medinio|medinis} namo stogas naujas.
+{Mediniam|medinis} namui reikia gero stogo.
+Ant {medinių|medinis} suolų sėdėjo žmonės.
+{Medinius|medinis} žaislus gamina meistrai.
+Vaikai žaidžia su {mediniais|medinis} kubeliais.
+Indai sudėti {medinėje|medinis} spintelėje.
+Pro {medines|medinis} duris įėjome į kiemą.
+Grindys išklotos {medinėmis|medinis} lentomis.
+Lietuvoje daug {medinių|medinis} bažnyčių.
+{Mediniuose|medinis} vazonuose auga gėlės.
+{Medinėse|medinis} statinėse brandinamas vynas.
+Aikštėje stovi {medinė|medinis} skulptūra.
+Šalia {medinio|medinis} namo auga obelis.
+Mamai padovanojau {medinę|medinis} dėžutę.
+Salotas valgau {medine|medinis} šakute.
+{Medinei|medinis} skulptūrai reikia stogelio.
+{Mediniams|medinis} langams reikia dažų.
+{Medinėms|medinis} grindims tinka kilimas.
+Kieme stovi {mediniai|medinis} suolai.
+{Medines|medinis} kėdes nudažėme baltai.
+Turistai lankė seną {medinę|medinis} bažnyčią.
+
+# --- Ответ совпадает с подсказкой: здесь нужна начальная форма ---
+Mano tėtis — labai {geras|geras} žmogus.
+Nusipirkau {geras|geras} pirštines.
+Mūsų {naujas|naujas} namas labai šviesus.
+Nusipirkau {naujas|naujas} kelnes.
+Šis obuolys dar {žalias|žalias}.
+Pasiėmiau {žalias|žalias} pirštines.
+Pienas {šviežias|šviežias}, ką tik pirktas.
+Nupirkau {šviežias|šviežias} bandeles.
+Koks {gražus|gražus} vakaras!
+Vilnius — labai {gražus|gražus} miestas.
+Šis arbūzas labai {saldus|saldus}.
+Medus {saldus|saldus} ir kvapnus.
+Mūsų kiemas {didelis|didelis}.
+Šis kambarys per {didelis|didelis} vienam žmogui.
+Mūsų namas — {medinis|medinis}.
+Šis senas tiltas — {medinis|medinis}.
+
 --- Mano butas
 Gyvenu {nedideliame|nedidelis} bute miesto centre.
 Jame yra {didelė|didelis} virtuvė ir du {jaukūs|jaukus} kambariai.

@@ -362,6 +362,304 @@ Ant {to|tas} stalo guli jūsų raktai.
 Su {šiuo|šis} draugu susipažinau Vilniuje.
 {Šioje|šis} gatvėje yra daug kavinių.
 
+# ======================================================================
+# Дополнение до ~50 примеров на каждое слово.
+# ======================================================================
+
+# --- šis ---
+{Šią|šis} vasarą važiuosime prie jūros.
+{Šie|šis} marškiniai man per dideli.
+{Šiuo|šis} keliu važiuoti saugiau.
+Ar tau patinka {šios|šis} spalvos?
+{Šiam|šis} darbui reikia daug kantrybės.
+Su {šiais|šis} žmonėmis dirbu jau dešimt metų.
+{Šioje|šis} nuotraukoje esu aš su broliu.
+
+# --- tas ---
+{Tą|tas} vakarą ilgai kalbėjomės.
+{Tie|tas} laikai jau praėjo.
+{To|tas} žmogaus aš nepažįstu.
+{Tai|tas} mergaitei reikia pagalbos.
+Prisimeni {tuos|tas} laikus, kai mokėmės mokykloje?
+Su {tomis|tas} draugėmis susitinku retai.
+{Toje|tas} kavinėje pirmą kartą susitikome.
+{Tuose|tas} kalnuose labai gražu.
+{Tam|tas} vaikui labai patinka piešti.
+{Tų|tas} metų vasara buvo labai šilta.
+{Toms|tas} gėlėms reikia daug vandens.
+Ar matai {tą|tas} mergaitę su raudona kepure?
+{Tais|tas} laikais nebuvo mobiliųjų telefonų.
+Su {tuo|tas} žmogumi nenoriu kalbėti.
+
+# --- pats ---
+Mes gyvename {pačiame|pats} Vilniaus centre.
+Tai buvo {pati|pats} laimingiausia mano gyvenimo diena.
+Ji {pati|pats} viską suorganizavo.
+Sesės {pačios|pats} iškepė pyragą.
+Mes {patys|pats} nusprendėme keliauti.
+Kalbėkite su {pačia|pats} vadove.
+Laišką reikia įteikti {pačiam|pats} adresatui.
+Jie gyvena tame {pačiame|pats} kaime kaip mes.
+Mes skaitome tą {pačią|pats} knygą.
+Mano vaikai lanko tas {pačias|pats} pamokas.
+Tų {pačių|pats} klaidų nebedarykite.
+Mes susitikome {pačioje|pats} kelionės pabaigoje.
+Abu broliai dirba toje {pačioje|pats} įmonėje.
+Tiems {patiems|pats} klausimams skirsime daugiau laiko.
+Su tais {pačiais|pats} draugais keliauju kasmet.
+
+# --- koks ---
+{Kokį|koks} sportą mėgsti?
+{Kokia|koks} tavo mėgstamiausia spalva?
+{Kokios|koks} knygos tau patinka?
+{Kokie|koks} žmonės gyvena tavo name?
+{Kokio|koks} ilgio ši upė?
+{Kokiu|koks} automobiliu važiuoji?
+{Kokioje|koks} šalyje norėtum gyventi?
+{Kokiame|koks} aukšte yra tavo butas?
+{Kokių|koks} gėlių nupirkti mamai?
+{Kokiems|koks} žmonėms patinka šis filmas?
+{Kokias|koks} dainas mėgsti dainuoti?
+{Kokiomis|koks} kalbomis kalba tavo tėvai?
+{Kokiuose|koks} miestuose yra metro?
+{Kokiose|koks} parduotuvėse perkate drabužius?
+{Kokiai|koks} šventei ruošiatės?
+{Kokiam|koks} tikslui reikia šių pinigų?
+{Kokius|koks} batus nusipirkai?
+{Kokiais|koks} keliais važiavote į Rygą?
+Papasakok, {kokia|koks} buvo kelionė.
+Nežinau, {kokią|koks} suknelę apsirengti.
+{Kokios|koks} spalvos tavo akys?
+{Kokia|koks} graži vaivorykštė!
+{Kokie|koks} skanūs blynai!
+Įdomu, {kokiu|koks} oru keliausime.
+
+# --- kitas ---
+{Kitą|kitas} kartą būsiu atidesnis.
+{Kitais|kitas} žodžiais, tu sutinki?
+Pakalbėkime apie {kitus|kitas} dalykus.
+{Kiti|kitas} vaikai jau miega.
+{Kitos|kitas} galimybės nėra.
+{Kitoje|kitas} upės pusėje yra miškas.
+Gyvenimas {kitose|kitas} šalyse labai įdomus.
+{Kitam|kitas} žmogui šis darbas būtų per sunkus.
+Pasiūlyk {kitiems|kitas} vaikams žaisti kartu.
+Norėčiau {kitos|kitas} kavos — ši per stipri.
+{Kito|kitas} kelio nėra.
+{Kitą|kitas} rytą išvažiavome namo.
+Su {kita|kitas} komanda žaisti lengviau.
+Užsisakykime {kitą|kitas} picą.
+Paprašyk {kitų|kitas} draugų pagalbos.
+{Kitomis|kitas} dienomis parduotuvė dirba iki šešių.
+{Kituose|kitas} kambariuose šilčiau.
+{Kitoms|kitas} mergaitėms patiko spektaklis.
+{Kitai|kitas} kaimynei taip pat reikia pagalbos.
+{Kitu|kitas} atveju būtume pavėlavę.
+Mano {kita|kitas} močiutė gyvena Klaipėdoje.
+{Kitame|kitas} puslapyje rasite atsakymus.
+{Kiti|kitas} metai bus geresni!
+{Kitų|kitas} žmonių nuomonė jam nerūpi.
+Šiandien negaliu — ateik {kitą|kitas} savaitę.
+
+# --- visas ---
+{Visą|visas} savaitę lijo.
+{Visi|visas} vaikai mėgsta vasarą.
+{Visos|visas} mano draugės jau ištekėjusios.
+{Viso|visas} miesto gyventojai susirinko aikštėje.
+{Visam|visas} miestui dingo elektra.
+{Visu|visas} balsu dainavome dainą.
+Šis rašytojas žinomas {visame|visas} pasaulyje.
+{Visoje|visas} Europoje šiandien šalta.
+{Visų|visas} mūsų laukia egzaminas.
+{Visiems|visas} svečiams patiko vakarienė.
+{Visoms|visas} mergaitėms nupirkome po gėlę.
+{Visus|visas} žodžius jau išmokau.
+Su {visais|visas} draugais susitinku kas savaitę.
+Ji domisi {visomis|visas} meno šakomis.
+{Visuose|visas} kambariuose šilta.
+{Visose|visas} parduotuvėse yra šios knygos.
+{Visą|visas} gyvenimą jis dirbo mokykloje.
+{Visa|visas} šeima susirinko prie stalo.
+{Visai|visas} klasei patiko ekskursija.
+Apie tai rašė {visi|visas} laikraščiai.
+Su {visa|visas} klase važiavome į Trakus.
+{Visų|visas} dalyvių prašome užsiregistruoti.
+Linkiu {visiems|visas} gražių švenčių!
+{Visame|visas} name kvepia pyragais.
+Jis {visu|visas} kūnu drebėjo iš šalčio.
+{Viso|visas} gero!
+{Visos|visas} durys buvo atidarytos.
+Iš {visų|visas} vaisių labiausiai mėgstu obuolius.
+
+# --- joks ---
+Nematau {jokios|joks} prasmės ginčytis.
+Neturiu {jokių|joks} planų savaitgaliui.
+Šiandien negavau {jokių|joks} žinučių.
+Jis nemoka {jokios|joks} užsienio kalbos.
+Nėra {jokio|joks} reikalo skubėti.
+{Jokiu|joks} būdu nevažiuok be šalmo!
+Neturiu {jokio|joks} supratimo, kur jis.
+Čia nėra {jokių|joks} parduotuvių.
+{Jokie|joks} pažadai manęs neįtikins.
+{Jokia|joks} kita šalis man nepatinka taip, kaip Lietuva.
+Nesu buvęs {jokioje|joks} kitoje šalyje.
+Apie tai internete nėra {jokios|joks} informacijos.
+Šiame tekste nėra {jokių|joks} klaidų.
+Neturėjome {jokio|joks} pasirinkimo.
+{Jokiam|joks} vaikui neleidžiama čia žaisti.
+{Jokiai|joks} šeimai nereikėtų gyventi skurde.
+{Jokiems|joks} pašaliniams žmonėms įeiti draudžiama.
+{Jokioms|joks} kitoms komandoms nepavyko laimėti.
+Su {jokiu|joks} žmogumi apie tai nekalbėjau.
+Su {jokia|joks} drauge nesu susipykusi.
+Jis nesidomi {jokiomis|joks} sporto šakomis.
+Nepasitikiu {jokiais|joks} pažadais.
+{Jokiuose|joks} miestuose nemačiau tokių gražių namų.
+Šių batų nėra {jokiose|joks} parduotuvėse.
+Neradau {jokio|joks} atsakymo.
+Nebijau {jokių|joks} sunkumų.
+Jis neturi {jokios|joks} patirties.
+Nemačiau čia {jokio|joks} šuns.
+Neturiu {jokių|joks} pinigų.
+Ar turite klausimų? — {Jokių|joks}.
+Nepirk {jokio|joks} maisto — namie visko yra.
+Mums nereikia {jokios|joks} pagalbos.
+
+# --- toks ---
+Niekada nevalgiau {tokio|toks} skanaus pyrago.
+Nemėgstu {tokių|toks} filmų.
+{Tokia|toks} graži diena!
+{Tokie|toks} brangūs batai!
+{Tokios|toks} gražios gėlės auga tik mūsų sode.
+Su {tokiu|toks} draugu nebaisu niekur keliauti.
+{Tokiam|toks} orui reikia šiltų drabužių.
+{Tokiai|toks} šeimai reikia didesnio buto.
+{Tokį|toks} gražų vaizdą matau pirmą kartą.
+{Tokią|toks} knygą norėčiau perskaityti.
+{Tokius|toks} žmones sutinki retai.
+{Tokias|toks} kainas matau pirmą kartą!
+{Tokiame|toks} mieste norėčiau gyventi.
+{Tokioje|toks} kavinėje dar nebuvau.
+{Tokiuose|toks} namuose gyvena turtingi žmonės.
+{Tokiose|toks} vietose visada daug turistų.
+{Tokiais|toks} batais negalima eiti į kalnus.
+{Tokiomis|toks} kainomis niekas nepirks.
+{Tokiems|toks} vaikams reikia daugiau dėmesio.
+{Tokioms|toks} užduotims reikia daug laiko.
+Nesu matęs {tokių|toks} aukštų kalnų.
+Nusipirkau {tokį|toks} patį telefoną kaip tavo.
+Ji {tokia|toks} pat graži kaip mama.
+Visi mokiniai dėvi {tokias|toks} pačias uniformas.
+{Tokio|toks} karšto oro dar nebuvo.
+{Tokia|toks} buvo mano svajonė.
+Su {tokia|toks} kompanija smagu keliauti.
+{Tokiu|toks} greičiu važiuoti pavojinga.
+{Tokių|toks} dalykų niekam nepasakoju.
+{Tokie|toks} jau gyvenimo dėsniai.
+{Tokiam|toks} žmogui galima patikėti viską.
+{Tokią|toks} pačią klaidą padariau ir aš.
+Pirmą kartą matau {tokį|toks} didelį šunį.
+
+# --- anas ---
+{Aną|anas} savaitę buvau Rygoje.
+{Aną|anas} kartą jis man labai padėjo.
+{Anoje|anas} gatvės pusėje yra vaistinė.
+{Anais|anas} metais čia stovėjo mokykla.
+{Anuo|anas} metu dar nebuvo interneto.
+Eikime ne šiuo keliu, o {anuo|anas}.
+Šie obuoliai saldūs, o {anie|anas} — rūgštūs.
+Šis namas mano, o {ano|anas} savininkas — kaimynas.
+Šioje pusėje šilta, o {anoje|anas} pučia vėjas.
+Paklausk ne šio, o {ano|anas} žmogaus.
+Šį puodelį duok man, o {aną|anas} — sesei.
+Šiems vaikams duok obuolių, o {aniems|anas} — kriaušių.
+Šioms mergaitėms filmas patiko, o {anoms|anas} — ne.
+Šiame name gyvena mano draugas, o {aname|anas} — mokytoja.
+Šiuose namuose šilta, o {anuose|anas} — šalta.
+Šiose parduotuvėse brangu, o {anose|anas} — pigiau.
+Su šiuo kaimynu sutariu, o su {anuo|anas} — ne.
+Su šia kolege dirbu kartu, o su {ana|anas} tik pasisveikinu.
+Su šiais draugais žaidžiu futbolą, o su {anais|anas} — krepšinį.
+Su šiomis draugėmis einu į kiną, o su {anomis|anas} — į teatrą.
+Šių knygų dar neskaičiau, o {anų|anas} — jau perskaičiau.
+Šio kalno viršūnė žema, o {ano|anas} — aukšta.
+Šiam žmogui padėsiu, o {anam|anas} — ne.
+Šiai mergaitei patinka šokti, o {anai|anas} — dainuoti.
+Šiuos batus pirksiu, o {anuos|anas} — ne.
+{Anie|anas} laikai buvo sunkūs.
+{Anos|anas} dienos niekada nesugrįš.
+Prisimenu {anuos|anas} laikus, kai buvome jauni.
+{Anų|anas} laikų žmonės gyveno kitaip.
+{Anoje|anas} ežero pusėje stovi sena bažnyčia.
+{Aną|anas} rytą prasidėjo pūga.
+Šita knyga mano, o {ana|anas} — tavo.
+Šita mergina — mano sesuo, o {ana|anas} — pusseserė.
+{Aną|anas} vakarą buvome teatre.
+Iš šios pusės kelias trumpesnis, o iš {anos|anas} — gražesnis.
+
+# --- kiekvienas ---
+{Kiekvieną|kiekvienas} vakarą skaitau knygą.
+{Kiekvienam|kiekvienas} mokiniui reikia vadovėlio.
+{Kiekviena|kiekvienas} mergaitė gavo dovaną.
+{Kiekvieno|kiekvienas} vaiko svajonė — šuniukas.
+{Kiekvienos|kiekvienas} dienos pradžioje geriu kavą.
+{Kiekvienai|kiekvienas} šeimai reikia namų.
+{Kiekviename|kiekvienas} mieste yra bažnyčia.
+{Kiekvienoje|kiekvienas} šalyje — savos tradicijos.
+Su {kiekvienu|kiekvienas} žmogumi reikia elgtis pagarbiai.
+Su {kiekviena|kiekvienas} pamoka išmokstu vis daugiau.
+{Kiekvieną|kiekvienas} vasarą važiuojame prie jūros.
+{Kiekvieną|kiekvienas} savaitę skambinu mamai.
+{Kiekvienam|kiekvienas} svečiui padaviau arbatos.
+Mokytoja pagyrė {kiekvieną|kiekvienas} mokinį.
+{Kiekvienoje|kiekvienas} klasėje kabo žemėlapis.
+{Kiekvieno|kiekvienas} mėnesio pradžioje moku už butą.
+{Kiekvienos|kiekvienas} knygos pabaigoje yra žodynas.
+Į {kiekvieną|kiekvienas} klausimą jis turi atsakymą.
+Prie {kiekvieno|kiekvienas} namo auga medis.
+{Kiekvienai|kiekvienas} gėlei reikia saulės.
+{Kiekviena|kiekvienas} minutė brangi.
+Su {kiekvienu|kiekvienas} mėnesiu vaikas auga.
+{Kiekvienu|kiekvienas} atveju paskambink man.
+{Kiekviename|kiekvienas} žingsnyje — nauja patirtis.
+Iš {kiekvieno|kiekvienas} miesto parsivežu atvirutę.
+{Kiekvieną|kiekvienas} dieną išmokstu po naują žodį.
+Ant {kiekvieno|kiekvienas} stalo stovi gėlės.
+{Kiekvienai|kiekvienas} progai turiu tinkamą suknelę.
+Apie {kiekvieną|kiekvienas} miestą galima daug papasakoti.
+{Kiekvienoje|kiekvienas} gatvėje yra kavinė.
+Po {kiekvienos|kiekvienas} pamokos būna pertrauka.
+{Kiekvieno|kiekvienas} žmogaus nuomonė svarbi.
+Su {kiekviena|kiekvienas} kelione vis geriau pažįstu Lietuvą.
+{Kiekviena|kiekvienas} šeima turi savų tradicijų.
+Pasveikink {kiekvieną|kiekvienas} svečią prie durų.
+{Kiekviename|kiekvienas} name yra rūsys.
+Mama nupirko dovanų {kiekvienam|kiekvienas} anūkui.
+{Kiekviena|kiekvienas} pamoka trunka keturiasdešimt penkias minutes.
+
+# --- Ответ совпадает с подсказкой: здесь нужна начальная форма ---
+{Koks|koks} šiandien oras?
+{Koks|koks} tavo vardas?
+Jis {toks|toks} protingas!
+{Toks|toks} jau gyvenimas.
+{Joks|joks} vaistas čia nepadės.
+{Joks|joks} darbas nėra gėdingas.
+Tomas {pats|pats} pasidarė pusryčius.
+Tas {pats|pats} žmogus vėl skambino.
+{Šis|šis} filmas labai įdomus.
+{Šis|šis} miestas man labai patinka.
+{Tas|tas} vyras prie lango — mano kaimynas.
+Paduok man {tas|tas} knygas.
+Šis namas naujas, o {anas|anas} — senas.
+Ne šitas kelias, o {anas|anas} veda į miestą.
+Šias gėles palik, o {anas|anas} išmesk.
+{Kitas|kitas} autobusas atvyks po dešimties minučių.
+Pasiimk {kitas|kitas} pirštines — šios šlapios.
+{Visas|visas} miestas jau miega.
+Vaikai suvalgė {visas|visas} bandeles.
+{Kiekvienas|kiekvienas} žmogus nori būti laimingas.
+{Kiekvienas|kiekvienas} mokinys gavo po knygą.
+
 --- Senamiestyje
 — Pažiūrėk į {šį|šis} namą — čia gyveno garsus rašytojas.
 — O kas gyveno {aname|anas} name, kitoje gatvės pusėje?
