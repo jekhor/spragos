@@ -1,7 +1,7 @@
 // Разбор файла темы (data/*.txt) в объект темы.
 // Формат описан в README.md. Модуль не зависит от DOM — его можно тестировать в node.
 
-const KNOWN_KEYS = new Set(["title", "group", "description", "distractors", "hints", "reference"]);
+const KNOWN_KEYS = new Set(["title", "group", "description", "distractors", "hints", "reference", "subtopic", "word-practice"]);
 
 // Нормализация для сравнения ответов: NFC, схлопывание пробелов, без учёта регистра.
 export function normalize(s) {
@@ -75,11 +75,14 @@ export function parseTopic(source, file = "") {
     distractors: [],
     hints: "", // "always" — подсказки в этой теме показываются всегда
     reference: "", // путь к справке .md относительно data/ (по умолчанию — файл с тем же именем)
+    wordPractice: true, // предлагать ли тренировку одного слова (@word-practice: off — нет)
+    subtopics: [], // { key, title, description }; key = "файл#заголовок"
     items: [],
     errors: [],
   };
   const lines = source.normalize("NFC").replace(/^﻿/, "").split(/\r?\n/);
   let block = null; // открытый блок связного текста
+  let subtopic = null; // текущая подтема (@subtopic) — к ней относятся задания ниже
 
   const err = (line, message) => topic.errors.push({ file, line, message });
 
@@ -94,6 +97,7 @@ export function parseTopic(source, file = "") {
         type: "text",
         title: block.title,
         line: block.line,
+        subtopic: block.subtopic,
         paragraphs: block.paragraphs,
       });
     }
@@ -112,7 +116,7 @@ export function parseTopic(source, file = "") {
         closeBlock();
         if (!fence[1]) return;
       }
-      block = { title: fence[1], line: lineNo, paragraphs: [], raw: [] };
+      block = { title: fence[1], line: lineNo, paragraphs: [], raw: [], subtopic: subtopic?.key ?? null };
       return;
     }
 
@@ -124,6 +128,18 @@ export function parseTopic(source, file = "") {
         err(lineNo, `неизвестный параметр @${key}`);
       } else if (key === "distractors") {
         topic.distractors.push(...splitList(value, ","));
+      } else if (key === "subtopic") {
+        // @subtopic: Заголовок | описание
+        const [title, ...rest] = value.split("|").map((x) => x.trim());
+        const subKey = `${file}#${title}`;
+        if (!title) err(lineNo, "у подтемы нет заголовка");
+        else if (topic.subtopics.some((st) => st.key === subKey)) err(lineNo, `подтема «${title}» уже есть в этом файле`);
+        else {
+          subtopic = { key: subKey, title, description: rest.join("|"), line: lineNo };
+          topic.subtopics.push(subtopic);
+        }
+      } else if (key === "word-practice") {
+        topic.wordPractice = !/^(off|no|нет)$/i.test(value);
       } else {
         topic[key] = value;
       }
@@ -151,6 +167,7 @@ export function parseTopic(source, file = "") {
       id: hash(file + "\n" + line),
       type: "sentence",
       line: lineNo,
+      subtopic: subtopic?.key ?? null,
       paragraphs: [segments],
     });
   });
@@ -158,6 +175,16 @@ export function parseTopic(source, file = "") {
   if (block) {
     err(block.line, `текст «${block.title}» не закрыт строкой «---»`);
     closeBlock();
+  }
+  // Если подтемы есть, каждое задание должно относиться к одной из них.
+  if (topic.subtopics.length) {
+    for (const it of topic.items) {
+      if (!it.subtopic) err(it.line, "задание стоит до первой строки @subtopic и не относится ни к одной подтеме");
+    }
+    topic.items = topic.items.filter((it) => it.subtopic);
+    for (const st of topic.subtopics) {
+      if (!topic.items.some((it) => it.subtopic === st.key)) err(st.line, `в подтеме «${st.title}» нет заданий`);
+    }
   }
   return topic;
 }

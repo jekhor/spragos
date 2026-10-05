@@ -1,11 +1,11 @@
 import { parseTopic } from "./parser.js";
-import { buildRound, countItems, isCorrect, poolFor, listLemmas } from "./round.js";
+import { buildRound, countItems, isCorrect, poolFor, listLemmas, applySelection, statsKey } from "./round.js";
 import { enableDragAndDrop } from "./dnd.js";
 import * as store from "./stats.js";
 import { renderMarkdown, markdownTitle, stripTitle } from "./markdown.js";
 
 const DEFAULT_SETTINGS = {
-  topics: [],
+  topics: [], // файлы тем и ключи подтем ("файл#заголовок"); файл темы с подтемами — все её подтемы
   gaps: 12,
   kind: "all",
   bank: "answers",
@@ -166,27 +166,31 @@ function renderTopicList() {
     if (!groups.has(g)) groups.set(g, []);
     groups.get(g).push(t);
   }
+  const badge = (keys) => {
+    const sum = keys.reduce((a, k) => {
+      const st = stats.topics[k];
+      return st ? { gaps: a.gaps + st.gaps, correct: a.correct + st.correct } : a;
+    }, { gaps: 0, correct: 0 });
+    return sum.gaps ? h("span", { class: "badge" }, pct(sum.correct, sum.gaps) + "%") : null;
+  };
+  const counts = (c) => {
+    const parts = [];
+    if (c.sentence) parts.push(`${c.sentence} предл.`);
+    if (c.text) parts.push(`${c.text} текст.`);
+    return h("span", {}, parts.join(", "));
+  };
   for (const [group, topics] of groups) {
     if (group) list.append(h("h3", { class: "group" }, group));
     for (const t of topics) {
-      const c = countItems(t);
-      const st = stats.topics[t.file];
-      const parts = [];
-      if (c.sentence) parts.push(`${c.sentence} предл.`);
-      if (c.text) parts.push(`${c.text} текст.`);
+      const subs = t.subtopics;
       list.append(
         h("label", { class: "topic" },
-          h("input", {
-            type: "checkbox",
-            value: t.file,
-            checked: state.settings.topics.includes(t.file),
-            onchange: onTopicToggle,
-          }),
+          h("input", { type: "checkbox", dataset: { topic: t.file }, onchange: (e) => toggleTopic(t, e.target.checked) }),
           h("span", { class: "topic-body" },
             h("span", { class: "topic-title" }, t.title),
             t.description ? h("span", { class: "topic-desc" }, t.description) : null),
           h("span", { class: "topic-meta" },
-            h("span", {}, parts.join(", ")),
+            subs.length ? null : counts(countItems(t)),
             t.refPath
               ? h("button", {
                   type: "button",
@@ -198,14 +202,59 @@ function renderTopicList() {
                   },
                 }, "справка")
               : null,
-            st && st.gaps ? h("span", { class: "badge" }, pct(st.correct, st.gaps) + "%") : null)));
+            badge(subs.length ? subs.map((st) => st.key) : [t.file]))));
+      if (subs.length) {
+        list.append(
+          h("div", { class: "subtopics" },
+            subs.map((st) =>
+              h("label", { class: "topic sub" },
+                h("input", { type: "checkbox", dataset: { sub: st.key }, onchange: (e) => toggleSubtopic(t, st, e.target.checked) }),
+                h("span", { class: "topic-body" },
+                  h("span", { class: "topic-title" }, st.title),
+                  st.description ? h("span", { class: "topic-desc" }, st.description) : null),
+                h("span", { class: "topic-meta" }, counts(countItems(t, st.key)), badge([st.key]))))));
+      }
     }
+  }
+  syncTopicChecks();
+}
+
+// Отметки в списке тем по state.settings.topics; тема, выбранная частично, — «неопределённая».
+function syncTopicChecks() {
+  const sel = new Set(state.settings.topics);
+  for (const t of state.topics) {
+    const box = document.querySelector(`#topic-list input[data-topic="${CSS.escape(t.file)}"]`);
+    if (!box) continue;
+    const subsOn = t.subtopics.filter((st) => sel.has(t.file) || sel.has(st.key));
+    for (const st of t.subtopics) {
+      const sb = document.querySelector(`#topic-list input[data-sub="${CSS.escape(st.key)}"]`);
+      if (sb) sb.checked = subsOn.includes(st);
+    }
+    box.checked = sel.has(t.file);
+    box.indeterminate = !sel.has(t.file) && subsOn.length > 0;
   }
 }
 
-function onTopicToggle() {
-  state.settings.topics = [...document.querySelectorAll("#topic-list input:checked")].map((i) => i.value);
+function setSelection(keys) {
+  state.settings.topics = keys;
+  syncTopicChecks();
   saveSettings();
+}
+
+function toggleTopic(t, on) {
+  const own = new Set([t.file, ...t.subtopics.map((st) => st.key)]);
+  setSelection([...state.settings.topics.filter((k) => !own.has(k)), ...(on ? [t.file] : [])]);
+}
+
+// Если отмечены все подтемы, хранится файл темы — тогда в выбор попадут и подтемы, добавленные позже.
+function toggleSubtopic(t, st, on) {
+  const sel = new Set(state.settings.topics);
+  const chosen = new Set(t.subtopics.filter((x) => sel.has(t.file) || sel.has(x.key)).map((x) => x.key));
+  if (on) chosen.add(st.key);
+  else chosen.delete(st.key);
+  const own = new Set([t.file, ...t.subtopics.map((x) => x.key)]);
+  const rest = state.settings.topics.filter((k) => !own.has(k));
+  setSelection(chosen.size === t.subtopics.length ? [...rest, t.file] : [...rest, ...chosen]);
 }
 
 function renderOptions() {
@@ -244,7 +293,14 @@ function plural(n, one, few, many) {
 }
 
 function selectedTopics() {
-  return state.topics.filter((t) => state.settings.topics.includes(t.file));
+  return applySelection(state.topics, state.settings.topics);
+}
+
+// Название темы в заголовке раунда: у частично выбранной — подтемы (номера, если заголовки с них начинаются).
+function topicLabel(t) {
+  if (!t.partial) return t.title;
+  if (t.subtopics.length === 1) return `${t.title}: ${t.subtopics[0].title}`;
+  return `${t.title} (${t.subtopics.map((st) => st.title.match(/^(\d+)\./)?.[1] ?? st.title).join(", ")})`;
 }
 
 // Список «Слово»: леммы выбранных тем, сгруппированные по темам.
@@ -264,6 +320,7 @@ function renderLemmaSelect() {
         g.lemmas.map((l) => h("option", { value: l.key }, `${l.label} — ${plural(l.count, "пропуск", "пропуска", "пропусков")}`))))
   );
   select.value = s.lemma;
+  $("#row-lemma").hidden = !groups.length; // у выбранных тем тренировка одного слова не предусмотрена
 }
 
 function updatePoolInfo() {
@@ -299,7 +356,7 @@ function startRound() {
     selected: null,
     recorded: false,
     revealed: false,
-    topicNames: topics.map((t) => t.title),
+    topicNames: topics.map(topicLabel),
     lemmaLabel: state.settings.lemma ? r.gaps[0]?.hint : "",
   };
   renderRound();
@@ -551,7 +608,7 @@ function check() {
     r.firstScore = correct;
     store.recordRound(
       r.units.map((u) => ({
-        topicFile: u.topic.file,
+        topicFile: statsKey(u.topic, u.item),
         itemId: u.item.id,
         gaps: u.gapIds.length,
         correct: u.gapIds.filter((id) => r.status.get(id) === "correct").length,
@@ -685,7 +742,11 @@ function renderStats() {
   const stats = store.loadStats();
   const box = $("#stats-table");
   box.replaceChildren();
-  const titles = new Map(state.topics.map((t) => [t.file, t.title]));
+  const titles = new Map();
+  for (const t of state.topics) {
+    titles.set(t.file, t.title);
+    for (const st of t.subtopics) titles.set(st.key, `${t.title}: ${st.title}`);
+  }
   const rows = Object.entries(stats.topics).sort((a, b) => (b[1].last || "").localeCompare(a[1].last || ""));
   if (!rows.length) {
     box.append(h("p", { class: "muted" }, "Пока нет ни одного завершённого раунда."));
@@ -725,14 +786,10 @@ async function init() {
   $("#home-start").addEventListener("click", () => show("setup"));
   $("#home-refs").addEventListener("click", () => show("refs"));
   $("#select-all").addEventListener("click", () => {
-    state.settings.topics = state.topics.map((t) => t.file);
-    renderTopicList();
-    saveSettings();
+    setSelection(state.topics.map((t) => t.file));
   });
   $("#select-none").addEventListener("click", () => {
-    state.settings.topics = [];
-    renderTopicList();
-    saveSettings();
+    setSelection([]);
   });
   for (const el of document.querySelectorAll(".options input, .options select")) el.addEventListener("change", readOptions);
   $("#start").addEventListener("click", startRound);
@@ -768,7 +825,7 @@ async function init() {
   enableDragAndDrop(area, onDrop);
 
   await loadTopics();
-  const known = new Set(state.topics.map((t) => t.file));
+  const known = new Set(state.topics.flatMap((t) => [t.file, ...t.subtopics.map((st) => st.key)]));
   state.settings.topics = state.settings.topics.filter((f) => known.has(f));
   if (!state.settings.topics.length && state.topics.length) state.settings.topics = [state.topics[0].file];
   renderLoadErrors();

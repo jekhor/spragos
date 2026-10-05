@@ -13,23 +13,23 @@
 
 | Падеж | 1 | 2 | 3 | 4 |
 |---|---|---|---|---|
-| Vardininkas (kas?) | vienas | du | trys | keturi |
-| Kilmininkas (ko?) | vieno | dviejų | trijų | keturių |
-| Naudininkas (kam?) | vienam | dviem | trims | keturiems |
-| Galininkas (ką?) | vieną | du | tris | keturis |
-| Įnagininkas (kuo?) | vienu | dviem | trimis | keturiais |
-| Vietininkas (kur?) | viename | dviejuose | trijuose | keturiuose |
+| Vardininkas (им., kas?) | vienas | du | trys | keturi |
+| Kilmininkas (род., ko?) | vieno | dviejų | trijų | keturių |
+| Naudininkas (дат., kam?) | vienam | dviem | trims | keturiems |
+| Galininkas (вин., ką?) | vieną | du | tris | keturis |
+| Įnagininkas (твор., kuo?) | vienu | dviem | trimis | keturiais |
+| Vietininkas (местн., kur?) | viename | dviejuose | trijuose | keturiuose |
 
 ### Женский род
 
 | Падеж | 1 | 2 | 3 | 4 |
 |---|---|---|---|---|
-| Vard. | viena | dvi | trys | keturios |
-| Kilm. | vienos | dviejų | trijų | keturių |
-| Naud. | vienai | dviem | trims | keturioms |
-| Gal. | vieną | dvi | tris | keturias |
-| Įnag. | viena | dviem | trimis | keturiomis |
-| Viet. | vienoje | dviejose | trijose | keturiose |
+| Vard. (им.) | viena | dvi | trys | keturios |
+| Kilm. (род.) | vienos | dviejų | trijų | keturių |
+| Naud. (дат.) | vienai | dviem | trims | keturioms |
+| Gal. (вин.) | vieną | dvi | tris | keturias |
+| Įnag. (твор.) | viena | dviem | trimis | keturiomis |
+| Viet. (местн.) | vienoje | dviejose | trijose | keturiose |
 
 > Числительное и существительное стоят в одном падеже: su **trimis** draug**ais**, **penkiose** mokykl**ose**. После *vienas* существительное в единственном числе, после 2–9 — во множественном.
 
@@ -37,7 +37,7 @@
 
 **11–19** — vienuolika, dvylika, trylika, keturiolika, penkiolika, šešiolika, septyniolika, aštuoniolika, devyniolika. Род не различают.
 
-| Vard. | Kilm. | Naud. | Gal. | Įnag. | Viet. |
+| Vard. (им.) | Kilm. (род.) | Naud. (дат.) | Gal. (вин.) | Įnag. (твор.) | Viet. (местн.) |
 |---|---|---|---|---|---|
 | dvylika | dvylikos | dvylikai | dvylika | dvylika | dvylikoje |
 
@@ -52,12 +52,12 @@
 
 | Падеж | treji (м.) | trejos (ж.) | ketveri (м.) | ketverios (ж.) |
 |---|---|---|---|---|
-| Vard. | treji | trejos | ketveri | ketverios |
-| Kilm. | trejų | trejų | ketverių | ketverių |
-| Naud. | trejiems | trejoms | ketveriems | ketverioms |
-| Gal. | trejus | trejas | ketverius | ketverias |
-| Įnag. | trejais | trejomis | ketveriais | ketveriomis |
-| Viet. | trejuose | trejose | ketveriuose | ketveriose |
+| Vard. (им.) | treji | trejos | ketveri | ketverios |
+| Kilm. (род.) | trejų | trejų | ketverių | ketverių |
+| Naud. (дат.) | trejiems | trejoms | ketveriems | ketverioms |
+| Gal. (вин.) | trejus | trejas | ketverius | ketverias |
+| Įnag. (твор.) | trejais | trejomis | ketveriais | ketveriomis |
+| Viet. (местн.) | trejuose | trejose | ketveriuose | ketveriose |
 
 Так же: **dveji / dvejos**, penkeri, šešeri, septyneri, aštuoneri, devyneri. Для 1 — **vieneri / vienerios** (или vieni / vienos): vieneri marškiniai.
 
@@ -69,12 +69,12 @@
 
 | Падеж | м. р. | ж. р. | м. р. мн. ч. | ж. р. мн. ч. |
 |---|---|---|---|---|
-| Vard. | pirm**as** | pirm**a** | pirm**i** | pirm**os** |
-| Kilm. | pirm**o** | pirm**os** | pirm**ų** | pirm**ų** |
-| Naud. | pirm**am** | pirm**ai** | pirm**iems** | pirm**oms** |
-| Gal. | pirm**ą** | pirm**ą** | pirm**us** | pirm**as** |
-| Įnag. | pirm**u** | pirm**a** | pirm**ais** | pirm**omis** |
-| Viet. | pirm**ame** | pirm**oje** | pirm**uose** | pirm**ose** |
+| Vard. (им.) | pirm**as** | pirm**a** | pirm**i** | pirm**os** |
+| Kilm. (род.) | pirm**o** | pirm**os** | pirm**ų** | pirm**ų** |
+| Naud. (дат.) | pirm**am** | pirm**ai** | pirm**iems** | pirm**oms** |
+| Gal. (вин.) | pirm**ą** | pirm**ą** | pirm**us** | pirm**as** |
+| Įnag. (твор.) | pirm**u** | pirm**a** | pirm**ais** | pirm**omis** |
+| Viet. (местн.) | pirm**ame** | pirm**oje** | pirm**uose** | pirm**ose** |
 
 Ряд: pirmas, antras, trečias, ketvirtas, penktas, šeštas, septintas, aštuntas, devintas, dešimtas; vienuoliktas, dvyliktas…; dvidešimtas.
 

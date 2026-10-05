@@ -15,12 +15,12 @@
 
 | Падеж | Вопрос | мы | вы | они (м.) | они (ж.) |
 |---|---|---|---|---|---|
-| Vardininkas | kas? | mes | jūs | jie | jos |
-| Kilmininkas | ko? | mūsų | jūsų | jų | jų |
-| Naudininkas | kam? | mums | jums | jiems | joms |
-| Galininkas | ką? | mus | jus | juos | jas |
-| Įnagininkas | kuo? | mumis | jumis | jais | jomis |
-| Vietininkas | kur? | mumyse | jumyse | juose | jose |
+| Vardininkas (им.) | kas? | mes | jūs | jie | jos |
+| Kilmininkas (род.) | ko? | mūsų | jūsų | jų | jų |
+| Naudininkas (дат.) | kam? | mums | jums | jiems | joms |
+| Galininkas (вин.) | ką? | mus | jus | juos | jas |
+| Įnagininkas (твор.) | kuo? | mumis | jumis | jais | jomis |
+| Vietininkas (местн.) | kur? | mumyse | jumyse | juose | jose |
 
 > **Jūs** — это и «вы» множественное, и вежливое «Вы» одному человеку.
 
@@ -28,7 +28,7 @@
 
 Именительного падежа нет. Местоимение относится к подлежащему этого же предложения.
 
-| Kilm. | Naud. | Gal. | Įnag. | Viet. |
+| Kilm. (род.) | Naud. (дат.) | Gal. (вин.) | Įnag. (твор.) | Viet. (местн.) |
 |---|---|---|---|---|
 | savęs | sau | save | savimi | savyje |
 
@@ -39,7 +39,7 @@
 
 ## Вопросительное kas («кто, что»)
 
-| Vard. | Kilm. | Naud. | Gal. | Įnag. |
+| Vard. (им.) | Kilm. (род.) | Naud. (дат.) | Gal. (вин.) | Įnag. (твор.) |
 |---|---|---|---|---|
 | kas | ko | kam | ką | kuo |
 

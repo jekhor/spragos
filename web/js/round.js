@@ -54,13 +54,38 @@ function matchCase(word, model) {
   return (isUpper(model[0]) ? first.toLocaleUpperCase("lt") : first.toLocaleLowerCase("lt")) + rest;
 }
 
-export function countItems(topic) {
+export function countItems(topic, subtopicKey = null) {
   const c = { sentence: 0, text: 0, gaps: 0 };
   for (const it of topic.items) {
+    if (subtopicKey && it.subtopic !== subtopicKey) continue;
     c[it.type]++;
     c.gaps += itemGaps(it).length;
   }
   return c;
+}
+
+// Выбор тем в настройках: ключ темы — имя файла, ключ подтемы — "файл#заголовок".
+// Файл темы с подтемами означает «все подтемы». Возвращает выбранные темы; у темы, выбранной частично,
+// в items остаются только задания выбранных подтем, а в subtopics — сами эти подтемы.
+export function applySelection(topics, keys) {
+  const sel = new Set(keys);
+  const out = [];
+  for (const t of topics) {
+    if (sel.has(t.file)) {
+      out.push(t);
+      continue;
+    }
+    const subs = t.subtopics.filter((st) => sel.has(st.key));
+    if (!subs.length) continue;
+    const chosen = new Set(subs.map((st) => st.key));
+    out.push({ ...t, subtopics: subs, items: t.items.filter((it) => chosen.has(it.subtopic)), partial: true });
+  }
+  return out;
+}
+
+// Ключ статистики: подтема, если она есть, иначе файл темы.
+export function statsKey(topic, item) {
+  return item.subtopic || topic.file;
 }
 
 /**
@@ -89,8 +114,9 @@ export function poolFor(topics, settings) {
 }
 
 // Слова (леммы-подсказки) тем с числом пропусков — для выбора «тренировать одно слово».
+// Темы с @word-practice: off (например, существительные — там выбирают подтему) не участвуют.
 export function listLemmas(topics, kind = "all") {
-  return topics.map((topic) => {
+  return topics.filter((t) => t.wordPractice !== false).map((topic) => {
     const byKey = new Map();
     for (const item of topic.items) {
       if (kind !== "all" && kind !== item.type) continue;

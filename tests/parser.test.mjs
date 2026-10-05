@@ -4,7 +4,7 @@ import { readFileSync, readdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { parseTopic, parseLine, normalize, itemGaps } from "../web/js/parser.js";
-import { buildRound, isCorrect, poolFor, listLemmas } from "../web/js/round.js";
+import { buildRound, isCorrect, poolFor, listLemmas, applySelection, statsKey, countItems } from "../web/js/round.js";
 
 const DATA = join(dirname(fileURLToPath(import.meta.url)), "..", "data");
 
@@ -179,6 +179,54 @@ test("фильтр по типу и проверка ответа", () => {
   assert.ok(isCorrect(s.gaps[0], "  JĮ  "));
   assert.ok(!isCorrect(s.gaps[0], "ji"));
   assert.ok(!isCorrect(s.gaps[0], ""));
+});
+
+test("подтемы: разбор, выбор целиком и по частям", () => {
+  const src = [
+    "@title: Daiktavardžiai",
+    "@word-practice: off",
+    "@subtopic: 1. мужской род | namas, kelias",
+    "A {namą|namas}.",
+    "--- Tekstas",
+    "B {kelyje|kelias}.",
+    "---",
+    "@subtopic: 2. женский род",
+    "C {knygą|knyga}.",
+    "D {gatvėje|gatvė}.",
+  ].join("\n");
+  const t = parseTopic(src, "d.txt");
+  assert.deepEqual(t.errors, []);
+  assert.equal(t.wordPractice, false);
+  assert.deepEqual(t.subtopics.map((st) => [st.key, st.title, st.description]), [
+    ["d.txt#1. мужской род", "1. мужской род", "namas, kelias"],
+    ["d.txt#2. женский род", "2. женский род", ""],
+  ]);
+  assert.deepEqual(t.items.map((it) => it.subtopic), ["d.txt#1. мужской род", "d.txt#1. мужской род", "d.txt#2. женский род", "d.txt#2. женский род"]);
+  assert.equal(countItems(t, "d.txt#2. женский род").sentence, 2);
+  assert.equal(statsKey(t, t.items[0]), "d.txt#1. мужской род");
+
+  const plain = parseTopic("X {jį|jis}.", "p.txt");
+  assert.equal(plain.wordPractice, true);
+  assert.equal(statsKey(plain, plain.items[0]), "p.txt");
+
+  // файл темы — все подтемы; ключ подтемы — только её задания
+  assert.equal(applySelection([t, plain], ["d.txt"])[0], t);
+  const part = applySelection([t, plain], ["d.txt#2. женский род", "p.txt"]);
+  assert.equal(part.length, 2);
+  assert.ok(part[0].partial);
+  assert.deepEqual(part[0].items.map((it) => it.line), [9, 10]);
+  assert.deepEqual(part[0].subtopics.map((st) => st.title), ["2. женский род"]);
+  assert.equal(t.items.length, 4); // исходная тема не изменилась
+  assert.deepEqual(applySelection([t], ["d.txt#нет такой"]), []);
+
+  // в выборе одного слова темы с @word-practice: off не участвуют
+  assert.deepEqual(listLemmas([t, plain]).map((g) => g.topic.file), ["p.txt"]);
+});
+
+test("подтемы: ошибки", () => {
+  const t = parseTopic("A {x}.\n@subtopic: S\n@subtopic: S\nB {y}.\n@subtopic: Пустая\n@subtopic:", "e.txt");
+  assert.deepEqual(t.errors.map((e) => e.line), [3, 6, 1, 5]);
+  assert.deepEqual(t.items.map((it) => it.line), [4]); // задание без подтемы отброшено
 });
 
 test("файлы базы data/ разбираются без ошибок", () => {

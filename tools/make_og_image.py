@@ -63,7 +63,7 @@ def main():
         d.text((cx + w / 2, 509), word, font=chip, fill=TEXT, anchor="mm")
         cx += w + 18
 
-    d.text((x0, 578), "местоимения · числительные · прилагательные", font=font("Regular", 28), fill=MUTED)
+    d.text((x0, 578), "существительные · прилагательные · местоимения · числительные", font=font("Regular", 28), fill=MUTED)
     img.save(OUT, optimize=True)
     print(f"{OUT} ({OUT.stat().st_size // 1024} КБ)")
 

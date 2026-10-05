@@ -28,12 +28,12 @@
 
 | Падеж | м. р. | ж. р. | м. р. мн. ч. | ж. р. мн. ч. |
 |---|---|---|---|---|
-| Vardininkas (kas?) | kuris | kuri | kurie | kurios |
-| Kilmininkas (ko?) | kurio | kurios | kurių | kurių |
-| Naudininkas (kam?) | kuriam | kuriai | kuriems | kurioms |
-| Galininkas (ką?) | kurį | kurią | kuriuos | kurias |
-| Įnagininkas (kuo?) | kuriuo | kuria | kuriais | kuriomis |
-| Vietininkas (kur?) | kuriame | kurioje | kuriuose | kuriose |
+| Vardininkas (им., kas?) | kuris | kuri | kurie | kurios |
+| Kilmininkas (род., ko?) | kurio | kurios | kurių | kurių |
+| Naudininkas (дат., kam?) | kuriam | kuriai | kuriems | kurioms |
+| Galininkas (вин., ką?) | kurį | kurią | kuriuos | kurias |
+| Įnagininkas (твор., kuo?) | kuriuo | kuria | kuriais | kuriomis |
+| Vietininkas (местн., kur?) | kuriame | kurioje | kuriuose | kuriose |
 
 **В придаточном предложении** (*namas, kuriame gyvenu* — «дом, в котором я живу»):
 - **род и число** *kuris* берёт у слова, к которому относится: *namas* → kuris, *knyga* → kuri, *vaikai* → kurie;
@@ -62,12 +62,12 @@
 
 | Падеж | м. р. | ж. р. | м. р. мн. ч. | ж. р. мн. ч. |
 |---|---|---|---|---|
-| Vard. | koks | kokia | kokie | kokios |
-| Kilm. | kokio | kokios | kokių | kokių |
-| Naud. | kokiam | kokiai | kokiems | kokioms |
-| Gal. | kokį | kokią | kokius | kokias |
-| Įnag. | kokiu | kokia | kokiais | kokiomis |
-| Viet. | kokiame | kokioje | kokiuose | kokiose |
+| Vard. (им.) | koks | kokia | kokie | kokios |
+| Kilm. (род.) | kokio | kokios | kokių | kokių |
+| Naud. (дат.) | kokiam | kokiai | kokiems | kokioms |
+| Gal. (вин.) | kokį | kokią | kokius | kokias |
+| Įnag. (твор.) | kokiu | kokia | kokiais | kokiomis |
+| Viet. (местн.) | kokiame | kokioje | kokiuose | kokiose |
 
 - **toks** — такой: Niekada nemačiau **tokio** gražaus ežero.
 - **joks** — никакой; почти всегда с отрицанием, поэтому чаще всего в родительном: Neturiu **jokio** noro. Nėra **jokių** problemų.
@@ -76,12 +76,12 @@
 
 | Падеж | м. р. | ж. р. | м. р. мн. ч. | ж. р. мн. ч. |
 |---|---|---|---|---|
-| Vard. | pats | pati | **patys** | pačios |
-| Kilm. | **paties** | pačios | pačių | pačių |
-| Naud. | pačiam | pačiai | **patiems** | pačioms |
-| Gal. | **patį** | pačią | pačius | pačias |
-| Įnag. | pačiu | pačia | pačiais | pačiomis |
-| Viet. | pačiame | pačioje | pačiuose | pačiose |
+| Vard. (им.) | pats | pati | **patys** | pačios |
+| Kilm. (род.) | **paties** | pačios | pačių | pačių |
+| Naud. (дат.) | pačiam | pačiai | **patiems** | pačioms |
+| Gal. (вин.) | **patį** | pačią | pačius | pačias |
+| Įnag. (твор.) | pačiu | pačia | pačiais | pačiomis |
+| Viet. (местн.) | pačiame | pačioje | pačiuose | pačiose |
 
 Жирным выделены формы, которые чаще всего путают.
 
@@ -102,35 +102,39 @@
 
 | Падеж | šis | tas | anas | kitas |
 |---|---|---|---|---|
-| Vard. | šis | tas | anas | kitas |
-| Kilm. | šio | to | ano | kito |
-| Naud. | šiam | tam | anam | kitam |
-| Gal. | šį | tą | aną | kitą |
-| Įnag. | šiuo | tuo | anuo | **kitu** |
-| Viet. | šiame | tame | aname | kitame |
-| Vard. мн. | šie | tie | anie | **kiti** |
-| Kilm. мн. | šių | tų | anų | kitų |
-| Naud. мн. | šiems | tiems | aniems | kitiems |
-| Gal. мн. | šiuos | tuos | anuos | **kitus** |
-| Įnag. мн. | šiais | tais | anais | kitais |
-| Viet. мн. | šiuose | tuose | anuose | kituose |
+| **ед. ч.** | | | | |
+| Vard. (им.) | šis | tas | anas | kitas |
+| Kilm. (род.) | šio | to | ano | kito |
+| Naud. (дат.) | šiam | tam | anam | kitam |
+| Gal. (вин.) | šį | tą | aną | kitą |
+| Įnag. (твор.) | šiuo | tuo | anuo | **kitu** |
+| Viet. (местн.) | šiame | tame | aname | kitame |
+| **мн. ч.** | | | | |
+| Vard. (им.) | šie | tie | anie | **kiti** |
+| Kilm. (род.) | šių | tų | anų | kitų |
+| Naud. (дат.) | šiems | tiems | aniems | kitiems |
+| Gal. (вин.) | šiuos | tuos | anuos | **kitus** |
+| Įnag. (твор.) | šiais | tais | anais | kitais |
+| Viet. (местн.) | šiuose | tuose | anuose | kituose |
 
 ### Женский род
 
 | Падеж | ši | ta | ana | kita |
 |---|---|---|---|---|
-| Vard. | ši | ta | ana | kita |
-| Kilm. | šios | tos | anos | kitos |
-| Naud. | šiai | tai | anai | kitai |
-| Gal. | šią | tą | aną | kitą |
-| Įnag. | šia | ta | ana | kita |
-| Viet. | šioje | toje | anoje | kitoje |
-| Vard. мн. | šios | tos | anos | kitos |
-| Kilm. мн. | šių | tų | anų | kitų |
-| Naud. мн. | šioms | toms | anoms | kitoms |
-| Gal. мн. | šias | tas | anas | kitas |
-| Įnag. мн. | šiomis | tomis | anomis | kitomis |
-| Viet. мн. | šiose | tose | anose | kitose |
+| **ед. ч.** | | | | |
+| Vard. (им.) | ši | ta | ana | kita |
+| Kilm. (род.) | šios | tos | anos | kitos |
+| Naud. (дат.) | šiai | tai | anai | kitai |
+| Gal. (вин.) | šią | tą | aną | kitą |
+| Įnag. (твор.) | šia | ta | ana | kita |
+| Viet. (местн.) | šioje | toje | anoje | kitoje |
+| **мн. ч.** | | | | |
+| Vard. (им.) | šios | tos | anos | kitos |
+| Kilm. (род.) | šių | tų | anų | kitų |
+| Naud. (дат.) | šioms | toms | anoms | kitoms |
+| Gal. (вин.) | šias | tas | anas | kitas |
+| Įnag. (твор.) | šiomis | tomis | anomis | kitomis |
+| Viet. (местн.) | šiose | tose | anose | kitose |
 
 > Будьте внимательны с омонимами: **tai** — это и дательный падеж *ta* (*tai moteriai* — «той женщине»), и частица «это» (*Tai mano namas*). **Tas** — и именительный мужского рода, и винительный женского во множественном числе (*tas knygas*).
 
@@ -143,12 +147,12 @@
 
 | Падеж | visas | visa | visi | visos |
 |---|---|---|---|---|
-| Vard. | visas | visa | visi | visos |
-| Kilm. | viso | visos | visų | visų |
-| Naud. | visam | visai | visiems | visoms |
-| Gal. | visą | visą | visus | visas |
-| Įnag. | visu | visa | visais | visomis |
-| Viet. | visame | visoje | visuose | visose |
+| Vard. (им.) | visas | visa | visi | visos |
+| Kilm. (род.) | viso | visos | visų | visų |
+| Naud. (дат.) | visam | visai | visiems | visoms |
+| Gal. (вин.) | visą | visą | visus | visas |
+| Įnag. (твор.) | visu | visa | visais | visomis |
+| Viet. (местн.) | visame | visoje | visuose | visose |
 
 - **Visą** dieną lijo. Pasakyk **visiems** draugams. **Visoje** Lietuvoje šilta.
 - **kiekvienas** обычно в единственном числе: **Kiekvieną** rytą bėgioju. **Kiekviename** kambaryje yra langas.

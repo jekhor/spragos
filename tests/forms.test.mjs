@@ -1,12 +1,13 @@
 // Проверка базы заданий: каждый ответ — существующая форма своей подсказки-леммы.
-// Леммы, которых нет в tests/paradigms.mjs (например, существительные и глаголы), пропускаются.
+// Леммы, которых нет в tests/paradigms.mjs (например, глаголы), пропускаются.
+// Существительные проверяются по типу склонения: его номер — число в начале заголовка подтемы («1. мужской род…»).
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { parseTopic, itemGaps, normalize } from "../web/js/parser.js";
-import { formsOf, DEMONSTRATIVE_FORMS } from "./paradigms.mjs";
+import { formsOf, nounForms, DEMONSTRATIVE_FORMS } from "./paradigms.mjs";
 
 const DATA = join(dirname(fileURLToPath(import.meta.url)), "..", "data");
 // Доля пропусков, где ответ совпадает с подсказкой (см. MATERIALS_GUIDE.md §4.3): немного — полезно, много — скучно.
@@ -41,6 +42,33 @@ test("парадигмы совпадают со сверенными табли
   assert.ok(!formsOf("didelis").has("dideliai"));
   assert.ok(!formsOf("medinis").has("medini"));
   assert.equal(formsOf("rašyti"), null);
+
+  const noun = (lemma, d, ...forms) => {
+    const set = nounForms(lemma, d);
+    for (const f of forms) assert.ok(set.has(f), `${lemma}: нет формы ${f}`);
+  };
+  // Žingsnis I, приложение «Daiktavardžių linksniavimas»
+  noun("namas", 1, "namo", "namui", "namą", "namu", "name", "namai", "namų", "namams", "namus", "namais", "namuose");
+  noun("kelias", 1, "kelio", "keliui", "kelią", "keliu", "kelyje", "keliai", "kelių", "keliams", "kelius", "keliais", "keliuose");
+  noun("medis", 1, "medžio", "medžiui", "medį", "medžiu", "medyje", "medžiai", "medžių", "medžius", "medžiuose");
+  noun("traukinys", 1, "traukinio", "traukiniui", "traukinį", "traukiniu", "traukinyje", "traukiniai", "traukinių");
+  noun("knyga", 2, "knygos", "knygai", "knygą", "knygoje", "knygų", "knygoms", "knygas", "knygomis", "knygose");
+  noun("bažnyčia", 2, "bažnyčios", "bažnyčiai", "bažnyčią", "bažnyčioje", "bažnyčių", "bažnyčioms", "bažnyčias");
+  noun("klasė", 2, "klasės", "klasei", "klasę", "klase", "klasėje", "klasių", "klasėms", "klases", "klasėmis", "klasėse");
+  noun("šalis", 3, "šalies", "šaliai", "šalį", "šalimi", "šalyje", "šalys", "šalių", "šalims", "šalis", "šalimis", "šalyse");
+  noun("debesis", 3, "debesies", "debesiui", "debesį", "debesimi", "debesyje", "debesys", "debesų", "debesims");
+  noun("dantis", 3, "danties", "dančiui", "dantį", "dantimi", "dantyje", "dantų"); // Langas į lietuvių kalbą
+  noun("turgus", 4, "turgaus", "turgui", "turgų", "turgumi", "turguje", "turgūs", "turgums", "turgus", "turgumis", "turguose");
+  noun("vaisius", 4, "vaisiaus", "vaisiui", "vaisių", "vaisiumi", "vaisiuje", "vaisiai", "vaisiams", "vaisiais", "vaisiuose");
+  noun("žmogus", 4, "žmogaus", "žmogumi", "žmonės", "žmonių", "žmonėms", "žmones", "žmonėmis", "žmonėse");
+  noun("asmuo", 5, "asmens", "asmeniui", "asmenį", "asmeniu", "asmenyje", "asmenys", "asmenų", "asmenims", "asmenis", "asmenimis", "asmenyse");
+  noun("šuo", 5, "šuns", "šuniui", "šunį", "šunimi", "šuniu", "šunyje", "šunys", "šunų");
+  noun("mėnuo", 5, "mėnesio", "mėnesiui", "mėnesį", "mėnesiu", "mėnesyje", "mėnesiai", "mėnesių", "mėnesiuose");
+  noun("sesuo", 5, "sesers", "seseriai", "seserį", "seserimi", "seseria", "seseryje", "seserys", "seserų", "seserims");
+  noun("duktė", 5, "dukters", "dukteriai", "dukterį", "dukterimi", "dukteria", "dukteryje", "dukterys", "dukterų");
+  assert.ok(!nounForms("naktis", 3).has("nakčies"));
+  assert.ok(!nounForms("akmuo", 5).has("akmenimi"));
+  assert.ok(!nounForms("namas", 1).has("namam")); // не прилагательное
 });
 
 for (const file of readdirSync(DATA, { recursive: true }).filter((f) => f.endsWith(".txt"))) {
@@ -50,12 +78,14 @@ for (const file of readdirSync(DATA, { recursive: true }).filter((f) => f.endsWi
     const unknown = new Set();
     let trivial = 0;
     let total = 0;
+    const declension = new Map(topic.subtopics.map((st) => [st.key, Number(st.title.match(/^(\d)\./)?.[1]) || null]));
     for (const item of topic.items) {
+      const decl = declension.get(item.subtopic) ?? null;
       for (const gap of itemGaps(item)) {
         total++;
         if (!gap.hint) continue;
         if (normalize(gap.answers[0]) === normalize(gap.hint)) trivial++;
-        const forms = formsOf(gap.hint);
+        const forms = formsOf(gap.hint, decl);
         if (!forms) {
           unknown.add(gap.hint);
           continue;

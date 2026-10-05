@@ -130,7 +130,88 @@ const NUM_FEMININE = {
   aštuoneri: "aštuonerios", devyneri: "devynerios",
 };
 
-export function formsOf(lemma) {
+// ---------- Существительные ----------
+// Пять типов склонения (linksniuotė), без звательного падежа. Таблицы: Žingsnis I (приложение
+// «Daiktavardžių linksniavimas» и «V linksniuotės daiktavardžiai»), Langas į lietuvių kalbą (приложение),
+// Colloquial Lithuanian (Declension tables).
+
+// č → t, dž → d перед y: kelias → kelyje, svečias → svetyje
+function unsoften(stem) {
+  if (stem.endsWith("dž")) return stem.slice(0, -2) + "d";
+  if (stem.endsWith("č")) return stem.slice(0, -1) + "t";
+  return stem;
+}
+
+const withStem = (stem, endings, soft = true) => endings.map((e) => (soft ? soften(stem, e) : stem) + e);
+
+// III склонение: мужской род (дат. п. ед. ч. -iui), род. п. мн. ч. на -ų вместо -ių
+const NOUN3_MASC = new Set(["dantis", "debesis", "žvėris", "vagis"]);
+const NOUN3_GEN_PL_U = new Set(["ausis", "dantis", "debesis", "naktis", "žąsis", "žuvis"]);
+// V склонение: основа косвенных падежей
+const NOUN5_STEM = { šuo: "šun", sesuo: "seser", duktė: "dukter" };
+
+const NOUN_IRREGULAR = {
+  // mėnuo: основа mėnes- с окончаниями I склонения (Žingsnis I, Colloquial Lithuanian)
+  mėnuo: ["mėnuo", "mėnesio", "mėnesiui", "mėnesį", "mėnesiu", "mėnesyje",
+    "mėnesiai", "mėnesių", "mėnesiams", "mėnesius", "mėnesiais", "mėnesiuose"],
+  // žmogus: ед. ч. — IV склонение, мн. ч. — žmonės (Langas į lietuvių kalbą)
+  žmogus: ["žmogus", "žmogaus", "žmogui", "žmogų", "žmogumi", "žmoguje",
+    "žmonės", "žmonių", "žmonėms", "žmones", "žmonėmis", "žmonėse"],
+};
+
+export function nounForms(lemma, declension) {
+  const l = lemma.toLocaleLowerCase("lt");
+  if (NOUN_IRREGULAR[l]) return new Set(NOUN_IRREGULAR[l]);
+  const cut = (n) => l.slice(0, -n);
+  let forms = null;
+  switch (declension) {
+    case 1:
+      if (l.endsWith("ias")) {
+        const st = cut(3);
+        forms = [...withStem(st, ["ias", "io", "iui", "ią", "iu", "iai", "ių", "iams", "ius", "iais", "iuose"], false), unsoften(st) + "yje"];
+      } else if (l.endsWith("as")) {
+        const st = cut(2);
+        forms = withStem(st, ["as", "o", "ui", "ą", "u", st.endsWith("j") ? "yje" : "e", "ai", "ų", "ams", "us", "ais", "uose"], false);
+      } else if (l.endsWith("is") || l.endsWith("ys")) {
+        const st = cut(2);
+        forms = [l, ...withStem(st, ["io", "iui", "į", "iu", "iai", "ių", "iams", "ius", "iais", "iuose"]), st + "yje"];
+      }
+      break;
+    case 2:
+      if (l.endsWith("ia")) forms = withStem(cut(2), ["ia", "ios", "iai", "ią", "ioje", "ių", "ioms", "ias", "iomis", "iose"], false);
+      else if (l.endsWith("a")) forms = withStem(cut(1), ["a", "os", "ai", "ą", "oje", "ų", "oms", "as", "omis", "ose"], false);
+      else if (l.endsWith("ė")) forms = withStem(cut(1), ["ė", "ės", "ei", "ę", "e", "ėje", "ių", "ėms", "es", "ėmis", "ėse"]);
+      break;
+    case 3:
+      if (l.endsWith("is")) {
+        const st = cut(2);
+        const dat = l === "vagis" ? ["iui", "iai"] : NOUN3_MASC.has(l) ? ["iui"] : ["iai"];
+        // -ies — дифтонг, основа не смягчается: nakties, но nakčiai
+        forms = [st + "ies", ...withStem(st, ["is", ...dat, "į", "imi", "yje", "ys", "ims", "imis", "yse"]),
+          NOUN3_GEN_PL_U.has(l) ? st + "ų" : soften(st, "ių") + "ių"];
+      }
+      break;
+    case 4:
+      if (l.endsWith("ius")) forms = withStem(cut(3), ["ius", "iaus", "iui", "ių", "iumi", "iuje", "iai", "iams", "iais", "iuose"], false);
+      else if (l.endsWith("us")) forms = withStem(cut(2), ["us", "aus", "ui", "ų", "umi", "uje", "ūs", "ums", "umis", "uose"], false);
+      break;
+    case 5: {
+      const st = NOUN5_STEM[l] ?? (l.endsWith("uo") ? cut(2) + "en" : null);
+      if (!st) break;
+      const fem = st.endsWith("er");
+      // твор. п.: sesuo, duktė — -imi и -ia; šuo — -imi и -iu; akmuo, vanduo — только -iu
+      const instr = fem ? ["imi", "ia"] : l === "šuo" ? ["imi", "iu"] : ["iu"];
+      forms = [l, ...withStem(st, ["s", fem ? "iai" : "iui", "į", ...instr, "yje",
+        "ys", "ų", "ims", "is", "imis", "yse"], false)];
+      break;
+    }
+  }
+  return forms ? new Set(forms) : null;
+}
+
+// declension — номер типа склонения существительного (1–5); если задан, лемма считается существительным.
+export function formsOf(lemma, declension = null) {
+  if (declension) return nounForms(lemma, declension);
   const l = lemma.toLocaleLowerCase("lt");
   if (WITH_FEMININE[l]) return new Set([...PRON[l], ...PRON[WITH_FEMININE[l]]]);
   if (NUM_FEMININE[l]) return new Set([...NUM[l], ...NUM[NUM_FEMININE[l]]]);
