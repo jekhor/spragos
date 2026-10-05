@@ -130,6 +130,7 @@ Aš {jai|ji} dažnai skambinu.
 ```
 serve.py            сервер: раздаёт web/ и data/, GET /api/files — список тем и справок
 build.py            сборка статической версии для GitHub Pages (_site/)
+tools/make_og_image.py  картинка предпросмотра ссылки web/og-image.png
 .github/workflows/  тесты и публикация на GitHub Pages
 web/index.html      страница
 web/style.css
