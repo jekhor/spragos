@@ -6,9 +6,10 @@
 @hints: always
 @description: Прилагательные на -as/-a, -us/-i, -is/-ė (didelis), ед. и мн. число. Подсказка — форма м. р. ед. ч.
 
+@subtopic: 1. -as, -a | geras, naujas, senas, mažas
+
 # --- -as / -a ---
 Mama geria {karštą|karštas} arbatą.
-Vaikai žaidžia {žaliame|žalias} parke.
 Prie {seno|senas} namo auga liepa.
 Aš rašau {mėlynu|mėlynas} rašikliu.
 Kalbėjau su {jauna|jaunas} mokytoja.
@@ -21,101 +22,37 @@ Duok vaikui {šilto|šiltas} pieno.
 Mūsų mieste yra daug {aukštų|aukštas} namų.
 Jie gyvena {naujuose|naujas} namuose.
 Vakar kalbėjome apie {naują|naujas} filmą.
-Nusipirkau {žalių|žalias} obuolių.
 Kambarys pilnas {senų|senas} baldų.
-
-# --- -us / -i ---
-Ji nupirko {gražią|gražus} suknelę.
-Mama iškepė {skanų|skanus} pyragą.
-Lietuvoje daug {gražių|gražus} ežerų.
-Mes padėkojome {maloniems|malonus} žmonėms.
-Studentai skaito {įdomias|įdomus} knygas.
-Vakare vaikščiojome {tamsiu|tamsus} mišku.
-Negaliu pakelti {sunkaus|sunkus} lagamino.
-
-# --- -is / -ė, -ias / -ia ---
-Aš gyvenu {dideliame|didelis} mieste.
-Kaimynai turi {didelį|didelis} šunį.
-Sesuo dirba {didelėje|didelis} ligoninėje.
-Pirkau {šviežios|šviežias} duonos.
-
---- Mano miestas
-Gyvenu {nedideliame|nedidelis} mieste prie upės.
-Mieste yra {sena|senas} bažnyčia ir daug {gražių|gražus} namų.
-Vasarą maudomės {švariame|švarus} ežere.
-Žiemą čia būna daug {balto|baltas} sniego.
-Labai myliu savo {mažą|mažas} ir {jaukų|jaukus} miestą.
----
-
---- Gimtadienis
-Vakar buvo mano draugės gimtadienis.
-Aš jai padovanojau {raudoną|raudonas} skarelę ir {įdomią|įdomus} knygą.
-Svečiai valgė {skanius|skanus} pyragus ir gėrė {karštą|karštas} kavą.
-Visi buvo {linksmi|linksmas} ir {laimingi|laimingas}.
----
-
-# ======================================================================
-# Дополнение. Формы проверены по таблицам Colloquial Lithuanian и
-# Complete Lithuanian; часть словосочетаний — из текстов учебников.
-# ======================================================================
 
 # --- Именительный (ж. р. и мн. ч.) ---
 Mano sesuo labai {protinga|protingas}.
 Ši sriuba labai {karšta|karštas}.
-Mūsų virtuvė {nedidelė|nedidelis}, bet {jauki|jaukus}.
 Po ilgo žygio vaikai labai {alkani|alkanas}.
-Obuoliai dar {žali|žalias}.
-Šios gėlės labai {gražios|gražus}.
-Kava per {saldi|saldus}.
-Senamiesčio gatvės {siauros|siauras} ir {tamsios|tamsus}.
 Mano tėvai jau {seni|senas}.
-Šie batai man per {dideli|didelis}.
 Muziejai pirmadieniais {uždari|uždaras}.
-Bilietai į koncertą labai {brangūs|brangus}.
 Vasarą naktys {trumpos|trumpas}, o dienos {ilgos|ilgas}.
 Mano kaimynai labai {draugiški|draugiškas}.
-Duona dar {šviežia|šviežias}.
-Lietuvos ežerai {gilūs|gilus} ir {švarūs|švarus}.
 Jos akys {mėlynos|mėlynas}.
-Ši užduotis labai {sunki|sunkus}.
 Pomidorai jau {raudoni|raudonas}.
-Rytoj bus {sunki|sunkus} diena.
-Kokia {graži|gražus} diena!
 Mūsų mokytoja labai {griežta|griežtas}.
-Vaikai labai {smalsūs|smalsus}.
 Po lietaus mano batai {purvini|purvinas}.
-Rugsėjo vakarai jau {vėsūs|vėsus}.
 Žiemą šie keliai {pavojingi|pavojingas}.
-Naktį gatvės {tuščios|tuščias}.
 Bandelės dar {šiltos|šiltas}, ką tik iškeptos.
-Šie klausimai labai {svarbūs|svarbus}.
-Mano senelė — {sveika|sveikas} ir {stipri|stiprus}.
 {Mieli|mielas} draugai, sveiki atvykę!
 
 # --- Родительный ---
 Prašyčiau {juodos|juodas} kavos be cukraus.
 Įpilk man {šalto|šaltas} vandens.
-Turguje nusipirkau {šviežių|šviežias} daržovių.
-Pyragui reikės {rūgščių|rūgštus} obuolių.
 Šią savaitę neturiu {laisvo|laisvas} laiko.
-Prie {didelio|didelis} ežero stovi mūsų sodyba.
-Šalia {gražaus|gražus} parko yra mokykla.
 Tai {jauno|jaunas} dailininko paveikslas.
 Nemėgstu {ilgų|ilgas} kelionių.
-Vaikai bijo {tamsaus|tamsus} miško.
 Jis neturi nė vieno {gero|geras} draugo.
-Ieškau {pigaus|pigus} buto centre.
-Visi laukiame {gražios|gražus} vasaros.
 Kaimas stovi prie {mažos|mažas} upės.
-Nusipirkau kilogramą {saldžių|saldus} vyšnių.
 Pasaulyje daug {laimingų|laimingas} žmonių.
 Išgerk {karštos|karštas} arbatos su medumi.
-Neturiu {švarių|švarus} marškinių.
 Iš {senų|senas} drabužių mama pasiuvo lėlę.
-Šiame restorane nėra {aštrių|aštrus} patiekalų.
 {Juodos|juodas} katės aš nebijau.
 Nemėgstu {šaltų|šaltas} žiemų.
-Vaikai bijo {didelių|didelis} šunų.
 Iš {tolimų|tolimas} šalių atvyko svečiai.
 Ant {plono|plonas} ledo eiti pavojinga.
 Nuo {aukšto|aukštas} kalno matyti visas miestas.
@@ -125,9 +62,6 @@ Po {ilgos|ilgas} kelionės visi buvo pavargę.
 Už {aukštos|aukštas} tvoros loja šuo.
 Šalia {senos|senas} bažnyčios yra kavinė.
 Ant {balto|baltas} sniego matyti pėdsakai.
-Paragavome {vietinio|vietinis} alaus.
-Muziejuje pamatėme {auksinių|auksinis} papuošalų.
-Kambarys pilnas {šviežių|šviežias} gėlių.
 
 # --- Дательный ---
 Padovanojau {jaunam|jaunas} kaimynui knygą.
@@ -140,10 +74,7 @@ Daviau duonos {alkanam|alkanas} šuniui.
 Šypsokitės {liūdniems|liūdnas} žmonėms.
 Šie batai netinka {ilgiems|ilgas} pasivaikščiojimams.
 Ji dažnai rašo {senoms|senas} draugėms.
-Šis butas tinka {didelei|didelis} šeimai.
 Restoranas skirtas {turtingiems|turtingas} turistams.
-Ši knyga patiks {smalsiems|smalsus} skaitytojams.
-Atsakiau {mandagiam|mandagus} pardavėjui.
 Ši knyga skirta {jauniems|jaunas} skaitytojams.
 Pasiūlykite {alkaniems|alkanas} svečiams sriubos.
 Vaikai padėjo {senam|senas} kaimynui.
@@ -152,136 +83,66 @@ Ačiū {mieloms|mielas} kolegėms už pagalbą.
 # --- Винительный ---
 Nusipirkau {raudoną|raudonas} paltą.
 Šiandien ji vilki {baltą|baltas} suknelę.
-Mes nuomojamės {didelį|didelis} butą.
 Turime {mažą|mažas} sodą už miesto.
-Jis turi {gražų|gražus} balsą.
 Mama nupirko {naujus|naujas} batus.
-Mėgstu {aštrius|aštrus} patiekalus.
-Vakar matėme labai {įdomų|įdomus} filmą.
-Vaikai mėgsta {saldžius|saldus} pyragus.
 Vakar gavau {ilgą|ilgas} laišką iš draugo.
-Atidaryk {plačius|platus} vartus.
-Nusipirkome {medinį|medinis} stalą.
-Ji turi {ilgus|ilgas} {šviesius|šviesus} plaukus.
 Senelis papasakojo {linksmą|linksmas} istoriją.
-Išsirinkau {pigų|pigus} telefoną.
-Pirmadienį rašysime {svarbų|svarbus} egzaminą.
 Mano brolis gavo {gerą|geras} darbą.
 Mes turime {draugišką|draugiškas} šunį.
 Ar matai tą {juodą|juodas} katę?
-Ji pagamino {skanius|skanus} pietus.
 Pasiimk {šiltą|šiltas} kepurę.
-Per gimtadienį gavau {auksinį|auksinis} žiedą.
 Vaikas nupiešė {mėlyną|mėlynas} dangų ir {geltoną|geltonas} saulę.
-Mėgstu {sūrius|sūrus} riešutus.
-Mama verda {skanią|skanus} sriubą.
 Nusipirkau {pilką|pilkas} megztinį.
 Senelis turi {baltą|baltas} barzdą.
 Žiemą nešioju {storus|storas} megztinius.
 Šiandien gavau {liūdną|liūdnas} žinią.
 Ji papasakojo {juokingą|juokingas} istoriją.
 Šuo pabėgo per {atvirus|atviras} vartus.
-Mes mėgstame {ramius|ramus} vakarus namuose.
-Kur pirkai tokius {gražius|gražus} batus?
-Duok man {aštrų|aštrus} peilį.
 Ji nupirko sūnui {mėlynus|mėlynas} marškinius.
-Kalbėjome apie {svarbius|svarbus} dalykus.
 Svajoju apie {šiltus|šiltas} kraštus.
-Visada pasakoju draugams apie {gražią|gražus} Lietuvos gamtą.
-Grįžau namo {vėlų|vėlus} vakarą.
 Visą {šaltą|šaltas} žiemą sėdėjome namie.
-Kiekvieną {gražią|gražus} dieną einame pasivaikščioti.
-{Paskutinį|paskutinis} kartą mačiau jį pernai.
 
 # --- Творительный ---
 Į darbą važiuoju {nauju|naujas} automobiliu.
-Laišką parašiau {žaliu|žalias} pieštuku.
 Vakar kalbėjausi su {jaunu|jaunas} gydytoju.
-Susipažinau su {malonia|malonus} mergina.
 Vaikai žaidžia su {mažais|mažas} šuniukais.
-Mergaitė mėgsta puoštis {gražiomis|gražus} suknelėmis.
 Važiavome {siauru|siauras} keliu.
 Mama didžiuojasi {protingu|protingas} sūnumi.
-Ėjome {plačia|platus} gatve.
-Domiuosi {senovine|senovinis} architektūra.
-Ji grįžo su {sunkiu|sunkus} lagaminu.
 Salė papuošta {spalvotais|spalvotas} balionais.
 Plaukėme {mažu|mažas} laiveliu.
 Su {geromis|geras} draugėmis visada smagu.
-Šioje laboratorijoje dirbama su {modernia|modernus} įranga.
 Nupirkau dukrai lėlę su {ilgais|ilgas} plaukais.
 Rūpinkimės {vienišais|vienišas} senoliais.
 Ji visada vaikšto su {raudona|raudonas} kepure.
 Šis restoranas garsus {lietuviškais|lietuviškas} patiekalais.
 Su {naujais|naujas} kaimynais dar nesusipažinau.
-Mėgstu vaikščioti {tyliomis|tylus} gatvelėmis.
 Žaidėme su {linksmais|linksmas} vaikais.
-Ji rašo {gražiu|gražus} braižu.
-Sumokėjau {dideliu|didelis} banknotu.
 {Juodu|juodas} automobiliu atvažiavo svečias.
-Ši vieta garsi {gražiais|gražus} paplūdimiais.
-Kalbėjausi su {vietiniais|vietinis} gyventojais.
 
 # --- Местный ---
-Mes gyvename {šviesiame|šviesus} bute.
-Tėvas dirba {tarptautinėje|tarptautinis} įmonėje.
-Žuvys plaukioja {švariame|švarus} vandenyje.
 Vaikai maudosi {šiltoje|šiltas} jūroje.
 Užaugau {mažame|mažas} miestelyje.
-Mes sėdėjome {jaukioje|jaukus} kavinėje.
 Šiuose {senuose|senas} namuose gyveno mano seneliai.
 Pietavome {kiniškame|kiniškas} restorane.
-Grybai auga {tamsiuose|tamsus} miškuose.
 Vaikas miega {mažoje|mažas} lovytėje.
 Žiemą dirbame {šiltose|šiltas} patalpose.
-Atostogavome {gražiose|gražus} vietose.
-Apie tai rašoma {paskutiniame|paskutinis} puslapyje.
 Mūsų mokykla yra {senoje|senas} gatvėje.
-Vaikai maudėsi {plačioje|platus} upėje.
-Gyvenome {mediniame|medinis} name.
-Apie tai rašė {vietiniame|vietinis} laikraštyje.
 Jie gyvena {turtingame|turtingas} rajone.
 {Raudonose|raudonas} vazose stovi tulpės.
-Vaikai žaidžia {dideliame|didelis} kieme.
 
 # --- Ещё задания ---
 Ant stalo guli {storos|storas} knygos.
 Kieme žaidžia {maži|mažas} vaikai.
-Mūsų mieste daug {žalių|žalias} parkų.
-Prie {didelio|didelis} stalo susėdo visa šeima.
 Jie gyvena {aukštuose|aukštas} namuose.
-Ji gyvena {gražiame|gražus} name prie jūros.
-{Paskutinė|paskutinis} pamoka baigiasi trečią valandą.
-Šie obuoliai labai {rūgštūs|rūgštus}.
-Ši arbata per {karti|kartus}.
 Šiandien jūra labai {šalta|šaltas}.
-Mano močiutė — labai {maloni|malonus} moteris.
 Prie namo stovi {nauja|naujas} mašina.
-Ar šie marškiniai {švarūs|švarus}?
-Kambariai {šviesūs|šviesus} ir {erdvūs|erdvus}.
-Tavo planai labai {įdomūs|įdomus}.
 Nusipirkau {lengvą|lengvas} striukę.
-Šie lagaminai per {sunkūs|sunkus}.
-Ji nešioja {didelius|didelis} akinius.
-Mes ieškome {ramios|ramus} vietos atostogoms.
-Po {sunkių|sunkus} metų pagaliau atostogos!
 Vaikams reikia {sveiko|sveikas} maisto.
-Gydytojas patarė valgyti {šviežius|šviežias} vaisius.
 Ji dirba {mažoje|mažas} parduotuvėje.
 Su {senu|senas} draugu susitikau kavinėje.
 Kiemą puošia {aukštos|aukštas} pušys.
-Mano dukra turi {žalią|žalias} dviratį.
-Prie jūros pūtė {stiprūs|stiprus} vėjai.
 Šie bateliai pagaminti iš {minkštos|minkštas} odos.
-Gyvename {ramioje|ramus} gatvėje.
 Į Kauną važiavome {greitu|greitas} traukiniu.
-Ji kalba {tyliu|tylus} balsu.
-
-# ======================================================================
-# Дополнение до ~50 примеров на прилагательные-образцы каждого типа:
-# geras, naujas (-as), žalias, šviežias (-ias), gražus, saldus (-us),
-# didelis, medinis (-is).
-# ======================================================================
 
 # --- geras ---
 Tai {gera|geras} idėja!
@@ -377,6 +238,38 @@ Kalbėjome apie {naujus|naujas} planus.
 {Nauja|naujas} mada — ilgi paltai.
 {Naujomis|naujas} gatvėmis važiuoti malonu.
 
+# --- Ответ совпадает с подсказкой: здесь нужна начальная форма ---
+Mano tėtis — labai {geras|geras} žmogus.
+Nusipirkau {geras|geras} pirštines.
+Mūsų {naujas|naujas} namas labai šviesus.
+Nusipirkau {naujas|naujas} kelnes.
+
+@subtopic: 2. -ias, -ia | žalias, šviežias, tuščias
+
+# --- -as / -a ---
+Vaikai žaidžia {žaliame|žalias} parke.
+Nusipirkau {žalių|žalias} obuolių.
+
+# --- -is / -ė, -ias / -ia ---
+Pirkau {šviežios|šviežias} duonos.
+
+# --- Именительный (ж. р. и мн. ч.) ---
+Obuoliai dar {žali|žalias}.
+Duona dar {šviežia|šviežias}.
+Naktį gatvės {tuščios|tuščias}.
+
+# --- Родительный ---
+Turguje nusipirkau {šviežių|šviežias} daržovių.
+Kambarys pilnas {šviežių|šviežias} gėlių.
+
+# --- Творительный ---
+Laišką parašiau {žaliu|žalias} pieštuku.
+
+# --- Ещё задания ---
+Mūsų mieste daug {žalių|žalias} parkų.
+Gydytojas patarė valgyti {šviežius|šviežias} vaisius.
+Mano dukra turi {žalią|žalias} dviratį.
+
 # --- žalias ---
 Mėgstu {žalią|žalias} arbatą.
 Pavasarį medžiai {žali|žalias}.
@@ -468,6 +361,101 @@ Kiemas nuklotas {šviežiu|šviežias} sniegu.
 Į salotas dėk tik {šviežius|šviežias} lapus.
 Prie {šviežios|šviežias} duonos tinka sviestas.
 
+# --- Ответ совпадает с подсказкой: здесь нужна начальная форма ---
+Šis obuolys dar {žalias|žalias}.
+Pasiėmiau {žalias|žalias} pirštines.
+Pienas {šviežias|šviežias}, ką tik pirktas.
+Nupirkau {šviežias|šviežias} bandeles.
+
+@subtopic: 3. -us, -i | gražus, saldus, platus, skanus
+
+# --- -us / -i ---
+Ji nupirko {gražią|gražus} suknelę.
+Mama iškepė {skanų|skanus} pyragą.
+Lietuvoje daug {gražių|gražus} ežerų.
+Mes padėkojome {maloniems|malonus} žmonėms.
+Studentai skaito {įdomias|įdomus} knygas.
+Vakare vaikščiojome {tamsiu|tamsus} mišku.
+Negaliu pakelti {sunkaus|sunkus} lagamino.
+
+# --- Именительный (ж. р. и мн. ч.) ---
+Šios gėlės labai {gražios|gražus}.
+Kava per {saldi|saldus}.
+Bilietai į koncertą labai {brangūs|brangus}.
+Lietuvos ežerai {gilūs|gilus} ir {švarūs|švarus}.
+Ši užduotis labai {sunki|sunkus}.
+Rytoj bus {sunki|sunkus} diena.
+Kokia {graži|gražus} diena!
+Vaikai labai {smalsūs|smalsus}.
+Rugsėjo vakarai jau {vėsūs|vėsus}.
+Šie klausimai labai {svarbūs|svarbus}.
+
+# --- Родительный ---
+Pyragui reikės {rūgščių|rūgštus} obuolių.
+Šalia {gražaus|gražus} parko yra mokykla.
+Vaikai bijo {tamsaus|tamsus} miško.
+Ieškau {pigaus|pigus} buto centre.
+Visi laukiame {gražios|gražus} vasaros.
+Nusipirkau kilogramą {saldžių|saldus} vyšnių.
+Neturiu {švarių|švarus} marškinių.
+Šiame restorane nėra {aštrių|aštrus} patiekalų.
+
+# --- Дательный ---
+Ši knyga patiks {smalsiems|smalsus} skaitytojams.
+Atsakiau {mandagiam|mandagus} pardavėjui.
+
+# --- Винительный ---
+Jis turi {gražų|gražus} balsą.
+Mėgstu {aštrius|aštrus} patiekalus.
+Vakar matėme labai {įdomų|įdomus} filmą.
+Vaikai mėgsta {saldžius|saldus} pyragus.
+Atidaryk {plačius|platus} vartus.
+Išsirinkau {pigų|pigus} telefoną.
+Pirmadienį rašysime {svarbų|svarbus} egzaminą.
+Ji pagamino {skanius|skanus} pietus.
+Mėgstu {sūrius|sūrus} riešutus.
+Mama verda {skanią|skanus} sriubą.
+Mes mėgstame {ramius|ramus} vakarus namuose.
+Kur pirkai tokius {gražius|gražus} batus?
+Duok man {aštrų|aštrus} peilį.
+Kalbėjome apie {svarbius|svarbus} dalykus.
+Visada pasakoju draugams apie {gražią|gražus} Lietuvos gamtą.
+Grįžau namo {vėlų|vėlus} vakarą.
+Kiekvieną {gražią|gražus} dieną einame pasivaikščioti.
+
+# --- Творительный ---
+Susipažinau su {malonia|malonus} mergina.
+Mergaitė mėgsta puoštis {gražiomis|gražus} suknelėmis.
+Ėjome {plačia|platus} gatve.
+Ji grįžo su {sunkiu|sunkus} lagaminu.
+Šioje laboratorijoje dirbama su {modernia|modernus} įranga.
+Mėgstu vaikščioti {tyliomis|tylus} gatvelėmis.
+Ji rašo {gražiu|gražus} braižu.
+Ši vieta garsi {gražiais|gražus} paplūdimiais.
+
+# --- Местный ---
+Mes gyvename {šviesiame|šviesus} bute.
+Žuvys plaukioja {švariame|švarus} vandenyje.
+Mes sėdėjome {jaukioje|jaukus} kavinėje.
+Grybai auga {tamsiuose|tamsus} miškuose.
+Atostogavome {gražiose|gražus} vietose.
+Vaikai maudėsi {plačioje|platus} upėje.
+
+# --- Ещё задания ---
+Ji gyvena {gražiame|gražus} name prie jūros.
+Šie obuoliai labai {rūgštūs|rūgštus}.
+Ši arbata per {karti|kartus}.
+Mano močiutė — labai {maloni|malonus} moteris.
+Ar šie marškiniai {švarūs|švarus}?
+Kambariai {šviesūs|šviesus} ir {erdvūs|erdvus}.
+Tavo planai labai {įdomūs|įdomus}.
+Šie lagaminai per {sunkūs|sunkus}.
+Mes ieškome {ramios|ramus} vietos atostogoms.
+Po {sunkių|sunkus} metų pagaliau atostogos!
+Prie jūros pūtė {stiprūs|stiprus} vėjai.
+Gyvename {ramioje|ramus} gatvėje.
+Ji kalba {tyliu|tylus} balsu.
+
 # --- gražus ---
 Tavo sesuo labai {graži|gražus}.
 Gyvename {gražiame|gražus} mieste.
@@ -546,6 +534,54 @@ Vaikams nupirkome {saldžių|saldus} sausainių.
 Močiutė kepa {saldų|saldus} obuolių pyragą.
 Šiai {saldžiai|saldus} bandelei reikia daugiau cukraus.
 Rudenį moliūgai būna {saldūs|saldus}.
+
+# --- Ответ совпадает с подсказкой: здесь нужна начальная форма ---
+Koks {gražus|gražus} vakaras!
+Vilnius — labai {gražus|gražus} miestas.
+Šis arbūzas labai {saldus|saldus}.
+Medus {saldus|saldus} ir kvapnus.
+
+@subtopic: 4. -is, -ė | didelis, medinis, vietinis
+
+# --- -is / -ė, -ias / -ia ---
+Aš gyvenu {dideliame|didelis} mieste.
+Kaimynai turi {didelį|didelis} šunį.
+Sesuo dirba {didelėje|didelis} ligoninėje.
+
+# --- Именительный (ж. р. и мн. ч.) ---
+Šie batai man per {dideli|didelis}.
+
+# --- Родительный ---
+Prie {didelio|didelis} ežero stovi mūsų sodyba.
+Vaikai bijo {didelių|didelis} šunų.
+Paragavome {vietinio|vietinis} alaus.
+Muziejuje pamatėme {auksinių|auksinis} papuošalų.
+
+# --- Дательный ---
+Šis butas tinka {didelei|didelis} šeimai.
+
+# --- Винительный ---
+Mes nuomojamės {didelį|didelis} butą.
+Nusipirkome {medinį|medinis} stalą.
+Per gimtadienį gavau {auksinį|auksinis} žiedą.
+{Paskutinį|paskutinis} kartą mačiau jį pernai.
+
+# --- Творительный ---
+Domiuosi {senovine|senovinis} architektūra.
+Sumokėjau {dideliu|didelis} banknotu.
+Kalbėjausi su {vietiniais|vietinis} gyventojais.
+
+# --- Местный ---
+Tėvas dirba {tarptautinėje|tarptautinis} įmonėje.
+Apie tai rašoma {paskutiniame|paskutinis} puslapyje.
+Gyvenome {mediniame|medinis} name.
+Apie tai rašė {vietiniame|vietinis} laikraštyje.
+Vaikai žaidžia {dideliame|didelis} kieme.
+
+# --- Ещё задания ---
+Prie {didelio|didelis} stalo susėdo visa šeima.
+{Paskutinė|paskutinis} pamoka baigiasi trečią valandą.
+Ji nešioja {didelius|didelis} akinius.
 
 # --- didelis ---
 Mūsų šeima {didelė|didelis}.
@@ -633,22 +669,35 @@ Kieme stovi {mediniai|medinis} suolai.
 Turistai lankė seną {medinę|medinis} bažnyčią.
 
 # --- Ответ совпадает с подсказкой: здесь нужна начальная форма ---
-Mano tėtis — labai {geras|geras} žmogus.
-Nusipirkau {geras|geras} pirštines.
-Mūsų {naujas|naujas} namas labai šviesus.
-Nusipirkau {naujas|naujas} kelnes.
-Šis obuolys dar {žalias|žalias}.
-Pasiėmiau {žalias|žalias} pirštines.
-Pienas {šviežias|šviežias}, ką tik pirktas.
-Nupirkau {šviežias|šviežias} bandeles.
-Koks {gražus|gražus} vakaras!
-Vilnius — labai {gražus|gražus} miestas.
-Šis arbūzas labai {saldus|saldus}.
-Medus {saldus|saldus} ir kvapnus.
 Mūsų kiemas {didelis|didelis}.
 Šis kambarys per {didelis|didelis} vienam žmogui.
 Mūsų namas — {medinis|medinis}.
 Šis senas tiltas — {medinis|medinis}.
+
+@subtopic: 5. Все типы вместе | тексты и предложения с прилагательными разных типов
+
+# --- Именительный (ж. р. и мн. ч.) ---
+Mūsų virtuvė {nedidelė|nedidelis}, bet {jauki|jaukus}.
+Senamiesčio gatvės {siauros|siauras} ir {tamsios|tamsus}.
+Mano senelė — {sveika|sveikas} ir {stipri|stiprus}.
+
+# --- Винительный ---
+Ji turi {ilgus|ilgas} {šviesius|šviesus} plaukus.
+
+--- Mano miestas
+Gyvenu {nedideliame|nedidelis} mieste prie upės.
+Mieste yra {sena|senas} bažnyčia ir daug {gražių|gražus} namų.
+Vasarą maudomės {švariame|švarus} ežere.
+Žiemą čia būna daug {balto|baltas} sniego.
+Labai myliu savo {mažą|mažas} ir {jaukų|jaukus} miestą.
+---
+
+--- Gimtadienis
+Vakar buvo mano draugės gimtadienis.
+Aš jai padovanojau {raudoną|raudonas} skarelę ir {įdomią|įdomus} knygą.
+Svečiai valgė {skanius|skanus} pyragus ir gėrė {karštą|karštas} kavą.
+Visi buvo {linksmi|linksmas} ir {laimingi|laimingas}.
+---
 
 --- Mano butas
 Gyvenu {nedideliame|nedidelis} bute miesto centre.

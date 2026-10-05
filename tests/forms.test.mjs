@@ -1,6 +1,7 @@
 // Проверка базы заданий: каждый ответ — существующая форма своей подсказки-леммы.
 // Леммы, которых нет в tests/paradigms.mjs (например, глаголы), пропускаются.
-// Существительные проверяются по типу склонения: его номер — число в начале заголовка подтемы («1. мужской род…»).
+// Существительные (файлы из NOUN_FILES) проверяются по типу склонения: его номер — число в начале
+// заголовка подтемы («1. мужской род…»). В других темах номера подтем — просто порядок.
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync, readdirSync } from "node:fs";
@@ -12,6 +13,7 @@ import { formsOf, nounForms, DEMONSTRATIVE_FORMS } from "./paradigms.mjs";
 const DATA = join(dirname(fileURLToPath(import.meta.url)), "..", "data");
 // Доля пропусков, где ответ совпадает с подсказкой (см. MATERIALS_GUIDE.md §4.3): немного — полезно, много — скучно.
 const MAX_TRIVIAL_SHARE = 0.1;
+const NOUN_FILES = new Set(["daiktavardziai.txt"]);
 
 test("парадигмы совпадают со сверенными таблицами", () => {
   const has = (lemma, ...forms) => {
@@ -78,7 +80,9 @@ for (const file of readdirSync(DATA, { recursive: true }).filter((f) => f.endsWi
     const unknown = new Set();
     let trivial = 0;
     let total = 0;
-    const declension = new Map(topic.subtopics.map((st) => [st.key, Number(st.title.match(/^(\d)\./)?.[1]) || null]));
+    const declension = new Map(NOUN_FILES.has(file)
+      ? topic.subtopics.map((st) => [st.key, Number(st.title.match(/^(\d)\./)?.[1]) || null])
+      : []);
     for (const item of topic.items) {
       const decl = declension.get(item.subtopic) ?? null;
       for (const gap of itemGaps(item)) {

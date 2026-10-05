@@ -202,7 +202,7 @@ function renderTopicList() {
                   },
                 }, "справка")
               : null,
-            badge(subs.length ? subs.map((st) => st.key) : [t.file]))));
+            badge([t.file, ...subs.map((st) => st.key)])))); // файл — статистика до разбиения на подтемы
       if (subs.length) {
         list.append(
           h("div", { class: "subtopics" },
