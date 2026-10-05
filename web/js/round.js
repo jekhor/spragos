@@ -33,7 +33,7 @@ function pickUnits(pool, target, weightOf, rnd) {
   let total = 0;
   for (const u of order) {
     if (total >= target) break;
-    const n = itemGaps(u.item).length;
+    const n = u.active ?? itemGaps(u.item).length;
     if (total + n > target + slack) continue;
     units.push(u);
     total += n;
@@ -65,27 +65,68 @@ export function countItems(topic) {
 
 /**
  * topics   — выбранные темы (результат parseTopic)
- * settings — { gaps (желаемое число пропусков), kind: "all"|"sentence"|"text", bank: "answers"|"distractors" }
+ * settings — { lemma (необязательно: тренировать одно слово), gaps (желаемое число пропусков), kind: "all"|"sentence"|"text", bank: "answers"|"distractors" }
  * itemErrors — { [itemId]: число ошибок } из статистики
  */
-export function buildRound(topics, settings, itemErrors = {}, rnd = Math.random) {
+// Пропуск «активен», если он относится к выбранному слову (лемме-подсказке) или слово не выбрано.
+export function activeGap(settings) {
+  const lemma = settings.lemma ? normalize(settings.lemma) : null;
+  return (g) => !lemma || (!!g.hint && normalize(g.hint) === lemma);
+}
+
+// Задания, подходящие под настройки (тип и слово), с числом активных пропусков в каждом.
+export function poolFor(topics, settings) {
+  const isActive = activeGap(settings);
   const pool = [];
   for (const topic of topics) {
     for (const item of topic.items) {
-      if (settings.kind === "all" || settings.kind === item.type) pool.push({ topic, item });
+      if (settings.kind !== "all" && settings.kind !== item.type) continue;
+      const active = itemGaps(item).filter(isActive).length;
+      if (active) pool.push({ topic, item, active });
     }
   }
+  return pool;
+}
+
+// Слова (леммы-подсказки) тем с числом пропусков — для выбора «тренировать одно слово».
+export function listLemmas(topics, kind = "all") {
+  return topics.map((topic) => {
+    const byKey = new Map();
+    for (const item of topic.items) {
+      if (kind !== "all" && kind !== item.type) continue;
+      for (const g of itemGaps(item)) {
+        if (!g.hint) continue;
+        const key = normalize(g.hint);
+        const entry = byKey.get(key) || { key, label: g.hint, count: 0 };
+        entry.count++;
+        byKey.set(key, entry);
+      }
+    }
+    const lemmas = [...byKey.values()].sort((a, b) => a.label.localeCompare(b.label, "lt"));
+    return { topic, lemmas };
+  });
+}
+
+export function buildRound(topics, settings, itemErrors = {}, rnd = Math.random) {
+  const isActive = activeGap(settings);
+  const pool = poolFor(topics, settings);
   const weight = (u) => 1 + Math.min(itemErrors[u.item.id] || 0, 5);
   const units = pickUnits(pool, settings.gaps, weight, rnd);
 
   let gapSeq = 0;
   const gaps = [];
   for (const unit of units) {
-    unit.gapIds = [];
+    unit.gapIds = []; // активные пропуски
+    unit.slots = []; // для каждого пропуска задания: id активного пропуска или null (будет показан ответ)
     for (const g of itemGaps(unit.item)) {
+      if (!isActive(g)) {
+        unit.slots.push(null);
+        continue;
+      }
       const id = "g" + gapSeq++;
       gaps.push({ id, unit, ...g, accept: new Set(g.answers.map(normalize)) });
       unit.gapIds.push(id);
+      unit.slots.push(id);
     }
   }
 
@@ -97,7 +138,7 @@ export function buildRound(topics, settings, itemErrors = {}, rnd = Math.random)
     for (const g of gaps) {
       const want = rnd() < 0.3 ? 2 : 1;
       let added = 0;
-      for (const cand of distractorCandidates(g, rnd)) {
+      for (const cand of distractorCandidates(g, rnd, !!settings.lemma)) {
         if (added >= want) break;
         const word = matchCase(cand, g.answers[0]);
         const key = normalize(word);
@@ -113,7 +154,8 @@ export function buildRound(topics, settings, itemErrors = {}, rnd = Math.random)
 }
 
 // Кандидаты в отвлекающие формы для пропуска — в порядке приоритета.
-function distractorCandidates(gap, rnd) {
+// При тренировке одного слова общий список темы не используется: там формы других слов.
+function distractorCandidates(gap, rnd, oneWord = false) {
   const topic = gap.unit.topic;
   const explicit = shuffle(gap.distractors, rnd);
   let sameLemma = [];
@@ -124,7 +166,7 @@ function distractorCandidates(gap, rnd) {
       .filter((g) => g.hint && normalize(g.hint) === lemma)
       .flatMap((g) => g.answers);
   }
-  return [...explicit, ...shuffle(sameLemma, rnd), ...shuffle(topic.distractors, rnd)];
+  return [...explicit, ...shuffle(sameLemma, rnd), ...(oneWord ? [] : shuffle(topic.distractors, rnd))];
 }
 
 export function isCorrect(gap, chipText) {

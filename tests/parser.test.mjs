@@ -4,7 +4,7 @@ import { readFileSync, readdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { parseTopic, parseLine, normalize, itemGaps } from "../web/js/parser.js";
-import { buildRound, isCorrect } from "../web/js/round.js";
+import { buildRound, isCorrect, poolFor, listLemmas } from "../web/js/round.js";
 
 const DATA = join(dirname(fileURLToPath(import.meta.url)), "..", "data");
 
@@ -139,6 +139,31 @@ test("размер раунда считается в пропусках", () =>
   // если подходит только большой текст — берём его целиком
   const r = buildRound([t], { gaps: 3, kind: "text", bank: "answers" }, {}, seeded(1));
   assert.equal(r.gaps.length, 10);
+});
+
+test("тренировка одного слова: только его пропуски, остальные заполнены", () => {
+  const t = parseTopic(
+    ["A {jį|jis} ir {ją|ji}.", "B {jam|jis}.", "C {jai|ji}.", "--- T", "{Jo|jis} {jos|ji} {juo|jis}.", "---"].join("\n"),
+    "t.txt"
+  );
+  t.distractors = ["man", "tau"]; // общий список темы не должен попадать в банк
+  const settings = { gaps: 50, kind: "all", bank: "distractors", lemma: "jis" };
+  const pool = poolFor([t], settings);
+  assert.equal(pool.length, 3); // «C {jai}» не содержит jis
+  assert.equal(pool.reduce((s, u) => s + u.active, 0), 4);
+  const r = buildRound([t], settings, {}, seeded(2));
+  assert.equal(r.gaps.length, 4);
+  assert.ok(r.gaps.every((g) => g.hint === "jis"));
+  for (const u of r.units) {
+    assert.equal(u.slots.length, u.item.paragraphs.flat().filter((x) => x.gap).length);
+    assert.deepEqual(u.slots.filter(Boolean), u.gapIds);
+  }
+  // лишние формы — только формы того же слова
+  for (const c of r.chips.filter((c) => c.distractor)) assert.ok(["jį", "jam", "jo", "juo"].includes(c.text.toLowerCase()));
+
+  const lemmas = listLemmas([t])[0].lemmas;
+  assert.deepEqual(lemmas.map((l) => [l.label, l.count]), [["ji", 3], ["jis", 4]]);
+  assert.deepEqual(listLemmas([t], "sentence")[0].lemmas.map((l) => l.count), [2, 2]);
 });
 
 test("фильтр по типу и проверка ответа", () => {

@@ -1,5 +1,5 @@
-import { parseTopic, itemGaps } from "./parser.js";
-import { buildRound, countItems, isCorrect } from "./round.js";
+import { parseTopic } from "./parser.js";
+import { buildRound, countItems, isCorrect, poolFor, listLemmas } from "./round.js";
 import { enableDragAndDrop } from "./dnd.js";
 import * as store from "./stats.js";
 import { renderMarkdown, markdownTitle, stripTitle } from "./markdown.js";
@@ -11,6 +11,7 @@ const DEFAULT_SETTINGS = {
   bank: "answers",
   hints: true,
   mode: "drag", // "drag" — перетаскивание из банка, "type" — ввод с клавиатуры
+  lemma: "", // тренировать формы одного слова (лемма-подсказка в нормализованном виде) или "" — все слова
 };
 
 const $ = (sel) => document.querySelector(sel);
@@ -225,6 +226,7 @@ function readOptions() {
   s.kind = document.querySelector('input[name="kind"]:checked')?.value || "all";
   s.bank = document.querySelector('input[name="bank"]:checked')?.value || "answers";
   s.mode = document.querySelector('input[name="mode"]:checked')?.value || "drag";
+  s.lemma = $("#opt-lemma").value;
   $("#row-bank").hidden = s.mode === "type";
   saveSettings();
 }
@@ -245,13 +247,30 @@ function selectedTopics() {
   return state.topics.filter((t) => state.settings.topics.includes(t.file));
 }
 
+// Список «Слово»: леммы выбранных тем, сгруппированные по темам.
+function renderLemmaSelect() {
+  const s = state.settings;
+  const groups = listLemmas(selectedTopics(), s.kind).filter((g) => g.lemmas.length);
+  const known = new Set(groups.flatMap((g) => g.lemmas.map((l) => l.key)));
+  if (s.lemma && !known.has(s.lemma)) {
+    s.lemma = ""; // выбранного слова нет в выбранных темах
+    store.saveSettings(s);
+  }
+  const select = $("#opt-lemma");
+  select.replaceChildren(
+    h("option", { value: "" }, "все слова"),
+    ...groups.map((g) =>
+      h("optgroup", { label: g.topic.title },
+        g.lemmas.map((l) => h("option", { value: l.key }, `${l.label} — ${plural(l.count, "пропуск", "пропуска", "пропусков")}`))))
+  );
+  select.value = s.lemma;
+}
+
 function updatePoolInfo() {
-  const kind = state.settings.kind;
-  const items = selectedTopics()
-    .flatMap((t) => t.items)
-    .filter((it) => kind === "all" || it.type === kind);
-  const n = items.length;
-  const gaps = items.reduce((s, it) => s + itemGaps(it).length, 0);
+  renderLemmaSelect();
+  const pool = poolFor(selectedTopics(), state.settings);
+  const n = pool.length;
+  const gaps = pool.reduce((sum, u) => sum + u.active, 0);
   $("#pool-info").textContent = n
     ? `в базе: ${plural(n, "задание", "задания", "заданий")}, ${plural(gaps, "пропуск", "пропуска", "пропусков")}`
     : "выберите хотя бы одну тему";
@@ -281,6 +300,7 @@ function startRound() {
     recorded: false,
     revealed: false,
     topicNames: topics.map((t) => t.title),
+    lemmaLabel: state.settings.lemma ? r.gaps[0]?.hint : "",
   };
   renderRound();
   show("round");
@@ -288,7 +308,7 @@ function startRound() {
 
 function renderRound() {
   const r = state.round;
-  $("#round-topics").textContent = r.topicNames.join(" · ");
+  $("#round-topics").textContent = r.topicNames.join(" · ") + (r.lemmaLabel ? ` · слово «${r.lemmaLabel}»` : "");
   r.refPaths = [...new Set(r.units.map((u) => u.topic.refPath).filter(Boolean))];
   $("#round-ref").hidden = !r.refPaths.length;
 
@@ -319,7 +339,9 @@ function renderRound() {
     const paragraphs = unit.item.paragraphs.map((segs) =>
       h("p", {}, segs.map((s) => {
         if (!s.gap) return s;
-        const gap = r.gapById.get(unit.gapIds[gi++]);
+        const slot = unit.slots[gi++];
+        if (slot == null) return h("span", { class: "given" }, s.answers[0]); // пропуск другого слова — уже заполнен
+        const gap = r.gapById.get(slot);
         const hint = showHint(unit.topic) && gap.hint ? h("span", { class: "hint" }, gap.hint) : null;
         const el = r.mode === "type"
           ? h("span", { class: "gap typed", dataset: { gap: gap.id } },
@@ -712,7 +734,7 @@ async function init() {
     renderTopicList();
     saveSettings();
   });
-  for (const el of document.querySelectorAll(".options input")) el.addEventListener("change", readOptions);
+  for (const el of document.querySelectorAll(".options input, .options select")) el.addEventListener("change", readOptions);
   $("#start").addEventListener("click", startRound);
   $("#check").addEventListener("click", check);
   $("#fix").addEventListener("click", fixMistakes);

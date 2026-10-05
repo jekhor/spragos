@@ -156,6 +156,10 @@ main { max-width: 860px; margin: 0 auto; padding: 16px; }
 }
 .options .row.check { justify-content: flex-start; cursor: pointer; }
 .options .row.check input { accent-color: var(--accent); width: 17px; height: 17px; }
+.options select {
+  max-width: 60%; padding: 5px 8px; font: inherit; color: inherit;
+  background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
+}
 .options input[type="number"] {
   width: 80px; padding: 5px 8px; font: inherit; color: inherit;
   background: var(--bg); border: 1px solid var(--border); border-radius: 8px;
@@ -284,6 +288,9 @@ main { max-width: 860px; margin: 0 auto; padding: 16px; }
 .gap.wrong .slot { border-color: var(--red); border-style: solid; }
 .gap.wrong .chip { background: var(--red-soft); border-color: var(--red); color: var(--red); text-decoration: line-through; }
 .gap.wrong:not(.filled) .slot { background: var(--red-soft); }
+
+/* Пропуск другого слова в режиме «одно слово»: сразу показан ответ */
+.given { font-weight: 600; border-bottom: 1px dotted var(--muted); }
 
 /* Режим ввода с клавиатуры */
 .gap.typed { cursor: text; }
