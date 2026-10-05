@@ -171,6 +171,179 @@ Prie mokyklos stovi daug {dviračių|dviratis}.
 Mano naujo {dviračio|dviratis} ratas sugedo.
 Šie {dviračiai|dviratis} skirti nuomai.
 
+# --- ещё: namas
+Netoli šio {namo|namas} yra autobusų stotelė.
+Ant seno {namo|namas} stogo tupi gandras.
+Iki to {namo|namas} — tik penkios minutės pėsčiomis.
+Naujam {namui|namas} reikia baldų.
+Tam mediniam {namui|namas} reikalingas naujas stogas.
+Kaimynai stato naują dviaukštį {namą|namas}.
+Parodyk man savo naująjį {namą|namas}.
+Pernai pardavėme seną {namą|namas} kaime.
+Seneliai labai didžiuojasi savo nauju {namu|namas}.
+Šiame {name|namas} gyvena dvidešimt šeimų.
+Kokiame {name|namas} tu gyveni?
+Senamiestyje visi {namai|namas} labai seni.
+Mediniai {namai|namas} žiemą šilti.
+Šioje gatvėje nėra naujų {namų|namas}.
+Mūsų kaime — tik dešimt {namų|namas}.
+Užupyje daug senų medinių {namų|namas}.
+Šiems daugiaaukščiams {namams|namas} jau penkiasdešimt metų.
+Naujiems {namams|namas} statyti reikia leidimo.
+Architektas projektuoja modernius {namus|namas}.
+Per audrą vėjas apgadino kelis {namus|namas}.
+Gatvė apstatyta naujais {namais|namas}.
+Domiuosi senais mediniais {namais|namas}.
+Daugiaaukščiuose {namuose|namas} yra liftai.
+Naujuose {namuose|namas} šilta ir šviesu.
+
+# --- ещё: draugas
+Laukiu seno {draugo|draugas} iš Kauno.
+Gavau laišką iš vieno seno {draugo|draugas}.
+Šio {draugo|draugas} nemačiau dešimt metų.
+Paskambink savo geriausiam {draugui|draugas}.
+Padėjau vienam {draugui|draugas} persikraustyti.
+Pakviečiau į svečius naują {draugą|draugas} iš darbo.
+Ar turi gerą {draugą|draugas}?
+Kiekvienas žmogus turėtų turėti bent vieną tikrą {draugą|draugas}.
+Vakar ilgai kalbėjau telefonu su vienu {draugu|draugas}.
+Didžiuojuosi savo geriausiu {draugu|draugas}.
+Mano seni {draugai|draugas} gyvena užsienyje.
+Tikri {draugai|draugas} visada padeda.
+Gimtadienio vakarėlyje buvo dvidešimt {draugų|draugas}.
+Neturiu daug {draugų|draugas} šiame mieste.
+Šeštadienį laukiame kelių {draugų|draugas} iš Rygos.
+Parodžiau nuotraukas visiems savo {draugams|draugas}.
+Abiem mūsų {draugams|draugas} labai patiko Vilnius.
+Pakviesk visus savo {draugus|draugas}.
+Per atostogas aplankiau senus {draugus|draugas}.
+Mėgstu leisti laiką su gerais {draugais|draugas}.
+Džiaugiuosi savo naujais {draugais|draugas}.
+
+# --- ещё: miestas
+Šio {miesto|miestas} centre yra didelis parkas.
+Išvažiavome iš triukšmingo {miesto|miestas} į kaimą.
+Iki artimiausio {miesto|miestas} — dvidešimt kilometrų.
+Kiekvienam dideliam {miestui|miestas} reikia gero viešojo transporto.
+Šis paminklas labai svarbus visam {miestui|miestas}.
+Labai myliu savo gimtąjį {miestą|miestas}.
+Kiekvieną vasarą aplankome kokį nors naują {miestą|miestas}.
+Mes persikėlėme į kitą {miestą|miestas}.
+Visi didžiuojasi savo gimtuoju {miestu|miestas}.
+Šis kaimas virto dideliu {miestu|miestas}.
+Šiame {mieste|miestas} gyvena pusė milijono žmonių.
+Kokiame {mieste|miestas} tu gimei?
+Dideli {miestai|miestas} visada triukšmingi.
+Ryga ir Talinas — gražūs {miestai|miestas}.
+Lietuvoje nėra labai didelių {miestų|miestas}.
+Tai vienas iš seniausių Europos {miestų|miestas}.
+Šis įstatymas taikomas visiems {miestams|miestas}.
+Mažiems {miestams|miestas} trūksta gydytojų.
+Šiais metais aplankėme tris naujus {miestus|miestas}.
+Šis kelias jungia du didelius {miestus|miestas}.
+Domiuosi senovės {miestais|miestas}.
+Lietuva garsėja gražiais senais {miestais|miestas}.
+Dideliuose {miestuose|miestas} oras užterštas.
+Abiejuose {miestuose|miestas} yra universitetai.
+
+# --- ещё: kelias
+Pasiklydome ir neradome {kelio|kelias} atgal.
+Abipus {kelio|kelias} auga pušys.
+Netoli pagrindinio {kelio|kelias} yra degalinė.
+Naujam {keliui|kelias} nutiesti prireiks trejų metų.
+Tam {keliui|kelias} jau penkiasdešimt metų.
+Ar gali parodyti man {kelią|kelias} į centrą?
+Darbininkai taiso seną {kelią|kelias}.
+Pasirinkome ilgesnį, bet gražesnį {kelią|kelias}.
+Ėjome siauru miško {keliu|kelias}.
+Važiavome nauju {keliu|kelias}.
+Šiame {kelyje|kelias} dažnai būna avarijų.
+Siaurame miško {kelyje|kelias} sunku prasilenkti.
+Kaime {keliai|kelias} žvyruoti.
+Šie du {keliai|kelias} susikerta prie miško.
+Šiame žemėlapyje nėra mažų kaimo {kelių|kelias}.
+Mus sustabdė {kelių|kelias} policija.
+Valstybė skiria daug pinigų {keliams|kelias}.
+Visiems šalies {keliams|kelias} reikalingas remontas.
+Žiemą darbininkai valo visus {kelius|kelias} nuo sniego.
+Žemėlapyje pažymėjau du {kelius|kelias} į Klaipėdą.
+Važinėjome siaurais kaimo {keliais|kelias}.
+Džiaugiamės naujais {keliais|kelias}.
+Šlapiuose {keliuose|kelias} reikia važiuoti atsargiai.
+Visuose užmiesčio {keliuose|kelias} greitis ribojamas.
+
+# --- ещё: brolis
+Pasiskolinau dviratį iš jaunesniojo {brolio|brolis}.
+Neturiu nė vieno {brolio|brolis}.
+Laukiu {brolio|brolis} — jis turėtų grįžti septintą.
+Padovanojau {broliui|brolis} knygą — jis labai mėgsta skaityti.
+Jaunesniajam {broliui|brolis} tik penkeri metai.
+Kasdien vedu jaunesnįjį {brolį|brolis} į mokyklą.
+Labai myliu savo vienintelį {brolį|brolis}.
+Sutikau tavo {brolį|brolis} parduotuvėje — jis tave sveikina.
+Didžiuojuosi savo vyresniuoju {broliu|brolis}.
+Mama dažnai lygina mane su vyresniuoju {broliu|brolis}.
+Jonas ir Petras — {broliai|brolis} dvyniai.
+Mano {broliai|brolis} abu aukšti ir stiprūs.
+Kiek turi {brolių|brolis}?
+Iš visų {brolių|brolis} jauniausias — Tomas.
+Abiejų mano {brolių|brolis} vaikai jau lanko mokyklą.
+Tėvai paliko ūkį trims {broliams|brolis}.
+Visiems mano {broliams|brolis} patinka futbolas.
+Pažįstu visus jo {brolius|brolis}.
+Pakviečiau į vestuves abu {brolius|brolis}.
+Vasarą su abiem {broliais|brolis} statėme namelį medyje.
+Mergaitė žaidė kieme su vyresniais {broliais|brolis}.
+
+# --- ещё: medis
+Nuo šio {medžio|medis} nukrito obuolys.
+Prie seno {medžio|medis} stovi suolelis.
+Šis stalas pagamintas iš {medžio|medis}.
+Kiekvienam pasodintam {medžiui|medis} reikia vandens.
+Šiam seniausiam Lietuvos {medžiui|medis} — daugiau nei tūkstantis metų.
+Vaikai įlipo į aukštą {medį|medis}.
+Žaibas trenkė į seną {medį|medis}.
+Kieme nukirtome seną nudžiūvusį {medį|medis}.
+Vasarą ilsimės pavėsyje po plačiu {medžiu|medis}.
+Šiame sename {medyje|medis} gyvena pelėda.
+Kiekviename {medyje|medis} — po inkilą.
+Rudenį {medžiai|medis} pasidaro geltoni.
+Šie seni {medžiai|medis} pasodinti prieš šimtą metų.
+Šiame parke — daugiau nei tūkstantis {medžių|medis}.
+Vėtra išvertė daug {medžių|medis}.
+Jauniems {medžiams|medis} reikia daug vandens.
+Visiems sodo {medžiams|medis} reikia genėjimo.
+Kas pavasarį sodiname naujus {medžius|medis}.
+Vėjas lenkė aukštus {medžius|medis}.
+Kelias apsodintas aukštais {medžiais|medis}.
+Sodyba apsupta senais {medžiais|medis}.
+Senuose {medžiuose|medis} gyvena geniai.
+
+# --- ещё: kambarys
+Išeik iš mano {kambario|kambarys}!
+Šio {kambario|kambarys} langai išeina į kiemą.
+Ieškome nebrangaus {kambario|kambarys} centre.
+Vaikų {kambariui|kambarys} nupirkome naujas lovas.
+Miegamajam {kambariui|kambarys} išsirinkome šviesias užuolaidas.
+Kiekvieną šeštadienį tvarkau savo {kambarį|kambarys}.
+Viešbutyje užsisakėme dvivietį {kambarį|kambarys}.
+Įeik į {kambarį|kambarys} ir atsisėsk.
+Esu labai patenkintas savo nauju {kambariu|kambarys}.
+Dalijuosi vienu {kambariu|kambarys} su seserimi.
+Šiame {kambaryje|kambarys} labai šilta.
+Kokiame {kambaryje|kambarys} miegosi?
+Šiame bute visi {kambariai|kambarys} šviesūs.
+Viešbučio {kambariai|kambarys} buvo švarūs ir jaukūs.
+Kiek {kambarių|kambarys} yra jūsų bute?
+Name nėra laisvų {kambarių|kambarys}.
+Visiems {kambariams|kambarys} reikia naujų langų.
+Abiem vaikų {kambariams|kambarys} nupirkome naujas lempas.
+Išdažėme du {kambarius|kambarys} geltonai.
+Viešbutis siūlo erdvius {kambarius|kambarys}.
+Ieškome buto su trimis {kambariais|kambarys}.
+Abiejuose {kambariuose|kambarys} yra balkonai.
+Mažuose {kambariuose|kambarys} trūksta vietos.
+
 --- Mūsų namas
 Mes gyvename sename mediniame {name|namas} prie miško.
 Name yra keturi {kambariai|kambarys} ir didelė virtuvė.
@@ -303,6 +476,158 @@ Turiu du {dėdes|dėdė} ir vieną tetą.
 Mūsų {klasėje|klasė} mokosi dvidešimt mokinių.
 Šioje mokykloje yra trisdešimt {klasių|klasė}.
 Mūsų {klasė|klasė} — pati draugiškiausia.
+
+# --- ещё: knyga
+Nerandu savo {knygos|knyga} — gal matei ją?
+Šios {knygos|knyga} autorius — garsus rašytojas.
+Savo pirmajai {knygai|knyga} rašytojas skyrė dešimt metų.
+Šiai {knygai|knyga} reikia naujo viršelio.
+Rytoj grąžinsiu šią {knygą|knyga} į biblioteką.
+Kokią {knygą|knyga} dabar skaitai?
+Kurioje {knygoje|knyga} radai šį receptą?
+Naujoje rašytojos {knygoje|knyga} — dvylika apsakymų.
+Mano mėgstamiausios {knygos|knyga} — detektyvai.
+Ant stalo guli trys bibliotekos {knygos|knyga}.
+Šiais metais perskaičiau dvidešimt {knygų|knyga}.
+Šioje bibliotekoje — šimtai tūkstančių {knygų|knyga}.
+Nupirkau naują lentyną {knygoms|knyga}.
+Vaikiškoms {knygoms|knyga} skirta atskira salė.
+Senas {knygas|knyga} atiduodu bibliotekai.
+Ar perskaitei visas šias {knygas|knyga}?
+Lentyna nukrauta storomis {knygomis|knyga}.
+Prekiauju senomis {knygomis|knyga}.
+Senose {knygose|knyga} galima rasti įdomių dalykų.
+Vaikiškose {knygose|knyga} daug paveikslėlių.
+
+# --- ещё: mokykla
+Šios {mokyklos|mokykla} direktorius labai griežtas.
+Grįžęs iš {mokyklos|mokykla}, sūnus iškart sėda prie kompiuterio.
+Netoli mūsų namų nėra jokios {mokyklos|mokykla}.
+Naujai {mokyklai|mokykla} reikia gerų mokytojų.
+Tėvai padovanojo šiai {mokyklai|mokykla} dešimt kompiuterių.
+Baigiau {mokyklą|mokykla} prieš dešimt metų.
+Kurią {mokyklą|mokykla} tu lankei?
+Rugsėjį sūnus pradės lankyti naują {mokyklą|mokykla}.
+Kurioje {mokykloje|mokykla} mokosi tavo dukra?
+Mano mama dirba muzikos {mokykloje|mokykla}.
+Vasarą visos {mokyklos|mokykla} uždarytos.
+Mieste yra dvi muzikos {mokyklos|mokykla}.
+Lietuvoje yra daug gerų {mokyklų|mokykla}.
+Kaimuose uždaroma vis daugiau {mokyklų|mokykla}.
+Visų miesto {mokyklų|mokykla} mokiniai susirinko aikštėje.
+Ministerija skyrė pinigų mažoms kaimo {mokykloms|mokykla}.
+Šis konkursas skirtas muzikos {mokykloms|mokykla}.
+Esu baigęs dvi {mokyklas|mokykla}: bendrojo lavinimo ir muzikos.
+Inspektoriai tikrina visas miesto {mokyklas|mokykla}.
+Mūsų miestas garsėja geromis {mokyklomis|mokykla}.
+Bendradarbiaujame su keliomis užsienio {mokyklomis|mokykla}.
+Lietuvos {mokyklose|mokykla} mokslo metai prasideda rugsėjo pirmąją.
+Kaimo {mokyklose|mokykla} mažai mokinių.
+
+# --- ещё: gatvė
+Kitoje {gatvės|gatvė} pusėje yra vaistinė.
+Pačiame {gatvės|gatvė} gale stovi bažnyčia.
+Mūsų namas stovi prie triukšmingos {gatvės|gatvė}.
+Šiai {gatvei|gatvė} reikia naujo apšvietimo.
+Naujai {gatvei|gatvė} suteiktas poeto vardas.
+Vaikai, niekada nebėkite per {gatvę|gatvė}!
+Išėjome į {gatvę|gatvė} pasivaikščioti.
+Į kurią {gatvę|gatvė} reikia pasukti?
+Važiuokite pagrindine {gatve|gatvė} iki sankryžos.
+Ėjome ilga tiesia {gatve|gatvė}.
+Kurioje {gatvėje|gatvė} gyveni?
+Šioje {gatvėje|gatvė} nėra jokių parduotuvių.
+Po lietaus {gatvės|gatvė} buvo šlapios.
+Šios dvi {gatvės|gatvė} susikerta prie turgaus.
+Vilniuje — daugiau nei tūkstantis {gatvių|gatvė}.
+Dviejų {gatvių|gatvė} sankryžoje įvyko avarija.
+Mūsų mieste niekas nevalo mažų {gatvių|gatvė}.
+Naujoms {gatvėms|gatvė} reikia pavadinimų.
+Senamiesčio {gatvėms|gatvė} būdingas akmenų grindinys.
+Kiemsargiai kiekvieną rytą šluoja visas {gatves|gatvė}.
+Per šventes papuošia pagrindines miesto {gatves|gatvė}.
+Mėgstu vaikščioti tamsiomis vakaro {gatvėmis|gatvė}.
+Važinėjome tuščiomis miesto {gatvėmis|gatvė}.
+Naktį visose {gatvėse|gatvė} tuščia.
+Per šventę miesto {gatvėse|gatvė} grojo muzikantai.
+
+# --- ещё: mergaitė
+Šios mažos {mergaitės|mergaitė} vardas — Ugnė.
+Paklausk tos {mergaitės|mergaitė}, kur stotelė.
+Tos {mergaitės|mergaitė} tėvai — mano kaimynai.
+Šiai {mergaitei|mergaitė} tik šešeri metai.
+Padėk šiai {mergaitei|mergaitė} rasti mamą.
+Mokytoja pagyrė naują {mergaitę|mergaitė} už gerą rašinį.
+Vakarėlyje sutikau labai gražią {mergaitę|mergaitė}.
+Mūsų sūnus draugauja su viena {mergaite|mergaitė} iš klasės.
+Mama didžiuojasi savo protinga {mergaite|mergaitė}.
+Šios dvi {mergaitės|mergaitė} — seserys.
+Kieme žaidžia kelios {mergaitės|mergaitė}.
+Mūsų klasėje daugiau {mergaičių|mergaitė} nei berniukų.
+Šokių būrelį lanko penkiolika {mergaičių|mergaitė}.
+Šis žurnalas skirtas paauglėms {mergaitėms|mergaitė}.
+Abiem {mergaitėms|mergaitė} patiko filmas.
+Berniukai pakvietė visas {mergaites|mergaitė} šokti.
+Treneris pagyrė abi {mergaites|mergaitė}.
+Sūnus nemėgsta žaisti su {mergaitėmis|mergaitė}.
+Mokytoja kalbasi su keliomis {mergaitėmis|mergaitė}.
+
+# --- ещё: bažnyčia
+Prie kaimo {bažnyčios|bažnyčia} stovi senas ąžuolas.
+Šios {bažnyčios|bažnyčia} bokštas — aukščiausias mieste.
+Iki artimiausios {bažnyčios|bažnyčia} — trys kilometrai.
+Šiai {bažnyčiai|bažnyčia} — beveik penki šimtai metų.
+Kaimo žmonės paaukojo pinigų naujai {bažnyčiai|bažnyčia}.
+Kiekvieną sekmadienį močiutė eina į {bažnyčią|bažnyčia}.
+Kurią {bažnyčią|bažnyčia} rekomenduotumėte aplankyti?
+Šią {bažnyčią|bažnyčia} pastatė septynioliktame amžiuje.
+Kurioje {bažnyčioje|bažnyčia} jūs tuokėtės?
+Senoje medinėje {bažnyčioje|bažnyčia} labai šalta.
+Šios dvi {bažnyčios|bažnyčia} pastatytos tame pačiame amžiuje.
+Senamiesčio {bažnyčios|bažnyčia} labai gražios.
+Vilniuje yra daugiau nei keturiasdešimt {bažnyčių|bažnyčia}.
+Iš visų Vilniaus {bažnyčių|bažnyčia} man gražiausia Šv. Onos.
+Medinėms {bažnyčioms|bažnyčia} reikia nuolatinės priežiūros.
+Ši knyga skirta Lietuvos medinėms {bažnyčioms|bažnyčia}.
+Turistai lankė senamiesčio {bažnyčias|bažnyčia}.
+Per ekskursiją aplankėme tris {bažnyčias|bažnyčia}.
+Vilnius garsėja baroko {bažnyčiomis|bažnyčia}.
+Domiuosi senomis medinėmis {bažnyčiomis|bažnyčia}.
+Kaimo {bažnyčiose|bažnyčia} sekmadieniais daug žmonių.
+
+# --- ещё: savaitė
+Kitos {savaitės|savaitė} pradžioje grįšiu.
+Darbą reikia baigti iki šios {savaitės|savaitė} pabaigos.
+Visos {savaitės|savaitė} darbas nuėjo veltui.
+Šiai {savaitei|savaitė} turime daug planų.
+Kitai {savaitei|savaitė} užsisakėme viešbutį.
+Praėjusią {savaitę|savaitė} sirgau.
+Visą {savaitę|savaitė} lijo.
+Kartą per {savaitę|savaitė} einu į baseiną.
+Vienoje {savaitėje|savaitė} — septynios dienos.
+Atostogų {savaitės|savaitė} prabėgo labai greitai.
+Praėjo dvi {savaitės|savaitė}, o atsakymo vis nėra.
+Po dviejų {savaičių|savaitė} vyksiu į Paryžių.
+Kursai truks dvylika {savaičių|savaitė}.
+Kelioms {savaitėms|savaitė} išvažiuoju į kaimą.
+Dviem {savaitėms|savaitė} išsinuomojome namelį prie jūros.
+Ligoninėje praleidau tris {savaites|savaitė}.
+Mokslo metai trunka trisdešimt penkias {savaites|savaitė}.
+Žiemą ištisomis {savaitėmis|savaitė} nesimato saulės.
+Kartais tėtis {savaitėmis|savaitė} negrįžta namo.
+Paskutinėse {savaitėse|savaitė} prieš egzaminą daug mokiausi.
+Pirmosiose mokslo metų {savaitėse|savaitė} mokiniai dar neįpratę prie pamokų.
+
+Kiekvienai {mergaitei|mergaitė} mokytoja padovanojo gėlę.
+Iš kiemo girdėjosi {mergaičių|mergaitė} juokas.
+Ar pažįsti tas dvi {mergaites|mergaitė}?
+Paklausiau mažos {mergaitės|mergaitė}, kuo ji vardu.
+Vestuvės vyks gotikinėje {bažnyčioje|bažnyčia}.
+Prieš {bažnyčią|bažnyčia} stovi paminklas.
+Šalia dviejų senų {bažnyčių|bažnyčia} yra muziejus.
+Pirmąją {savaitę|savaitė} buvo sunku.
+Kiekvienos {savaitės|savaitė} pabaigoje važiuojame į kaimą.
+Per dvi {savaites|savaitė} išmokau groti gitara.
 
 --- Mano močiutė
 Mano {močiutė|močiutė} gyvena mažame kaime prie {upės|upė}.
@@ -440,6 +765,126 @@ Jo {dantys|dantis} balti kaip sniegas.
 Iš abiejų {akių|akis} riedėjo ašaros.
 Visoms Europos {šalims|šalis} reikia švarios energijos.
 
+# --- ещё: šalis
+Kokios {šalies|šalis} pilietis jūs esate?
+Visos {šalies|šalis} gyventojai laukė rinkimų rezultatų.
+Į Lietuvą atvyko svečių iš tolimos {šalies|šalis} — Japonijos.
+Kiekvienai {šaliai|šalis} svarbi nepriklausomybė.
+Šiai {šaliai|šalis} trūksta darbininkų.
+Į kokią {šalį|šalis} norėtum nuvažiuoti?
+Myliu savo {šalį|šalis}.
+Kitais metais planuojame aplankyti kokią nors šiltą {šalį|šalis}.
+Didžiuojuosi savo {šalimi|šalis}.
+Lietuva vadinama gintaro {šalimi|šalis}.
+Kokioje {šalyje|šalis} gyveni?
+Tolimoje {šalyje|šalis} gyvena mano teta.
+Lietuvos kaimyninės {šalys|šalis} — Latvija, Baltarusija, Lenkija ir Rusija.
+Šios dvi {šalys|šalis} seniai bendradarbiauja.
+Konferencijoje dalyvavo atstovai iš trisdešimties {šalių|šalis}.
+Kokių {šalių|šalis} sostines žinai?
+Šiaurės {šalims|šalis} būdingos ilgos žiemos.
+Ši upė teka per tris {šalis|šalis}.
+Bendradarbiaujame su kaimyninėmis {šalimis|šalis}.
+Lietuva ribojasi su keturiomis {šalimis|šalis}.
+Šiltose {šalyse|šalis} žiemos nebūna.
+Skandinavijos {šalyse|šalis} pragyvenimas brangus.
+
+# --- ещё: naktis
+Iki pat {nakties|naktis} mokiausi egzaminui.
+Vidury {nakties|naktis} mane pažadino telefonas.
+{Nakties|naktis} tamsoje nieko nesimatė.
+Kiek kainuoja kambarys vienai {nakčiai|naktis}?
+Šią {naktį|naktis} beveik nemiegojau.
+Kiekvieną {naktį|naktis} sapnuoju keistus sapnus.
+Praeitą {naktį|naktis} buvo šalta.
+Tamsioje {naktyje|naktis} sužibo žvaigždės.
+Rudenį {naktys|naktis} vis ilgesnės.
+Vasaros {naktys|naktis} trumpos ir šviesios.
+Neprisimenu tokių šaltų {naktų|naktis}.
+Po trijų {naktų|naktis} viešbutyje grįžome namo.
+Šaltoms {naktims|naktis} pasiėmėme šiltus miegmaišius.
+Dviem {naktims|naktis} išsinuomojome namelį.
+Kelias {naktis|naktis} iš eilės negalėjau užmigti.
+Vasaros {naktimis|naktis} vaikščiojame prie jūros.
+Jis dirba {naktimis|naktis}, o dieną miega.
+
+# --- ещё: akis
+Iš kairės {akies|akis} bėga ašaros.
+Visą naktį nė {akies|akis} nesumerkiau.
+Kairiajai {akiai|akis} reikia stipresnio lęšio.
+Šie lašai skirti sergančiai {akiai|akis}.
+Katė prisimerkė vieną {akį|akis}.
+Jis pamerkė man {akį|akis}.
+Jis gerai mato tik viena {akimi|akis}.
+Žiūrėk į mikroskopą dešine {akimi|akis}.
+Dešinėje {akyje|akis} jaučiu skausmą.
+Vaiko {akys|akis} spindėjo iš džiaugsmo.
+Mano {akys|akis} pavargo nuo kompiuterio.
+Ji nenuleido {akių|akis} nuo vaiko.
+Neturėtum trinti {akių|akis}.
+Kompiuteris kenkia {akims|akis}.
+Mėlyna spalva tinka tavo {akims|akis}.
+Atmerk {akis|akis}!
+Pamačiau tai savo {akimis|akis}.
+Ji žiūrėjo į mane didelėmis {akimis|akis}.
+Jo {akyse|akis} matėsi baimė.
+Tėvų {akyse|akis} vaikas visada mažas.
+
+# --- ещё: širdis
+Jis serga {širdies|širdis} liga.
+Ji neturi {širdies|širdis}!
+Sportas naudingas {širdžiai|širdis}.
+Per didelis krūvis kenkia {širdžiai|širdis}.
+Ji atidavė jam savo {širdį|širdis}.
+Ši daina paliečia man {širdį|širdis}.
+Jaučiu tai visa {širdimi|širdis}.
+Vilniaus {širdyje|širdis} — senamiestis.
+Jo {širdyje|širdis} gimė viltis.
+Sportininkų {širdys|širdis} paprastai stiprios.
+Ši daina sujaudino tūkstančius {širdžių|širdis}.
+Daina užkariavo žiūrovų {širdis|širdis}.
+Mūsų {širdyse|širdis} jis gyvens amžinai.
+Žmonių {širdyse|širdis} vis dar gyva viltis.
+
+Gydytojai operavo jo {širdį|širdis}.
+{Širdies|širdis} skausmas — rimtas simptomas.
+Su sunkia {širdimi|širdis} atsisveikinau su draugais.
+Mano {širdžiai|širdis} brangiausia vieta — gimtasis kaimas.
+Senelio {širdyje|širdis} buvo daug meilės.
+Šiuolaikiniai gydytojai gali persodinti {širdį|širdis}.
+„Dviejų {širdžių|širdis} istorija“ — taip vadinasi šis filmas.
+Šis gydytojas garsėja sudėtingomis {širdies|širdis} operacijomis.
+Mano {akims|akis} reikia poilsio.
+Tos mergaitės {akių|akis} spalva — žalia.
+Jis negalėjo patikėti savo {akimis|akis}.
+Šiltą vasaros {naktį|naktis} miegojome palapinėje.
+{Nakties|naktis} traukiniu važiavome į Varšuvą.
+Šios {nakties|naktis} niekada nepamiršiu.
+
+# --- ещё: dantis
+Ant šio {danties|dantis} yra plomba.
+Netekau priekinio {danties|dantis}.
+Skaudančiam {dančiui|dantis} padės šaltas kompresas.
+Vaikas prarado pirmąjį pieninį {dantį|dantis}.
+Gydytojas užplombavo vieną {dantį|dantis}.
+Šiame {dantyje|dantis} — skylė.
+Mano {dantys|dantis} labai jautrūs šalčiui.
+Pieniniai {dantys|dantis} pradeda kristi maždaug šešerių metų.
+Vaikas turi dvidešimt pieninių {dantų|dantis}.
+{Dantų|dantis} šepetėlį reikia keisti kas tris mėnesius.
+Saldainiai kenkia {dantims|dantis}.
+Ši pasta skirta jautriems {dantims|dantis}.
+Šuo iššiepė aštrius {dantis|dantis}.
+Šuo laikė kaulą {dantimis|dantis}.
+Paveikslėlyje — krokodilas su aštriais {dantimis|dantis}.
+Kai kuriuose {dantyse|dantis} yra plombų.
+
+Kiek {dantų|dantis} turi suaugęs žmogus?
+Su naujais {dantimis|dantis} senelis vėl gali kramtyti obuolius.
+Senelis įsidėjo dirbtinius {dantis|dantis}.
+Mažiems vaikams {dantys|dantis} dygsta skausmingai.
+Po {danties|dantis} traukimo dvi valandas negalima valgyti.
+
 --- Kelionė į pilį
 Praėjusią vasarą aplankėme Trakų {pilį|pilis}.
 Nuo {pilies|pilis} bokšto matėsi visas ežeras.
@@ -564,6 +1009,113 @@ Abiejuose {koridoriuose|koridorius} dega šviesa.
 Visuose {stalčiuose|stalčius} — netvarka.
 Nusipirkome spintelę su trimis {stalčiais|stalčius}.
 
+# --- ещё: sūnus
+Laukiame {sūnaus|sūnus} — jis grįžta iš Anglijos.
+Kaimynai neturi {sūnaus|sūnus}, tik dukterį.
+Gavome laišką iš vyresniojo {sūnaus|sūnus}.
+Paskambinau {sūnui|sūnus} — jis jau grįžo namo.
+Jauniausiajam {sūnui|sūnus} nupirkome kuprinę.
+Kasdien vedu mažąjį {sūnų|sūnus} į darželį.
+Ar pažįsti jų vyriausiąjį {sūnų|sūnus}?
+Mama labai rūpinasi sergančiu {sūnumi|sūnus}.
+Kalbėjausi su kaimynų {sūnumi|sūnus} — jis studijuoja fiziką.
+Jų {sūnūs|sūnus} abu tapo gydytojais.
+Mano trys {sūnūs|sūnus} gyvena skirtinguose miestuose.
+Iš visų {sūnų|sūnus} jauniausias labiausiai panašus į tėvą.
+Ji yra trijų {sūnų|sūnus} mama.
+Ūkininkas padalijo žemę savo {sūnums|sūnus}.
+Trims {sūnums|sūnus} nupirkome po kompiuterį.
+Tėvai išleido abu {sūnus|sūnus} studijuoti į užsienį.
+Didžiuojamės savo {sūnumis|sūnus} — jie abu puikūs sportininkai.
+
+# --- ещё: žmogus
+Iš šio {žmogaus|žmogus} galima daug išmokti.
+Gatvėje nebuvo nė vieno {žmogaus|žmogus}.
+Šiam {žmogui|žmogus} reikia pagalbos.
+Pasakyk tam {žmogui|žmogus}, kad palauktų.
+Policija sulaikė įtartiną {žmogų|žmogus}.
+Myliu šį {žmogų|žmogus} visa širdimi.
+Jis tapo garsiu {žmogumi|žmogus}.
+Pasitikiu šiuo {žmogumi|žmogus}.
+Lietuviai — draugiški {žmonės|žmogus}.
+Visi {žmonės|žmogus} nori būti laimingi.
+Kiek {žmonių|žmogus} gyvena Vilniuje?
+Autobuse buvo per daug {žmonių|žmogus}.
+Šis vaistas padeda vyresnio amžiaus {žmonėms|žmogus}.
+Kaimo {žmonėms|žmogus} trūksta darbo.
+Pažįstu visus šiuos {žmones|žmogus}.
+Mėgstu linksmus {žmones|žmogus}.
+Mėgstu bendrauti su naujais {žmonėmis|žmogus}.
+Pasitikiu šiais {žmonėmis|žmogus}.
+
+# --- ещё: vaisius
+Šito {vaisiaus|vaisius} skonis primena bananą.
+Ši arbata pagaminta iš egzotiško {vaisiaus|vaisius}.
+Šiam {vaisiui|vaisius} subręsti reikia daug šilumos.
+Nupjauk šį {vaisių|vaisius} pusiau.
+Mama nupirko keistą {vaisių|vaisius} — nežinau, kaip jį valgyti.
+Viename {vaisiuje|vaisius} — daug vitamino C.
+Šiame {vaisiuje|vaisius} daug sėklų.
+Šie {vaisiai|vaisius} dar neprinokę.
+Švieži {vaisiai|vaisius} labai sveiki.
+Vaikams reikia daug {vaisių|vaisius} ir daržovių.
+Kilogramas egzotiškų {vaisių|vaisius} kainuoja brangiai.
+Šie dubenys skirti {vaisiams|vaisius}.
+Prinokusiems {vaisiams|vaisius} reikia vėsios vietos.
+Nuplauk {vaisius|vaisius} prieš valgydamas.
+Turgus garsėja šviežiais {vaisiais|vaisius}.
+Prekiaujame egzotiškais {vaisiais|vaisius}.
+Šviežiuose {vaisiuose|vaisius} yra daug skaidulų.
+Kai kuriuose {vaisiuose|vaisius} daug cukraus.
+
+# --- ещё: turgus
+Prie Halės {turgaus|turgus} visada daug mašinų.
+Šis sūris iš ūkininkų {turgaus|turgus}.
+Šiam {turgui|turgus} jau daugiau nei šimtas metų.
+Kalėdų {turgui|turgus} miesto aikštėje pastatė namelius.
+Kiekvieną šeštadienį važiuojame į ūkininkų {turgų|turgus}.
+Mieste atidarė naują {turgų|turgus}.
+Vilnius garsėja Kalvarijų {turgumi|turgus}.
+Jie labai patenkinti nauju {turgumi|turgus}.
+Šiame {turguje|turgus} viskas pigiau.
+Ūkininkų {turguje|turgus} nusipirkau šviežio sūrio.
+Savaitgaliais visi {turgūs|turgus} pilni žmonių.
+Kalėdiniai {turgūs|turgus} Europoje labai populiarūs.
+Mieste yra keletas {turgų|turgus}.
+Tai vienas didžiausių Europos {turgų|turgus}.
+Ūkininkų {turgums|turgus} reikia daugiau vietos.
+Kalėdiniams {turgums|turgus} skirta pagrindinė aikštė.
+Aplankėme visus miesto {turgus|turgus}.
+Šis miestas garsėja spalvingais {turgumis|turgus}.
+Domiuosi senaisiais Vilniaus {turgumis|turgus}.
+Kalėdiniuose {turguose|turgus} pardavinėja rankų darbo dovanas.
+Ūkininkų {turguose|turgus} produktai šviežesni.
+
+# --- ещё: skaičius
+Studentų {skaičiaus|skaičius} augimas nustebino visus.
+Atimk du iš šio {skaičiaus|skaičius}.
+Šiam {skaičiui|skaičius} trūksta dar vieno nulio.
+Kiekvienam {skaičiui|skaičius} pridėk po vienetą.
+Pagalvok apie kokį nors {skaičių|skaičius}.
+Padaugink šį {skaičių|skaičius} iš trijų.
+Pakeisk šį skaičių kitu {skaičiumi|skaičius}.
+Daug kas laiko septynetą laimingu {skaičiumi|skaičius}.
+Šie {skaičiai|skaičius} man nieko nesako.
+Nelyginiai {skaičiai|skaičius} — vienas, trys, penki ir t. t.
+Užrašyk dešimt atsitiktinių {skaičių|skaičius}.
+Nemėgstu ilgų {skaičių|skaičius}.
+Dideliems {skaičiams|skaičius} skaičiuoti naudoju skaičiuotuvą.
+Romėniškiems {skaičiams|skaičius} rašyti naudojamos raidės.
+Užrašyk šiuos {skaičius|skaičius} į sąsiuvinį.
+Ši lentelė užpildyta {skaičiais|skaičius}.
+Užrašyk sumą {skaičiais|skaičius}, ne žodžiais.
+Šiuose {skaičiuose|skaičius} yra klaida.
+Dideliuose {skaičiuose|skaičius} lengva pasiklysti.
+
+Kiekvieno {skaičiaus|skaičius} kvadratas — teigiamas.
+Šiuo {skaičiumi|skaičius} baigiasi sąrašas.
+Visi lyginiai {skaičiai|skaičius} dalijasi iš dviejų.
+
 --- Šeštadienis turguje
 Šeštadienio rytą su mažuoju {sūnumi|sūnus} nuėjome į {turgų|turgus}.
 {Turguje|turgus} buvo daug {žmonių|žmogus}.
@@ -665,6 +1217,105 @@ Per pastaruosius kelis {mėnesius|mėnuo} daug išmokau.
 Po dviejų {mėnesių|mėnuo} grįšiu namo.
 Kitam {mėnesiui|mėnuo} planų dar neturiu.
 Pase yra visa informacija apie {asmenį|asmuo}.
+
+# --- ещё: sesuo
+Ši suknelė — mano vyresniosios {sesers|sesuo}.
+Laukiu {sesers|sesuo} — ji atvažiuos traukiniu.
+Neturiu {sesers|sesuo}, tik brolį.
+Paskambinau {seseriai|sesuo} — ji pagimdė sūnų!
+Padėjau vyresniajai {seseriai|sesuo} perkraustyti baldus.
+Labai myliu savo jaunesniąją {seserį|sesuo}.
+Ar pažįsti mano {seserį|sesuo}? Ji dirba mokytoja.
+Tėvai didžiuojasi mano {seserimi/seseria|sesuo} — ji laimėjo olimpiadą.
+Mano {seserys|sesuo} — dvynės.
+Abi mūsų mamos {seserys|sesuo} gyvena kaime.
+Kiek tu turi {seserų|sesuo}?
+Iš visų {seserų|sesuo} aš jauniausia.
+Visoms mano {seserims|sesuo} patinka šokti.
+Pakviečiau į gimtadienį abi {seseris|sesuo}.
+Vaikystėje dažnai pykdavausi su vyresnėmis {seserimis|sesuo}.
+
+# --- ещё: duktė
+Laukiame {dukters|duktė} iš Londono.
+Tai mano jauniausios {dukters|duktė} piešinys.
+Jie neturi {dukters|duktė}, tik du sūnus.
+Kaimynų {dukteriai|duktė} — aštuoniolika metų.
+Kasdien vedu {dukterį|duktė} į darželį.
+Jie labai myli savo vienintelę {dukterį|duktė}.
+Šeštadienį eisiu į kiną su {dukterimi/dukteria|duktė}.
+Mano {dukterys|duktė} jau suaugusios.
+Jų dvi {dukterys|duktė} studijuoja Vilniuje.
+Ji — trijų {dukterų|duktė} mama.
+Iš visų {dukterų|duktė} jauniausia — Ona.
+Tėvai paliko butą dviem {dukterims|duktė}.
+Jie išleido abi {dukteris|duktė} į užsienį studijuoti.
+Didžiuojuosi savo {dukterimis|duktė} — jos abi puikiai mokosi.
+
+# --- ещё: šuo
+Kaimyno {šuns|šuo} lojimas neleidžia miegoti.
+Mažas vaikas išsigando didelio {šuns|šuo}.
+Neturime {šuns|šuo}, bet turime katę.
+Nupirkau savo {šuniui|šuo} naują kamuoliuką.
+Kas vedžios {šunį|šuo}, kai išvažiuosime?
+Kaimynai įsigijo mažą {šunį|šuo}.
+Kaimynas kiekvieną rytą bėgioja su savo {šunimi/šuniu|šuo}.
+Šie {šunys|šuo} labai draugiški.
+Gyvūnų prieglaudoje — daugiau nei šimtas {šunų|šuo}.
+Mano mama labai bijo {šunų|šuo}.
+Šiame parke {šunims|šuo} vaikščioti draudžiama.
+Kaimynai augina medžioklinius {šunis|šuo}.
+Ar mėgsti {šunis|šuo}?
+Ūkininkas turi tris {šunis|šuo}.
+Domiuosi medžiokliniais {šunimis|šuo}.
+
+# --- ещё: akmuo
+Ši pilis pastatyta iš {akmens|akmuo}.
+Vaikas užkliuvo už {akmens|akmuo} ir pargriuvo.
+Berniukas įmetė vieną {akmenį|akmuo} į ežerą.
+Ant kranto radau gražų baltą {akmenį|akmuo}.
+Langas buvo išdaužtas {akmeniu|akmuo}.
+Šie {akmenys|akmuo} — iš ledynmečio laikų.
+Ant stalo — trys spalvoti {akmenys|akmuo}.
+Ši siena pastatyta iš didelių {akmenų|akmuo}.
+Lauke daug {akmenų|akmuo} — sunku arti.
+Brangiems {akmenims|akmuo} saugoti reikia seifo.
+Vaikai rinko {akmenis|akmuo} pajūryje.
+Darbininkai išvežė visus {akmenis|akmuo} iš lauko.
+Žiedas papuoštas brangiais {akmenimis|akmuo}.
+Šiuose {akmenyse|akmuo} iškalti senoviniai ženklai.
+
+# --- ещё: mėnuo
+Kito {mėnesio|mėnuo} pradžioje važiuosiu į Rygą.
+Atlyginimą gaunu kiekvieno {mėnesio|mėnuo} penktą dieną.
+Projektą reikia baigti iki {mėnesio|mėnuo} galo.
+Vienam {mėnesiui|mėnuo} išsinuomojome butą prie jūros.
+Kitą {mėnesį|mėnuo} prasidės atostogos.
+Praėjusį {mėnesį|mėnuo} buvau Paryžiuje.
+Vasaros {mėnesiai|mėnuo} — birželis, liepa ir rugpjūtis.
+Praėjo trys {mėnesiai|mėnuo}.
+Po kelių {mėnesių|mėnuo} jis visiškai pasveiko.
+Sūnui jau aštuoniolika {mėnesių|mėnuo}.
+Dviem {mėnesiams|mėnuo} išvykstu į Ispaniją.
+Keliems {mėnesiams|mėnuo} atidėjome projektą.
+Kelionė truko du {mėnesius|mėnuo}.
+Ištisus {mėnesius|mėnuo} laukėme atsakymo.
+Žiemos {mėnesiais|mėnuo} anksti temsta.
+Šiltaisiais {mėnesiais|mėnuo} dirbame sode.
+
+Prie didelio {akmens|akmuo} sustojome pailsėti.
+Mergaitė įsidėjo {akmenį|akmuo} į kišenę.
+Kiekvienam {akmeniui|akmuo} vaikai davė vardą.
+Upės dugne tarp {akmenų|akmuo} slepiasi žuvys.
+Gražiais {akmenimis|akmuo} papuošėme sodą.
+Šį {mėnesį|mėnuo} labai daug dirbu.
+Per pirmuosius tris {mėnesius|mėnuo} išmokau daug žodžių.
+Gruodis — paskutinis metų {mėnuo|mėnuo}.
+Pirmųjų {mėnesių|mėnuo} išlaidos buvo didelės.
+Nėštumas trunka devynis {mėnesius|mėnuo}.
+Kiekvienam {mėnesiui|mėnuo} sudarome biudžetą.
+Mama su {dukterimi/dukteria|duktė} panašios kaip du vandens lašai.
+Vyriausiajai {dukteriai|duktė} nupirkome butą.
+Visoms trims {dukterims|duktė} tėvas paliko po namą.
 
 --- Mano sesuo ir jos šuo
 Mano vyresnioji {sesuo|sesuo} gyvena Kaune su vyru ir maža {dukterimi/dukteria|duktė}.
