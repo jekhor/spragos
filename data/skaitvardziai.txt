@@ -9,11 +9,19 @@
 @title.be: Skaitvardžiai — лічэбнікі
 @group.be: Скланенне
 @description.be: Колькасныя (vienas, du/dvi, trys, keturi…), зборныя (dveji, treji) і парадкавыя
+@title.uk: Skaitvardžiai — числівники
+@group.uk: Відмінювання
+@description.uk: Кількісні (vienas, du/dvi, trys, keturi…), збірні (dveji, treji) і порядкові
+@title.en: Skaitvardžiai — numerals
+@group.en: Declension
+@description.en: Cardinal (vienas, du/dvi, trys, keturi…), collective (dveji, treji) and ordinal
 @hints: always
 @distractors: du, dvi, dviejų, dviem, trys, trijų, trims, tris, trimis
 
 @subtopic: 1. Количественные: vienas, du, trys | du — dvi, dviejų, dviem; trys — trijų, trims, trimis
 @subtopic.be: 1. Колькасныя: vienas, du, trys | du — dvi, dviejų, dviem; trys — trijų, trims, trimis
+@subtopic.uk: 1. Кількісні: vienas, du, trys | du — dvi, dviejų, dviem; trys — trijų, trims, trimis
+@subtopic.en: 1. Cardinal: vienas, du, trys | du — dvi, dviejų, dviem; trys — trijų, trims, trimis
 
 # --- Количественные ---
 Ji turi tik {vieną|vienas} seserį.
@@ -174,6 +182,8 @@ Vaistus reikia gerti po {vieną|vienas} tabletę.
 
 @subtopic: 2. Количественные: keturi – devyni, 11–19, šimtas, tūkstantis | keturi — keturios; penkiolika, šimtas
 @subtopic.be: 2. Колькасныя: keturi – devyni, 11–19, šimtas, tūkstantis | keturi — keturios; penkiolika, šimtas
+@subtopic.uk: 2. Кількісні: keturi – devyni, 11–19, šimtas, tūkstantis | keturi — keturios; penkiolika, šimtas
+@subtopic.en: 2. Cardinal: keturi – devyni, 11–19, šimtas, tūkstantis | keturi — keturios; penkiolika, šimtas
 
 # --- Количественные ---
 Aš paskambinau {keturiems|keturi} draugams.
@@ -367,6 +377,8 @@ Kelionė autobusu kainuoja {devynis|devyni} eurus.
 
 @subtopic: 3. Собирательные | dveji, treji, ketveri… — с pluralia tantum: durys, metai, marškiniai
 @subtopic.be: 3. Зборныя | dveji, treji, ketveri… — з pluralia tantum: durys, metai, marškiniai
+@subtopic.uk: 3. Збірні | dveji, treji, ketveri… — з pluralia tantum: durys, metai, marškiniai
+@subtopic.en: 3. Collective | dveji, treji, ketveri… — with plural-only nouns: durys, metai, marškiniai
 
 # --- Собирательные (с pluralia tantum: metai, kelnės, marškiniai…) ---
 Lietuvoje gyvenu jau {dvejus|dveji} metus.
@@ -496,6 +508,8 @@ Vaikai nuo {trejų|treji} metų lanko darželį.
 
 @subtopic: 4. Порядковые | pirmas, antras, trečias, aštuntas
 @subtopic.be: 4. Парадкавыя | pirmas, antras, trečias, aštuntas
+@subtopic.uk: 4. Порядкові | pirmas, antras, trečias, aštuntas
+@subtopic.en: 4. Ordinal | pirmas, antras, trečias, aštuntas
 
 # --- Порядковые ---
 Mes gyvename {trečiame|trečias} aukšte.
@@ -692,6 +706,8 @@ Mano brolis — {dešimtos|dešimtas} klasės mokinys.
 
 @subtopic: 5. Все вместе | тексты с числительными разных видов
 @subtopic.be: 5. Усе разам | тэксты з лічэбнікамі розных відаў
+@subtopic.uk: 5. Усе разом | тексти з числівниками різних видів
+@subtopic.en: 5. All together | texts with different kinds of numerals
 
 # --- šeši, šešios ---
 Nupirkau {šešis|šeši} kiaušinius ir {tris|trys} bandeles.

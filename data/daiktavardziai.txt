@@ -11,9 +11,17 @@
 @title.be: Daiktavardžiai — назоўнікі
 @group.be: Скланенне
 @description.be: Шэсць склонаў у адзіночным і множным ліку па тыпах скланення (linksniuotės). Падказка — назоўны склон адз. л.
+@title.uk: Daiktavardžiai — іменники
+@group.uk: Відмінювання
+@description.uk: Шість відмінків в однині й множині за типами відмінювання (linksniuotės). Підказка — називний відмінок однини.
+@title.en: Daiktavardžiai — nouns
+@group.en: Declension
+@description.en: Six cases, singular and plural, by declension type (linksniuotės). Hint: nominative singular.
 
 @subtopic: 1. мужской род, -(i)as, -is, -ys | namas, kelias, brolis, medis, traukinys
 @subtopic.be: 1. мужчынскі род, -(i)as, -is, -ys | namas, kelias, brolis, medis, traukinys
+@subtopic.uk: 1. чоловічий рід, -(i)as, -is, -ys | namas, kelias, brolis, medis, traukinys
+@subtopic.en: 1. masculine, -(i)as, -is, -ys | namas, kelias, brolis, medis, traukinys
 
 # namas
 Mes gyvename tame dideliame {name|namas} prie upės.
@@ -359,6 +367,8 @@ Vakarais visa šeima susirenka prie didelio {stalo|stalas} virtuvėje.
 
 @subtopic: 2. женский род, -(i)a, -ė | knyga, bažnyčia, gatvė; м. р.: dėdė
 @subtopic.be: 2. жаночы род, -(i)a, -ė | knyga, bažnyčia, gatvė; м. р.: dėdė
+@subtopic.uk: 2. жіночий рід, -(i)a, -ė | knyga, bažnyčia, gatvė; ч. р.: dėdė
+@subtopic.en: 2. feminine, -(i)a, -ė | knyga, bažnyčia, gatvė; masc.: dėdė
 
 # knyga
 Ši {knyga|knyga} labai įdomi.
@@ -644,6 +654,8 @@ Sekmadieniais einame į kaimo {bažnyčią|bažnyčia}, o paskui — į mažą {
 
 @subtopic: 3. женский род (и немного мужского), -is | šalis, naktis, širdis; м. р.: dantis, debesis
 @subtopic.be: 3. жаночы род (і крыху мужчынскага), -is | šalis, naktis, širdis; м. р.: dantis, debesis
+@subtopic.uk: 3. жіночий рід (і трохи чоловічого), -is | šalis, naktis, širdis; ч. р.: dantis, debesis
+@subtopic.en: 3. feminine (and a few masculine), -is | šalis, naktis, širdis; masc.: dantis, debesis
 
 # šalis
 Lietuva — nedidelė {šalis|šalis}.
@@ -901,6 +913,8 @@ Tą {naktį|naktis} danguje nebuvo nė vieno {debesies|debesis}.
 
 @subtopic: 4. мужской род, -(i)us | sūnus, turgus, vaisius; žmogus
 @subtopic.be: 4. мужчынскі род, -(i)us | sūnus, turgus, vaisius; žmogus
+@subtopic.uk: 4. чоловічий рід, -(i)us | sūnus, turgus, vaisius; žmogus
+@subtopic.en: 4. masculine, -(i)us | sūnus, turgus, vaisius; žmogus
 
 # sūnus
 Mano {sūnus|sūnus} mokosi universitete.
@@ -1133,6 +1147,8 @@ Po valandos {dangus|dangus} vėl buvo giedras.
 
 @subtopic: 5. мужской род, -uo; sesuo, duktė | akmuo, vanduo, šuo, mėnuo, sesuo, duktė
 @subtopic.be: 5. мужчынскі род, -uo; sesuo, duktė | akmuo, vanduo, šuo, mėnuo, sesuo, duktė
+@subtopic.uk: 5. чоловічий рід, -uo; sesuo, duktė | akmuo, vanduo, šuo, mėnuo, sesuo, duktė
+@subtopic.en: 5. masculine, -uo; sesuo, duktė | akmuo, vanduo, šuo, mėnuo, sesuo, duktė
 
 # sesuo
 Mano {sesuo|sesuo} gyvena Londone.

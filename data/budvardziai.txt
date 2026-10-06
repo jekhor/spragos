@@ -8,6 +8,12 @@
 @title.be: Būdvardžiai — прыметнікі
 @group.be: Скланенне
 @description.be: Прыметнікі на -as/-a, -us/-i, -is/-ė (didelis), адзіночны і множны лік. Падказка — форма м. р. адз. л.
+@title.uk: Būdvardžiai — прикметники
+@group.uk: Відмінювання
+@description.uk: Прикметники на -as/-a, -us/-i, -is/-ė (didelis), однина й множина. Підказка — форма ч. р. одн.
+@title.en: Būdvardžiai — adjectives
+@group.en: Declension
+@description.en: Adjectives in -as/-a, -us/-i, -is/-ė (didelis), singular and plural. Hint: masculine singular form.
 
 @subtopic: 1. -as, -a | geras, naujas, senas, mažas
 
@@ -679,6 +685,8 @@ Mūsų namas — {medinis|medinis}.
 
 @subtopic: 5. Все типы вместе | тексты и предложения с прилагательными разных типов
 @subtopic.be: 5. Усе тыпы разам | тэксты і сказы з прыметнікамі розных тыпаў
+@subtopic.uk: 5. Усі типи разом | тексти й речення з прикметниками різних типів
+@subtopic.en: 5. All types together | texts and sentences with adjectives of different types
 
 # --- Именительный (ж. р. и мн. ч.) ---
 Mūsų virtuvė {nedidelė|nedidelis}, bet {jauki|jaukus}.

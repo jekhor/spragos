@@ -1,10 +1,10 @@
 // Перевод интерфейса. Модуль не зависит от DOM: словари проверяет node-тест.
 // Строка словаря — текст или HTML (для ключей home.*, где есть разметка); {name} — подстановка параметра.
-// Формы для plural() — массив [одна, несколько, много] (одинаково для русского и белорусского).
+// Формы для plural() — массив по категориям Intl.PluralRules: [one, few, many] для славянских языков, [one, other] для английского.
 
-export const LANGS = { ru: "Русский", be: "Беларуская" };
+export const LANGS = { ru: "Русский", be: "Беларуская", uk: "Українська", en: "English" };
 // Короткие подписи для переключателя в шапке
-export const LANG_SHORT = { ru: "Рус", be: "Бел" };
+export const LANG_SHORT = { ru: "Рус", be: "Бел", uk: "Укр", en: "Eng" };
 export const DEFAULT_LANG = "ru";
 
 const STRINGS = {
@@ -203,9 +203,205 @@ const STRINGS = {
     "stats.last": "Апошні раз",
     "stats.confirmReset": "Скінуць усю статыстыку?",
   },
+
+  uk: {
+    "doc.title": "Spragos — тренажер литовської граматики",
+    "lang.label": "Мова інтерфейсу",
+    "nav.home": "На головну",
+    "nav.setup": "Вправа",
+    "nav.refs": "Довідка",
+    "nav.stats": "Статистика",
+
+    "home.kicker": "міні-тренажер литовської граматики",
+    "home.lead": "<em>Spragos</em> литовською означає «пропуски»: і в тексті, і в знаннях. Основна механіка наразі — речення з пропусками: перетягніть у кожен пропуск слово в правильній формі або впишіть його з клавіатури. Зараз є вправи на відмінювання іменників, прикметників, займенників і числівників, понад 500 пропусків на кожну тему.",
+    "home.start": "Почати вправу",
+    "home.refs": "Граматична довідка",
+    "home.about.title": "Що це",
+    "home.about.text": "Невеликий тренажер, створений мною за допомогою Claude для власної підготовки до іспиту з литовської мови, коли знадобилося швидко пройтися певними темами. Ним може користуватися будь-хто.",
+    "home.about.noAccount": "<strong>Без реєстрації.</strong> Обліковий запис не потрібен, жодні дані нікуди не надсилаються.",
+    "home.about.stats": "<strong>Статистика зберігається лише у вашому браузері.</strong> На іншому пристрої чи в іншому браузері вона буде своя; очищення даних сайту її зітре.",
+    "home.about.mobile": "<strong>Працює на телефоні:</strong> слова можна перетягувати пальцем або просто натиснути на слово, а потім на пропуск.",
+    "home.about.modes": "<strong>Два режими:</strong> перетягування слів із банку або введення з клавіатури. Для литовських літер (ą, č, ę, ė, į, š, ų, ū, ž) є панель, якщо їх немає на клавіатурі.",
+    "home.warn.title": "Важливо про матеріали",
+    "home.warn.ai": "Завдання й довідки <strong>повністю згенеровані ШІ</strong> і <strong>не перевірялися носіями мови</strong>. Кожну форму у відповідях автоматично звірено з таблицями відмінювання з підручників, але помилки у виборі відмінка чи неприродні фрази все ж можливі.",
+    "home.warn.books": "Щоб приклади були якомога правильнішими, частину речень узято з підручників, знайдених у вільному доступі в інтернеті, <strong>дослівно або майже дослівно</strong>. Права на них належать авторам цих книжок, тож будьте обережні, копіюючи й використовуючи матеріали.",
+    "home.warn.sources": "Джерела: Žingsnis I–II, Sėkmės, Langas į lietuvių kalbą, Lietuvių kalba dialoguose, Ne dienos be lietuvių kalbos, Skaitome ir klausome lietuviškai, Mano ir tavo šalis Lietuva, Complete Lithuanian, Colloquial Lithuanian.",
+    "home.license.title": "Ліцензія",
+    "home.license.text": "Користуватися, копіювати й змінювати можна як завгодно. Усе надається «як є»: можуть бути помилки як у коді, так і в завданнях.",
+    "home.license.code": "<strong>Код</strong> — ліцензія <a href=\"https://opensource.org/license/mit\" target=\"_blank\" rel=\"noopener\">MIT</a>.",
+    "home.license.content": "<strong>Завдання й довідки</strong> — <a href=\"https://creativecommons.org/publicdomain/zero/1.0/deed.uk\" target=\"_blank\" rel=\"noopener\">CC0 1.0</a> (суспільне надбання), крім фраз, узятих із підручників: права на них зберігаються за авторами.",
+    "home.license.source": "Вихідний код і база завдань: <a href=\"https://github.com/jekhor/spragos\" target=\"_blank\" rel=\"noopener\">github.com/jekhor/spragos</a>.",
+
+    "setup.topics": "Теми",
+    "setup.selectAll": "вибрати всі",
+    "setup.selectNone": "зняти",
+    "setup.round": "Раунд",
+    "setup.word": "Слово",
+    "setup.allWords": "усі слова",
+    "setup.mode": "Режим",
+    "setup.mode.drag": "перетягування",
+    "setup.mode.type": "введення з клавіатури",
+    "setup.count": "Скільки пропусків (приблизно)",
+    "setup.kind": "Що включати",
+    "setup.kind.all": "усе",
+    "setup.kind.sentence": "речення",
+    "setup.kind.text": "тексти",
+    "setup.bank": "Банк слів",
+    "setup.bank.answers": "лише відповіді",
+    "setup.bank.distractors": "+ зайві форми",
+    "setup.hints": "Показувати початкову форму під пропуском",
+    "setup.start": "Почати",
+    "setup.pool": "у базі: {items}, {gaps}",
+    "setup.poolEmpty": "виберіть хоча б одну тему",
+    "setup.noTopics": "У папці data/ немає жодної теми.",
+    "setup.loadErrors": "Помилки у файлах бази: {n}",
+    "setup.sentences": "{n} реч.",
+    "setup.texts": "{n} текст.",
+    "setup.ref": "довідка",
+    "setup.refTitle": "Граматична довідка",
+    "setup.lemmaOption": "{label} — {gaps}",
+
+    "plural.item": ["завдання", "завдання", "завдань"],
+    "plural.gap": ["пропуск", "пропуски", "пропусків"],
+
+    "round.word": "слово «{word}»",
+    "round.ref": "довідка",
+    "round.progress": "заповнено {filled} з {total}",
+    "round.bank": "Банк слів",
+    "round.letters": "Литовські літери",
+    "round.lettersLabel": "Литовські літери:",
+    "round.gap": "пропуск",
+    "round.gapHint": "пропуск, початкова форма: {hint}",
+    "round.gapFilled": "пропуск: {word}",
+    "round.gapEmpty": "порожній пропуск",
+    "round.check": "Перевірити",
+    "round.fix": "Виправити помилки",
+    "round.reveal": "Показати відповіді",
+    "round.again": "Новий раунд",
+    "round.toSetup": "До налаштувань",
+    "round.perfect": "Puiku! Усе правильно з першої спроби.",
+    "round.allCorrect": "Тепер усе правильно!",
+    "round.score": "Правильно {score}",
+    "round.scoreOf": "{correct} з {total}",
+    "round.firstTry": " (з першої спроби: {n})",
+
+    "refs.title": "Граматична довідка",
+    "refs.none": "У папці data/ поки немає жодної довідки (.md).",
+    "refs.usedBy": "до теми: {topics}",
+    "refs.close": "Закрити",
+
+    "stats.title": "Статистика за темами",
+    "stats.reset": "скинути",
+    "stats.note": "Зараховуються відповіді під час першої перевірки кожного раунду. Зберігається в цьому браузері.",
+    "stats.empty": "Ще немає жодного завершеного раунду.",
+    "stats.topic": "Тема",
+    "stats.rounds": "Раундів",
+    "stats.gaps": "Пропусків",
+    "stats.correct": "Правильно",
+    "stats.last": "Останній раз",
+    "stats.confirmReset": "Скинути всю статистику?",
+  },
+
+  en: {
+    "doc.title": "Spragos — Lithuanian grammar trainer",
+    "lang.label": "Interface language",
+    "nav.home": "Home",
+    "nav.setup": "Practice",
+    "nav.refs": "Reference",
+    "nav.stats": "Statistics",
+
+    "home.kicker": "a small Lithuanian grammar trainer",
+    "home.lead": "<em>Spragos</em> is Lithuanian for “gaps”: in a text and in one’s knowledge. For now the main exercise is sentences with gaps: drag a word in the correct form into each gap or type it in. There are exercises on the declension of nouns, adjectives, pronouns and numerals, with more than 500 gaps per topic.",
+    "home.start": "Start practising",
+    "home.refs": "Grammar reference",
+    "home.about.title": "What is this",
+    "home.about.text": "A small trainer I made with Claude for my own Lithuanian exam preparation, when I needed to go through certain topics quickly. Anyone is welcome to use it.",
+    "home.about.noAccount": "<strong>No sign-up.</strong> You don’t need an account, and no data is sent anywhere.",
+    "home.about.stats": "<strong>Statistics are stored only in your browser.</strong> Another device or browser keeps its own, and clearing site data erases them.",
+    "home.about.mobile": "<strong>Works on phones:</strong> drag words with your finger, or tap a word and then a gap.",
+    "home.about.modes": "<strong>Two modes:</strong> drag words from the word bank or type them in. If your keyboard has no Lithuanian letters (ą, č, ę, ė, į, š, ų, ū, ž), there is a panel with them.",
+    "home.warn.title": "About the materials",
+    "home.warn.ai": "The exercises and reference pages are <strong>entirely AI-generated</strong> and <strong>have not been checked by native speakers</strong>. Every answer form has been automatically checked against declension tables from textbooks, but mistakes in the choice of case or unnatural phrases are still possible.",
+    "home.warn.books": "To keep the examples as correct as possible, some sentences are taken <strong>verbatim or almost verbatim</strong> from textbooks freely available online. The rights to them belong to the authors of those books, so be careful when copying and reusing the materials.",
+    "home.warn.sources": "Sources: Žingsnis I–II, Sėkmės, Langas į lietuvių kalbą, Lietuvių kalba dialoguose, Ne dienos be lietuvių kalbos, Skaitome ir klausome lietuviškai, Mano ir tavo šalis Lietuva, Complete Lithuanian, Colloquial Lithuanian.",
+    "home.license.title": "License",
+    "home.license.text": "You may use, copy and modify everything as you like. Everything is provided “as is”: there may be mistakes both in the code and in the exercises.",
+    "home.license.code": "<strong>Code</strong>: <a href=\"https://opensource.org/license/mit\" target=\"_blank\" rel=\"noopener\">MIT</a> license.",
+    "home.license.content": "<strong>Exercises and reference pages</strong>: <a href=\"https://creativecommons.org/publicdomain/zero/1.0/\" target=\"_blank\" rel=\"noopener\">CC0 1.0</a> (public domain), except phrases taken from textbooks, whose authors retain the rights.",
+    "home.license.source": "Source code and exercises: <a href=\"https://github.com/jekhor/spragos\" target=\"_blank\" rel=\"noopener\">github.com/jekhor/spragos</a>.",
+
+    "setup.topics": "Topics",
+    "setup.selectAll": "select all",
+    "setup.selectNone": "clear",
+    "setup.round": "Round",
+    "setup.word": "Word",
+    "setup.allWords": "all words",
+    "setup.mode": "Mode",
+    "setup.mode.drag": "drag and drop",
+    "setup.mode.type": "keyboard",
+    "setup.count": "Number of gaps (approx.)",
+    "setup.kind": "Include",
+    "setup.kind.all": "all",
+    "setup.kind.sentence": "sentences",
+    "setup.kind.text": "texts",
+    "setup.bank": "Word bank",
+    "setup.bank.answers": "answers only",
+    "setup.bank.distractors": "+ extra forms",
+    "setup.hints": "Show the base form under each gap",
+    "setup.start": "Start",
+    "setup.pool": "available: {items}, {gaps}",
+    "setup.poolEmpty": "select at least one topic",
+    "setup.noTopics": "There are no topics in the data/ folder.",
+    "setup.loadErrors": "Errors in data files: {n}",
+    "setup.sentences": "{n} sent.",
+    "setup.texts": "{n} texts",
+    "setup.ref": "reference",
+    "setup.refTitle": "Grammar reference",
+    "setup.lemmaOption": "{label} — {gaps}",
+
+    "plural.item": ["exercise", "exercises"],
+    "plural.gap": ["gap", "gaps"],
+
+    "round.word": "word “{word}”",
+    "round.ref": "reference",
+    "round.progress": "{filled} of {total} filled",
+    "round.bank": "Word bank",
+    "round.letters": "Lithuanian letters",
+    "round.lettersLabel": "Lithuanian letters:",
+    "round.gap": "gap",
+    "round.gapHint": "gap, base form: {hint}",
+    "round.gapFilled": "gap: {word}",
+    "round.gapEmpty": "empty gap",
+    "round.check": "Check",
+    "round.fix": "Fix mistakes",
+    "round.reveal": "Show answers",
+    "round.again": "New round",
+    "round.toSetup": "Settings",
+    "round.perfect": "Puiku! All correct on the first try.",
+    "round.allCorrect": "All correct now!",
+    "round.score": "Correct: {score}",
+    "round.scoreOf": "{correct} of {total}",
+    "round.firstTry": " (first try: {n})",
+
+    "refs.title": "Grammar reference",
+    "refs.none": "There are no reference pages (.md) in data/ yet.",
+    "refs.usedBy": "topic: {topics}",
+    "refs.close": "Close",
+
+    "stats.title": "Statistics by topic",
+    "stats.reset": "reset",
+    "stats.note": "Answers are counted at the first check of each round. Stored in this browser.",
+    "stats.empty": "No rounds completed yet.",
+    "stats.topic": "Topic",
+    "stats.rounds": "Rounds",
+    "stats.gaps": "Gaps",
+    "stats.correct": "Correct",
+    "stats.last": "Last time",
+    "stats.confirmReset": "Reset all statistics?",
+  },
 };
 
-export const LOCALES = { ru: "ru-RU", be: "be-BY" };
+export const LOCALES = { ru: "ru-RU", be: "be-BY", uk: "uk-UA", en: "en-GB" };
 
 let current = DEFAULT_LANG;
 
@@ -239,12 +435,12 @@ export function t(key, params = {}, lang = current) {
 }
 
 // «5 пропусков»: число и слово в нужной форме.
+const CATEGORY_INDEX = { one: 0, few: 1, many: 2 };
+
 export function plural(n, key, lang = current) {
-  const [one, few, many] = raw(key, lang);
-  const m10 = n % 10;
-  const m100 = n % 100;
-  const word = m10 === 1 && m100 !== 11 ? one : m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14) ? few : many;
-  return `${n} ${word}`;
+  const forms = raw(key, lang);
+  const cat = new Intl.PluralRules(LOCALES[lang] || lang).select(n);
+  return `${n} ${forms[Math.min(CATEGORY_INDEX[cat] ?? forms.length - 1, forms.length - 1)]}`;
 }
 
 export function keys(lang) {

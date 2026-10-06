@@ -8,6 +8,12 @@
 @title.be: Іншыя займеннікі
 @group.be: Скланенне
 @description.be: Kuris, koks, toks, joks, pats (tas pats, toks pats), šis, tas, anas, kitas, visas, kiekvienas
+@title.uk: Інші займенники
+@group.uk: Відмінювання
+@description.uk: Kuris, koks, toks, joks, pats (tas pats, toks pats), šis, tas, anas, kitas, visas, kiekvienas
+@title.en: Other pronouns
+@group.en: Declension
+@description.en: Kuris, koks, toks, joks, pats (tas pats, toks pats), šis, tas, anas, kitas, visas, kiekvienas
 @hints: always
 @distractors: kuris, kurio, kuriam, kurį, kuriuo, kuriame, kuri, kurios, kuriai, kurią, kuria, kurioje
 

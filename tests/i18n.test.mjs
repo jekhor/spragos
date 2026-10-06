@@ -18,7 +18,8 @@ test("во всех словарях те же ключи, что в языке 
       const a = raw(k, DEFAULT_LANG);
       const b = raw(k, lang);
       if (Array.isArray(a)) {
-        assert.ok(Array.isArray(b) && b.length === a.length, `${lang}: ${k} — формы множественного числа`);
+        // число форм зависит от языка: [one, few, many] или [one, other]
+        assert.ok(Array.isArray(b) && b.length >= 2, `${lang}: ${k} — формы множественного числа`);
         continue;
       }
       const params = (s) => [...s.matchAll(/\{(\w+)\}/g)].map((m) => m[1]).sort();
@@ -37,8 +38,9 @@ test("все ключи из index.html есть в словаре", () => {
 
 test("язык по умолчанию — из настроек браузера", () => {
   assert.equal(detectLang(["be-BY", "ru"]), "be");
-  assert.equal(detectLang(["en-US", "ru-RU"]), "ru");
-  assert.equal(detectLang(["en-US", "de"]), DEFAULT_LANG);
+  assert.equal(detectLang(["en-US", "ru-RU"]), "en");
+  assert.equal(detectLang(["de-DE", "uk"]), "uk");
+  assert.equal(detectLang(["de", "lt"]), DEFAULT_LANG);
   assert.equal(detectLang([]), DEFAULT_LANG);
   assert.equal(setLang("xx"), DEFAULT_LANG);
 });
@@ -50,6 +52,12 @@ test("подстановки и множественное число", () => {
   assert.equal(plural(3, "plural.gap"), "3 пропускі");
   assert.equal(plural(12, "plural.gap"), "12 пропускаў");
   assert.equal(plural(21, "plural.item"), "21 заданне");
+  setLang("uk");
+  assert.equal(plural(3, "plural.gap"), "3 пропуски");
+  assert.equal(plural(5, "plural.item"), "5 завдань");
+  setLang("en");
+  assert.equal(plural(1, "plural.gap"), "1 gap");
+  assert.equal(plural(21, "plural.gap"), "21 gaps");
   setLang("ru");
   assert.equal(plural(24, "plural.item"), "24 задания");
   assert.equal(t("нет такого ключа"), "нет такого ключа");
