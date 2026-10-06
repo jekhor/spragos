@@ -2,6 +2,8 @@
 // Формат описан в README.md. Модуль не зависит от DOM — его можно тестировать в node.
 
 const KNOWN_KEYS = new Set(["title", "group", "description", "distractors", "hints", "reference", "subtopic", "word-practice"]);
+// Ключи, у которых бывают переводы: @title.be: …, @subtopic.be: Заголовок | описание
+const LOCALIZED_KEYS = new Set(["title", "group", "description", "subtopic"]);
 
 // Нормализация для сравнения ответов: NFC, схлопывание пробелов, без учёта регистра.
 export function normalize(s) {
@@ -76,7 +78,8 @@ export function parseTopic(source, file = "") {
     hints: "", // "always" — подсказки в этой теме показываются всегда
     reference: "", // путь к справке .md относительно data/ (по умолчанию — файл с тем же именем)
     wordPractice: true, // предлагать ли тренировку одного слова (@word-practice: off — нет)
-    subtopics: [], // { key, title, description }; key = "файл#заголовок"
+    subtopics: [], // { key, title, description, i18n }; key = "файл#заголовок" (по исходному заголовку, без перевода)
+    i18n: {}, // переводы: { be: { title, group, description } }
     items: [],
     errors: [],
   };
@@ -120,10 +123,21 @@ export function parseTopic(source, file = "") {
       return;
     }
 
-    const meta = !block && line.match(/^@([\wа-яё-]+)\s*:\s*(.*)$/i);
+    const meta = !block && line.match(/^@([\wа-яё-]+)(?:\.([a-z]{2,3}))?\s*:\s*(.*)$/i);
     if (meta) {
       const key = meta[1].toLowerCase();
-      const value = meta[2].trim();
+      const lang = meta[2]?.toLowerCase();
+      const value = meta[3].trim();
+      if (lang) {
+        // перевод: заголовок подтемы относится к последней строке @subtopic
+        if (!LOCALIZED_KEYS.has(key)) err(lineNo, `у параметра @${key} не бывает перевода`);
+        else if (key === "subtopic") {
+          const [title, ...rest] = value.split("|").map((x) => x.trim());
+          if (!subtopic) err(lineNo, `@subtopic.${lang} стоит до первой строки @subtopic`);
+          else subtopic.i18n[lang] = { title, description: rest.join("|") };
+        } else (topic.i18n[lang] ??= {})[key] = value;
+        return;
+      }
       if (!KNOWN_KEYS.has(key)) {
         err(lineNo, `неизвестный параметр @${key}`);
       } else if (key === "distractors") {
@@ -135,7 +149,7 @@ export function parseTopic(source, file = "") {
         if (!title) err(lineNo, "у подтемы нет заголовка");
         else if (topic.subtopics.some((st) => st.key === subKey)) err(lineNo, `подтема «${title}» уже есть в этом файле`);
         else {
-          subtopic = { key: subKey, title, description: rest.join("|"), line: lineNo };
+          subtopic = { key: subKey, title, description: rest.join("|"), line: lineNo, i18n: {} };
           topic.subtopics.push(subtopic);
         }
       } else if (key === "word-practice") {
@@ -187,6 +201,11 @@ export function parseTopic(source, file = "") {
     }
   }
   return topic;
+}
+
+// Поле темы или подтемы на нужном языке; если перевода нет — исходное.
+export function localized(obj, field, lang) {
+  return (lang && obj.i18n?.[lang]?.[field]) || obj[field];
 }
 
 // Все пропуски единицы по порядку.

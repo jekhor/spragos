@@ -8,8 +8,12 @@
 @hints: always
 @word-practice: off
 @description: Шесть падежей в ед. и мн. числе по типам склонения (linksniuotės). Подсказка — именительный падеж ед. ч.
+@title.be: Daiktavardžiai — назоўнікі
+@group.be: Скланенне
+@description.be: Шэсць склонаў у адзіночным і множным ліку па тыпах скланення (linksniuotės). Падказка — назоўны склон адз. л.
 
 @subtopic: 1. мужской род, -(i)as, -is, -ys | namas, kelias, brolis, medis, traukinys
+@subtopic.be: 1. мужчынскі род, -(i)as, -is, -ys | namas, kelias, brolis, medis, traukinys
 
 # namas
 Mes gyvename tame dideliame {name|namas} prie upės.
@@ -354,6 +358,7 @@ Vakarais visa šeima susirenka prie didelio {stalo|stalas} virtuvėje.
 ---
 
 @subtopic: 2. женский род, -(i)a, -ė | knyga, bažnyčia, gatvė; м. р.: dėdė
+@subtopic.be: 2. жаночы род, -(i)a, -ė | knyga, bažnyčia, gatvė; м. р.: dėdė
 
 # knyga
 Ši {knyga|knyga} labai įdomi.
@@ -638,6 +643,7 @@ Sekmadieniais einame į kaimo {bažnyčią|bažnyčia}, o paskui — į mažą {
 ---
 
 @subtopic: 3. женский род (и немного мужского), -is | šalis, naktis, širdis; м. р.: dantis, debesis
+@subtopic.be: 3. жаночы род (і крыху мужчынскага), -is | šalis, naktis, širdis; м. р.: dantis, debesis
 
 # šalis
 Lietuva — nedidelė {šalis|šalis}.
@@ -894,6 +900,7 @@ Tą {naktį|naktis} danguje nebuvo nė vieno {debesies|debesis}.
 ---
 
 @subtopic: 4. мужской род, -(i)us | sūnus, turgus, vaisius; žmogus
+@subtopic.be: 4. мужчынскі род, -(i)us | sūnus, turgus, vaisius; žmogus
 
 # sūnus
 Mano {sūnus|sūnus} mokosi universitete.
@@ -1125,6 +1132,7 @@ Po valandos {dangus|dangus} vėl buvo giedras.
 ---
 
 @subtopic: 5. мужской род, -uo; sesuo, duktė | akmuo, vanduo, šuo, mėnuo, sesuo, duktė
+@subtopic.be: 5. мужчынскі род, -uo; sesuo, duktė | akmuo, vanduo, šuo, mėnuo, sesuo, duktė
 
 # sesuo
 Mano {sesuo|sesuo} gyvena Londone.

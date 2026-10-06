@@ -24,53 +24,54 @@
 </head>
 <body>
   <header class="topbar">
-    <h1 class="logo"><a href="#" id="logo" title="На главную">Spra<span>gos</span></a></h1>
+    <h1 class="logo"><a href="#" id="logo" title="На главную" data-i18n-title="nav.home">Spra<span>gos</span></a></h1>
     <nav>
-      <button class="nav-btn" data-nav="setup">Упражнение</button>
-      <button class="nav-btn" data-nav="refs">Справка</button>
-      <button class="nav-btn" data-nav="stats">Статистика</button>
+      <button class="nav-btn" data-nav="setup" data-i18n="nav.setup">Упражнение</button>
+      <button class="nav-btn" data-nav="refs" data-i18n="nav.refs">Справка</button>
+      <button class="nav-btn" data-nav="stats" data-i18n="nav.stats">Статистика</button>
     </nav>
+    <select id="lang" class="lang-select" aria-label="Язык интерфейса" data-i18n-aria-label="lang.label"></select>
   </header>
 
   <main>
     <!-- Главная -->
     <section id="screen-home" class="screen home" hidden>
       <div class="hero">
-        <p class="hero-kicker">мини-тренажёр литовской грамматики</p>
+        <p class="hero-kicker" data-i18n="home.kicker">мини-тренажёр литовской грамматики</p>
         <h2 class="hero-title">Spra<span>gos</span></h2>
-        <p class="hero-lead"><em>Spragos</em> по-литовски значит «пропуски»: и в тексте, и в знаниях. Основная механика на данный момент — предложения с пропусками: перетащите в каждый пропуск слово в правильной форме или впишите его с клавиатуры. Сейчас есть упражнения на склонение существительных, прилагательных, местоимений и числительных, более 500 пропусков на каждую тему.</p>
+        <p class="hero-lead" data-i18n-html="home.lead"><em>Spragos</em> по-литовски значит «пропуски»: и в тексте, и в знаниях. Основная механика на данный момент — предложения с пропусками: перетащите в каждый пропуск слово в правильной форме или впишите его с клавиатуры. Сейчас есть упражнения на склонение существительных, прилагательных, местоимений и числительных, более 500 пропусков на каждую тему.</p>
         <div class="actions">
-          <button class="btn primary" id="home-start" type="button">Начать упражнение</button>
-          <button class="btn" id="home-refs" type="button">Грамматическая справка</button>
+          <button class="btn primary" id="home-start" type="button" data-i18n="home.start">Начать упражнение</button>
+          <button class="btn" id="home-refs" type="button" data-i18n="home.refs">Грамматическая справка</button>
         </div>
       </div>
 
       <div class="panel prose">
-        <h2>Что это</h2>
-        <p>Небольшой тренажёр, который был сделан мной с помощью Claude для собственной подготовки к экзамену по литовскому языку, когда понадобилось быстро пройтись по определённым темам. Им может пользоваться кто угодно.</p>
+        <h2 data-i18n="home.about.title">Что это</h2>
+        <p data-i18n-html="home.about.text">Небольшой тренажёр, который был сделан мной с помощью Claude для собственной подготовки к экзамену по литовскому языку, когда понадобилось быстро пройтись по определённым темам. Им может пользоваться кто угодно.</p>
         <ul>
-          <li><strong>Без регистрации.</strong> Аккаунт не нужен, никакие данные никуда не отправляются.</li>
-          <li><strong>Статистика хранится только в вашем браузере.</strong> На другом устройстве или в другом браузере она будет своя; очистка данных сайта её сотрёт.</li>
-          <li><strong>Работает на телефоне:</strong> слова можно перетаскивать пальцем или просто нажать на слово, а потом на пропуск.</li>
-          <li><strong>Два режима:</strong> перетаскивание слов из банка или ввод с клавиатуры. Для литовских букв (ą, č, ę, ė, į, š, ų, ū, ž) есть панель, если их нет на клавиатуре.</li>
+          <li data-i18n-html="home.about.noAccount"><strong>Без регистрации.</strong> Аккаунт не нужен, никакие данные никуда не отправляются.</li>
+          <li data-i18n-html="home.about.stats"><strong>Статистика хранится только в вашем браузере.</strong> На другом устройстве или в другом браузере она будет своя; очистка данных сайта её сотрёт.</li>
+          <li data-i18n-html="home.about.mobile"><strong>Работает на телефоне:</strong> слова можно перетаскивать пальцем или просто нажать на слово, а потом на пропуск.</li>
+          <li data-i18n-html="home.about.modes"><strong>Два режима:</strong> перетаскивание слов из банка или ввод с клавиатуры. Для литовских букв (ą, č, ę, ė, į, š, ų, ū, ž) есть панель, если их нет на клавиатуре.</li>
         </ul>
       </div>
 
       <div class="panel prose warn-note">
-        <h2>Важно о материалах</h2>
-        <p>Задания и справки <strong>полностью сгенерированы ИИ</strong> и <strong>не проверялись носителями языка</strong>. Каждая форма в ответах автоматически сверена с таблицами склонения из учебников, но ошибки в выборе падежа или неестественные фразы всё же возможны.</p>
-        <p>Чтобы примеры были как можно правильнее, часть предложений взята из учебников, найденных в свободном доступе в интернете, <strong>дословно или почти дословно</strong>. Права на них принадлежат авторам этих книг, поэтому при копировании и использовании материалов будьте осторожны.</p>
-        <p class="muted small">Источники: Žingsnis I–II, Sėkmės, Langas į lietuvių kalbą, Lietuvių kalba dialoguose, Ne dienos be lietuvių kalbos, Skaitome ir klausome lietuviškai, Mano ir tavo šalis Lietuva, Complete Lithuanian, Colloquial Lithuanian.</p>
+        <h2 data-i18n="home.warn.title">Важно о материалах</h2>
+        <p data-i18n-html="home.warn.ai">Задания и справки <strong>полностью сгенерированы ИИ</strong> и <strong>не проверялись носителями языка</strong>. Каждая форма в ответах автоматически сверена с таблицами склонения из учебников, но ошибки в выборе падежа или неестественные фразы всё же возможны.</p>
+        <p data-i18n-html="home.warn.books">Чтобы примеры были как можно правильнее, часть предложений взята из учебников, найденных в свободном доступе в интернете, <strong>дословно или почти дословно</strong>. Права на них принадлежат авторам этих книг, поэтому при копировании и использовании материалов будьте осторожны.</p>
+        <p class="muted small" data-i18n="home.warn.sources">Источники: Žingsnis I–II, Sėkmės, Langas į lietuvių kalbą, Lietuvių kalba dialoguose, Ne dienos be lietuvių kalbos, Skaitome ir klausome lietuviškai, Mano ir tavo šalis Lietuva, Complete Lithuanian, Colloquial Lithuanian.</p>
       </div>
 
       <div class="panel prose">
-        <h2>Лицензия</h2>
-        <p>Пользоваться, копировать и переделывать можно как угодно. Всё предоставляется «как есть»: могут быть ошибки как в коде, так и в заданиях.</p>
+        <h2 data-i18n="home.license.title">Лицензия</h2>
+        <p data-i18n-html="home.license.text">Пользоваться, копировать и переделывать можно как угодно. Всё предоставляется «как есть»: могут быть ошибки как в коде, так и в заданиях.</p>
         <ul>
-          <li><strong>Код</strong> — лицензия <a href="https://opensource.org/license/mit" target="_blank" rel="noopener">MIT</a>.</li>
-          <li><strong>Задания и справки</strong> — <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.ru" target="_blank" rel="noopener">CC0 1.0</a> (общественное достояние), кроме фраз, взятых из учебников: на них права сохраняются за авторами.</li>
+          <li data-i18n-html="home.license.code"><strong>Код</strong> — лицензия <a href="https://opensource.org/license/mit" target="_blank" rel="noopener">MIT</a>.</li>
+          <li data-i18n-html="home.license.content"><strong>Задания и справки</strong> — <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.ru" target="_blank" rel="noopener">CC0 1.0</a> (общественное достояние), кроме фраз, взятых из учебников: на них права сохраняются за авторами.</li>
         </ul>
-        <p>Исходный код и база заданий: <a href="https://github.com/jekhor/spragos" target="_blank" rel="noopener">github.com/jekhor/spragos</a>.</p>
+        <p data-i18n-html="home.license.source">Исходный код и база заданий: <a href="https://github.com/jekhor/spragos" target="_blank" rel="noopener">github.com/jekhor/spragos</a>.</p>
       </div>
     </section>
 
@@ -80,53 +81,53 @@
 
       <div class="panel">
         <div class="panel-head">
-          <h2>Темы</h2>
+          <h2 data-i18n="setup.topics">Темы</h2>
           <div class="links">
-            <button class="link" id="select-all">выбрать все</button>
-            <button class="link" id="select-none">снять</button>
+            <button class="link" id="select-all" data-i18n="setup.selectAll">выбрать все</button>
+            <button class="link" id="select-none" data-i18n="setup.selectNone">снять</button>
           </div>
         </div>
         <div id="topic-list"></div>
       </div>
 
       <div class="panel options">
-        <h2>Раунд</h2>
+        <h2 data-i18n="setup.round">Раунд</h2>
         <label class="row" id="row-lemma">
-          <span>Слово</span>
+          <span data-i18n="setup.word">Слово</span>
           <select id="opt-lemma"></select>
         </label>
         <div class="row">
-          <span>Режим</span>
+          <span data-i18n="setup.mode">Режим</span>
           <div class="seg" role="radiogroup">
-            <label><input type="radio" name="mode" value="drag"><span>перетаскивание</span></label>
-            <label><input type="radio" name="mode" value="type"><span>ввод с клавиатуры</span></label>
+            <label><input type="radio" name="mode" value="drag"><span data-i18n="setup.mode.drag">перетаскивание</span></label>
+            <label><input type="radio" name="mode" value="type"><span data-i18n="setup.mode.type">ввод с клавиатуры</span></label>
           </div>
         </div>
         <label class="row">
-          <span>Сколько пропусков (примерно)</span>
+          <span data-i18n="setup.count">Сколько пропусков (примерно)</span>
           <input type="number" id="opt-count" min="1" max="100" step="1">
         </label>
         <div class="row">
-          <span>Что включать</span>
+          <span data-i18n="setup.kind">Что включать</span>
           <div class="seg" role="radiogroup">
-            <label><input type="radio" name="kind" value="all"><span>всё</span></label>
-            <label><input type="radio" name="kind" value="sentence"><span>предложения</span></label>
-            <label><input type="radio" name="kind" value="text"><span>тексты</span></label>
+            <label><input type="radio" name="kind" value="all"><span data-i18n="setup.kind.all">всё</span></label>
+            <label><input type="radio" name="kind" value="sentence"><span data-i18n="setup.kind.sentence">предложения</span></label>
+            <label><input type="radio" name="kind" value="text"><span data-i18n="setup.kind.text">тексты</span></label>
           </div>
         </div>
         <div class="row" id="row-bank">
-          <span>Банк слов</span>
+          <span data-i18n="setup.bank">Банк слов</span>
           <div class="seg" role="radiogroup">
-            <label><input type="radio" name="bank" value="answers"><span>только ответы</span></label>
-            <label><input type="radio" name="bank" value="distractors"><span>+ лишние формы</span></label>
+            <label><input type="radio" name="bank" value="answers"><span data-i18n="setup.bank.answers">только ответы</span></label>
+            <label><input type="radio" name="bank" value="distractors"><span data-i18n="setup.bank.distractors">+ лишние формы</span></label>
           </div>
         </div>
         <label class="row check">
           <input type="checkbox" id="opt-hints">
-          <span>Показывать начальную форму под пропуском</span>
+          <span data-i18n="setup.hints">Показывать начальную форму под пропуском</span>
         </label>
         <div class="actions">
-          <button class="btn primary" id="start">Начать</button>
+          <button class="btn primary" id="start" data-i18n="setup.start">Начать</button>
           <span class="muted" id="pool-info"></span>
         </div>
       </div>
@@ -137,7 +138,7 @@
       <div class="round-head">
         <div class="muted" id="round-topics"></div>
         <div class="round-head-right">
-          <button class="link" id="round-ref" type="button" hidden>справка</button>
+          <button class="link" id="round-ref" type="button" hidden data-i18n="round.ref">справка</button>
           <span class="muted" id="round-progress"></span>
         </div>
       </div>
@@ -147,11 +148,11 @@
           <ol class="units" id="units"></ol>
           <div class="actions round-actions">
             <div class="result" id="result" hidden></div>
-            <button class="btn primary" id="check">Проверить</button>
-            <button class="btn" id="fix" hidden>Исправить ошибки</button>
-            <button class="btn" id="reveal" hidden>Показать ответы</button>
-            <button class="btn" id="again">Новый раунд</button>
-            <button class="btn ghost-btn" id="to-setup">К настройкам</button>
+            <button class="btn primary" id="check" data-i18n="round.check">Проверить</button>
+            <button class="btn" id="fix" hidden data-i18n="round.fix">Исправить ошибки</button>
+            <button class="btn" id="reveal" hidden data-i18n="round.reveal">Показать ответы</button>
+            <button class="btn" id="again" data-i18n="round.again">Новый раунд</button>
+            <button class="btn ghost-btn" id="to-setup" data-i18n="round.toSetup">К настройкам</button>
           </div>
         </div>
       </div>
@@ -160,7 +161,7 @@
     <!-- Экран справки -->
     <section id="screen-refs" class="screen" hidden>
       <div class="panel">
-        <h2>Грамматическая справка</h2>
+        <h2 data-i18n="refs.title">Грамматическая справка</h2>
         <div id="ref-list"></div>
       </div>
     </section>
@@ -169,10 +170,10 @@
     <section id="screen-stats" class="screen" hidden>
       <div class="panel">
         <div class="panel-head">
-          <h2>Статистика по темам</h2>
-          <button class="link danger" id="stats-reset">сбросить</button>
+          <h2 data-i18n="stats.title">Статистика по темам</h2>
+          <button class="link danger" id="stats-reset" data-i18n="stats.reset">сбросить</button>
         </div>
-        <p class="muted small">Считаются ответы при первой проверке каждого раунда. Хранится в этом браузере.</p>
+        <p class="muted small" data-i18n="stats.note">Считаются ответы при первой проверке каждого раунда. Хранится в этом браузере.</p>
         <div id="stats-table"></div>
       </div>
     </section>
@@ -181,7 +182,7 @@
   <dialog id="ref-dialog" aria-labelledby="ref-title">
     <div class="ref-head">
       <h1 id="ref-title"></h1>
-      <button type="button" class="ref-close" id="ref-close" aria-label="Закрыть">×</button>
+      <button type="button" class="ref-close" id="ref-close" aria-label="Закрыть" data-i18n-aria-label="refs.close">×</button>
     </div>
     <div class="ref-tabs" id="ref-tabs" hidden></div>
     <div class="ref-body" id="ref-body"></div>

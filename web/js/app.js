@@ -1,8 +1,10 @@
-import { parseTopic } from "./parser.js";
+import { parseTopic, localized } from "./parser.js";
 import { buildRound, countItems, isCorrect, poolFor, listLemmas, applySelection, statsKey } from "./round.js";
 import { enableDragAndDrop } from "./dnd.js";
 import * as store from "./stats.js";
 import { renderMarkdown, markdownTitle, stripTitle } from "./markdown.js";
+import * as i18n from "./i18n.js";
+import { getLang, LANGS } from "./i18n.js";
 
 const DEFAULT_SETTINGS = {
   topics: [], // файлы тем и ключи подтем ("файл#заголовок"); файл темы с подтемами — все её подтемы
@@ -12,6 +14,7 @@ const DEFAULT_SETTINGS = {
   hints: true,
   mode: "drag", // "drag" — перетаскивание из банка, "type" — ввод с клавиатуры
   lemma: "", // тренировать формы одного слова (лемма-подсказка в нормализованном виде) или "" — все слова
+  lang: "", // язык интерфейса, выбранный пользователем; "" — по настройкам браузера
 };
 
 const $ = (sel) => document.querySelector(sel);
@@ -31,7 +34,7 @@ function h(tag, attrs = {}, ...children) {
 
 const state = {
   topics: [],
-  refs: new Map(), // путь .md относительно data/ → { path, title, src }
+  refs: new Map(), // путь .md относительно data/ → { path, title, src, translations: { be: { title, src } } }
   loadErrors: [],
   settings: store.loadSettings(DEFAULT_SETTINGS),
   round: null,
@@ -84,13 +87,35 @@ async function loadTopics() {
       return src == null ? null : { path: f, title: markdownTitle(src, f), src };
     })),
   ]);
-  for (const r of refs) if (r) state.refs.set(r.path, r);
+  // имя.be.md — перевод справки имя.md
+  const translations = [];
+  for (const r of refs) {
+    if (!r) continue;
+    const m = r.path.match(/^(.*)\.([a-z]{2,3})\.md$/);
+    if (m && LANGS[m[2]]) translations.push({ ...r, base: m[1] + ".md", lang: m[2] });
+    else state.refs.set(r.path, { ...r, translations: {} });
+  }
+  for (const tr of translations) {
+    const base = state.refs.get(tr.base);
+    if (base) base.translations[tr.lang] = { title: tr.title, src: tr.src };
+    else state.loadErrors.push({ file: tr.path, line: 0, message: `нет исходной справки ${tr.base} для перевода` });
+  }
   for (const t of topics) {
     if (!t) continue;
     state.loadErrors.push(...t.errors);
     t.refPath = resolveRef(t);
     if (t.items.length) state.topics.push(t);
   }
+}
+
+// Справка на текущем языке (или исходная, если перевода нет).
+function refText(ref) {
+  return ref.translations[getLang()] || ref;
+}
+
+// Название темы на текущем языке.
+function topicTitle(topic) {
+  return localized(topic, "title", getLang());
 }
 
 // Справка темы: @reference (путь относительно data/) или файл .md с тем же именем.
@@ -143,7 +168,7 @@ function renderLoadErrors() {
   if (!state.loadErrors.length) return;
   box.append(
     h("details", { class: "panel warn" },
-      h("summary", {}, `Ошибки в файлах базы: ${state.loadErrors.length}`),
+      h("summary", {}, i18n.t("setup.loadErrors", { n: state.loadErrors.length })),
       h("ul", {},
         state.loadErrors.map((e) =>
           h("li", {},
@@ -156,7 +181,7 @@ function renderTopicList() {
   const list = $("#topic-list");
   list.replaceChildren();
   if (!state.topics.length) {
-    list.append(h("p", { class: "muted" }, "В папке data/ нет ни одной темы."));
+    list.append(h("p", { class: "muted" }, i18n.t("setup.noTopics")));
     return;
   }
   const stats = store.loadStats();
@@ -175,32 +200,33 @@ function renderTopicList() {
   };
   const counts = (c) => {
     const parts = [];
-    if (c.sentence) parts.push(`${c.sentence} предл.`);
-    if (c.text) parts.push(`${c.text} текст.`);
+    if (c.sentence) parts.push(i18n.t("setup.sentences", { n: c.sentence }));
+    if (c.text) parts.push(i18n.t("setup.texts", { n: c.text }));
     return h("span", {}, parts.join(", "));
   };
+  const lang = getLang();
   for (const [group, topics] of groups) {
-    if (group) list.append(h("h3", { class: "group" }, group));
+    if (group) list.append(h("h3", { class: "group" }, localized(topics[0], "group", lang)));
     for (const t of topics) {
       const subs = t.subtopics;
       list.append(
         h("label", { class: "topic" },
           h("input", { type: "checkbox", dataset: { topic: t.file }, onchange: (e) => toggleTopic(t, e.target.checked) }),
           h("span", { class: "topic-body" },
-            h("span", { class: "topic-title" }, t.title),
-            t.description ? h("span", { class: "topic-desc" }, t.description) : null),
+            h("span", { class: "topic-title" }, topicTitle(t)),
+            t.description ? h("span", { class: "topic-desc" }, localized(t, "description", lang)) : null),
           h("span", { class: "topic-meta" },
             subs.length ? null : counts(countItems(t)),
             t.refPath
               ? h("button", {
                   type: "button",
                   class: "link ref-link",
-                  title: "Грамматическая справка",
+                  title: i18n.t("setup.refTitle"),
                   onclick: (e) => {
                     e.preventDefault();
                     openRefs([t.refPath]);
                   },
-                }, "справка")
+                }, i18n.t("setup.ref"))
               : null,
             badge([t.file, ...subs.map((st) => st.key)])))); // файл — статистика до разбиения на подтемы
       if (subs.length) {
@@ -210,8 +236,8 @@ function renderTopicList() {
               h("label", { class: "topic sub" },
                 h("input", { type: "checkbox", dataset: { sub: st.key }, onchange: (e) => toggleSubtopic(t, st, e.target.checked) }),
                 h("span", { class: "topic-body" },
-                  h("span", { class: "topic-title" }, st.title),
-                  st.description ? h("span", { class: "topic-desc" }, st.description) : null),
+                  h("span", { class: "topic-title" }, localized(st, "title", lang)),
+                  st.description ? h("span", { class: "topic-desc" }, localized(st, "description", lang)) : null),
                 h("span", { class: "topic-meta" }, counts(countItems(t, st.key)), badge([st.key]))))));
       }
     }
@@ -285,22 +311,18 @@ function saveSettings() {
   updatePoolInfo();
 }
 
-function plural(n, one, few, many) {
-  const m10 = n % 10;
-  const m100 = n % 100;
-  const word = m10 === 1 && m100 !== 11 ? one : m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14) ? few : many;
-  return `${n} ${word}`;
-}
-
 function selectedTopics() {
   return applySelection(state.topics, state.settings.topics);
 }
 
 // Название темы в заголовке раунда: у частично выбранной — подтемы (номера, если заголовки с них начинаются).
 function topicLabel(t) {
-  if (!t.partial) return t.title;
-  if (t.subtopics.length === 1) return `${t.title}: ${t.subtopics[0].title}`;
-  return `${t.title} (${t.subtopics.map((st) => st.title.match(/^(\d+)\./)?.[1] ?? st.title).join(", ")})`;
+  const lang = getLang();
+  const title = topicTitle(t);
+  if (!t.partial) return title;
+  const sub = (st) => localized(st, "title", lang);
+  if (t.subtopics.length === 1) return `${title}: ${sub(t.subtopics[0])}`;
+  return `${title} (${t.subtopics.map((st) => sub(st).match(/^(\d+)\./)?.[1] ?? sub(st)).join(", ")})`;
 }
 
 // Список «Слово»: леммы выбранных тем, сгруппированные по темам.
@@ -314,10 +336,10 @@ function renderLemmaSelect() {
   }
   const select = $("#opt-lemma");
   select.replaceChildren(
-    h("option", { value: "" }, "все слова"),
+    h("option", { value: "" }, i18n.t("setup.allWords")),
     ...groups.map((g) =>
-      h("optgroup", { label: g.topic.title },
-        g.lemmas.map((l) => h("option", { value: l.key }, `${l.label} — ${plural(l.count, "пропуск", "пропуска", "пропусков")}`))))
+      h("optgroup", { label: topicTitle(g.topic) },
+        g.lemmas.map((l) => h("option", { value: l.key }, i18n.t("setup.lemmaOption", { label: l.label, gaps: i18n.plural(l.count, "plural.gap") })))))
   );
   select.value = s.lemma;
   $("#row-lemma").hidden = !groups.length; // у выбранных тем тренировка одного слова не предусмотрена
@@ -329,8 +351,8 @@ function updatePoolInfo() {
   const n = pool.length;
   const gaps = pool.reduce((sum, u) => sum + u.active, 0);
   $("#pool-info").textContent = n
-    ? `в базе: ${plural(n, "задание", "задания", "заданий")}, ${plural(gaps, "пропуск", "пропуска", "пропусков")}`
-    : "выберите хотя бы одну тему";
+    ? i18n.t("setup.pool", { items: i18n.plural(n, "plural.item"), gaps: i18n.plural(gaps, "plural.gap") })
+    : i18n.t("setup.poolEmpty");
   $("#start").disabled = n === 0;
 }
 
@@ -356,7 +378,7 @@ function startRound() {
     selected: null,
     recorded: false,
     revealed: false,
-    topicNames: topics.map(topicLabel),
+    topics, // для заголовка раунда: его пересчитывают при смене языка
     lemmaLabel: state.settings.lemma ? r.gaps[0]?.hint : "",
   };
   renderRound();
@@ -365,7 +387,7 @@ function startRound() {
 
 function renderRound() {
   const r = state.round;
-  $("#round-topics").textContent = r.topicNames.join(" · ") + (r.lemmaLabel ? ` · слово «${r.lemmaLabel}»` : "");
+  renderRoundTitle();
   r.refPaths = [...new Set(r.units.map((u) => u.topic.refPath).filter(Boolean))];
   $("#round-ref").hidden = !r.refPaths.length;
 
@@ -380,10 +402,10 @@ function renderRound() {
   const bank = $("#bank");
   bank.replaceChildren(); // плашки прошлого раунда (их id совпадают с новыми)
   bank.classList.toggle("letters", r.mode === "type");
-  bank.setAttribute("aria-label", r.mode === "type" ? "Литовские буквы" : "Банк слов");
+  bank.setAttribute("aria-label", i18n.t(r.mode === "type" ? "round.letters" : "round.bank"));
   if (r.mode === "type") {
     bank.append(
-      h("span", { class: "letters-label" }, "Литовские буквы:"),
+      h("span", { class: "letters-label" }, i18n.t("round.lettersLabel")),
       ...LT_LETTERS.map((ch) => h("button", { type: "button", class: "letter", dataset: { letter: ch }, tabindex: "-1" }, ch))
     );
   }
@@ -410,7 +432,7 @@ function renderRound() {
                 autocorrect: "off",
                 spellcheck: "false",
                 enterkeyhint: "next",
-                "aria-label": gap.hint ? `пропуск, начальная форма: ${gap.hint}` : "пропуск",
+                "aria-label": gap.hint ? i18n.t("round.gapHint", { hint: gap.hint }) : i18n.t("round.gap"),
                 dataset: { gap: gap.id },
                 style: `width:${inputWidth("", gap)}ch`,
               }),
@@ -419,7 +441,7 @@ function renderRound() {
               class: "gap",
               role: "button",
               tabindex: "0",
-              "aria-label": "пропуск",
+              "aria-label": i18n.t("round.gap"),
               dataset: { gap: gap.id },
             },
               h("span", { class: "slot" }),
@@ -464,7 +486,7 @@ function layout() {
     }
   }
   const filled = r.mode === "type" ? layoutTyped() : layoutChips();
-  $("#round-progress").textContent = `заполнено ${filled} из ${r.gaps.length}`;
+  $("#round-progress").textContent = i18n.t("round.progress", { filled, total: r.gaps.length });
 
   const allCorrect = r.gaps.every((g) => r.status.get(g.id) === "correct");
   const hasWrong = [...r.status.values()].includes("wrong");
@@ -495,7 +517,9 @@ function layoutChips() {
     const st = r.status.get(gid);
     el.classList.toggle("filled", r.placement.has(gid));
     el.classList.toggle("target", r.selected != null && st !== "correct");
-    el.setAttribute("aria-label", r.placement.has(gid) ? "пропуск: " + r.chipById.get(r.placement.get(gid)).text : "пустой пропуск");
+    el.setAttribute("aria-label", r.placement.has(gid)
+      ? i18n.t("round.gapFilled", { word: r.chipById.get(r.placement.get(gid)).text })
+      : i18n.t("round.gapEmpty"));
     if (!r.placement.has(gid)) el.querySelector(".slot").replaceChildren();
   }
   for (const c of r.chips) {
@@ -616,17 +640,32 @@ function check() {
     );
   }
 
+  r.score = correct;
+  $("#result").hidden = false;
+  renderResult();
+  layout();
+}
+
+// Итог проверки (отдельно, чтобы перерисовать его при смене языка).
+function renderResult() {
+  const r = state.round;
+  const correct = r.score;
   const total = r.gaps.length;
   const res = $("#result");
-  res.hidden = false;
   res.className = "result " + (correct === total ? "good" : "");
+  const [before, after] = i18n.t("round.score").split("{score}");
   res.replaceChildren(
     correct === total
-      ? h("strong", {}, r.firstScore === total ? "Puiku! Всё верно с первой попытки." : "Теперь всё верно!")
-      : h("span", {}, "Верно ", h("strong", {}, `${correct} из ${total}`),
-          r.firstScore !== correct ? ` (с первой попытки: ${r.firstScore})` : "")
+      ? h("strong", {}, i18n.t(r.firstScore === total ? "round.perfect" : "round.allCorrect"))
+      : h("span", {}, before, h("strong", {}, i18n.t("round.scoreOf", { correct, total })), after,
+          r.firstScore !== correct ? i18n.t("round.firstTry", { n: r.firstScore }) : "")
   );
-  layout();
+}
+
+function renderRoundTitle() {
+  const r = state.round;
+  $("#round-topics").textContent = r.topics.map(topicLabel).join(" · ")
+    + (r.lemmaLabel ? " · " + i18n.t("round.word", { word: r.lemmaLabel }) : "");
 }
 
 function fixMistakes() {
@@ -689,11 +728,14 @@ function reveal() {
 
 // ---------- Справка ----------
 
+let openedRefs = null; // { paths, active } — чтобы перерисовать окно при смене языка
+
 function openRefs(paths, active = 0) {
   const dlg = $("#ref-dialog");
-  const refs = paths.map((p) => state.refs.get(p)).filter(Boolean);
+  const refs = paths.map((p) => state.refs.get(p)).filter(Boolean).map(refText);
   if (!refs.length) return;
   const show = (k) => {
+    openedRefs = { paths, active: k };
     const ref = refs[k];
     $("#ref-title").textContent = ref.title;
     const tabs = $("#ref-tabs");
@@ -716,19 +758,19 @@ function renderRefList() {
   const box = $("#ref-list");
   box.replaceChildren();
   if (!state.refs.size) {
-    box.append(h("p", { class: "muted" }, "В папке data/ пока нет ни одной справки (.md)."));
+    box.append(h("p", { class: "muted" }, i18n.t("refs.none")));
     return;
   }
   const usedBy = new Map();
   for (const t of state.topics) {
-    if (t.refPath) usedBy.set(t.refPath, [...(usedBy.get(t.refPath) || []), t.title]);
+    if (t.refPath) usedBy.set(t.refPath, [...(usedBy.get(t.refPath) || []), topicTitle(t)]);
   }
-  const refs = [...state.refs.values()].sort((a, b) => a.title.localeCompare(b.title, "lt"));
+  const refs = [...state.refs.values()].sort((a, b) => refText(a).title.localeCompare(refText(b).title, "lt"));
   for (const ref of refs) {
     box.append(
       h("button", { type: "button", class: "ref-item", onclick: () => openRefs([ref.path]) },
-        h("span", { class: "topic-title" }, ref.title),
-        usedBy.has(ref.path) ? h("span", { class: "topic-desc" }, "к теме: " + usedBy.get(ref.path).join(", ")) : null));
+        h("span", { class: "topic-title" }, refText(ref).title),
+        usedBy.has(ref.path) ? h("span", { class: "topic-desc" }, i18n.t("refs.usedBy", { topics: usedBy.get(ref.path).join(", ") })) : null));
   }
 }
 
@@ -744,19 +786,19 @@ function renderStats() {
   box.replaceChildren();
   const titles = new Map();
   for (const t of state.topics) {
-    titles.set(t.file, t.title);
-    for (const st of t.subtopics) titles.set(st.key, `${t.title}: ${st.title}`);
+    titles.set(t.file, topicTitle(t));
+    for (const st of t.subtopics) titles.set(st.key, `${topicTitle(t)}: ${localized(st, "title", getLang())}`);
   }
   const rows = Object.entries(stats.topics).sort((a, b) => (b[1].last || "").localeCompare(a[1].last || ""));
   if (!rows.length) {
-    box.append(h("p", { class: "muted" }, "Пока нет ни одного завершённого раунда."));
+    box.append(h("p", { class: "muted" }, i18n.t("stats.empty")));
     return;
   }
   box.append(
     h("table", { class: "stats" },
       h("thead", {}, h("tr", {},
-        h("th", {}, "Тема"), h("th", {}, "Раундов"), h("th", {}, "Пропусков"),
-        h("th", {}, "Верно"), h("th", {}, "Последний раз"))),
+        h("th", {}, i18n.t("stats.topic")), h("th", {}, i18n.t("stats.rounds")), h("th", {}, i18n.t("stats.gaps")),
+        h("th", {}, i18n.t("stats.correct")), h("th", {}, i18n.t("stats.last")))),
       h("tbody", {},
         rows.map(([file, s]) => {
           const p = pct(s.correct, s.gaps);
@@ -767,13 +809,66 @@ function renderStats() {
             h("td", { class: "bar-cell" },
               h("span", { class: "bar" }, h("span", { style: `width:${p}%` })),
               h("span", { class: "num" }, p + "%")),
-            h("td", { class: "muted" }, s.last ? new Date(s.last).toLocaleDateString("ru-RU") : "—"));
+            h("td", { class: "muted" }, s.last ? new Date(s.last).toLocaleDateString(i18n.LOCALES[getLang()]) : "—"));
         }))));
+}
+
+// ---------- Язык ----------
+
+// Тексты из index.html: data-i18n — текст, data-i18n-html — HTML из словаря (пустая строка скрывает элемент),
+// data-i18n-title и data-i18n-aria-label — атрибуты.
+function applyStaticTexts() {
+  document.documentElement.lang = getLang();
+  document.title = i18n.t("doc.title");
+  for (const el of document.querySelectorAll("[data-i18n]")) el.textContent = i18n.t(el.dataset.i18n);
+  for (const el of document.querySelectorAll("[data-i18n-html]")) {
+    const html = i18n.t(el.dataset.i18nHtml);
+    el.innerHTML = html;
+    el.hidden = !html;
+  }
+  for (const el of document.querySelectorAll("[data-i18n-title]")) el.title = i18n.t(el.dataset.i18nTitle);
+  for (const el of document.querySelectorAll("[data-i18n-aria-label]")) el.setAttribute("aria-label", i18n.t(el.dataset.i18nAriaLabel));
+  $("#lang").value = getLang();
+}
+
+// Язык: выбранный пользователем или первый подходящий из настроек браузера.
+function initLang() {
+  i18n.setLang(state.settings.lang || i18n.detectLang(navigator.languages?.length ? navigator.languages : [navigator.language]));
+  $("#lang").replaceChildren(...Object.entries(LANGS).map(([code, name]) => h("option", { value: code, title: name }, i18n.LANG_SHORT[code])));
+  applyStaticTexts();
+}
+
+function changeLang(lang) {
+  state.settings.lang = i18n.setLang(lang);
+  store.saveSettings(state.settings);
+  applyStaticTexts();
+  renderLoadErrors();
+  renderTopicList();
+  updatePoolInfo();
+  renderRefList();
+  renderStats();
+  if (state.round) {
+    renderRoundTitle();
+    const bank = $("#bank");
+    bank.setAttribute("aria-label", i18n.t(state.round.mode === "type" ? "round.letters" : "round.bank"));
+    const label = bank.querySelector(".letters-label");
+    if (label) label.textContent = i18n.t("round.lettersLabel");
+    for (const [gid, el] of state.round.gapEls) {
+      const input = el.querySelector(".gap-input");
+      const hint = state.round.gapById.get(gid).hint;
+      if (input) input.setAttribute("aria-label", hint ? i18n.t("round.gapHint", { hint }) : i18n.t("round.gap"));
+    }
+    if (!$("#result").hidden) renderResult();
+    layout();
+  }
+  if ($("#ref-dialog").open && openedRefs) openRefs(openedRefs.paths, openedRefs.active);
 }
 
 // ---------- Запуск ----------
 
 async function init() {
+  initLang();
+  $("#lang").addEventListener("change", (e) => changeLang(e.target.value));
   for (const b of document.querySelectorAll(".nav-btn")) {
     b.addEventListener("click", () => {
       show(b.dataset.nav);
@@ -805,7 +900,7 @@ async function init() {
     if (e.target === dlg) dlg.close(); // клик по фону вокруг окна
   });
   $("#stats-reset").addEventListener("click", () => {
-    if (confirm("Сбросить всю статистику?")) {
+    if (confirm(i18n.t("stats.confirmReset"))) {
       store.resetStats();
       renderStats();
     }

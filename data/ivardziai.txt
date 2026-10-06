@@ -3,6 +3,9 @@
 @title: Įvardžiai — местоимения
 @group: Склонение
 @description: Личные (aš, tu, jis, ji, mes, jūs, jie, jos, savęs) и вопросительное kas
+@title.be: Įvardžiai — займеннікі
+@group.be: Скланенне
+@description.be: Асабовыя (aš, tu, jis, ji, mes, jūs, jie, jos, savęs) і пытальны kas
 @distractors: manęs, man, mane, tavęs, tau, tave, jo, jam, jį, jos, jai, ją
 
 # --- Личные местоимения ---
