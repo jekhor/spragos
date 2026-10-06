@@ -64,6 +64,8 @@ const STRINGS = {
     "setup.ref": "справка",
     "setup.refTitle": "Грамматическая справка",
     "setup.lemmaOption": "{label} — {gaps}",
+    "setup.subtopics": "подтемы: {n}",
+    "setup.subtopicsPartial": "подтемы: {k} из {n}",
 
     "plural.item": ["задание", "задания", "заданий"],
     "plural.gap": ["пропуск", "пропуска", "пропусков"],
@@ -162,6 +164,8 @@ const STRINGS = {
     "setup.ref": "даведка",
     "setup.refTitle": "Граматычная даведка",
     "setup.lemmaOption": "{label} — {gaps}",
+    "setup.subtopics": "падтэмы: {n}",
+    "setup.subtopicsPartial": "падтэмы: {k} з {n}",
 
     "plural.item": ["заданне", "заданні", "заданняў"],
     "plural.gap": ["пропуск", "пропускі", "пропускаў"],
@@ -260,6 +264,8 @@ const STRINGS = {
     "setup.ref": "довідка",
     "setup.refTitle": "Граматична довідка",
     "setup.lemmaOption": "{label} — {gaps}",
+    "setup.subtopics": "підтеми: {n}",
+    "setup.subtopicsPartial": "підтеми: {k} з {n}",
 
     "plural.item": ["завдання", "завдання", "завдань"],
     "plural.gap": ["пропуск", "пропуски", "пропусків"],
@@ -358,6 +364,8 @@ const STRINGS = {
     "setup.ref": "reference",
     "setup.refTitle": "Grammar reference",
     "setup.lemmaOption": "{label} — {gaps}",
+    "setup.subtopics": "subtopics: {n}",
+    "setup.subtopicsPartial": "subtopics: {k} of {n}",
 
     "plural.item": ["exercise", "exercises"],
     "plural.gap": ["gap", "gaps"],

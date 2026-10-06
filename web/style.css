@@ -147,6 +147,9 @@ main { max-width: 860px; margin: 0 auto; padding: 16px; }
 .topic input { margin-top: 5px; accent-color: var(--accent); width: 17px; height: 17px; }
 .topic-body { flex: 1; display: flex; flex-direction: column; min-width: 0; }
 .topic-title { font-weight: 600; }
+.sub-toggle { align-self: flex-start; margin-top: 2px; font-size: .85rem; }
+.sub-toggle::before { content: "▸"; display: inline-block; width: 1em; transition: transform .15s; }
+.sub-toggle[aria-expanded="true"]::before { transform: rotate(90deg); }
 .subtopics { margin: -4px 0 4px 27px; border-left: 2px solid var(--border); padding-left: 4px; }
 .topic.sub { padding: 5px 6px; }
 .topic.sub .topic-title { font-weight: 500; }

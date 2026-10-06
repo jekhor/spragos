@@ -15,6 +15,7 @@ const DEFAULT_SETTINGS = {
   mode: "drag", // "drag" — перетаскивание из банка, "type" — ввод с клавиатуры
   lemma: "", // тренировать формы одного слова (лемма-подсказка в нормализованном виде) или "" — все слова
   lang: "", // язык интерфейса, выбранный пользователем; "" — по настройкам браузера
+  expanded: [], // темы, у которых в настройках развёрнут список подтем
 };
 
 const $ = (sel) => document.querySelector(sel);
@@ -214,9 +215,21 @@ function renderTopicList() {
           h("input", { type: "checkbox", dataset: { topic: t.file }, onchange: (e) => toggleTopic(t, e.target.checked) }),
           h("span", { class: "topic-body" },
             h("span", { class: "topic-title" }, topicTitle(t)),
-            t.description ? h("span", { class: "topic-desc" }, localized(t, "description", lang)) : null),
+            t.description ? h("span", { class: "topic-desc" }, localized(t, "description", lang)) : null,
+            subs.length
+              ? h("button", {
+                  type: "button",
+                  class: "link sub-toggle",
+                  dataset: { toggle: t.file },
+                  "aria-expanded": String(isExpanded(t)),
+                  onclick: (e) => {
+                    e.preventDefault(); // кнопка внутри <label>: не переключать флажок темы
+                    toggleExpanded(t);
+                  },
+                })
+              : null),
           h("span", { class: "topic-meta" },
-            subs.length ? null : counts(countItems(t)),
+            counts(countItems(t)),
             t.refPath
               ? h("button", {
                   type: "button",
@@ -231,7 +244,7 @@ function renderTopicList() {
             badge([t.file, ...subs.map((st) => st.key)])))); // файл — статистика до разбиения на подтемы
       if (subs.length) {
         list.append(
-          h("div", { class: "subtopics" },
+          h("div", { class: "subtopics", dataset: { subsOf: t.file }, hidden: !isExpanded(t) },
             subs.map((st) =>
               h("label", { class: "topic sub" },
                 h("input", { type: "checkbox", dataset: { sub: st.key }, onchange: (e) => toggleSubtopic(t, st, e.target.checked) }),
@@ -243,6 +256,22 @@ function renderTopicList() {
     }
   }
   syncTopicChecks();
+}
+
+// Список подтем темы свёрнут, пока пользователь его не развернёт (состояние запоминается).
+function isExpanded(t) {
+  return (state.settings.expanded || []).includes(t.file);
+}
+
+function toggleExpanded(t) {
+  const set = new Set(state.settings.expanded || []);
+  if (set.has(t.file)) set.delete(t.file);
+  else set.add(t.file);
+  state.settings.expanded = [...set];
+  store.saveSettings(state.settings);
+  const open = set.has(t.file);
+  document.querySelector(`#topic-list [data-subs-of="${CSS.escape(t.file)}"]`).hidden = !open;
+  document.querySelector(`#topic-list [data-toggle="${CSS.escape(t.file)}"]`).setAttribute("aria-expanded", String(open));
 }
 
 // Отметки в списке тем по state.settings.topics; тема, выбранная частично, — «неопределённая».
@@ -258,6 +287,13 @@ function syncTopicChecks() {
     }
     box.checked = sel.has(t.file);
     box.indeterminate = !sel.has(t.file) && subsOn.length > 0;
+    const toggle = document.querySelector(`#topic-list [data-toggle="${CSS.escape(t.file)}"]`);
+    if (toggle) {
+      const n = t.subtopics.length;
+      toggle.textContent = box.indeterminate
+        ? i18n.t("setup.subtopicsPartial", { k: subsOn.length, n })
+        : i18n.t("setup.subtopics", { n });
+    }
   }
 }
 
