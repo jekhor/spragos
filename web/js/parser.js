@@ -76,9 +76,9 @@ export function parseTopic(source, file = "") {
     description: "",
     distractors: [],
     hints: "", // "always" — подсказки в этой теме показываются всегда
-    reference: "", // путь к справке .md относительно data/ (по умолчанию — файл с тем же именем)
+    references: [], // пути к справкам .md относительно data/ (@reference: a.md, b.md; по умолчанию — файл с тем же именем)
     wordPractice: true, // предлагать ли тренировку одного слова (@word-practice: off — нет)
-    subtopics: [], // { key, title, description, i18n }; key = "файл#заголовок" (по исходному заголовку, без перевода)
+    subtopics: [], // { key, title, description, i18n, hints, distractors }; key = "файл#заголовок" (по исходному заголовку, без перевода)
     i18n: {}, // переводы: { be: { title, group, description } }
     items: [],
     errors: [],
@@ -141,7 +141,14 @@ export function parseTopic(source, file = "") {
       if (!KNOWN_KEYS.has(key)) {
         err(lineNo, `неизвестный параметр @${key}`);
       } else if (key === "distractors") {
-        topic.distractors.push(...splitList(value, ","));
+        // после @subtopic — запас лишних форм этой подтемы, иначе всей темы
+        (subtopic ? subtopic.distractors : topic.distractors).push(...splitList(value, ","));
+      } else if (key === "hints") {
+        if (subtopic) subtopic.hints = value;
+        else topic.hints = value;
+      } else if (key === "reference") {
+        if (subtopic) err(lineNo, "@reference задаётся для всей темы, а не для подтемы");
+        else topic.references.push(...splitList(value, ",").map((x) => x.replace(/^\/+/, "")));
       } else if (key === "subtopic") {
         // @subtopic: Заголовок | описание
         const [title, ...rest] = value.split("|").map((x) => x.trim());
@@ -149,7 +156,7 @@ export function parseTopic(source, file = "") {
         if (!title) err(lineNo, "у подтемы нет заголовка");
         else if (topic.subtopics.some((st) => st.key === subKey)) err(lineNo, `подтема «${title}» уже есть в этом файле`);
         else {
-          subtopic = { key: subKey, title, description: rest.join("|"), line: lineNo, i18n: {} };
+          subtopic = { key: subKey, title, description: rest.join("|"), line: lineNo, i18n: {}, hints: "", distractors: [] };
           topic.subtopics.push(subtopic);
         }
       } else if (key === "word-practice") {
@@ -201,6 +208,11 @@ export function parseTopic(source, file = "") {
     }
   }
   return topic;
+}
+
+// Подтема задания (или null).
+export function itemSubtopic(topic, item) {
+  return item.subtopic ? topic.subtopics.find((st) => st.key === item.subtopic) || null : null;
 }
 
 // Поле темы или подтемы на нужном языке; если перевода нет — исходное.

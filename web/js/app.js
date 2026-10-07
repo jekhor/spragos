@@ -1,5 +1,5 @@
 import { parseTopic, localized } from "./parser.js";
-import { buildRound, countItems, isCorrect, poolFor, listLemmas, applySelection, statsKey } from "./round.js";
+import { buildRound, countItems, isCorrect, poolFor, listLemmas, applySelection, statsKey, hintsAlways } from "./round.js";
 import { enableDragAndDrop } from "./dnd.js";
 import * as store from "./stats.js";
 import { renderMarkdown, markdownTitle, stripTitle } from "./markdown.js";
@@ -104,7 +104,7 @@ async function loadTopics() {
   for (const t of topics) {
     if (!t) continue;
     state.loadErrors.push(...t.errors);
-    t.refPath = resolveRef(t);
+    t.refPaths = resolveRefs(t);
     if (t.items.length) state.topics.push(t);
   }
 }
@@ -119,16 +119,17 @@ function topicTitle(topic) {
   return localized(topic, "title", getLang());
 }
 
-// Справка темы: @reference (путь относительно data/) или файл .md с тем же именем.
-function resolveRef(topic) {
-  if (topic.reference) {
-    const path = topic.reference.replace(/^\/+/, "");
-    if (state.refs.has(path)) return path;
-    state.loadErrors.push({ file: topic.file, line: 0, message: `справка «${topic.reference}» не найдена в data/` });
-    return null;
+// Справки темы: @reference (пути относительно data/, через запятую) или файл .md с тем же именем.
+function resolveRefs(topic) {
+  if (topic.references.length) {
+    return topic.references.filter((path) => {
+      if (state.refs.has(path)) return true;
+      state.loadErrors.push({ file: topic.file, line: 0, message: `справка «${path}» не найдена в data/` });
+      return false;
+    });
   }
   const same = topic.file.replace(/\.txt$/, ".md");
-  return state.refs.has(same) ? same : null;
+  return state.refs.has(same) ? [same] : [];
 }
 
 // ---------- Экраны ----------
@@ -230,14 +231,14 @@ function renderTopicList() {
               : null),
           h("span", { class: "topic-meta" },
             counts(countItems(t)),
-            t.refPath
+            t.refPaths.length
               ? h("button", {
                   type: "button",
                   class: "link ref-link",
                   title: i18n.t("setup.refTitle"),
                   onclick: (e) => {
                     e.preventDefault();
-                    openRefs([t.refPath]);
+                    openRefs(t.refPaths);
                   },
                 }, i18n.t("setup.ref"))
               : null,
@@ -424,7 +425,7 @@ function startRound() {
 function renderRound() {
   const r = state.round;
   renderRoundTitle();
-  r.refPaths = [...new Set(r.units.map((u) => u.topic.refPath).filter(Boolean))];
+  r.refPaths = [...new Set(r.units.flatMap((u) => u.topic.refPaths))];
   $("#round-ref").hidden = !r.refPaths.length;
 
   const chipEls = new Map();
@@ -457,7 +458,7 @@ function renderRound() {
         const slot = unit.slots[gi++];
         if (slot == null) return h("span", { class: "given" }, s.answers[0]); // пропуск другого слова — уже заполнен
         const gap = r.gapById.get(slot);
-        const hint = showHint(unit.topic) && gap.hint ? h("span", { class: "hint" }, gap.hint) : null;
+        const hint = showHint(unit.topic, unit.item) && gap.hint ? h("span", { class: "hint" }, gap.hint) : null;
         const el = r.mode === "type"
           ? h("span", { class: "gap typed", dataset: { gap: gap.id } },
               h("input", {
@@ -494,8 +495,8 @@ function renderRound() {
   layout();
 }
 
-function showHint(topic) {
-  return state.settings.hints || topic.hints === "always";
+function showHint(topic, item) {
+  return state.settings.hints || hintsAlways(topic, item);
 }
 
 const LT_LETTERS = ["ą", "č", "ę", "ė", "į", "š", "ų", "ū", "ž"];
@@ -799,7 +800,7 @@ function renderRefList() {
   }
   const usedBy = new Map();
   for (const t of state.topics) {
-    if (t.refPath) usedBy.set(t.refPath, [...(usedBy.get(t.refPath) || []), topicTitle(t)]);
+    for (const path of t.refPaths) usedBy.set(path, [...(usedBy.get(path) || []), topicTitle(t)]);
   }
   const refs = [...state.refs.values()].sort((a, b) => refText(a).title.localeCompare(refText(b).title, "lt"));
   for (const ref of refs) {
@@ -957,6 +958,10 @@ async function init() {
 
   await loadTopics();
   const known = new Set(state.topics.flatMap((t) => [t.file, ...t.subtopics.map((st) => st.key)]));
+  // Если база загрузилась без ошибок, статистика удалённых тем и заданий больше не нужна.
+  if (!state.loadErrors.length && state.topics.length) {
+    store.pruneStats(known, new Set(state.topics.flatMap((t) => t.items.map((it) => it.id))));
+  }
   state.settings.topics = state.settings.topics.filter((f) => known.has(f));
   if (!state.settings.topics.length && state.topics.length) state.settings.topics = [state.topics[0].file];
   renderLoadErrors();

@@ -52,6 +52,25 @@ export function recordRound(results) {
   return stats;
 }
 
+// Удалить статистику тем, подтем и заданий, которых больше нет в базе (например, после объединения тем).
+export function pruneStats(topicKeys, itemIds) {
+  const stats = loadStats();
+  let changed = false;
+  for (const k of Object.keys(stats.topics)) {
+    if (!topicKeys.has(k)) {
+      delete stats.topics[k];
+      changed = true;
+    }
+  }
+  for (const id of Object.keys(stats.items)) {
+    if (!itemIds.has(id)) {
+      delete stats.items[id];
+      changed = true;
+    }
+  }
+  if (changed) write(STATS_KEY, stats);
+}
+
 export function loadSettings(defaults) {
   return read(SETTINGS_KEY, defaults);
 }

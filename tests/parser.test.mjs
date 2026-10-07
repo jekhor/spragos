@@ -4,7 +4,7 @@ import { readFileSync, readdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { parseTopic, parseLine, normalize, itemGaps } from "../web/js/parser.js";
-import { buildRound, isCorrect, poolFor, listLemmas, applySelection, statsKey, countItems } from "../web/js/round.js";
+import { buildRound, isCorrect, poolFor, listLemmas, applySelection, statsKey, countItems, hintsAlways } from "../web/js/round.js";
 
 const DATA = join(dirname(fileURLToPath(import.meta.url)), "..", "data");
 
@@ -221,6 +221,39 @@ test("подтемы: разбор, выбор целиком и по частя
 
   // в выборе одного слова темы с @word-practice: off не участвуют
   assert.deepEqual(listLemmas([t, plain]).map((g) => g.topic.file), ["p.txt"]);
+});
+
+test("подтемы: свои @hints и @distractors, несколько справок", () => {
+  const src = [
+    "@reference: a.md, /b.md",
+    "@distractors: x1, x2",
+    "@subtopic: Личные",
+    "@distractors: jam, jo",
+    "A {jį|jis}.",
+    "@subtopic: Указательные",
+    "@hints: always",
+    "B {šį|šis}.",
+  ].join("\n");
+  const t = parseTopic(src, "p.txt");
+  assert.deepEqual(t.errors, []);
+  assert.deepEqual(t.references, ["a.md", "b.md"]);
+  assert.equal(t.hints, "");
+  assert.deepEqual(t.distractors, ["x1", "x2"]);
+  assert.deepEqual(t.subtopics.map((st) => [st.hints, st.distractors]), [["", ["jam", "jo"]], ["always", []]]);
+  assert.equal(hintsAlways(t, t.items[0]), false);
+  assert.equal(hintsAlways(t, t.items[1]), true);
+  // лишние формы личных — из запаса подтемы, указательных — из запаса темы
+  const pick = (line) => {
+    const words = new Set();
+    for (let seed = 1; seed < 20; seed++) {
+      const r = buildRound([t], { gaps: 1, kind: "all", bank: "distractors" }, {}, seeded(seed));
+      if (r.units[0].item.line === line) r.chips.filter((c) => c.distractor).forEach((c) => words.add(c.text));
+    }
+    return [...words].sort();
+  };
+  assert.ok(pick(5).every((w) => ["jam", "jo"].includes(w)));
+  assert.ok(pick(8).every((w) => ["x1", "x2"].includes(w)));
+  assert.equal(parseTopic("@subtopic: S\n@reference: a.md\nA {x}.", "e.txt").errors[0].line, 2);
 });
 
 test("подтемы: ошибки", () => {

@@ -50,6 +50,6 @@ test("справки в data/: есть заголовок, рендерятся
   }
   for (const f of files.filter((f) => f.endsWith(".txt"))) {
     const t = parseTopic(readFileSync(join(DATA, f), "utf8"), f);
-    if (t.reference) assert.ok(existsSync(join(DATA, t.reference)), `${f}: нет справки ${t.reference}`);
+    for (const ref of t.references) assert.ok(existsSync(join(DATA, ref)), `${f}: нет справки ${ref}`);
   }
 });

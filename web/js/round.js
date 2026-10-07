@@ -1,5 +1,5 @@
 // Сборка раунда: выбор единиц, банк слов, отвлекающие формы, проверка ответов.
-import { normalize, itemGaps } from "./parser.js";
+import { normalize, itemGaps, itemSubtopic } from "./parser.js";
 
 export function shuffle(arr, rnd = Math.random) {
   const a = arr.slice();
@@ -81,6 +81,11 @@ export function applySelection(topics, keys) {
     out.push({ ...t, subtopics: subs, items: t.items.filter((it) => chosen.has(it.subtopic)), partial: true });
   }
   return out;
+}
+
+// Подсказки показываются всегда, если так сказано у темы или у подтемы задания (@hints: always).
+export function hintsAlways(topic, item) {
+  return topic.hints === "always" || itemSubtopic(topic, item)?.hints === "always";
 }
 
 // Ключ статистики: подтема, если она есть, иначе файл темы.
@@ -192,7 +197,9 @@ function distractorCandidates(gap, rnd, oneWord = false) {
       .filter((g) => g.hint && normalize(g.hint) === lemma)
       .flatMap((g) => g.answers);
   }
-  return [...explicit, ...shuffle(sameLemma, rnd), ...(oneWord ? [] : shuffle(topic.distractors, rnd))];
+  // запас лишних форм: у подтемы свой, если задан
+  const pool = itemSubtopic(topic, gap.unit.item)?.distractors.length ? itemSubtopic(topic, gap.unit.item).distractors : topic.distractors;
+  return [...explicit, ...shuffle(sameLemma, rnd), ...(oneWord ? [] : shuffle(pool, rnd))];
 }
 
 export function isCorrect(gap, chipText) {

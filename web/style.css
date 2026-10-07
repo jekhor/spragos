@@ -167,6 +167,10 @@ main { max-width: 860px; margin: 0 auto; padding: 16px; }
 }
 .options .row.check { justify-content: flex-start; cursor: pointer; }
 .options .row.check input { accent-color: var(--accent); width: 17px; height: 17px; }
+.options .row.check { align-items: flex-start; }
+.options .row.check input { margin-top: 3px; flex: none; }
+.check-text { display: flex; flex-direction: column; gap: 2px; }
+.check-text .note { color: var(--muted); font-size: .85rem; }
 .options select {
   max-width: 60%; padding: 5px 8px; font: inherit; color: inherit;
   background: var(--bg); border: 1px solid var(--border); border-radius: 8px;

@@ -1,4 +1,4 @@
-# Įvardžiai — pronouns
+# Įvardžiai — personal pronouns
 
 ## Personal pronouns: singular
 
@@ -35,7 +35,7 @@ It has no nominative. It refers to the subject of the same sentence.
 - Jis galvoja tik apie **save**. — He thinks only about himself.
 - Nupirkau **sau** knygą. — I bought myself a book.
 
-> The demonstratives **šis, tas, anas, kitas** are in a separate topic and reference, “Other pronouns”, together with other pronouns that decline like adjectives.
+> Demonstratives (**šis, tas, anas, toks**) and other pronouns that decline like adjectives (**kuris, koks, pats, visas, kitas**…) are covered in the neighbouring reference, “Įvardžiai — demonstrative and other pronouns”.
 
 ## Interrogative kas (“who, what”)
 

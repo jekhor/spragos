@@ -1,4 +1,4 @@
-# Other pronouns
+# Įvardžiai — demonstrative and other pronouns
 
 This topic covers pronouns (*įvardžiai*) other than personal ones:
 - **demonstrative** — šis, tas, anas, toks;
