@@ -1,5 +1,5 @@
 // Проверка базы заданий: каждый ответ — существующая форма своей подсказки-леммы.
-// Леммы, которых нет в tests/paradigms.mjs (например, глаголы), пропускаются.
+// Леммы, которых нет в web/js/paradigms.js, пропускаются.
 // Существительные (файлы из NOUN_FILES) проверяются по типу склонения: его номер — число в начале
 // заголовка подтемы («1. мужской род…»). В других темах номера подтем — просто порядок.
 import { test } from "node:test";
@@ -8,7 +8,7 @@ import { readFileSync, readdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { parseTopic, itemGaps, normalize } from "../web/js/parser.js";
-import { formsOf, nounForms, DEMONSTRATIVE_FORMS } from "./paradigms.mjs";
+import { formsOf, nounForms, DEMONSTRATIVE_FORMS } from "../web/js/paradigms.js";
 
 const DATA = join(dirname(fileURLToPath(import.meta.url)), "..", "data");
 // Доля пропусков, где ответ совпадает с подсказкой (см. MATERIALS_GUIDE.md §4.3): немного — полезно, много — скучно.
@@ -43,7 +43,21 @@ test("парадигмы совпадают со сверенными табли
   assert.ok(!formsOf("kitas").has("kitie"));
   assert.ok(!formsOf("didelis").has("dideliai"));
   assert.ok(!formsOf("medinis").has("medini"));
-  assert.equal(formsOf("rašyti"), null);
+  assert.equal(formsOf("skristi"), null); // глагола нет в таблицах
+  const verb = (lemma, ...forms) => {
+    const set = formsOf(lemma);
+    for (const f of forms) assert.ok(set.has(f), `${lemma}: нет формы ${f}`);
+  };
+  // Nė dienos be lietuvių kalbos 1, приложение: таблицы спряжения (dirbti, žaisti, mylėti, skaityti)
+  verb("dirbti", "dirbu", "dirbi", "dirba", "dirbame", "dirbate", "dirbau", "dirbo", "dirbsiu", "dirbs", "dirbdavau", "dirbk", "dirbkime");
+  verb("žaisti", "žaidžiu", "žaidi", "žaidžia", "žaidžiau", "žaidei", "žaidė", "žaisiu", "žais", "žaisdavau", "žaisk");
+  verb("skaityti", "skaitau", "skaitai", "skaito", "skaičiau", "skaitei", "skaitėme", "skaitysiu", "skaitydavau", "skaityk");
+  verb("būti", "esu", "esi", "yra", "esame", "esate", "buvau", "bus", "būsime", "būdavo", "būk", "nesu", "nėra", "nebuvo");
+  verb("eiti", "einu", "ėjau", "eisiu", "eik", "neinu", "neina", "nėjau", "neisiu", "neik");
+  verb("bėgti", "bėk", "bėkime"); verb("mokytis", "mokausi", "mokiausi", "mokysiuosi", "mokykis", "nesimoko");
+  verb("jaustis", "jaučiuosi", "jautiesi", "jaučiausi", "jauteisi"); verb("apsirengti", "apsirengiu", "apsirenk", "neapsirengė");
+  assert.ok(!formsOf("eiti").has("neeina"));
+  assert.ok(!formsOf("jaustis").has("jaučiesi"));
 
   const noun = (lemma, d, ...forms) => {
     const set = nounForms(lemma, d);

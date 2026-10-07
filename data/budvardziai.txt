@@ -253,6 +253,94 @@ Nusipirkau {geras|geras} pirštines.
 Mūsų {naujas|naujas} namas labai šviesus.
 Nusipirkau {naujas|naujas} kelnes.
 
+# --- ещё: по 4 примера на слово ---
+Pro {uždarą|uždaras} langą nieko negirdėti.
+Vaikai žaidė {uždaroje|uždaras} salėje.
+Ji labai {uždara|uždaras} mergina — mažai kalba.
+Vasarą naktys {trumpos|trumpas}.
+Parašyk man {trumpą|trumpas} laišką.
+Ji nešioja {trumpus|trumpas} plaukus.
+Mano tėvai buvo labai {griežti|griežtas}.
+Tėvas buvo {griežto|griežtas} būdo žmogus.
+Šioje mokykloje {griežtos|griežtas} taisyklės.
+Nusiauk {purvinus|purvinas} batus!
+Vaikas grįžo su {purvinomis|purvinas} rankomis.
+Mūsų mašina labai {purvina|purvinas}.
+Tai labai {pavojinga|pavojingas} vieta.
+Nevažiuok šiuo {pavojingu|pavojingas} keliu.
+Saugokitės {pavojingų|pavojingas} gyvūnų.
+Atsiprašau, ar ši vieta {laisva|laisvas}?
+Šiandien turiu daug {laisvo|laisvas} laiko.
+Restorane nebuvo {laisvų|laisvas} staliukų.
+Linkiu tau {laimingų|laimingas} Naujųjų metų!
+Ji atrodo labai {laiminga|laimingas}.
+Tą vasarą mes buvome labai {laimingi|laimingas}.
+Jis grįžo iš {tolimos|tolimas} kelionės.
+{Tolimuose|tolimas} kraštuose gyvena mano teta.
+Pro langą matėme {tolimus|tolimas} kalnus.
+Nupjauk man {ploną|plonas} duonos riekę.
+Žiemą vilkėti {plonu|plonas} megztiniu per šalta.
+Mano sesuo labai {plona|plonas}.
+Turiu tau {blogą|blogas} naujieną.
+Nemėgstu {blogų|blogas} filmų.
+Tai buvo {blogi|blogas} laikai.
+Jis kilęs iš {neturtingos|neturtingas} šeimos.
+Mes padedame {neturtingiems|neturtingas} žmonėms.
+Tai {neturtinga|neturtingas} šalis.
+Rudenį lapai pasidaro {geltoni|geltonas}.
+Ji vilki {geltoną|geltonas} suknelę.
+Ant stalo stovi vaza su {geltonomis|geltonas} tulpėmis.
+Nusipirkau {pilką|pilkas} paltą.
+Mūsų katė balta su {pilkomis|pilkas} dėmėmis.
+Lapkričio dienos {pilkos|pilkas} ir trumpos.
+Papasakok kokį nors {juokingą|juokingas} anekdotą.
+Tai buvo labai {juokinga|juokingas} istorija.
+Vaikai mėgsta {juokingus|juokingas} filmus.
+Pro {atvirą|atviras} langą sklido muzika.
+Parduotuvė {atvira|atviras} iki devynių.
+Aš mėgstu {atvirus|atviras} žmones.
+Vaikai piešia {spalvotais|spalvotas} pieštukais.
+Nusipirkau {spalvotą|spalvotas} skarelę.
+Ant sienų kabo {spalvotos|spalvotas} nuotraukos.
+Senelė jaučiasi {vieniša|vienišas}.
+Padėkime {vienišiems|vienišas} senoliams.
+Jis gyvena {vienišą|vienišas} gyvenimą.
+Labiausiai mėgstu {lietuvišką|lietuviškas} duoną.
+Ar žinai kokių {lietuviškų|lietuviškas} dainų?
+Šis restoranas garsėja {lietuviškais|lietuviškas} patiekalais.
+Vakar valgėme {kiniško|kiniškas} maisto.
+Šalia mūsų atidarė {kinišką|kiniškas} restoraną.
+Jis domisi {kiniška|kiniškas} kultūra.
+Šiandien turėjome {lengvą|lengvas} egzaminą.
+Vasarą vilkiu {lengvus|lengvas} drabužius.
+Ši užduotis {lengva|lengvas}.
+Valgyk {sveiką|sveikas} maistą.
+Ačiū Dievui, mūsų vaikai {sveiki|sveikas}.
+Gydytoja sakė, kad močiutė jau {sveika|sveikas}.
+Atsisėsk ant {minkšto|minkštas} fotelio.
+Mėgstu {minkštą|minkštas} duoną.
+Pagalvės labai {minkštos|minkštas}.
+Tai labai {greita|greitas} mašina.
+Ačiū už {greitą|greitas} atsakymą!
+Lietuvoje nėra labai {greitų|greitas} traukinių.
+Ėjome {siauru|siauras} takeliu.
+Ši gatvė per {siaura|siauras} sunkvežimiams.
+Mūsų kaimynai labai {draugiški|draugiškas}.
+Ji visada {draugiška|draugiškas} su visais.
+Gavau {mielą|mielas} laišką iš senelės.
+Ji labai {miela|mielas} mergaitė.
+Ji šiandien kažkokia {liūdna|liūdnas}.
+Vakar žiūrėjome labai {liūdną|liūdnas} filmą.
+Jis vedė {turtingą|turtingas} merginą.
+{Turtingi|turtingas} žmonės ne visada laimingi.
+Ji labai {linksma|linksmas} mergina.
+Vakarėlyje buvo daug {linksmų|linksmas} žmonių.
+Perskaičiau labai {storą|storas} knygą.
+Žiemą reikia {storų|storas} kojinių.
+Atsargiai, sriuba {karšta|karštas}!
+Jos vaikai labai {protingi|protingas}.
+Vaikai grįžo iš lauko {alkani|alkanas}.
+
 @subtopic: 2. -ias, -ia | žalias, šviežias, tuščias
 
 # --- -as / -a ---
@@ -375,6 +463,11 @@ Prie {šviežios|šviežias} duonos tinka sviestas.
 Pasiėmiau {žalias|žalias} pirštines.
 Pienas {šviežias|šviežias}, ką tik pirktas.
 Nupirkau {šviežias|šviežias} bandeles.
+
+# --- ещё ---
+Po šventės liko daug {tuščių|tuščias} butelių.
+Įpilk vandens į {tuščią|tuščias} butelį.
+Salėje buvo daug {tuščių|tuščias} vietų.
 
 @subtopic: 3. -us, -i | gražus, saldus, platus, skanus
 
@@ -550,6 +643,59 @@ Vilnius — labai {gražus|gražus} miestas.
 Šis arbūzas labai {saldus|saldus}.
 Medus {saldus|saldus} ir kvapnus.
 
+# --- ещё: по 4 примера на слово ---
+Tai labai {brangi|brangus} suknelė.
+Mes negalime pirkti tokio {brangaus|brangus} automobilio.
+{Brangūs|brangus} draugai, ačiū, kad atėjote!
+Nesimaudyk {giliame|gilus} vandenyje!
+Upė čia labai {gili|gilus}.
+Miške yra {gilių|gilus} duobių.
+Vasaros vakarai buvo {vėsūs|vėsus}.
+Gerk {vėsų|vėsus} vandenį.
+Šiandien {vėsi|vėsus} diena.
+Ji labai {mandagi|mandagus} mergaitė.
+Padavėjai čia {mandagūs|mandagus}.
+Ačiū už {mandagų|mandagus} atsakymą.
+Ši sriuba per {sūri|sūrus}.
+Nemėgstu {sūraus|sūrus} maisto.
+Ant stalo — {sūrūs|sūrus} riešutai.
+Grįžome namo {vėlų|vėlus} vakarą.
+Dirbome iki {vėlaus|vėlus} vakaro.
+Buvo jau {vėli|vėlus} naktis.
+Vilniuje daug {modernių|modernus} pastatų.
+Tai {moderni|modernus} ligoninė.
+Jie gyvena {moderniame|modernus} name.
+Tai labai {jauki|jaukus} kavinė.
+Mes gyvename {jaukiame|jaukus} bute.
+Mėgstu {jaukius|jaukus} vakarus prie židinio.
+Ši kava labai {karti|kartus}.
+Nemėgstu {kartaus|kartus} šokolado.
+Vaistai buvo {kartūs|kartus}.
+Jie išsinuomojo {erdvų|erdvus} butą.
+Mūsų virtuvė labai {erdvi|erdvus}.
+{Erdviuose|erdvus} kambariuose lengva kvėpuoti.
+Gerk {stiprią|stiprus} arbatą, jei nori nemiegoti.
+Dėl {stipraus|stiprus} vėjo lėktuvas vėlavo.
+Mūsų komanda turi {stiprių|stiprus} žaidėjų.
+Kačiukai labai {smalsūs|smalsus}.
+Ji labai {smalsi|smalsus} mergaitė.
+Šie obuoliai {rūgštūs|rūgštus}.
+Mėgstu {rūgščią|rūgštus} grietinę.
+Nusipirkau {pigų|pigus} telefoną.
+Turguje daržovės {pigios|pigus}.
+Gyvename {tylioje|tylus} gatvėje.
+Mūsų kaimynai labai {tylūs|tylus}.
+Ji turi {šviesius|šviesus} plaukus.
+Mėgstu {šviesias|šviesus} spalvas.
+Ačiū už {skanią|skanus} vakarienę!
+Linkiu {malonaus|malonus} vakaro!
+Tai buvo labai {įdomi|įdomus} paskaita.
+Žiemą vakarai {tamsūs|tamsus}.
+Turiu tau {svarbią|svarbus} naujieną.
+Nemėgstu {aštraus|aštrus} maisto.
+Važiavome {plačiu|platus} keliu.
+Linkiu {ramios|ramus} nakties!
+
 @subtopic: 4. -is, -ė | didelis, medinis, vietinis
 
 # --- -is / -ė, -ias / -ia ---
@@ -682,6 +828,18 @@ Mūsų kiemas {didelis|didelis}.
 Šis kambarys per {didelis|didelis} vienam žmogui.
 Mūsų namas — {medinis|medinis}.
 Šis senas tiltas — {medinis|medinis}.
+
+# --- ещё ---
+Muziejuje daug {senovinių|senovinis} daiktų.
+Ji nešioja {senovinę|senovinis} sagę.
+Mes gyvename {senoviniame|senovinis} name.
+Vilniuje vyksta {tarptautinė|tarptautinis} konferencija.
+Atvykome į {tarptautinį|tarptautinis} oro uostą.
+Jis dirba {tarptautinėje|tarptautinis} įmonėje.
+Mama gavo dovanų {auksinį|auksinis} žiedą.
+Akvariume plaukioja {auksinės|auksinis} žuvelės.
+Visada perku {vietinių|vietinis} ūkininkų daržoves.
+Vos spėjome į {paskutinį|paskutinis} autobusą.
 
 @subtopic: 5. Все типы вместе | тексты и предложения с прилагательными разных типов
 @subtopic.be: 5. Усе тыпы разам | тэксты і сказы з прыметнікамі розных тыпаў

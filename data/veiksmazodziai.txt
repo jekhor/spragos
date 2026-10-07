@@ -1,0 +1,825 @@
+# Формы сверены со списком «Pagrindinės veiksmažodžių formos» и таблицами спряжения в приложении
+# Nė dienos be lietuvių kalbos 1, а также со словарными статьями «365 lietuvių kalbos veiksmažodžiai».
+# Предложения составлены автоматически — по возможности покажите их носителю.
+# Подсказка — инфинитив. Лицо видно из подлежащего, время — из обстоятельств; отрицание — из контекста
+# (niekada, nieko, deja, родительный падеж после глагола и т. п.).
+@title: Veiksmažodžiai — глаголы
+@group: Спряжение
+@hints: always
+@description: Настоящее, прошедшее (однократное и многократное), будущее время и повелительное наклонение, в том числе с отрицанием. Подсказка — инфинитив.
+@title.be: Veiksmažodžiai — дзеясловы
+@group.be: Спражэнне
+@description.be: Цяперашні, прошлы (аднаразовы і шматразовы), будучы час і загадны лад, у тым ліку з адмоўем. Падказка — інфінітыў.
+@title.uk: Veiksmažodžiai — дієслова
+@group.uk: Дієвідмінювання
+@description.uk: Теперішній, минулий (одноразовий і багаторазовий), майбутній час і наказовий спосіб, зокрема із запереченням. Підказка — інфінітив.
+@title.en: Veiksmažodžiai — verbs
+@group.en: Conjugation
+@description.en: Present, past (simple and frequentative), future tense and the imperative, including negative forms. Hint: the infinitive.
+@distractors: esu, yra, buvo, bus, būdavo, nėra, nebuvo
+
+@subtopic: 1. Настоящее время | dirbu, myliu, rašau
+@subtopic.be: 1. Цяперашні час | dirbu, myliu, rašau
+@subtopic.uk: 1. Теперішній час | dirbu, myliu, rašau
+@subtopic.en: 1. Present tense | dirbu, myliu, rašau
+
+# --- būti ---
+Aš {esu|būti} studentas.
+Tu {esi|būti} labai malonus.
+Mano mama {yra|būti} gydytoja.
+Mes {esame|būti} iš Lietuvos.
+Ar jūs {esate|būti} čia pirmą kartą?
+Šiandien namie {nėra|būti} duonos.
+Ne, aš {nesu|būti} pavargęs.
+Palaukite, mes dar {nesame|būti} pasiruošę.
+
+# --- -a, -ia ---
+Aš {einu|eiti} į darbą pėsčiomis.
+Kur tu {eini|eiti}?
+Vaikai {eina|eiti} į mokyklą.
+Mes {einame|eiti} į kiną.
+Ar jūs {einate|eiti} kartu?
+Šiandien aš {neinu|eiti} į darbą — sergu.
+Kasdien aš {važiuoju|važiuoti} į darbą autobusu.
+Kur tu {važiuoji|važiuoti} atostogų?
+Traukinys {važiuoja|važiuoti} į Kauną.
+Mes {važiuojame|važiuoti} prie jūros.
+Kuo jūs {važiuojate|važiuoti} namo?
+Aš {dirbu|dirbti} banke.
+Kur tu {dirbi|dirbti}?
+Mano tėvas {dirba|dirbti} gydytoju.
+Mes {dirbame|dirbti} nuo devynių iki penkių.
+Šiandien parduotuvė {nedirba|dirbti} — šventė.
+Aš {gyvenu|gyventi} Vilniuje.
+Kur tu {gyveni|gyventi}?
+Seneliai {gyvena|gyventi} kaime.
+Mes {gyvename|gyventi} naujame name.
+Ar jūs {gyvenate|gyventi} netoli centro?
+Aš {kalbu|kalbėti} lietuviškai.
+Ar tu {kalbi|kalbėti} angliškai?
+Ji {kalba|kalbėti} trimis kalbomis.
+Mes {kalbame|kalbėti} apie orą.
+Jūs labai gerai {kalbate|kalbėti} lietuviškai!
+Deja, aš {nekalbu|kalbėti} vokiškai.
+Aš {mėgstu|mėgti} šokoladą.
+Ar tu {mėgsti|mėgti} futbolą?
+Mano sesuo {mėgsta|mėgti} keliauti.
+Mes {mėgstame|mėgti} vaikščioti miške.
+Aš {nemėgstu|mėgti} šalto oro.
+Aš {geriu|gerti} kavą be cukraus.
+Ką tu {geri|gerti}?
+Ar jūs {geriate|gerti} arbatą?
+Mano senelis {negeria|gerti} kavos — gydytojas uždraudė.
+Aš {duodu|duoti} tau savo knygą.
+Mama {duoda|duoti} vaikams obuolių.
+Aš {imu|imti} šitą megztinį.
+Ar tu {imi|imti} cukraus į kavą?
+Aš {gaunu|gauti} daug laiškų.
+Kiek tu {gauni|gauti} per mėnesį?
+Kur jūs {perkate|pirkti} daržoves?
+Aš {perku|pirkti} duoną šioje parduotuvėje.
+Mes visada {perkame|pirkti} šviežią žuvį turguje.
+Ko tu {klausi|klausti}?
+Mokytoja {klausia|klausti}, o mokiniai {atsako|atsakyti}.
+Aš {laukiu|laukti} tavęs prie kino.
+Ko tu {lauki|laukti}?
+Mes {laukiame|laukti} autobuso.
+Mama {gamina|gaminti} pietus.
+Aš {gaminu|gaminti} vakarienę.
+Ką tu {gamini|gaminti}?
+Vaikas jau {miega|miegoti}.
+Aš {miegu|miegoti} aštuonias valandas.
+Jau vidurnaktis, o tu vis dar {nemiegi|miegoti}.
+Aš {suprantu|suprasti} lietuviškai.
+Ar tu {supranti|suprasti}?
+Atsiprašau, aš {nesuprantu|suprasti}.
+Aš {moku|mokėti} plaukti.
+Ar tu {moki|mokėti} vairuoti?
+Jis {moka|mokėti} groti gitara.
+Aš {skambinu|skambinti} mamai kiekvieną dieną.
+Tu man niekada {neskambini|skambinti}.
+Aš {grįžtu|grįžti} namo šeštą.
+Kada tu {grįžti|grįžti}?
+Kiekvieną vasarą mes {keliaujame|keliauti} po Europą.
+Vaikai {bėga|bėgti} į kiemą.
+Ką tu {neši|nešti}?
+Vaikai {žaidžia|žaisti} futbolą.
+Ar tu {žaidi|žaisti} šachmatais?
+Aš {žaidžiu|žaisti} krepšinį.
+
+# --- -i ---
+Aš {turiu|turėti} du brolius.
+Ar tu {turi|turėti} laiko?
+Jie {turi|turėti} didelį namą.
+Mes {turime|turėti} šunį ir katę.
+Ar jūs {turite|turėti} vaikų?
+Atsiprašau, aš {neturiu|turėti} laiko.
+Aš {galiu|galėti} tau padėti.
+Ar tu {gali|galėti} ateiti rytoj?
+Mes {galime|galėti} susitikti vakare.
+Ar jūs {galite|galėti} pakartoti?
+Deja, šiandien jis {negali|galėti} atvykti.
+Aš {noriu|norėti} kavos.
+Ko tu {nori|norėti}?
+Mes {norime|norėti} nusipirkti butą.
+Ar jūs {norite|norėti} arbatos?
+Vaikas verkia ir {nenori|norėti} miegoti.
+Aš {žiūriu|žiūrėti} televizorių.
+Ką tu {žiūri|žiūrėti}?
+Ar jūs {girdite|girdėti} mane?
+Aš tavęs {negirdžiu|girdėti} — kalbėk garsiau.
+Aš {sėdžiu|sėdėti} prie lango.
+Kur tu {sėdi|sėdėti}?
+
+# --- -o ---
+Aš {rašau|rašyti} laišką draugui.
+Ką tu {rašai|rašyti}?
+Studentai {rašo|rašyti} diktantą.
+Mes {rašome|rašyti} rašinį.
+Ar jūs {rašote|rašyti} pieštuku ar rašikliu?
+Vakarais aš {skaitau|skaityti} knygas.
+Ką tu dabar {skaitai|skaityti}?
+Tėtis {skaito|skaityti} laikraštį.
+Mes {skaitome|skaityti} tekstą garsiai.
+Jis niekada {neskaito|skaityti} laikraščių.
+Ką tu {darai|daryti}?
+Aš {darau|daryti} namų darbus.
+Ką jūs {darote|daryti} savaitgaliais?
+Vaikai {daro|daryti} triukšmą.
+Aš {žinau|žinoti} atsakymą.
+Ar tu {žinai|žinoti}, kur stotis?
+Niekas {nežino|žinoti}, kas bus rytoj.
+Mes {žinome|žinoti} šią dainą.
+Aš {matau|matyti} jūrą!
+Ar tu {matai|matyti} tą bokštą?
+Senelė blogai {mato|matyti}.
+Be akinių aš nieko {nematau|matyti}.
+Ką tu {valgai|valgyti} pusryčiams?
+Aš {valgau|valgyti} košę.
+Mes {valgome|valgyti} vakarienę septintą.
+Jis vegetaras ir {nevalgo|valgyti} mėsos.
+Aš {atsakau|atsakyti} į laiškus vakare.
+Ką jis {sako|sakyti}?
+Aš {sakau|sakyti} tiesą.
+Ką tu {ieškai|ieškoti}?
+Aš {ieškau|ieškoti} raktų.
+Jie {ieško|ieškoti} naujo buto.
+
+# --- ещё: по 4 формы на глагол ---
+Ar jūs daug {keliaujate|keliauti}?
+Aš {keliauju|keliauti} su kuprine.
+Mano tėvai dabar {keliauja|keliauti} po Italiją.
+Aš kiekvieną rytą {bėgu|bėgti} parke.
+Kur tu taip {bėgi|bėgti}?
+Mes {bėgame|bėgti} į autobusą!
+Aš {nešu|nešti} tau dovaną.
+Paštininkas {neša|nešti} laiškus.
+Ką jūs {nešate|nešti}?
+Ar jūs {duodate|duoti} nuolaidą studentams?
+Mes {duodame|duoti} vaikams vitaminų.
+Ką jūs {imate|imti} į kelionę?
+Paprastai mes {imame|imti} taksi.
+Ji {gauna|gauti} didelį atlyginimą.
+Mes {gauname|gauti} laikraštį kiekvieną rytą.
+Atsiprašau, aš {klausiu|klausti}, kur stotis.
+Ko jūs {klausiate|klausti}?
+Rašau tau jau trečią kartą — kodėl {neatsakai|atsakyti}?
+Mes visada {atsakome|atsakyti} į laiškus.
+Kas {skambina|skambinti}?
+Mes {skambiname|skambinti} seneliams sekmadieniais.
+Mes {grįžtame|grįžti} namo vėlai.
+Tėtis {grįžta|grįžti} iš darbo šeštą.
+Vaikai {žiūri|žiūrėti} animacinius filmus.
+Mes {žiūrime|žiūrėti} į jūrą.
+Ar tu {girdi|girdėti} muziką?
+Mes {girdime|girdėti} paukščius.
+Katė {sėdi|sėdėti} ant palangės.
+Mes {sėdime|sėdėti} kavinėje.
+Ką tu {sakai|sakyti}?
+Visi {sako|sakyti}, kad Vilnius gražus.
+Ką tu {perki|pirkti}?
+Ar jūs ko nors {laukiate|laukti}?
+Mes {gaminame|gaminti} pietus kartu.
+Kiek valandų tu {miegi|miegoti}?
+Mes jus gerai {suprantame|suprasti}.
+Mes {mokame|mokėti} šokti tango.
+Ar jūs {žaidžiate|žaisti} tenisą?
+Ko jūs {ieškote|ieškoti}?
+
+@subtopic: 2. Прошедшее время | dirbau, rašiau, mačiau
+@subtopic.be: 2. Прошлы час | dirbau, rašiau, mačiau
+@subtopic.uk: 2. Минулий час | dirbau, rašiau, mačiau
+@subtopic.en: 2. Past tense | dirbau, rašiau, mačiau
+
+# --- būti ---
+Vakar aš {buvau|būti} kine.
+Kur tu {buvai|būti} vakar?
+Praėjusią vasarą mes {buvome|būti} Italijoje.
+Ar jūs {buvote|būti} Klaipėdoje?
+Vakar {buvo|būti} šalta.
+Vakar manęs {nebuvo|būti} namie.
+Aš niekada {nebuvau|būti} Paryžiuje.
+
+# --- -o: dirbo, kalbėjo, gyveno… ---
+Vakar aš {ėjau|eiti} pėsčiomis į darbą.
+Kur tu {ėjai|eiti}?
+Mes {ėjome|eiti} per mišką.
+Vakar aš {važiavau|važiuoti} į Kauną.
+Kuo tu {važiavai|važiuoti}?
+Jie {važiavo|važiuoti} traukiniu.
+Mes {važiavome|važiuoti} visą naktį.
+Vakar aš {dirbau|dirbti} iki vėlumos.
+Kur jūs anksčiau {dirbote|dirbti}?
+Anksčiau jis {dirbo|dirbti} mokykloje.
+Vakar aš visai {nedirbau|dirbti}.
+Anksčiau mes {gyvenome|gyventi} Kaune.
+Kur tu {gyvenai|gyventi} prieš tai?
+Mano seneliai visą gyvenimą {gyveno|gyventi} kaime.
+Vakar mes ilgai {kalbėjome|kalbėti} telefonu.
+Su kuo tu {kalbėjai|kalbėti}?
+Aš {kalbėjau|kalbėti} su mokytoja.
+Aš {žinojau|žinoti}, kad tu ateisi.
+Ar tu {žinojai|žinoti} apie tai?
+Aš {nežinojau|žinoti}, kad tu sirgai, — atsiprašau.
+Vaikystėje aš {turėjau|turėti} šunį.
+Ar tu vakar {turėjai|turėti} laiko?
+Jie {turėjo|turėti} didelį sodą.
+Vakar aš {neturėjau|turėti} nė minutės laisvo laiko.
+Aš {galėjau|galėti} ateiti anksčiau.
+Ar tu {galėjai|galėti} pabaigti darbą?
+Atsiprašau, vakar aš {negalėjau|galėti} atvykti.
+Aš {norėjau|norėti} tau paskambinti.
+Ko tu {norėjai|norėti}?
+Vaikystėje aš labai {mėgau|mėgti} ledus.
+Ar tu {mėgai|mėgti} matematiką mokykloje?
+Vakar aš {gavau|gauti} dovaną.
+Ar tu {gavai|gauti} mano laišką?
+Mes {gavome|gauti} gerą žinią.
+Ką tu {pirkai|pirkti} parduotuvėje?
+Aš {pirkau|pirkti} duonos ir pieno.
+Jie {pirko|pirkti} naują automobilį.
+Mes {ieškojome|ieškoti} tavęs visur.
+Ką tu {ieškojai|ieškoti}?
+Vakar aš {gaminau|gaminti} cepelinus.
+Kas {gamino|gaminti} šią sriubą?
+Aš blogai {miegojau|miegoti}.
+Kaip tu {miegojai|miegoti}?
+Vakar mes {žiūrėjome|žiūrėti} filmą.
+Ar tu {girdėjai|girdėti} naujieną?
+Aš {nesupratau|suprasti} klausimo.
+Ar jūs {supratote|suprasti}?
+Vakar aš {skambinau|skambinti} tau du kartus.
+Kada tu {grįžai|grįžti} namo?
+Mes {grįžome|grįžti} vėlai.
+Praėjusią vasarą mes {keliavome|keliauti} po Ispaniją.
+Šuo {bėgo|bėgti} per kiemą.
+Vakar aš {sėdėjau|sėdėti} namie.
+
+# --- -ė: rašė, skaitė, matė… ---
+Vakar aš {rašiau|rašyti} laišką.
+Ką tu {rašei|rašyti}?
+Ji {rašė|rašyti} knygą trejus metus.
+Mes {rašėme|rašyti} testą.
+Vakar aš {skaičiau|skaityti} įdomią knygą.
+Ar tu {skaitei|skaityti} šią knygą?
+Mes {skaitėme|skaityti} laikraštį.
+Ką tu vakar {darei|daryti}?
+Aš {dariau|daryti} namų darbus.
+Ką jūs {darėte|daryti} per atostogas?
+Vaikai visą dieną nieko {nedarė|daryti}.
+Vakar aš {mačiau|matyti} tavo brolį.
+Ar tu {matei|matyti} šį filmą?
+Mes {matėme|matyti} gražų saulėlydį.
+Aš niekada {nemačiau|matyti} jūros.
+Ką tu {valgei|valgyti} pusryčiams?
+Aš {valgiau|valgyti} kiaušinienę.
+Mes {valgėme|valgyti} restorane.
+Aš {gėriau|gerti} arbatą.
+Ką jūs {gėrėte|gerti}?
+Mama {davė|duoti} man pinigų.
+Aš {daviau|duoti} jam savo telefoną.
+Aš {ėmiau|imti} knygas iš bibliotekos.
+Kas {ėmė|imti} mano rašiklį?
+Ką jis tau {sakė|sakyti}?
+Aš {sakiau|sakyti}, kad lis!
+Mokytoja {klausė|klausti} apie namų darbus.
+Aš {klausiau|klausti} kelio.
+Ar tu {atsakei|atsakyti} į jo laišką?
+Aš {atsakiau|atsakyti} į visus klausimus.
+Aš ilgai {laukiau|laukti} autobuso.
+Ko tu {laukei|laukti}?
+Aš {nešiau|nešti} sunkų krepšį.
+Vaikai visą dieną {žaidė|žaisti} lauke.
+Aš {žaidžiau|žaisti} tenisą.
+Ką tu {žaidei|žaisti}?
+
+# --- ещё ---
+Ar jūs vakar {ėjote|eiti} pėsčiomis?
+Vakar aš {nėjau|eiti} į darbą — sirgau.
+Mes {darėme|daryti} remontą visą vasarą.
+Ji {žinojo|žinoti} atsakymą.
+Ar jūs anksčiau {turėjote|turėti} šunį?
+Mes {norėjome|norėti} pailsėti.
+Jie {galėjo|galėti} ateiti, bet neatėjo.
+Ar jūs {gavote|gauti} mano laišką?
+Ką jūs {pirkote|pirkti}?
+Mes {laukėme|laukti} tavęs dvi valandas.
+Kas {skambino|skambinti}?
+Ką jūs vakar {žiūrėjote|žiūrėti}?
+Ar jūs jau {grįžote|grįžti}?
+Vakar mes {sėdėjome|sėdėti} kavinėje.
+
+# --- ещё: по 4 формы на глагол ---
+Aš {girdėjau|girdėti} keistą garsą.
+Mes {girdėjome|girdėti} koncertą per radiją.
+Ar jūs {girdėjote|girdėti} apie tai?
+Aš {keliavau|keliauti} po Portugaliją dvi savaites.
+Ar tu {keliavai|keliauti} vienas?
+Jie {keliavo|keliauti} dviračiais.
+Aš {bėgau|bėgti} į stotį, bet vis tiek pavėlavau.
+Kodėl tu {bėgai|bėgti}?
+Mes {bėgome|bėgti} per lietų.
+Ką tu {nešei|nešti} tame maiše?
+Vaikai {nešė|nešti} gėles.
+Mes {nešėme|nešti} baldus visą dieną.
+Mes {mėgome|mėgti} šį restoraną.
+Jis vaikystėje {mėgo|mėgti} piešti.
+Aš ilgai {ieškojau|ieškoti} raktų.
+Policija {ieškojo|ieškoti} vagies.
+Ką tu {gaminai|gaminti} vakarienei?
+Mes {gaminome|gaminti} kepsnius sode.
+Vaikai jau {miegojo|miegoti}, kai grįžome.
+Mes {miegojome|miegoti} palapinėje.
+Aš {žiūrėjau|žiūrėti} pro langą.
+Ką tu vakar {žiūrėjai|žiūrėti}?
+Aš viską {supratau|suprasti}.
+Ar tu {supratai|suprasti} pamoką?
+Ar tu {skambinai|skambinti} mamai?
+Mes {skambinome|skambinti} tau, bet tu neatsiliepei.
+Ar tu {sėdėjai|sėdėti} pirmoje eilėje?
+Seneliai {sėdėjo|sėdėti} ant suoliuko.
+Mes {gėrėme|gerti} vyną.
+Jis {gėrė|gerti} kavą be cukraus.
+Ar tu {davei|duoti} šuniui vandens?
+Mes {davėme|duoti} jam savo adresą.
+Ar tu {ėmei|imti} mano skėtį?
+Mes {ėmėme|imti} taksi.
+Ką tu {sakei|sakyti}?
+Mes {sakėme|sakyti} tau tiesą.
+Ko tu {klausei|klausti}?
+Turistai {klausė|klausti} kelio į pilį.
+Jis {atsakė|atsakyti} labai trumpai.
+Mes {atsakėme|atsakyti} į visus klausimus.
+Ar jūs {gyvenote|gyventi} užsienyje?
+Apie ką jūs {kalbėjote|kalbėti}?
+Ar jūs {norėjote|norėti} kavos?
+Aš {grįžau|grįžti} namo vidurnaktį.
+Jie {skaitė|skaityti} tą pačią knygą.
+Ar jūs jau {valgėte|valgyti}?
+Jie {laukė|laukti} traukinio.
+Mes {žaidėme|žaisti} kortomis.
+
+@subtopic: 3. Будущее время | dirbsiu, rašysiu, eisiu
+@subtopic.be: 3. Будучы час | dirbsiu, rašysiu, eisiu
+@subtopic.uk: 3. Майбутній час | dirbsiu, rašysiu, eisiu
+@subtopic.en: 3. Future tense | dirbsiu, rašysiu, eisiu
+
+Rytoj aš {būsiu|būti} namie.
+Kur tu {būsi|būti} rytoj?
+Rytoj {bus|būti} šilta.
+Kitais metais mes {būsime|būti} Lietuvoje.
+Ar jūs {būsite|būti} vakarėlyje?
+Rytoj manęs {nebus|būti} darbe.
+Rytoj aš {eisiu|eiti} į teatrą.
+Kur tu {eisi|eiti} vakare?
+Mes {eisime|eiti} pasivaikščioti.
+Ar jūs {eisite|eiti} kartu?
+Kitą savaitę aš {važiuosiu|važiuoti} į Rygą.
+Kada tu {važiuosi|važiuoti} namo?
+Rytoj jie {važiuos|važiuoti} prie jūros.
+Mes {važiuosime|važiuoti} traukiniu.
+Rytoj aš {dirbsiu|dirbti} iki vakaro.
+Kur tu {dirbsi|dirbti} po studijų?
+Rytoj parduotuvė {nedirbs|dirbti} — šventė.
+Kitais metais mes {gyvensime|gyventi} Vilniuje.
+Kur tu {gyvensi|gyventi}?
+Rytoj aš {kalbėsiu|kalbėti} su direktoriumi.
+Apie ką jūs {kalbėsite|kalbėti}?
+Rytoj aš {rašysiu|rašyti} egzaminą.
+Ar tu man {rašysi|rašyti}, kai išvažiuosi?
+Mes {skaitysime|skaityti} šią knygą kitą savaitę.
+Ką tu {skaitysi|skaityti} per atostogas?
+Ką tu {darysi|daryti} rytoj?
+Rytoj aš {darysiu|daryti} pyragą.
+Ką jūs {darysite|daryti} vasarą?
+Rytoj aš {žinosiu|žinoti} egzamino rezultatus.
+Rytoj mes {matysime|matyti} Trakų pilį.
+Ar tu {matysi|matyti} Joną rytoj?
+Po metų mes {turėsime|turėti} savo namą.
+Ar tu {turėsi|turėti} laiko rytoj?
+Rytoj aš labai užsiėmęs ir {neturėsiu|turėti} laisvo laiko.
+Rytoj aš {galėsiu|galėti} tau padėti.
+Ar tu {galėsi|galėti} ateiti?
+Deja, rytoj mes {negalėsime|galėti} atvykti.
+Ką {valgysime|valgyti} vakarienei?
+Rytoj aš {valgysiu|valgyti} tik vaisius.
+Ką {gersite|gerti} — kavą ar arbatą?
+Aš {gersiu|gerti} sulčių.
+Rytoj aš {duosiu|duoti} tau knygą.
+Ar tu {duosi|duoti} man savo telefoną?
+Mama {duos|duoti} mums pinigų.
+Aš {imsiu|imti} šitą suknelę.
+Rytoj aš {gausiu|gauti} atlyginimą.
+Ką tu {gausi|gauti} gimtadienio proga?
+Kitą mėnesį mes {pirksime|pirkti} naują šaldytuvą.
+Ką {pirksi|pirkti} turguje?
+Ką tu jam {sakysi|sakyti}?
+Rytoj mokytojas {klaus|klausti} apie namų darbus.
+Ar tu {atsakysi|atsakyti} į mano klausimą?
+Aš {lauksiu|laukti} tavęs prie įėjimo.
+Mes {lauksime|laukti} jūsų laiško.
+Rytoj mes {ieškosime|ieškoti} naujo buto.
+Rytoj aš {gaminsiu|gaminti} vakarienę.
+Kas {gamins|gaminti} pietus?
+Šiąnakt aš {miegosiu|miegoti} pas draugą.
+Rytoj mes {žiūrėsime|žiūrėti} krepšinio rungtynes.
+Ar jūs {girdėsite|girdėti} mane iš ten?
+Po metų tu viską {suprasi|suprasti}.
+Rytoj aš tau {skambinsiu|skambinti}.
+Kada tu {grįši|grįžti}?
+Aš {grįšiu|grįžti} vėlai.
+Mes {grįšime|grįžti} po savaitės.
+Kitą vasarą mes {keliausime|keliauti} po Norvegiją.
+Rytoj aš {bėgsiu|bėgti} maratoną.
+Duok, aš {nešiu|nešti} tavo krepšį.
+Rytoj vaikai {žais|žaisti} kieme.
+Ar tu {žaisi|žaisti} su mumis?
+Rytoj aš {sėdėsiu|sėdėti} pirmoje eilėje.
+
+# --- ещё ---
+Rytoj jūs {dirbsite|dirbti} kartu.
+Kitą savaitę ji {dirbs|dirbti} namie.
+Kur jie {gyvens|gyventi} po vestuvių?
+Ar jūs {gyvensite|gyventi} pas tėvus?
+Rytoj per susirinkimą ji {kalbės|kalbėti} pirma.
+Ką jūs {rašysite|rašyti} per egzaminą?
+Vakare aš {skaitysiu|skaityti} naują knygą.
+Rytoj tu viską {žinosi|žinoti}.
+Po savaitės mes {žinosime|žinoti} atsakymą.
+Rytoj jūs {matysite|matyti} jūrą!
+Ar jūs {galėsite|galėti} mums padėti?
+Kitą savaitę jie {turės|turėti} daug darbo.
+Ką jūs {valgysite|valgyti}?
+Per vakarėlį vaikai {gers|gerti} sultis.
+Mes {duosime|duoti} tau atsakymą rytoj.
+Po metų jie {gaus|gauti} naują butą.
+Ar jūs {pirksite|pirkti} šį namą?
+Rytoj aš {pirksiu|pirkti} bilietus.
+Ką jūs {sakysite|sakyti} mokytojui?
+Mes {atsakysime|atsakyti} per savaitę.
+Ar tu {lauksi|laukti} manęs?
+Ką jūs {gaminsite|gaminti} per šventes?
+Ar šiąnakt tu {miegosi|miegoti} pas mus?
+Ką jūs {žiūrėsite|žiūrėti} vakare?
+Jie {grįš|grįžti} rytoj vakare.
+Ar vasarą tu {keliausi|keliauti} vienas?
+Vakare mes {žaisime|žaisti} stalo žaidimus.
+Rytoj aš {neisiu|eiti} į darbą — imu laisvą dieną.
+Rytoj vaikai {neis|eiti} į mokyklą — atostogos.
+
+# --- ещё: по 3 формы на глагол ---
+Kelionėn mes {imsime|imti} tik kuprines.
+Ar tu {imsi|imti} šį darbą?
+Rytoj mes {klausime|klausti} gido apie pilį.
+Ar jūs {klausite|klausti} jo nuomonės?
+Po atostogų aš {ieškosiu|ieškoti} naujo darbo.
+Ar tu {ieškosi|ieškoti} buto Vilniuje?
+Iš čia tu viską {girdėsi|girdėti}.
+Rytoj mes {girdėsime|girdėti} naują dainininką.
+Perskaitysite taisyklę ir viską {suprasite|suprasti}.
+Jis niekada {nesupras|suprasti} manęs.
+Ar tu {skambinsi|skambinti} man, kai atvažiuosi?
+Rytoj mes {skambinsime|skambinti} į banką.
+Rytoj mes {bėgsime|bėgti} penkis kilometrus.
+Ar rytoj tu {bėgsi|bėgti} kartu?
+Rytoj vaikai {neš|nešti} gėles mokytojai.
+Mes {nešime|nešti} lagaminus kartu.
+Per koncertą mes {sėdėsime|sėdėti} balkone.
+Kur jūs {sėdėsite|sėdėti} per vestuves?
+Teisme aš {sakysiu|sakyti} tik tiesą.
+Aš {atsakysiu|atsakyti} rytoj.
+Šiąnakt jūs {miegosite|miegoti} svetainėje.
+Vakare aš {žiūrėsiu|žiūrėti} filmą.
+Jie {keliaus|keliauti} po Aziją visą mėnesį.
+
+@subtopic: 4. Многократное прошедшее (-davo) | rašydavau, eidavome
+@subtopic.be: 4. Прошлы шматразовы час (-davo) | rašydavau, eidavome
+@subtopic.uk: 4. Минулий багаторазовий час (-davo) | rašydavau, eidavome
+@subtopic.en: 4. Past frequentative (-davo) | rašydavau, eidavome
+
+Vaikystėje aš dažnai {būdavau|būti} pas senelius.
+Anksčiau čia {būdavo|būti} parduotuvė.
+Vasarą mes {būdavome|būti} prie ežero.
+Kiekvieną rytą aš {eidavau|eiti} į mokyklą pėsčiomis.
+Kur jūs {eidavote|eiti} vakarais?
+Kiekvieną vasarą mes {važiuodavome|važiuoti} prie jūros.
+Anksčiau tu {važiuodavai|važiuoti} dviračiu.
+Studijų metais aš {dirbdavau|dirbti} kavinėje.
+Mano tėvas {dirbdavo|dirbti} ir savaitgaliais.
+Vasarą mes {gyvendavome|gyventi} sodyboje.
+Vaikystėje mes daug {kalbėdavome|kalbėti} su seneliu.
+Ar vaikystėje jūs namie {kalbėdavote|kalbėti} lietuviškai?
+Anksčiau aš {rašydavau|rašyti} laiškus ranka.
+Senelė mums {rašydavo|rašyti} ilgus laiškus.
+Vaikystėje aš daug {skaitydavau|skaityti}.
+Ar tu {skaitydavai|skaityti} komiksus?
+Kai buvau mažas, mama man {skaitydavo|skaityti} pasakas.
+Ką jūs {darydavote|daryti} per atostogas?
+Anksčiau mes dažnai {matydavome|matyti} stirnas miške.
+Vaikystėje aš {turėdavau|turėti} daug laisvo laiko.
+Anksčiau aš {galėdavau|galėti} miegoti iki pietų.
+Vaikystėje aš visada {norėdavau|norėti} saldainių.
+Aš labai {mėgdavau|mėgti} vasaros atostogas.
+Pusryčiams mes {valgydavome|valgyti} košę.
+Senelis {valgydavo|valgyti} tik naminę duoną.
+Kiekvieną rytą tėtis {gerdavo|gerti} juodą kavą.
+Vaikystėje mes {gerdavome|gerti} daug pieno.
+Močiutė mums visada {duodavo|duoti} saldainių.
+Aš {imdavau|imti} knygas iš bibliotekos.
+Gimtadienio proga aš {gaudavau|gauti} daug dovanų.
+Mes {pirkdavome|pirkti} daržoves turguje.
+Mama dažnai {sakydavo|sakyti}: „Mokykis!“
+Mokytoja kiekvieną pamoką {klausdavo|klausti} apie namų darbus.
+Aš visada {atsakydavau|atsakyti} į laiškus.
+Mes ilgai {laukdavome|laukti} autobuso.
+Vaikystėje mes {ieškodavome|ieškoti} grybų miške.
+Mama sekmadieniais {gamindavo|gaminti} cepelinus.
+Vasarą aš {miegodavau|miegoti} palapinėje.
+Vakarais mes {žiūrėdavome|žiūrėti} filmus.
+Anksčiau aš dažnai {girdėdavau|girdėti} šią dainą per radiją.
+Aš {skambindavau|skambinti} mamai kas vakarą.
+Tėtis {grįždavo|grįžti} namo vėlai.
+Kiekvieną vasarą mes {keliaudavome|keliauti} po Lietuvą.
+Vaikystėje aš greitai {bėgdavau|bėgti}.
+Vaikai {žaisdavo|žaisti} kieme iki tamsos.
+Ar tu vaikystėje {žaisdavai|žaisti} slėpynes?
+Senelis {sėdėdavo|sėdėti} ant suoliuko prie namo.
+Anksčiau aš {nevalgydavau|valgyti} žuvies, o dabar ją mėgstu.
+Anksčiau jis visai {negerdavo|gerti} kavos.
+Vaikystėje mes {neturėdavome|turėti} kompiuterio.
+
+# --- ещё ---
+Anksčiau mes {eidavome|eiti} į kiną kiekvieną penktadienį.
+Vaikystėje aš dažnai {sėdėdavau|sėdėti} prie lango.
+Studentai {skambindavo|skambinti} namo sekmadieniais.
+Ar vasaromis jūs {gyvendavote|gyventi} kaime?
+Vaikystėje tu {mėgdavai|mėgti} piešti.
+Vasarą mes {miegodavome|miegoti} ant šieno.
+Anksčiau aš {nemėgdavau|mėgti} daržovių.
+Anksčiau tėtis {nedirbdavo|dirbti} šeštadieniais.
+Per Kalėdas vaikai {gaudavo|gauti} daug dovanų.
+Kas vakarą mama {klausdavo|klausti}, kaip sekėsi mokykloje.
+Šeštadieniais aš {laukdavau|laukti} tėčio prie vartų.
+Ar jūs {grįždavote|grįžti} namo pėsčiomis?
+
+# --- ещё: по 4 формы на глагол ---
+Vaikystėje mes {darydavome|daryti} lėktuvėlius iš popieriaus.
+Ką tu {darydavai|daryti} vakarais, kai gyvenai kaime?
+Senelis {darydavo|daryti} mums švilpukus.
+Vaikystėje aš dažnai {matydavau|matyti} gandrus.
+Ar tu {matydavai|matyti} jį mokykloje?
+Kai gyvenome prie jūros, mes kas vakarą {matydavome|matyti} saulėlydį.
+Vaikystėje aš {galėdavau|galėti} žaisti lauke visą dieną.
+Anksčiau mes {galėdavome|galėti} važiuoti autobusu nemokamai.
+Studijų metais tu {galėdavai|galėti} miegoti iki pietų.
+Kai buvau mažas, aš {norėdavau|norėti} tapti lakūnu.
+Vaikai visada {norėdavo|norėti} ledų.
+Vakarais mes {norėdavome|norėti} tik ilsėtis.
+Anksčiau mokytoja mums {duodavo|duoti} daug namų darbų.
+Aš {duodavau|duoti} broliui savo dviratį.
+Tu visada {duodavai|duoti} man gerų patarimų.
+Į žygį mes visada {imdavome|imti} palapinę.
+Senelis visada {imdavo|imti} lazdą, kai eidavo į mišką.
+Ar tu {imdavai|imti} skėtį į mokyklą?
+Sekmadieniais tėtis {pirkdavo|pirkti} laikraštį.
+Anksčiau aš {pirkdavau|pirkti} kavą kiekvieną rytą.
+Kur jūs {pirkdavote|pirkti} drabužius?
+Senelė visada {sakydavo|sakyti}, kad reikia anksti keltis.
+Ką tu {sakydavai|sakyti} mokytojui, kai vėluodavai?
+Mes visada {sakydavome|sakyti} tiesą.
+Jis visada greitai {atsakydavo|atsakyti} į žinutes.
+Ar tu {atsakydavai|atsakyti} į visus klausimus?
+Per pamokas mes {atsakydavome|atsakyti} lietuviškai.
+Vaikystėje aš dažnai {ieškodavau|ieškoti} gintaro pajūryje.
+Mama visada {ieškodavo|ieškoti} akinių.
+Ką jūs {ieškodavote|ieškoti} miške?
+Studijų metais aš pats {gamindavau|gaminti} valgyti.
+Ką tu {gamindavai|gaminti} vakarienei?
+Per šventes mes visi kartu {gamindavome|gaminti} Kūčių patiekalus.
+Vaikystėje aš kiekvieną sekmadienį {žiūrėdavau|žiūrėti} animacinius filmus.
+Ar tu {žiūrėdavai|žiūrėti} krepšinį su tėčiu?
+Senelis vakarais {žiūrėdavo|žiūrėti} žinias.
+Naktimis mes {girdėdavome|girdėti} lakštingalas.
+Ar tu {girdėdavai|girdėti}, kaip kaimynai dainuoja?
+Senelė blogai {girdėdavo|girdėti}, todėl kalbėdavome garsiai.
+Studijų metais aš daug {keliaudavau|keliauti}.
+Seneliai kasmet {keliaudavo|keliauti} į Palangą.
+Ar jūs {keliaudavote|keliauti} su vaikais?
+Kiekvieną rytą tėtis {bėgdavo|bėgti} parke.
+Mes {bėgdavome|bėgti} į mokyklą, nes vėluodavome.
+Ar tu {bėgdavai|bėgti} maratonus?
+Kiekvieną žiemą seneliai {važiuodavo|važiuoti} į kalnus.
+Aš {važiuodavau|važiuoti} į darbą troleibusu.
+Vaikystėje aš {gyvendavau|gyventi} pas senelius kiekvieną vasarą.
+Kur tu {gyvendavai|gyventi} per atostogas?
+Su seneliais aš {kalbėdavau|kalbėti} tik lietuviškai.
+Telefonu jie {kalbėdavo|kalbėti} valandų valandas.
+Mokykloje mes {rašydavome|rašyti} diktantus kiekvieną savaitę.
+Ar tu {rašydavai|rašyti} dienoraštį?
+Kiekvieną vasarą mes {turėdavome|turėti} daug svečių.
+Ar per atostogas tu {turėdavai|turėti} laiko skaityti?
+Ar tu {gaudavai|gauti} gerus pažymius?
+Mes {gaudavome|gauti} laiškų iš Amerikos.
+Aš dažnai {klausdavau|klausti} mokytojo patarimo.
+Ko tu {klausdavai|klausti} senelio?
+Vaikai kas vakarą {laukdavo|laukti} tėčio.
+Aš {laukdavau|laukti} vasaros visus metus.
+Vaikystėje aš {miegodavau|miegoti} su meškiuku.
+Kiek valandų tu {miegodavai|miegoti} studijų metais?
+Seneliai mums {skambindavo|skambinti} kiekvieną sekmadienį.
+Ar tu {skambindavai|skambinti} draugams vakarais?
+Vaikystėje aš {grįždavau|grįžti} iš mokyklos pėsčiomis.
+Mes {grįždavome|grįžti} namo sutemus.
+Mes su broliu {žaisdavome|žaisti} šachmatais.
+Aš {žaisdavau|žaisti} futbolą kieme.
+Vakarais mes {sėdėdavome|sėdėti} verandoje.
+Ar tu {sėdėdavai|sėdėti} pirmame suole?
+Anksčiau žiemos {būdavo|būti} šaltesnės.
+Sekmadieniais seneliai {eidavo|eiti} į bažnyčią.
+Ar jūs {dirbdavote|dirbti} ir naktimis?
+Mes {skaitydavome|skaityti} knygas garsiai.
+Mes {mėgdavome|mėgti} žaisti sniege.
+Ką tu {valgydavai|valgyti} vaikystėje pusryčiams?
+Senelis vakarais {gerdavo|gerti} žolelių arbatą.
+Mokykloje aš visada {žinodavau|žinoti} atsakymus.
+Mama visada {žinodavo|žinoti}, kada meluoju.
+Tu visada {žinodavai|žinoti}, ką pasakyti.
+Mes niekada {nežinodavome|žinoti}, kada grįš tėtis.
+Vaikystėje aš ne visada {suprasdavau|suprasti} suaugusiuosius.
+Senelė {suprasdavo|suprasti} mane be žodžių.
+Ar tu {suprasdavai|suprasti} matematiką?
+Vaikai niekada {nesuprasdavo|suprasti}, kodėl reikia anksti eiti miegoti.
+
+@subtopic: 5. Повелительное наклонение | rašyk, eikime, duokite
+@subtopic.be: 5. Загадны лад | rašyk, eikime, duokite
+@subtopic.uk: 5. Наказовий спосіб | rašyk, eikime, duokite
+@subtopic.en: 5. Imperative | rašyk, eikime, duokite
+
+# Лицо и число видны из обращения (Tomai / Vaikai / Ponia) и из других слов фразы (tu, tau, jūsų, jums, mes, mūsų).
+Tomai, {būk|būti} atsargus — kelias slidus.
+Vaikai, {būkite|būti} atsargūs prie vandens!
+Draugai, {būkime|būti} kantrūs — mes tikrai laimėsime.
+Ona, {nebūk|būti} tokia pikta ant manęs!
+Jonai, {eik|eiti} namo, tu jau pavargęs.
+Vaikai, {eikite|eiti} į kiemą ir pažaiskite kartu.
+Jau vėlu — {eikime|eiti} namo, mūsų laukia vakarienė.
+Atsiprašau, kaip nueiti į stotį? — {Eikite|eiti} tiesiai, paskui pasukite į kairę.
+Tėti, {važiuok|važiuoti} lėčiau — tu per greitai vairuoji!
+Savaitgalį {važiuokime|važiuoti} prie jūros — mes seniai ten nebuvome.
+Iki centro {važiuokite|važiuoti} trečiu autobusu, o paskui jūs pamatysite pilį.
+Mama, {nedirbk|dirbti} tiek daug — tau reikia pailsėti.
+Kolegos, {dirbkime|dirbti} kartu, ir mes viską spėsime.
+Studentai, {dirbkite|dirbti} tyliai, jūsų kaimynai rašo testą.
+Petrai, {kalbėk|kalbėti} garsiau, tavęs negirdėti!
+Atsiprašau, {kalbėkite|kalbėti} lėčiau — aš jūsų nesuprantu.
+Mes Lietuvoje, tad {kalbėkime|kalbėti} lietuviškai!
+Sūneli, {nekalbėk|kalbėti} su pilna burna!
+Ona, {rašyk|rašyti} man dažniau, aš tavęs pasiilgau!
+Mokiniai, {rašykite|rašyti} aiškiai, kad galėčiau perskaityti jūsų darbus.
+{Rašykime|rašyti} jam laišką kartu — mes abu jo pasiilgome.
+Lukai, {skaityk|skaityti} garsiai, kad visi tave girdėtų.
+Vaikai, atsiverskite knygas ir {skaitykite|skaityti} tekstą.
+Šį vakarą {skaitykime|skaityti} vaikams pasakas, o ne žiūrėkime televizorių.
+Gerai, {daryk|daryti}, ką nori, tu jau suaugęs.
+Mokiniai, {darykite|daryti} trečią pratimą savo sąsiuviniuose.
+Tomai, {nedaryk|daryti} to — tu susižeisi!
+Mama, {žiūrėk|žiūrėti}, koks gražus paukštis tupi ant tavo palangės!
+Mokiniai, {žiūrėkite|žiūrėti} į lentą, o ne į savo telefonus.
+Ona, {nežiūrėk|žiūrėti} į mane taip piktai, aš tau nieko nepadariau!
+Sūneli, {valgyk|valgyti} daugiau daržovių, tu turi augti!
+Mieli svečiai, {valgykite|valgyti}, kol jūsų sriuba neatvėso.
+Vakarienė ant stalo — {valgykime|valgyti}, mes visi alkani!
+Tu sergi, todėl {gerk|gerti} daugiau vandens.
+Pacientai, {gerkite|gerti} vaistus tris kartus per dieną, kaip jums paskyrė gydytojas.
+Jonai, {negerk|gerti} šalto vandens — tu susirgsi!
+Tomai, {duok|duoti} man ranką, tau bus lengviau lipti.
+Ponia, {duokite|duoti}, prašom, du bilietus — mes su vyru važiuojame kartu.
+{Duokime|duoti} jam dar vieną šansą — mes juk visi klystame.
+Tomai, {imk|imti} obuolį, jei nori.
+Prašom, {imkite|imti} pyrago — jūs juk dar neragavote.
+Sese, {neimk|imti} mano telefono be leidimo!
+Mama, {pirk|pirkti} duonos, kai grįši iš darbo.
+Pirkėjai, {pirkite|pirkti} šviežią duoną tiesiai iš krosnies!
+Bilietus {pirkime|pirkti} internetu — mums bus pigiau.
+Jonai, {sakyk|sakyti} tiesą — aš tavęs nebarsiu.
+{Sakykite|sakyti}, prašom, kiek kainuoja šie jūsų obuoliai?
+Nuo šiol {sakykime|sakyti} vieni kitiems tik tiesą — mes juk draugai.
+Jei ko nesupranti, {klausk|klausti} manęs.
+Studentai, {klauskite|klausti}, jei jums kas neaišku.
+Nežinome kelio — {klauskime|klausti} gido.
+Lina, {atsakyk|atsakyti} į mano klausimą, kai tavęs klausiu!
+{Atsakykite|atsakyti} į klausimus raštu — jūs turite valandą.
+Mes gavome kvietimą — {atsakykime|atsakyti} į jį šiandien.
+Tomai, {lauk|laukti} manęs prie durų, aš tuoj ateisiu.
+Ponai, {laukite|laukti} savo eilės, jus pakvies.
+Mes neskubame, todėl {laukime|laukti} jo dar penkias minutes.
+Tu pametei raktus? {Ieškok|ieškoti} jų kišenėse!
+Mokiniai, {ieškokite|ieškoti} informacijos internete ir užsirašykite.
+Šuo pabėgo! {Ieškokime|ieškoti} jo kartu — mes jį tikrai rasime.
+Tu šiandien namie — {gamink|gaminti} pietus, o aš nupirksiu desertą.
+Mes visi alkani — {gaminkime|gaminti} vakarienę kartu!
+Šeimininkės, {gaminkite|gaminti} sriubą pagal šį receptą, ir jūsų šeima bus patenkinta.
+Jau vėlu, sūneli, {miegok|miegoti}.
+Vaikai, {miegokite|miegoti} ramiai, rytoj jūsų laukia kelionė.
+Rytoj mums anksti keltis — {miegokime|miegoti}.
+Jei tau reikės pagalbos, {skambink|skambinti} man bet kada.
+Jei turite klausimų, {skambinkite|skambinti} šiuo numeriu.
+Šiandien mūsų mamos gimtadienis — {skambinkime|skambinti} jai!
+Sūneli, {grįžk|grįžti} namo iki dešimtos.
+Mieli svečiai, {grįžkite|grįžti} pas mus ir kitais metais!
+Pradeda lyti — {grįžkime|grįžti} namo, kol mes nesušlapome.
+Kol esi jaunas, {keliauk|keliauti} kuo daugiau!
+Brangūs turistai, {keliaukite|keliauti} saugiai!
+Šią vasarą {keliaukime|keliauti} po Lietuvą — mes jos dar nepažįstame.
+Rūta, {bėk|bėgti} greičiau, tu vėluoji!
+Autobusas atvažiuoja — {bėkime|bėgti}, kitaip mes nespėsime!
+Vaikai, {nebėkite|bėgti} per gatvę — jūs galite patekti po mašina!
+Tomai, {nešk|nešti} krepšį atsargiai — jame tavo mamos kiaušiniai.
+Vyrai, {neškite|nešti} kėdes į kiemą.
+{Neškime|nešti} viską į mašiną — mes jau išvažiuojame.
+Lukai, {žaisk|žaisti} su broliu, kol aš gaminu valgyti.
+Vaikai, {žaiskite|žaisti} kieme, ne gatvėje!
+Lyja, todėl {žaiskime|žaisti} namie stalo žaidimus — mes jau seniai nežaidėme.
+Lukai, {sėdėk|sėdėti} ramiai, kol tave kerpa.
+Vaikai, {sėdėkite|sėdėti} ramiai, pamoka dar nesibaigė.
+Sūneli, {nesėdėk|sėdėti} visą dieną prie kompiuterio!
+
+@subtopic: 6. Все вместе | тексты с разными временами
+@subtopic.be: 6. Усё разам | тэксты з рознымі часамі
+@subtopic.uk: 6. Усе разом | тексти з різними часами
+@subtopic.en: 6. All together | texts with different tenses
+
+--- Mano diena
+Aš {esu|būti} studentė ir {gyvenu|gyventi} Kaune.
+Kiekvieną dieną {einu|eiti} į universitetą.
+Po paskaitų {dirbu|dirbti} kavinėje.
+Vakare {skaitau|skaityti} arba {žiūriu|žiūrėti} filmus.
+---
+
+--- Vakar
+Vakar {buvo|būti} šeštadienis.
+Ryte aš ilgai {miegojau|miegoti}, paskui {gaminau|gaminti} pusryčius.
+Po pietų mes su draugais {žaidėme|žaisti} krepšinį.
+Vakare {grįžau|grįžti} namo ir {skambinau|skambinti} mamai.
+---
+
+--- Kitą vasarą
+Kitą vasarą mes {keliausime|keliauti} po Lietuvą.
+Pirmiausia {važiuosime|važiuoti} į Klaipėdą, paskui — į Nidą.
+Ten {gyvensime|gyventi} mažame namelyje prie marių.
+Kiekvieną dieną {valgysime|valgyti} rūkytą žuvį.
+---
+
+--- Vaikystė
+Vaikystėje kiekvieną vasarą aš {būdavau|būti} pas senelius kaime.
+Ryte senelė {gamindavo|gaminti} blynus, o mes {valgydavome|valgyti} juos su medumi.
+Dieną mes {žaisdavome|žaisti} lauke ir {bėgdavome|bėgti} prie upės.
+Vakare senelis {sėdėdavo|sėdėti} su mumis prie laužo.
+---
+
+--- Telefonu
+— Labas! Ką tu dabar {darai|daryti}?
+— {Žiūriu|žiūrėti} krepšinį. O kas?
+— Vakare mes {eisime|eiti} į kiną. Gal {eisi|eiti} kartu?
+— {Nežinau|žinoti}… Rytoj man reikia anksti keltis.
+— Nagi, {eik|eiti} su mumis! Tau tikrai {bus|būti} smagu!
+---
+
+--- Kelionė
+Praėjusią savaitę mes {buvome|būti} Rygoje.
+Ten {važiavome|važiuoti} autobusu, o namo grįžome traukiniu.
+Rygoje mes daug {matėme|matyti} ir {valgėme|valgyti} geruose restoranuose.
+Kitą kartą tikrai {važiuosime|važiuoti} ilgiau.
+---
+
+--- Mano šeima
+Mano šeima {yra|būti} nedidelė.
+Tėtis {dirba|dirbti} gydytoju, o sesuo dar {eina|eiti} į mokyklą.
+Vakarais mes visi kartu {valgome|valgyti} vakarienę ir {kalbame|kalbėti} apie dieną.
+---
+
+--- Kai buvau studentas
+Kai buvau studentas, aš {gyvendavau|gyventi} bendrabutyje.
+Ryte {gerdavau|gerti} kavą ir {eidavau|eiti} į paskaitas.
+Savaitgaliais {grįždavau|grįžti} pas tėvus.
+---

@@ -1,5 +1,6 @@
 // Сборка раунда: выбор единиц, банк слов, отвлекающие формы, проверка ответов.
 import { normalize, itemGaps, itemSubtopic } from "./parser.js";
+import { exactForms } from "./paradigms.js";
 
 export function shuffle(arr, rnd = Math.random) {
   const a = arr.slice();
@@ -24,23 +25,42 @@ function weightedSample(pool, n, weightOf, rnd) {
   return picked;
 }
 
+// Сколько пропусков одного слова собирать в раунде при группировке: при 12 пропусках — по 3.
+export function perWord(target) {
+  return Math.max(2, Math.min(4, Math.round(target / 4)));
+}
+
 // Набрать единицы так, чтобы суммарно вышло примерно target пропусков.
 // Единицу, с которой получился бы заметный перебор, пропускаем и пробуем следующую.
-function pickUnits(pool, target, weightOf, rnd) {
+// group: собирать по нескольку пропусков на одно слово (подсказку). Иначе в режиме перетаскивания с банком
+// «только ответы» все слова в банке разные и ответ находится по корню, а не по форме.
+function pickUnits(pool, target, weightOf, rnd, group = false) {
   const order = weightedSample(pool, pool.length, weightOf, rnd);
   const slack = Math.max(2, Math.round(target * 0.25));
+  const gapsOf = (u) => u.active ?? itemGaps(u.item).length;
+  const fits = (u) => total + gapsOf(u) <= target + slack;
+  const want = perWord(target);
   const units = [];
+  const used = new Set();
+  const words = new Map(); // слово → сколько его пропусков уже в раунде
   let total = 0;
-  for (const u of order) {
-    if (total >= target) break;
-    const n = u.active ?? itemGaps(u.item).length;
-    if (total + n > target + slack) continue;
-    units.push(u);
-    total += n;
+  while (total < target) {
+    let next = null;
+    if (group) {
+      const open = new Set([...words].filter(([, n]) => n < want).map(([w]) => w));
+      if (open.size) next = order.find((u) => !used.has(u) && fits(u) && u.words.some((w) => open.has(w)));
+    }
+    next ??= order.find((u) => !used.has(u) && fits(u));
+    if (!next) break;
+    used.add(next);
+    units.push(next);
+    total += gapsOf(next);
+    for (const w of next.words ?? []) words.set(w, (words.get(w) || 0) + 1);
   }
   // ни одна единица не влезла (например, остались только длинные тексты) — берём одну
   if (!units.length && order.length) units.push(order[0]);
-  return units;
+  // при группировке задания одного слова шли бы подряд — перемешиваем
+  return group ? shuffle(units, rnd) : units;
 }
 
 function isUpper(ch) {
@@ -78,7 +98,7 @@ export function applySelection(topics, keys) {
     const subs = t.subtopics.filter((st) => sel.has(st.key));
     if (!subs.length) continue;
     const chosen = new Set(subs.map((st) => st.key));
-    out.push({ ...t, subtopics: subs, items: t.items.filter((it) => chosen.has(it.subtopic)), partial: true });
+    out.push({ ...t, subtopics: subs, items: t.items.filter((it) => chosen.has(it.subtopic)), partial: true, source: t });
   }
   return out;
 }
@@ -111,8 +131,9 @@ export function poolFor(topics, settings) {
   for (const topic of topics) {
     for (const item of topic.items) {
       if (settings.kind !== "all" && settings.kind !== item.type) continue;
-      const active = itemGaps(item).filter(isActive).length;
-      if (active) pool.push({ topic, item, active });
+      const gaps = itemGaps(item).filter(isActive);
+      // words — подсказки активных пропусков (по одной на каждый пропуск): по ним группируется раунд
+      if (gaps.length) pool.push({ topic, item, active: gaps.length, words: gaps.filter((g) => g.hint).map((g) => normalize(g.hint)) });
     }
   }
   return pool;
@@ -142,7 +163,8 @@ export function buildRound(topics, settings, itemErrors = {}, rnd = Math.random)
   const isActive = activeGap(settings);
   const pool = poolFor(topics, settings);
   const weight = (u) => 1 + Math.min(itemErrors[u.item.id] || 0, 5);
-  const units = pickUnits(pool, settings.gaps, weight, rnd);
+  // группировка по словам — только для перетаскивания (в режиме ввода банка нет)
+  const units = pickUnits(pool, settings.gaps, weight, rnd, settings.mode !== "type" && !settings.lemma);
 
   let gapSeq = 0;
   const gaps = [];
@@ -184,22 +206,48 @@ export function buildRound(topics, settings, itemErrors = {}, rnd = Math.random)
   return { units, gaps, chips: shuffle(chips, rnd) };
 }
 
+function commonPrefix(a, b) {
+  let i = 0;
+  while (i < a.length && i < b.length && a[i] === b[i]) i++;
+  return i;
+}
+
+// Формы того же слова: ответы других пропусков всей темы (не только выбранных подтем) с той же подсказкой
+// и формы из парадигмы (paradigms.js), если слово в ней есть. К утвердительной форме глагола — только
+// утвердительные, к отрицательной — отрицательные. Сначала идут формы, похожие на ответ (общее начало):
+// для «žaisdavo» — «žaisdavau», «žaisdavome», потом «žaidė», «žais».
+function sameWordForms(gap, rnd) {
+  if (!gap.hint) return [];
+  const lemma = normalize(gap.hint);
+  const full = gap.unit.topic.source || gap.unit.topic;
+  const answers = full.items
+    .flatMap(itemGaps)
+    .filter((g) => g.hint && normalize(g.hint) === lemma)
+    .flatMap((g) => g.answers);
+  let forms = answers;
+  const paradigm = exactForms(gap.hint);
+  if (paradigm) {
+    const neg = new Set(paradigm.neg);
+    const negative = neg.has(normalize(gap.answers[0]));
+    forms = [...answers, ...(negative ? paradigm.neg : paradigm.pos)].filter((w) => neg.has(normalize(w)) === negative);
+  }
+  const answer = normalize(gap.answers[0]);
+  const unique = [...new Map(forms.map((w) => [normalize(w), w])).values()];
+  return unique
+    .map((w) => ({ w, score: commonPrefix(normalize(w), answer) + rnd() * 3 }))
+    .sort((a, b) => b.score - a.score)
+    .map((x) => x.w);
+}
+
 // Кандидаты в отвлекающие формы для пропуска — в порядке приоритета.
 // При тренировке одного слова общий список темы не используется: там формы других слов.
 function distractorCandidates(gap, rnd, oneWord = false) {
   const topic = gap.unit.topic;
   const explicit = shuffle(gap.distractors, rnd);
-  let sameLemma = [];
-  if (gap.hint) {
-    const lemma = normalize(gap.hint);
-    sameLemma = topic.items
-      .flatMap(itemGaps)
-      .filter((g) => g.hint && normalize(g.hint) === lemma)
-      .flatMap((g) => g.answers);
-  }
   // запас лишних форм: у подтемы свой, если задан
-  const pool = itemSubtopic(topic, gap.unit.item)?.distractors.length ? itemSubtopic(topic, gap.unit.item).distractors : topic.distractors;
-  return [...explicit, ...shuffle(sameLemma, rnd), ...(oneWord ? [] : shuffle(pool, rnd))];
+  const sub = itemSubtopic(topic, gap.unit.item);
+  const pool = sub?.distractors.length ? sub.distractors : topic.distractors;
+  return [...explicit, ...sameWordForms(gap, rnd), ...(oneWord ? [] : shuffle(pool, rnd))];
 }
 
 export function isCorrect(gap, chipText) {

@@ -1,4 +1,6 @@
-// Парадигмы склонения для проверки ответов в data/*.txt.
+// Парадигмы склонения и спряжения. Модуль не зависит от DOM, им пользуются:
+// - тест tests/forms.test.mjs — проверяет, что каждый ответ в data/*.txt — форма своей подсказки (formsOf);
+// - round.js — строит лишние формы для банка слов из полной парадигмы слова (exactForms).
 // Таблицы сверены с учебниками: Langas į lietuvių kalbą, Žingsnis I (приложение с таблицами местоимений
 // и числительных), Colloquial Lithuanian, Complete Lithuanian. formsOf(лемма) → Set всех форм или null, если лемма неизвестна.
 
@@ -212,6 +214,7 @@ export function nounForms(lemma, declension) {
 // ---------- Возвратные глаголы ----------
 // Спряжение по трём основным формам (инфинитив, наст. и прош. время 3 л. без -si), как в
 // «365 lietuvių kalbos veiksmažodžiai» (2015): таблицы спряжения возвратных глаголов во введении и словарные статьи.
+// Основные формы ещё сверены со списком «Pagrindinės veiksmažodžių formos» в приложении Nė dienos be lietuvių kalbos 1 (UAB SDG).
 // Формы: настоящее, прошедшее, будущее время, повелительное наклонение (2 л. ед. ч., 1 и 2 л. мн. ч.),
 // инфинитив; отрицательные (ne-si-moko, ne-ap-si-rengė).
 
@@ -224,9 +227,9 @@ const VERB_REFLEXIVE = {
   juoktis: ["juokia", "juokė"], // 365
   džiaugtis: ["džiaugia", "džiaugė"], // 365
   jaustis: ["jaučia", "jautė"], // 365
-  tikėtis: ["tiki", "tikėjo"], // 365, введение: tikiuosi, tikiesi, tikisi
-  domėtis: ["domi", "domėjo"],
-  rūpintis: ["rūpina", "rūpino"],
+  tikėtis: ["tiki", "tikėjo"], // 365 (введение), Nė dienos be lietuvių kalbos 1
+  domėtis: ["domi", "domėjo"], // Nė dienos be lietuvių kalbos 1
+  rūpintis: ["rūpina", "rūpino"], // Nė dienos be lietuvių kalbos 1
   šypsotis: ["šypso", "šypsojo"], // 365
   ruoštis: ["ruošia", "ruošė"], // 365
   kalbėtis: ["kalba", "kalbėjo"], // 365, введение: kalbėjausi
@@ -234,30 +237,30 @@ const VERB_REFLEXIVE = {
   maudytis: ["maudo", "maudė"], // 365
   klausytis: ["klauso", "klausė"], // 365
   naudotis: ["naudoja", "naudojo"], // 365
-  sėstis: ["sėda", "sėdo"],
+  sėstis: ["sėda", "sėdo"], // Žingsnis I, Langas, Complete Lithuanian
   jaudintis: ["jaudina", "jaudino"], // 365
   skųstis: ["skundžia", "skundė"], // 365
-  didžiuotis: ["didžiuoja", "didžiavo"],
-  elgtis: ["elgia", "elgė"],
-  ilsėtis: ["ilsi", "ilsėjo"],
+  didžiuotis: ["didžiuoja", "didžiavo"], // как šukuotis (365): -uoja, -avo
+  elgtis: ["elgia", "elgė"], // Complete Lithuanian, Žingsnis II
+  ilsėtis: ["ilsi", "ilsėjo"], // Nė dienos be lietuvių kalbos 1
 };
 
 // Приставочные: инфинитив → [приставка, инфинитив без приставки и -si-, наст. 3 л., прош. 3 л.]
 const VERB_PREFIXED = {
   atsikelti: ["at", "kelti", "kelia", "kėlė"], // kelti — 365
   nusiprausti: ["nu", "prausti", "prausia", "prausė"], // prausti — 365
-  apsirengti: ["ap", "rengti", "rengia", "rengė"], // rengti — 365
-  atsisėsti: ["at", "sėsti", "sėda", "sėdo"],
-  susitikti: ["su", "tikti", "tinka", "tiko"],
-  susipažinti: ["su", "pažinti", "pažįsta", "pažino"],
-  pasiimti: ["pa", "imti", "ima", "ėmė"],
-  užsiimti: ["už", "imti", "ima", "ėmė"],
-  nusipirkti: ["nu", "pirkti", "perka", "pirko"],
-  atsigulti: ["at", "gulti", "gula", "gulė"],
-  užsisakyti: ["už", "sakyti", "sako", "sakė"], // sakyti — 365
+  apsirengti: ["ap", "rengti", "rengia", "rengė"], // 365, Nė dienos be lietuvių kalbos 1
+  atsisėsti: ["at", "sėsti", "sėda", "sėdo"], // Colloquial Lithuanian, Žingsnis II
+  susitikti: ["su", "tikti", "tinka", "tiko"], // Nė dienos be lietuvių kalbos 1
+  susipažinti: ["su", "pažinti", "pažįsta", "pažino"], // Nė dienos be lietuvių kalbos 1
+  pasiimti: ["pa", "imti", "ima", "ėmė"], // imti — Nė dienos be lietuvių kalbos 1
+  užsiimti: ["už", "imti", "ima", "ėmė"], // imti — Nė dienos be lietuvių kalbos 1
+  nusipirkti: ["nu", "pirkti", "perka", "pirko"], // pirkti — Nė dienos be lietuvių kalbos 1
+  atsigulti: ["at", "gulti", "gula", "gulė"], // gultis: gulasi, gulėsi — Nė dienos be lietuvių kalbos 1
+  užsisakyti: ["už", "sakyti", "sako", "sakė"], // Nė dienos be lietuvių kalbos 1
   atsiprašyti: ["at", "prašyti", "prašo", "prašė"], // 365
   išsimaudyti: ["iš", "maudyti", "maudo", "maudė"], // maudyti — 365
-  įsimylėti: ["į", "mylėti", "myli", "mylėjo"],
+  įsimylėti: ["į", "mylėti", "myli", "mylėjo"], // mylėti — Nė dienos be lietuvių kalbos 1
   apsistoti: ["ap", "stoti", "stoja", "stojo"], // 365
   pasiklysti: ["pa", "klysti", "klysta", "klydo"], // 365
 };
@@ -310,19 +313,90 @@ function reflexiveConjugation(stem, pres, past) {
   return out;
 }
 
-export function verbForms(lemma) {
-  const l = lemma.toLocaleLowerCase("lt");
+// Невозвратные глаголы: инфинитив → [наст. 3 л., прош. 3 л.]. Источник — список «Pagrindinės veiksmažodžių formos»
+// в приложении Nė dienos be lietuvių kalbos 1; где отмечено, ещё и словарные статьи «365».
+const VERB_PLAIN = {
+  eiti: ["eina", "ėjo"],
+  važiuoti: ["važiuoja", "važiavo"], // и 365
+  dirbti: ["dirba", "dirbo"],
+  gyventi: ["gyvena", "gyveno"], // и 365
+  kalbėti: ["kalba", "kalbėjo"],
+  rašyti: ["rašo", "rašė"], // и 365
+  skaityti: ["skaito", "skaitė"],
+  daryti: ["daro", "darė"], // и 365
+  žinoti: ["žino", "žinojo"],
+  matyti: ["mato", "matė"], // и 365
+  turėti: ["turi", "turėjo"],
+  galėti: ["gali", "galėjo"],
+  norėti: ["nori", "norėjo"],
+  mėgti: ["mėgsta", "mėgo"],
+  valgyti: ["valgo", "valgė"], // и 365
+  gerti: ["geria", "gėrė"], // и 365
+  duoti: ["duoda", "davė"], // и 365
+  imti: ["ima", "ėmė"],
+  gauti: ["gauna", "gavo"], // и 365
+  pirkti: ["perka", "pirko"],
+  sakyti: ["sako", "sakė"], // и 365
+  klausti: ["klausia", "klausė"], // и 365
+  atsakyti: ["atsako", "atsakė"], // 365
+  laukti: ["laukia", "laukė"], // и 365
+  ieškoti: ["ieško", "ieškojo"], // и 365
+  gaminti: ["gamina", "gamino"], // Colloquial Lithuanian, Complete Lithuanian
+  miegoti: ["miega", "miegojo"], // и 365
+  žiūrėti: ["žiūri", "žiūrėjo"],
+  girdėti: ["girdi", "girdėjo"],
+  suprasti: ["supranta", "suprato"], // и 365
+  mokėti: ["moka", "mokėjo"],
+  sėdėti: ["sėdi", "sėdėjo"],
+  skambinti: ["skambina", "skambino"], // и 365
+  grįžti: ["grįžta", "grįžo"], // и 365
+  keliauti: ["keliauja", "keliavo"], // и 365
+  bėgti: ["bėga", "bėgo"],
+  nešti: ["neša", "nešė"], // и 365
+  žaisti: ["žaidžia", "žaidė"], // и таблица спряжения в приложении Nė dienos (žaidžiu, žaidi)
+};
+
+// būti — нерегулярный (Nė dienos be lietuvių kalbos 1, Langas į lietuvių kalbą): esu, esi, yra…; отрицание nesu, nėra.
+const BUTI = ["esu", "esi", "yra", "esame", "esate", "buvau", "buvai", "buvo", "buvome", "buvote",
+  "būsiu", "būsi", "bus", "būsime", "būsite", "būdavau", "būdavai", "būdavo", "būdavome", "būdavote", "būk", "būkime", "būkite"];
+const BUTI_NEG = ["nesu", "nesi", "nėra", "nesame", "nesate", ...BUTI.slice(5).map((f) => "ne" + f)];
+
+// Отрицание: ne + форма; перед e- и ė- гласная сливается: eina → neina, eisiu → neisiu, ėjo → nėjo, ėmė → nėmė.
+function negate(form) {
+  if (form.startsWith("e")) return "ne" + form.slice(1);
+  if (form.startsWith("ė")) return "n" + form;
+  return "ne" + form;
+}
+
+// Многократное прошедшее: основа инфинитива + -dav- + -au, -ai, -o, -ome, -ote (одинаково у всех глаголов).
+function frequentative(stem) {
+  return ["au", "ai", "o", "ome", "ote"].map((e) => stem + "dav" + e);
+}
+
+// Формы глагола отдельно утвердительные и отрицательные: { pos, neg } или null.
+function verbParts(l) {
+  if (l === "būti") return { pos: ["būti", ...BUTI], neg: ["nebūti", ...BUTI_NEG] };
+  if (VERB_PLAIN[l]) {
+    const stem = l.slice(0, -2);
+    const forms = [l, ...plainConjugation(stem, ...VERB_PLAIN[l]), ...frequentative(stem)];
+    return { pos: forms, neg: forms.map(negate) };
+  }
   if (VERB_REFLEXIVE[l]) {
     const stem = l.slice(0, -3); // -tis
     const plain = plainConjugation(stem, ...VERB_REFLEXIVE[l]);
-    return new Set([l, "nesi" + stem + "ti", ...reflexiveConjugation(stem, ...VERB_REFLEXIVE[l]), ...plain.map((f) => "nesi" + f)]);
+    return { pos: [l, ...reflexiveConjugation(stem, ...VERB_REFLEXIVE[l])], neg: ["nesi" + stem + "ti", ...plain.map((f) => "nesi" + f)] };
   }
   if (VERB_PREFIXED[l]) {
     const [prefix, inf, pres, past] = VERB_PREFIXED[l];
     const forms = [inf, ...plainConjugation(inf.slice(0, -2), pres, past)].map((f) => prefix + "si" + f);
-    return new Set([...forms, ...forms.map((f) => "ne" + f)]);
+    return { pos: forms, neg: forms.map((f) => "ne" + f) };
   }
   return null;
+}
+
+export function verbForms(lemma) {
+  const parts = verbParts(lemma.toLocaleLowerCase("lt"));
+  return parts ? new Set([...parts.pos, ...parts.neg]) : null;
 }
 
 // declension — номер типа склонения существительного (1–5); если задан, лемма считается существительным.
@@ -336,6 +410,20 @@ export function formsOf(lemma, declension = null) {
   if (PRON[l]) return new Set(PRON[l]);
   if (NUM[l]) return new Set(NUM[l]);
   return adjForms(l);
+}
+
+// Формы слова, известные точно: глаголы, местоимения и числительные из таблиц, — { pos, neg } (neg — отрицательные
+// формы глагола, у остальных пусто) или null. В отличие от formsOf, не угадывает прилагательное по окончанию:
+// подсказка «namas» в теме существительных не должна дать «namam».
+export function exactForms(lemma) {
+  const l = lemma.toLocaleLowerCase("lt");
+  const verb = verbParts(l);
+  if (verb) return verb;
+  if (WITH_FEMININE[l]) return { pos: [...PRON[l], ...PRON[WITH_FEMININE[l]]], neg: [] };
+  if (NUM_FEMININE[l]) return { pos: [...NUM[l], ...NUM[NUM_FEMININE[l]]], neg: [] };
+  if (PRON[l]) return { pos: PRON[l], neg: [] };
+  if (NUM[l]) return { pos: NUM[l], neg: [] };
+  return null;
 }
 
 // Все формы указательных местоимений: для альтернатив вида {šį/tą|šis}.

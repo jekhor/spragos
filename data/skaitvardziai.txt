@@ -375,6 +375,30 @@ Grupėje mokosi studentai iš {septynių|septyni} šalių.
 Kelionė autobusu kainuoja {devynis|devyni} eurus.
 {Keturiems|keturi} studentams reikia bendrabučio.
 
+# --- ещё: 11–19 ---
+Parduotuvė dirba nuo devynių iki {vienuolikos|vienuolika}.
+Pernai aš buvau {vienuolikoje|vienuolika} šalių.
+{Vienuolikai|vienuolika} mokinių reikia papildomos pamokos.
+{Keturiolikai|keturiolika} vaikų reikia vietos stovykloje.
+Iš {keturiolikos|keturiolika} mokinių tik du gavo dešimtukus.
+Kelionė vyko {keturiolikoje|keturiolika} miestų.
+Nuo {aštuoniolikos|aštuoniolika} metų galima vairuoti.
+Dovanojome dovanėles {aštuoniolikai|aštuoniolika} vaikų.
+Ši programa veikia {aštuoniolikoje|aštuoniolika} šalių.
+Jai dar nėra {septyniolikos|septyniolika}.
+{Septyniolikai|septyniolika} studentų skirta stipendija.
+Jis gyveno {septyniolikoje|septyniolika} skirtingų butų.
+Iki {šešiolikos|šešiolika} metų vaikai privalo mokytis mokykloje.
+Mokytoja išdalijo užduotis {šešiolikai|šešiolika} mokinių.
+Mūsų įmonė turi biurus {šešiolikoje|šešiolika} miestų.
+Iš {devyniolikos|devyniolika} žaidėjų žaidė tik dvylika.
+{Devyniolikai|devyniolika} dalyvių prireikė pagalbos.
+Varžybos vyko {devyniolikoje|devyniolika} sporto salių.
+Pietūs būna po {dvylikos|dvylika}.
+{Dvylikai|dvylika} žmonių užteks dviejų picų.
+Nuo {trylikos|trylika} metų jis lanko muzikos mokyklą.
+Visiems {trylikai|trylika} vaikų nupirkome ledų.
+
 @subtopic: 3. Собирательные | dveji, treji, ketveri… — с pluralia tantum: durys, metai, marškiniai
 @subtopic.be: 3. Зборныя | dveji, treji, ketveri… — з pluralia tantum: durys, metai, marškiniai
 @subtopic.uk: 3. Збірні | dveji, treji, ketveri… — з pluralia tantum: durys, metai, marškiniai
@@ -505,6 +529,23 @@ Ant lentynos guli {treji|treji} akiniai.
 Ji dar tik {dvejų|dveji} metų.
 Vaikai nuo {trejų|treji} metų lanko darželį.
 Ši stovykla skirta {aštuonerių|aštuoneri} metų vaikams.
+
+# --- ещё ---
+Prieš {septynerius|septyneri} metus mes persikėlėme į Vilnių.
+Sūnus eina į mokyklą nuo {septynerių|septyneri} metų.
+Šis namas turi {septynerias|septyneri} duris.
+Jau {devynerius|devyneri} metus dirbu šioje įmonėje.
+Vaikams iki {devynerių|devyneri} metų bilietas nemokamas.
+{Devyneriems|devyneri} metams jis išvyko į Ameriką.
+Mergaitė pradėjo groti smuiku nuo {šešerių|šešeri} metų.
+Prieš {šešerius|šešeri} metus mes susituokėme.
+Spintoje radau {šešerias|šešeri} kelnes.
+Sūnus jau {penkerių|penkeri} metų.
+Turiu {penkerius|penkeri} baltus marškinius.
+Jie vedę jau {aštuonerius|aštuoneri} metus.
+Nuo {aštuonerių|aštuoneri} metų jis žaidžia krepšinį.
+Mūsų dukrai dar nėra {vienerių|vieneri} metų.
+Prieš {ketverius|ketveri} metus nusipirkome butą.
 
 @subtopic: 4. Порядковые | pirmas, antras, trečias, aštuntas
 @subtopic.be: 4. Парадкавыя | pirmas, antras, trečias, aštuntas
@@ -703,6 +744,29 @@ Mano brolis — {dešimtos|dešimtas} klasės mokinys.
 — Kitas išvyksta pusę {antros|antras}.
 — Ačiū! Dar spėsiu išgerti kavos.
 ---
+
+# --- ещё ---
+Gyvenu {vienuoliktame|vienuoliktas} aukšte.
+Mano sūnus mokosi {vienuoliktoje|vienuoliktas} klasėje.
+Susitikime {vienuoliktą|vienuoliktas} valandą.
+Pamoka prasideda {devintą|devintas} valandą.
+Mano brolis mokosi {devintoje|devintas} klasėje.
+Kelinta valanda? — {Devinta|devintas}.
+Pietausime {dvyliktą|dvyliktas} valandą.
+Tai jau {dvylikta|dvyliktas} mūsų kelionė į Italiją.
+{Dvyliktos|dvyliktas} klasės mokiniai laiko egzaminus.
+Šis namas pastatytas {devynioliktame|devynioliktas} amžiuje.
+{Devyniolikto|devynioliktas} amžiaus pabaigoje lietuviška spauda buvo uždrausta.
+Jis gimė gegužės {devynioliktą|devynioliktas}.
+Ši bažnyčia pastatyta {septynioliktame|septynioliktas} amžiuje.
+Tai {septyniolikto|septynioliktas} amžiaus paveikslas.
+Susitiksime kovo {septynioliktą|septynioliktas}.
+Mėgstu {aštuoniolikto|aštuonioliktas} amžiaus muziką.
+Ji atšventė {aštuonioliktą|aštuonioliktas} gimtadienį.
+Šis paveikslas nutapytas {aštuonioliktame|aštuonioliktas} amžiuje.
+Mūsų butas — {septintame|septintas} aukšte.
+Susitinkame {septintą|septintas} valandą.
+Sūnus rudenį eis į {šeštą|šeštas} klasę.
 
 @subtopic: 5. Все вместе | тексты с числительными разных видов
 @subtopic.be: 5. Усе разам | тэксты з лічэбнікамі розных відаў

@@ -4,6 +4,7 @@ import { readFileSync, readdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { parseTopic, parseLine, normalize, itemGaps } from "../web/js/parser.js";
+import { exactForms } from "../web/js/paradigms.js";
 import { buildRound, isCorrect, poolFor, listLemmas, applySelection, statsKey, countItems, hintsAlways } from "../web/js/round.js";
 
 const DATA = join(dirname(fileURLToPath(import.meta.url)), "..", "data");
@@ -120,7 +121,7 @@ test("сборка раунда: отвлекающие формы той же �
     const answer = normalize(r.gaps[0].answers[0]);
     for (const c of extra) {
       assert.notEqual(normalize(c.text), answer);
-      assert.ok(["jį", "jam", "jo", "juo"].includes(normalize(c.text)));
+      assert.ok(exactForms("jis").pos.includes(normalize(c.text))); // формы jis — из заданий темы и из парадигмы
       // регистр первой буквы подгоняется под ответ
       assert.equal(c.text[0] === c.text[0].toUpperCase(), r.gaps[0].answers[0][0] === "J");
     }
@@ -159,11 +160,31 @@ test("тренировка одного слова: только его проп
     assert.deepEqual(u.slots.filter(Boolean), u.gapIds);
   }
   // лишние формы — только формы того же слова
-  for (const c of r.chips.filter((c) => c.distractor)) assert.ok(["jį", "jam", "jo", "juo"].includes(c.text.toLowerCase()));
+  for (const c of r.chips.filter((c) => c.distractor)) assert.ok(exactForms("jis").pos.includes(c.text.toLowerCase()));
 
   const lemmas = listLemmas([t])[0].lemmas;
   assert.deepEqual(lemmas.map((l) => [l.label, l.count]), [["ji", 3], ["jis", 4]]);
   assert.deepEqual(listLemmas([t], "sentence")[0].lemmas.map((l) => l.count), [2, 2]);
+});
+
+test("перетаскивание: в раунде по нескольку пропусков на одно слово", () => {
+  const lines = [];
+  for (let w = 0; w < 8; w++) for (let i = 0; i < 6; i++) lines.push(`S${w}-${i} {f${w}${i}|w${w}}.`);
+  const t = parseTopic(lines.join("\n"), "t.txt");
+  for (let seed = 1; seed < 30; seed++) {
+    const r = buildRound([t], { gaps: 12, kind: "all", bank: "answers", mode: "drag" }, {}, seeded(seed));
+    const per = {};
+    for (const g of r.gaps) per[g.hint] = (per[g.hint] || 0) + 1;
+    assert.equal(r.gaps.length, 12);
+    assert.deepEqual(Object.values(per), [3, 3, 3, 3], `seed ${seed}: ${JSON.stringify(per)}`);
+  }
+  // в режиме ввода группировки нет: слов обычно больше
+  const spread = [];
+  for (let seed = 1; seed < 30; seed++) {
+    const r = buildRound([t], { gaps: 12, kind: "all", bank: "answers", mode: "type" }, {}, seeded(seed));
+    spread.push(new Set(r.gaps.map((g) => g.hint)).size);
+  }
+  assert.ok(spread.some((n) => n > 4));
 });
 
 test("фильтр по типу и проверка ответа", () => {
@@ -229,10 +250,10 @@ test("подтемы: свои @hints и @distractors, несколько спр
     "@distractors: x1, x2",
     "@subtopic: Личные",
     "@distractors: jam, jo",
-    "A {jį|jis}.",
+    "A {foo|fo}.",
     "@subtopic: Указательные",
     "@hints: always",
-    "B {šį|šis}.",
+    "B {bar|ba}.",
   ].join("\n");
   const t = parseTopic(src, "p.txt");
   assert.deepEqual(t.errors, []);

@@ -652,6 +652,8 @@ Vakarais ji pasakoja man senas {istorijas|istorija}.
 Sekmadieniais einame į kaimo {bažnyčią|bažnyčia}, o paskui — į mažą {parduotuvę|parduotuvė}.
 ---
 
+Kokioje {klasėje|klasė} mokosi tavo sūnus?
+
 @subtopic: 3. женский род (и немного мужского), -is | šalis, naktis, širdis; м. р.: dantis, debesis
 @subtopic.be: 3. жаночы род (і крыху мужчынскага), -is | šalis, naktis, širdis; м. р.: dantis, debesis
 @subtopic.uk: 3. жіночий рід (і трохи чоловічого), -is | šalis, naktis, širdis; ч. р.: dantis, debesis
@@ -911,6 +913,13 @@ Vakare užkūrėme {ugnį|ugnis} prie ežero ir kalbėjomės iki vėlyvos {nakti
 Tą {naktį|naktis} danguje nebuvo nė vieno {debesies|debesis}.
 ---
 
+Lapė pavogė vieną {žąsį|žąsis}.
+Senelė rūpinasi {žąsimis|žąsis}.
+Vaikui iš {nosies|nosis} bėga kraujas.
+Cirke pasirodė klounas su raudona {nosimi|nosis}.
+Zoologijos sode gyvena įvairūs {žvėrys|žvėris}.
+Policija rado {vagių|vagis} paliktus pėdsakus.
+
 @subtopic: 4. мужской род, -(i)us | sūnus, turgus, vaisius; žmogus
 @subtopic.be: 4. мужчынскі род, -(i)us | sūnus, turgus, vaisius; žmogus
 @subtopic.uk: 4. чоловічий рід, -(i)us | sūnus, turgus, vaisius; žmogus
@@ -1144,6 +1153,9 @@ Nusipirkome šviežių {vaisių|vaisius} ir stiklainį {medaus|medus}.
 Staiga pradėjo lyti, todėl nuo {lietaus|lietus} pasislėpėme kavinėje.
 Po valandos {dangus|dangus} vėl buvo giedras.
 ---
+
+Prie {alaus|alus} patiekė rūkytą sūrį.
+Šiame {aluje|alus} mažai alkoholio.
 
 @subtopic: 5. мужской род, -uo; sesuo, duktė | akmuo, vanduo, šuo, mėnuo, sesuo, duktė
 @subtopic.be: 5. мужчынскі род, -uo; sesuo, duktė | akmuo, vanduo, šuo, mėnuo, sesuo, duktė
