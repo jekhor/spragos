@@ -209,10 +209,128 @@ export function nounForms(lemma, declension) {
   return forms ? new Set(forms) : null;
 }
 
+// ---------- Возвратные глаголы ----------
+// Спряжение по трём основным формам (инфинитив, наст. и прош. время 3 л. без -si), как в
+// «365 lietuvių kalbos veiksmažodžiai» (2015): таблицы спряжения возвратных глаголов во введении и словарные статьи.
+// Формы: настоящее, прошедшее, будущее время, повелительное наклонение (2 л. ед. ч., 1 и 2 л. мн. ч.),
+// инфинитив; отрицательные (ne-si-moko, ne-ap-si-rengė).
+
+// Возвратные без приставки: инфинитив → [наст. 3 л., прош. 3 л.] без -si
+const VERB_REFLEXIVE = {
+  mokytis: ["moko", "mokė"], // 365
+  praustis: ["prausia", "prausė"], // 365
+  rengtis: ["rengia", "rengė"], // 365
+  keltis: ["kelia", "kėlė"], // 365
+  juoktis: ["juokia", "juokė"], // 365
+  džiaugtis: ["džiaugia", "džiaugė"], // 365
+  jaustis: ["jaučia", "jautė"], // 365
+  tikėtis: ["tiki", "tikėjo"], // 365, введение: tikiuosi, tikiesi, tikisi
+  domėtis: ["domi", "domėjo"],
+  rūpintis: ["rūpina", "rūpino"],
+  šypsotis: ["šypso", "šypsojo"], // 365
+  ruoštis: ["ruošia", "ruošė"], // 365
+  kalbėtis: ["kalba", "kalbėjo"], // 365, введение: kalbėjausi
+  sveikintis: ["sveikina", "sveikino"], // 365
+  maudytis: ["maudo", "maudė"], // 365
+  klausytis: ["klauso", "klausė"], // 365
+  naudotis: ["naudoja", "naudojo"], // 365
+  sėstis: ["sėda", "sėdo"],
+  jaudintis: ["jaudina", "jaudino"], // 365
+  skųstis: ["skundžia", "skundė"], // 365
+  didžiuotis: ["didžiuoja", "didžiavo"],
+  elgtis: ["elgia", "elgė"],
+  ilsėtis: ["ilsi", "ilsėjo"],
+};
+
+// Приставочные: инфинитив → [приставка, инфинитив без приставки и -si-, наст. 3 л., прош. 3 л.]
+const VERB_PREFIXED = {
+  atsikelti: ["at", "kelti", "kelia", "kėlė"], // kelti — 365
+  nusiprausti: ["nu", "prausti", "prausia", "prausė"], // prausti — 365
+  apsirengti: ["ap", "rengti", "rengia", "rengė"], // rengti — 365
+  atsisėsti: ["at", "sėsti", "sėda", "sėdo"],
+  susitikti: ["su", "tikti", "tinka", "tiko"],
+  susipažinti: ["su", "pažinti", "pažįsta", "pažino"],
+  pasiimti: ["pa", "imti", "ima", "ėmė"],
+  užsiimti: ["už", "imti", "ima", "ėmė"],
+  nusipirkti: ["nu", "pirkti", "perka", "pirko"],
+  atsigulti: ["at", "gulti", "gula", "gulė"],
+  užsisakyti: ["už", "sakyti", "sako", "sakė"], // sakyti — 365
+  atsiprašyti: ["at", "prašyti", "prašo", "prašė"], // 365
+  išsimaudyti: ["iš", "maudyti", "maudo", "maudė"], // maudyti — 365
+  įsimylėti: ["į", "mylėti", "myli", "mylėjo"],
+  apsistoti: ["ap", "stoti", "stoja", "stojo"], // 365
+  pasiklysti: ["pa", "klysti", "klysta", "klydo"], // 365
+};
+
+// Основа будущего времени: inf без -ti + s; s/š/z/ž основы сливаются с s (praus-ti → praus, vež-ti → veš)
+function futureStem(stem) {
+  if (/[sšzž]$/.test(stem)) return stem.replace(/z$/, "s").replace(/ž$/, "š");
+  return stem + "s";
+}
+
+// Основа повелительного наклонения: inf без -ti + k; g → k, k остаётся (rengti → renk, juoktis → juok)
+function imperativeStem(stem) {
+  if (stem.endsWith("g")) return stem.slice(0, -1) + "k";
+  if (stem.endsWith("k")) return stem;
+  return stem + "k";
+}
+
+// Невозвратные формы: наст., прош., буд. время, повелительное наклонение.
+function plainConjugation(stem, pres, past) {
+  const out = [];
+  const pb = pres.slice(0, -1);
+  if (pres.endsWith("o")) out.push(pb + "au", pb + "ai", pres, pb + "ome", pb + "ote");
+  else if (pres.endsWith("i")) out.push(soften(pb, "iu") + "iu", pres, pb + "ime", pb + "ite");
+  // 2 л. ед. ч. — от несмягчённой основы: jaučia → jauti, skundžia → skundi
+  else out.push(pb + "u", pb.endsWith("i") ? unsoften(pb.slice(0, -1)) + "i" : pb + "i", pres, pres + "me", pres + "te");
+  const qb = past.slice(0, -1);
+  if (past.endsWith("o")) out.push(qb + "au", qb + "ai", past, qb + "ome", qb + "ote");
+  else out.push(soften(qb, "iau") + "iau", qb + "ei", past, past + "me", past + "te");
+  const fs = futureStem(stem);
+  out.push(fs + "iu", fs + "i", fs, fs + "ime", fs + "ite");
+  const ks = imperativeStem(stem);
+  out.push(ks, ks + "ime", ks + "ite");
+  return out;
+}
+
+// Возвратные формы глагола без приставки (-si в конце).
+function reflexiveConjugation(stem, pres, past) {
+  const out = [];
+  const pb = pres.slice(0, -1);
+  if (pres.endsWith("o")) out.push(pb + "ausi", pb + "aisi", pb + "osi", pb + "omės", pb + "otės");
+  else if (pres.endsWith("i")) out.push(soften(pb, "iu") + "iuosi", pb + "iesi", pb + "isi", pb + "imės", pb + "itės");
+  else out.push(pb + "uosi", (pb.endsWith("i") ? unsoften(pb.slice(0, -1)) : pb) + "iesi", pb + "asi", pb + "amės", pb + "atės");
+  const qb = past.slice(0, -1);
+  if (past.endsWith("o")) out.push(qb + "ausi", qb + "aisi", qb + "osi", qb + "omės", qb + "otės");
+  else out.push(soften(qb, "iau") + "iausi", qb + "eisi", qb + "ėsi", qb + "ėmės", qb + "ėtės");
+  const fs = futureStem(stem);
+  out.push(fs + "iuosi", fs + "iesi", fs + "is", fs + "imės", fs + "itės");
+  const ks = imperativeStem(stem);
+  out.push(ks + "is", ks + "imės", ks + "itės");
+  return out;
+}
+
+export function verbForms(lemma) {
+  const l = lemma.toLocaleLowerCase("lt");
+  if (VERB_REFLEXIVE[l]) {
+    const stem = l.slice(0, -3); // -tis
+    const plain = plainConjugation(stem, ...VERB_REFLEXIVE[l]);
+    return new Set([l, "nesi" + stem + "ti", ...reflexiveConjugation(stem, ...VERB_REFLEXIVE[l]), ...plain.map((f) => "nesi" + f)]);
+  }
+  if (VERB_PREFIXED[l]) {
+    const [prefix, inf, pres, past] = VERB_PREFIXED[l];
+    const forms = [inf, ...plainConjugation(inf.slice(0, -2), pres, past)].map((f) => prefix + "si" + f);
+    return new Set([...forms, ...forms.map((f) => "ne" + f)]);
+  }
+  return null;
+}
+
 // declension — номер типа склонения существительного (1–5); если задан, лемма считается существительным.
 export function formsOf(lemma, declension = null) {
   if (declension) return nounForms(lemma, declension);
   const l = lemma.toLocaleLowerCase("lt");
+  const verb = verbForms(l);
+  if (verb) return verb;
   if (WITH_FEMININE[l]) return new Set([...PRON[l], ...PRON[WITH_FEMININE[l]]]);
   if (NUM_FEMININE[l]) return new Set([...NUM[l], ...NUM[NUM_FEMININE[l]]]);
   if (PRON[l]) return new Set(PRON[l]);

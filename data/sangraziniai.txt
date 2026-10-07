@@ -1,0 +1,602 @@
+# Формы сверены с «365 lietuvių kalbos veiksmažodžiai» (2015): таблицы спряжения возвратных глаголов
+# и словарные статьи (три основные формы). Предложения составлены автоматически — по возможности покажите их носителю.
+# Подсказка — инфинитив. Лицо видно из подлежащего, время — из обстоятельств (vakar, rytoj, dabar, kiekvieną rytą).
+@title: Sangrąžiniai veiksmažodžiai — возвратные глаголы
+@group: Спряжение
+@hints: always
+@description: Настоящее, прошедшее, будущее время и повелительное наклонение; где стоит -si- с приставкой и ne-. Подсказка — инфинитив.
+@title.be: Sangrąžiniai veiksmažodžiai — зваротныя дзеясловы
+@group.be: Спражэнне
+@description.be: Цяперашні, прошлы, будучы час і загадны лад; дзе стаіць -si- з прыстаўкай і ne-. Падказка — інфінітыў.
+@title.uk: Sangrąžiniai veiksmažodžiai — зворотні дієслова
+@group.uk: Дієвідмінювання
+@description.uk: Теперішній, минулий, майбутній час і наказовий спосіб; де стоїть -si- з префіксом і ne-. Підказка — інфінітив.
+@title.en: Sangrąžiniai veiksmažodžiai — reflexive verbs
+@group.en: Conjugation
+@description.en: Present, past and future tense and the imperative; where -si- goes with a prefix and ne-. Hint: the infinitive.
+@distractors: mokausi, mokosi, mokiausi, mokėsi, mokysiuosi, mokysis, mokykis, nesimoko
+
+@subtopic: 1. Настоящее время | mokausi, prausiuosi, tikiuosi
+@subtopic.be: 1. Цяперашні час | mokausi, prausiuosi, tikiuosi
+@subtopic.uk: 1. Теперішній час | mokausi, prausiuosi, tikiuosi
+@subtopic.en: 1. Present tense | mokausi, prausiuosi, tikiuosi
+
+# --- -osi: mokytis, šypsotis, maudytis, klausytis ---
+Aš {mokausi|mokytis} lietuvių kalbos jau dvejus metus.
+Ar tu dar {mokaisi|mokytis} universitete?
+Mano sesuo {mokosi|mokytis} Vilniuje.
+Mes {mokomės|mokytis} vairuoti.
+Ko jūs dabar {mokotės|mokytis}?
+Vaikai {mokosi|mokytis} plaukti baseine.
+Kodėl tu {šypsaisi|šypsotis}?
+Ji visada {šypsosi|šypsotis}.
+Aš {šypsausi|šypsotis}, kai matau tave.
+Vasarą mes {maudomės|maudytis} ežere.
+Vaikai {maudosi|maudytis} upėje.
+Ar tu {maudaisi|maudytis} jūroje net rudenį?
+Aš kiekvieną vakarą {klausausi|klausytis} radijo.
+Ko tu {klausaisi|klausytis}?
+Mokiniai atidžiai {klausosi|klausytis} mokytojo.
+
+# --- -iasi, -asi: praustis, rengtis, keltis, juoktis, džiaugtis, jaustis… ---
+Kiekvieną rytą aš {prausiuosi|praustis} šaltu vandeniu.
+Kodėl tu taip ilgai {prausiesi|praustis}?
+Katė {prausiasi|praustis} letenėle.
+Po treniruotės mes {prausiamės|praustis} duše.
+Žiemą aš šiltai {rengiuosi|rengtis}.
+Kodėl tu taip lengvai {rengiesi|rengtis}? Lauke šalta!
+Ji visada gražiai {rengiasi|rengtis}.
+Mes jau savaitę {rengiamės|rengtis} kelionei.
+Kaip jūs {rengiatės|rengtis} į teatrą?
+Aš {keliuosi|keltis} septintą valandą.
+Kada tu paprastai {keliesi|keltis}?
+Tėtis visada {keliasi|keltis} anksčiausiai.
+Savaitgaliais mes {keliamės|keltis} vėlai.
+Kodėl jūs {keliatės|keltis} taip anksti?
+Aš visada {juokiuosi|juoktis} iš tavo anekdotų.
+Iš ko tu {juokiesi|juoktis}?
+Vaikai garsiai {juokiasi|juoktis}.
+Mes visada {juokiamės|juoktis} kartu.
+Aš labai {džiaugiuosi|džiaugtis} tavo sėkme.
+Ar tu {džiaugiesi|džiaugtis} nauju darbu?
+Močiutė {džiaugiasi|džiaugtis} anūkais.
+Mes {džiaugiamės|džiaugtis}, kad atvažiavote.
+Šiandien aš {jaučiuosi|jaustis} daug geriau.
+Kaip tu {jautiesi|jaustis}?
+Senelis {jaučiasi|jaustis} pavargęs.
+Mes čia {jaučiamės|jaustis} kaip namie.
+Kaip jūs šiandien {jaučiatės|jaustis}?
+Aš {ruošiuosi|ruoštis} egzaminui.
+Studentai {ruošiasi|ruoštis} sesijai.
+Mes {ruošiamės|ruoštis} vestuvėms.
+Senelis {skundžiasi|skųstis} galvos skausmu.
+Kuo jūs {skundžiatės|skųstis}?
+Kodėl tu taip keistai {elgiesi|elgtis}?
+Vaikai šiandien gerai {elgiasi|elgtis}.
+
+# --- -asi: rūpintis, kalbėtis, sveikintis, jaudintis, sėstis, naudotis… ---
+Aš pati {rūpinuosi|rūpintis} savo sodu.
+Kas {rūpinasi|rūpintis} jūsų šunimi, kai jūs išvažiuojate?
+Mes {rūpinamės|rūpintis} senais tėvais.
+Tu per daug {rūpiniesi|rūpintis} kitais.
+Mes dažnai {kalbamės|kalbėtis} telefonu.
+Su kuo tu {kalbiesi|kalbėtis}?
+Mama {kalbasi|kalbėtis} su kaimyne.
+Kaimynai visada {sveikinasi|sveikintis} su manimi.
+Aš {sveikinuosi|sveikintis} su visais kolegomis.
+Aš labai {jaudinuosi|jaudintis} prieš egzaminą.
+Ko tu taip {jaudiniesi|jaudintis}?
+Mama {jaudinasi|jaudintis}, kai aš vėluoju.
+Aš visada {sėduosi|sėstis} prie lango.
+Kur tu {sėdiesi|sėstis}?
+Šeima {sėdasi|sėstis} vakarieniauti.
+Aš {naudojuosi|naudotis} viešuoju transportu.
+Ar tu {naudojiesi|naudotis} šiuo žodynu?
+Daug žmonių {naudojasi|naudotis} dviračiais.
+Aš {didžiuojuosi|didžiuotis} savo vaikais.
+Tėvai {didžiuojasi|didžiuotis} sūnumi.
+
+# --- -isi: tikėtis, domėtis, ilsėtis ---
+Aš {tikiuosi|tikėtis}, kad rytoj nelis.
+Ar tu {tikiesi|tikėtis} laimėti?
+Treneris {tikisi|tikėtis} pergalės.
+Mes {tikimės|tikėtis} jus vėl pamatyti.
+Ar jūs {tikitės|tikėtis} svečių?
+Aš {domiuosi|domėtis} istorija.
+Kuo tu {domiesi|domėtis}?
+Mano brolis {domisi|domėtis} futbolu.
+Mes {domimės|domėtis} lietuvių kultūra.
+Savaitgaliais aš {ilsiuosi|ilsėtis} sode.
+Seneliai vakarais {ilsisi|ilsėtis} ant suoliuko.
+Atostogų metu mes {ilsimės|ilsėtis} prie jūros.
+
+# --- ещё ---
+Ar jūs {domitės|domėtis} sportu?
+Ar jūs {rūpinatės|rūpintis} savo sveikata?
+Ar jūs {džiaugiatės|džiaugtis} nauju butu?
+Ar jūs {juokiatės|juoktis} iš manęs?
+Ar jūs dažnai {naudojatės|naudotis} internetu?
+Ar jūs {didžiuojatės|didžiuotis} savo miestu?
+Mes {didžiuojamės|didžiuotis} savo komanda.
+Aš {skundžiuosi|skųstis} tik tada, kai tikrai blogai.
+Tu nuolat {skundiesi|skųstis} oru.
+Jūs labai gražiai {šypsotės|šypsotis}.
+Jie {kalbasi|kalbėtis} lietuviškai.
+Jūs {kalbatės|kalbėtis} per garsiai.
+Mes {sveikinamės|sveikintis} su visais kaimynais.
+Ar jūs Lietuvoje {sveikinatės|sveikintis} ranka?
+Ar tu {sveikiniesi|sveikintis} su kaimynais?
+Ar jūs {maudotės|maudytis} net žiemą?
+Mes {klausomės|klausytis} muzikos.
+Ar jūs {klausotės|klausytis} manęs?
+Aš {elgiuosi|elgtis} taip, kaip noriu.
+Jūs {elgiatės|elgtis} kaip vaikai!
+Tu {ilsiesi|ilsėtis}, o aš dirbu.
+Ar jūs {ilsitės|ilsėtis} savaitgaliais?
+Mes {sėdamės|sėstis} į mašiną ir važiuojame.
+
+@subtopic: 2. Прошедшее время | mokiausi, prausėsi, domėjausi
+@subtopic.be: 2. Прошлы час | mokiausi, prausėsi, domėjausi
+@subtopic.uk: 2. Минулий час | mokiausi, prausėsi, domėjausi
+@subtopic.en: 2. Past tense | mokiausi, prausėsi, domėjausi
+
+# --- -ėsi: mokiausi, mokeisi, mokėsi ---
+Vakar aš visą dieną {mokiausi|mokytis}.
+Ar tu {mokeisi|mokytis} lietuvių kalbos mokykloje?
+Jis {mokėsi|mokytis} Kaune penkerius metus.
+Mes kartu {mokėmės|mokytis} universitete.
+Kur jūs {mokėtės|mokytis} vokiečių kalbos?
+Šįryt aš {prausiausi|praustis} šaltu vandeniu.
+Ar tu šįryt jau {prauseisi|praustis}?
+Vaikai {prausėsi|praustis} prie upės.
+Vakar mes {prausėmės|praustis} ežere.
+Vakar aš per lengvai {rengiausi|rengtis} ir sušalau.
+Kodėl tu taip šiltai {rengeisi|rengtis}? Juk buvo karšta.
+Ji ilgai {rengėsi|rengtis} vakarėliui.
+Vakar jūs {rengėtės|rengtis} per lengvai, todėl ir sušalote.
+Šiandien aš {kėliausi|keltis} šeštą valandą.
+Kada tu vakar {kėleisi|keltis}?
+Mes {kėlėmės|keltis} anksti, nes skubėjome į traukinį.
+Mama visą naktį {kėlėsi|keltis} pas verkiantį vaiką.
+Vakar mes daug {juokėmės|juoktis}.
+Iš ko jūs {juokėtės|juoktis}?
+Aš {juokiausi|juoktis}, kol pradėjo skaudėti pilvą.
+Vaikai {juokėsi|juoktis} iš klouno.
+Visi {džiaugėsi|džiaugtis} pirmuoju sniegu.
+Aš labai {džiaugiausi|džiaugtis} tavo laišku.
+Ar tu {džiaugeisi|džiaugtis} dovana?
+Mes {džiaugėmės|džiaugtis} komandos pergale.
+Vakar aš {jaučiausi|jaustis} blogai.
+Kaip tu {jauteisi|jaustis} po operacijos?
+Mes ten {jautėmės|jaustis} labai gerai.
+Naujame mieste ji iš pradžių {jautėsi|jaustis} vieniša.
+Visą mėnesį aš {ruošiausi|ruoštis} egzaminui.
+Ar jūs gerai {ruošėtės|ruoštis} varžyboms?
+Jie {ruošėsi|ruoštis} kelionei visą savaitę.
+Pacientas {skundėsi|skųstis} nugaros skausmu.
+Aš {skundžiausi|skųstis} kaimynų triukšmu.
+Vakar vaikai blogai {elgėsi|elgtis}.
+Kodėl tu vakar taip keistai {elgeisi|elgtis}?
+Svečiai {elgėsi|elgtis} labai mandagiai.
+Praėjusią vasarą mes {maudėmės|maudytis} jūroje.
+Vaikystėje aš {maudžiausi|maudytis} šioje upėje.
+Ar jūs vakar {maudėtės|maudytis} ežere?
+Vakar aš {klausiausi|klausytis} koncerto per radiją.
+Ar tu {klauseisi|klausytis} mano patarimo?
+Mes {klausėmės|klausytis} gidės pasakojimo.
+
+# --- -osi: domėjausi, rūpinausi, šypsojausi… ---
+Aš {tikėjausi|tikėtis} tave sutikti.
+Ar tu {tikėjaisi|tikėtis} tokios dovanos?
+Mes {tikėjomės|tikėtis} geresnio oro.
+Ar jūs {tikėjotės|tikėtis} kito atsakymo?
+Anksčiau aš {domėjausi|domėtis} astronomija.
+Jaunystėje tėtis {domėjosi|domėtis} fotografija.
+Kuo jūs {domėjotės|domėtis} vaikystėje?
+Kai sirgau, mama {rūpinosi|rūpintis} manimi.
+Mes {rūpinomės|rūpintis} kaimynų šunimi, kol jie atostogavo.
+Aš pats {rūpinausi|rūpintis} viskuo.
+Vaikas {šypsojosi|šypsotis} miegodamas.
+Kodėl tu taip {šypsojaisi|šypsotis}?
+Mes {šypsojomės|šypsotis} vieni kitiems.
+Vakar mes ilgai {kalbėjomės|kalbėtis} apie ateitį.
+Su kuo tu {kalbėjaisi|kalbėtis} telefonu?
+Aš ilgai {kalbėjausi|kalbėtis} su gydytoju.
+Ar jūs jau {kalbėjotės|kalbėtis} su direktoriumi?
+Jie {sveikinosi|sveikintis} su visais svečiais.
+Aš {sveikinausi|sveikintis}, bet jis neatsakė.
+Mes {sveikinomės|sveikintis} su kiekvienu svečiu.
+Anksčiau mes {naudojomės|naudotis} senu kompiuteriu.
+Jis {naudojosi|naudotis} draugo automobiliu.
+Aš {naudojausi|naudotis} tavo žodynu.
+Svečiai {sėdosi|sėstis} prie stalo.
+Kai paskambinai, aš kaip tik {sėdausi|sėstis} į autobusą.
+Prieš egzaminą aš labai {jaudinausi|jaudintis}.
+Ar tu {jaudinaisi|jaudintis} per pokalbį?
+Mes {jaudinomės|jaudintis} dėl tavęs.
+Tėvai labai {didžiavosi|didžiuotis} dukra.
+Aš visada {didžiavausi|didžiuotis} savo tėvu.
+Praėjusį savaitgalį mes {ilsėjomės|ilsėtis} kaime.
+Ar tu gerai {ilsėjaisi|ilsėtis} per atostogas?
+
+# --- ещё ---
+Vakar mes {sėdomės|sėstis} vakarieniauti septintą.
+Jūs {šypsojotės|šypsotis} visą vakarą.
+Jie {kalbėjosi|kalbėtis} iki vidurnakčio.
+Tu {rūpinaisi|rūpintis} manimi, kai sirgau.
+Jis vakar visą dieną {ilsėjosi|ilsėtis}.
+Ar tu vakar {naudojaisi|naudotis} mano dviračiu?
+Mes ilgai {domėjomės|domėtis} šiuo klausimu.
+Jūs {jaudinotės|jaudintis} be reikalo.
+Ar jūs {skundėtės|skųstis} direktoriui?
+Vakar tu {skundeisi|skųstis} galvos skausmu.
+
+Jie {mokėsi|mokytis} kartu mokykloje.
+Tu vakar {juokeisi|juoktis} visą vakarą.
+Ar tu {domėjaisi|domėtis} šiuo darbu?
+Ar jūs vakar {sveikinotės|sveikintis} su juo?
+Jūs {rūpinotės|rūpintis} mūsų sodu, kai buvome išvykę.
+Mes {elgėmės|elgtis} labai tyliai.
+Ar jūs anksčiau {naudojotės|naudotis} šia programa?
+Vakar aš {ilsėjausi|ilsėtis} visą dieną.
+Anksčiau tu {didžiavaisi|didžiuotis} savo darbu.
+
+@subtopic: 3. Будущее время | mokysiuosi, džiaugsimės, rengsitės
+@subtopic.be: 3. Будучы час | mokysiuosi, džiaugsimės, rengsitės
+@subtopic.uk: 3. Майбутній час | mokysiuosi, džiaugsimės, rengsitės
+@subtopic.en: 3. Future tense | mokysiuosi, džiaugsimės, rengsitės
+
+Rytoj aš {mokysiuosi|mokytis} visą dieną.
+Kitais metais tu {mokysiesi|mokytis} universitete.
+Sesuo {mokysis|mokytis} vairuoti kitą vasarą.
+Kitą savaitę mes {mokysimės|mokytis} naujų žodžių.
+Ko jūs {mokysitės|mokytis} kitą semestrą?
+Rytoj aš {kelsiuosi|keltis} penktą valandą.
+Kada tu rytoj {kelsiesi|keltis}?
+Rytoj visi {kelsis|keltis} anksti.
+Rytoj mes {kelsimės|keltis} prieš saulėtekį.
+Rytoj bus šalta, todėl aš {rengsiuosi|rengtis} šilčiau.
+Kaip tu {rengsiesi|rengtis} į rytojaus vakarėlį?
+Ji ilgai {rengsis|rengtis}, todėl mes vėluosime.
+Mes {rengsimės|rengtis} kelionei visą savaitę.
+Mes {džiaugsimės|džiaugtis}, jei atvažiuosite.
+Tėvai {džiaugsis|džiaugtis} tavo sėkme.
+Aš {džiaugsiuosi|džiaugtis}, jei tau patiks dovana.
+Po atostogų jūs {jausitės|jaustis} geriau.
+Išgersi vaistus ir rytoj {jausiesi|jaustis} sveikas.
+Po šio pokalbio jis {jausis|jaustis} geriau.
+Po savaitės mes {jausimės|jaustis} kaip namie.
+Aš {tikėsiuosi|tikėtis} geriausio.
+Po šito pokalbio ji {tikėsis|tikėtis} paaukštinimo.
+Rytoj aš {kalbėsiuosi|kalbėtis} su direktoriumi.
+Kitą savaitę mes {kalbėsimės|kalbėtis} apie tavo planus.
+Poryt jie {kalbėsis|kalbėtis} su advokatu.
+Kas {rūpinsis|rūpintis} tavo šunimi, kai išvažiuosi?
+Aš {rūpinsiuosi|rūpintis} vaikais, o tu gaminsi vakarienę.
+Vasarą mes {maudysimės|maudytis} ežere.
+Vaikai {maudysis|maudytis} tik su suaugusiaisiais.
+Rytoj tu {maudysiesi|maudytis} jūroje!
+Kitą mėnesį studentai {ruošis|ruoštis} egzaminams.
+Rytoj mes {sėsimės|sėstis} į traukinį septintą valandą.
+Kur tu rytoj {sėsiesi|sėstis} — prie lango ar prie durų?
+Rytoj jūs {sėsitės|sėstis} pirmoje eilėje.
+Aš {klausysiuosi|klausytis} tavo patarimų.
+Rytoj per radiją {klausysimės|klausytis} krepšinio rungtynių.
+Ar rytoj jūs {klausysitės|klausytis} mūsų koncerto?
+Ar rytoj tu {naudosiesi|naudotis} mano kompiuteriu?
+Po metų visi {naudosis|naudotis} šia programa.
+Jei laimėsi, mes {didžiuosimės|didžiuotis} tavimi.
+Rytoj tu {šypsosiesi|šypsotis}, kai pamatysi dovaną.
+Visi {juoksis|juoktis} iš šito anekdoto.
+Mes ilgai {juoksimės|juoktis}, prisiminę šią dieną.
+Kai sutiksi jį, tu {juoksiesi|juoktis} iš jo istorijų.
+Kitą kartą aš {elgsiuosi|elgtis} kitaip.
+Tikiuosi, kad ir toliau {domėsitės|domėtis} mūsų darbais.
+Ateityje mes {domėsimės|domėtis} ir kitomis kalbomis.
+Rytoj per egzaminą aš tikrai {jaudinsiuosi|jaudintis}.
+Jie {sveikinsis|sveikintis} su kiekvienu svečiu prie durų.
+Rytoj vaikai {prausis|praustis} ežere.
+Jis tikrai {skųsis|skųstis} vadovui.
+Per atostogas aš daug {ilsėsiuosi|ilsėtis}.
+Savaitgalį mes {ilsėsimės|ilsėtis} kaime.
+
+# --- ещё ---
+Po pietų vaikai {ilsėsis|ilsėtis}.
+Rytoj jūs {ilsėsitės|ilsėtis} visą dieną.
+Ar tu rytoj {ilsėsiesi|ilsėtis}, ar dirbsi?
+Kitą rudenį brolis {mokysis|mokytis} Anglijoje.
+Po metų tu {kalbėsiesi|kalbėtis} lietuviškai su visais.
+Rytoj jūs {kelsitės|keltis} šeštą.
+Tu rytoj {jaudinsiesi|jaudintis}, bet viskas bus gerai.
+Mama {jaudinsis|jaudintis}, jei negrįši laiku.
+Svečiai tuoj {sėsis|sėstis} prie stalo.
+Jūs {juoksitės|juoktis}, kai išgirsite šią istoriją.
+Kol būsi išvykęs, mes {rūpinsimės|rūpintis} tavo gėlėmis.
+Ar jūs {rūpinsitės|rūpintis} mūsų katinu, kol mes atostogausime?
+Nuo kitos savaitės mes {naudosimės|naudotis} nauja sistema.
+Kol taisys mašiną, aš {naudosiuosi|naudotis} viešuoju transportu.
+Kitą kartą tu {elgsiesi|elgtis} geriau.
+Mes {elgsimės|elgtis} tyliai, kad neprižadintume vaiko.
+Ateityje ji {domėsis|domėtis} medicina.
+Visi {šypsosis|šypsotis}, kai pamatys tavo nuotrauką.
+Tuoj mes {šypsosimės|šypsotis} į kamerą.
+Aš {šypsosiuosi|šypsotis}, net jei bus sunku.
+Tėvai {didžiuosis|didžiuotis} tavimi.
+Rytoj mes {sveikinsimės|sveikintis} su naujais kolegomis.
+Kitą savaitę mes {ruošimės|ruoštis} kelionei.
+Kitais metais mes {tikėsimės|tikėtis} geresnio rezultato.
+Jūs {džiaugsitės|džiaugtis} šiuo pirkiniu.
+Rytoj aš {skųsiuosi|skųstis} direktoriui.
+Vasarą jūs {maudysitės|maudytis} kasdien.
+
+Kai baigsi universitetą, tu {didžiuosiesi|didžiuotis} savimi.
+Rytoj jie {klausysis|klausytis} paskaitos.
+Ar jūs {naudositės|naudotis} mūsų paslaugomis ir toliau?
+Rytoj tu {sveikinsiesi|sveikintis} su visais svečiais.
+
+@subtopic: 4. Повелительное наклонение | mokykis, prauskitės, juokimės
+@subtopic.be: 4. Загадны лад | mokykis, prauskitės, juokimės
+@subtopic.uk: 4. Наказовий спосіб | mokykis, prauskitės, juokimės
+@subtopic.en: 4. Imperative | mokykis, prauskitės, juokimės
+
+Daugiau {mokykis|mokytis}, ir egzaminas pavyks!
+Vaikai, gerai {mokykitės|mokytis}!
+Rytoj {mokykimės|mokytis} kartu!
+{Prauskis|praustis} greičiau, mes vėluojame!
+Vaikai, {prauskitės|praustis} ir eikite miegoti!
+Lauke šalta, {renkis|rengtis} šilčiau!
+{Renkitės|rengtis} greičiau, taksi jau laukia!
+{Kelkis|keltis}, jau aštunta valanda!
+Vaikai, {kelkitės|keltis}, pusryčiai ant stalo!
+{Kelkimės|keltis} anksčiau ir pamatysime saulėtekį.
+{Juokis|juoktis} dažniau — tai sveika.
+{Džiaukis|džiaugtis} kiekviena diena!
+{Džiaukimės|džiaugtis} pavasariu!
+{Jauskitės|jaustis} kaip namie!
+{Jauskis|jaustis} kaip namie, Tomai.
+Ponia, {sėskitės|sėstis}, prašom.
+{Sėskis|sėstis} prie manęs.
+{Sėskimės|sėstis} prie lango.
+{Šypsokis|šypsotis}, tave fotografuoja!
+{Šypsokitės|šypsotis} — tuoj fotografuosiu!
+{Ruoškis|ruoštis} egzaminui iš anksto.
+{Ruoškimės|ruoštis} kelionei!
+{Kalbėkimės|kalbėtis} ramiai.
+{Rūpinkis|rūpintis} savo sveikata!
+Vaikai, {rūpinkitės|rūpintis} vieni kitais.
+{Maudykitės|maudytis} tik ten, kur negilu!
+{Maudykimės|maudytis} upėje!
+{Klausykis|klausytis} mamos!
+Vaikai, atidžiai {klausykitės|klausytis}!
+{Klausykimės|klausytis} muzikos.
+{Naudokitės|naudotis} mūsų paslaugomis!
+{Naudokis|naudotis} žodynu, jei nežinai žodžio.
+{Domėkis|domėtis} pasauliu!
+{Elkis|elgtis} mandagiai!
+Vaikai, gražiai {elkitės|elgtis}!
+{Tikėkimės|tikėtis} geriausio.
+{Sveikinkis|sveikintis} su kaimynais!
+{Didžiuokis|didžiuotis} savo darbu.
+{Ilsėkis|ilsėtis} — tu daug dirbai.
+{Ilsėkitės|ilsėtis}, rytoj mūsų laukia ilga diena.
+
+# --- ещё ---
+{Juokitės|juoktis}, kiek norite!
+{Juokimės|juoktis} kartu!
+{Džiaukitės|džiaugtis} gyvenimu!
+{Kalbėkis|kalbėtis} su juo atvirai.
+{Kalbėkitės|kalbėtis} tyliau, vaikas miega.
+{Ruoškitės|ruoštis} kelionei iš anksto.
+{Rūpinkimės|rūpintis} gamta.
+{Domėkitės|domėtis} naujienomis.
+{Elkimės|elgtis} tyliai, vaikai miega.
+{Tikėkis|tikėtis} geriausio, bet būk pasiruošęs blogiausiam.
+{Tikėkitės|tikėtis} atsakymo per savaitę.
+{Sveikinkitės|sveikintis} su visais.
+{Sveikinkimės|sveikintis} su naujais kaimynais.
+{Didžiuokitės|didžiuotis} savo šalimi.
+{Prauskimės|praustis} upėje!
+{Naudokimės|naudotis} proga!
+{Šypsokimės|šypsotis} dažniau!
+{Ilsėkimės|ilsėtis} po darbo.
+
+{Maudykis|maudytis} atsargiai!
+{Didžiuokimės|didžiuotis} savo istorija.
+
+@subtopic: 5. Приставки и отрицание: где стоит -si- | apsirengiu, nusiprausė, nesimoko
+@subtopic.be: 5. Прыстаўкі і адмоўе: дзе стаіць -si- | apsirengiu, nusiprausė, nesimoko
+@subtopic.uk: 5. Префікси й заперечення: де стоїть -si- | apsirengiu, nusiprausė, nesimoko
+@subtopic.en: 5. Prefixes and negation: where -si- goes | apsirengiu, nusiprausė, nesimoko
+
+# --- Приставочные глаголы ---
+Šiandien aš {atsikėliau|atsikelti} šeštą valandą.
+Kada tu paprastai {atsikeli|atsikelti}?
+Rytoj mes {atsikelsime|atsikelti} anksti.
+{Atsikelk|atsikelti}, jau vėlu!
+Ryte aš {nusiprausiau|nusiprausti} šaltu vandeniu.
+{Nusiprausk|nusiprausti} prieš miegą!
+Ar tu jau {nusiprausei|nusiprausti}?
+Vaikai {nusiprausė|nusiprausti} ir nuėjo miegoti.
+Palauk, aš tuoj {apsirengsiu|apsirengti}.
+Ji {apsirengė|apsirengti} naują suknelę.
+{Apsirenkite|apsirengti} šiltai — lauke šalta!
+Mes greitai {apsirengėme|apsirengti} ir išėjome.
+{Atsisėskite|atsisėsti}, prašom.
+Autobuse aš {atsisėdau|atsisėsti} prie lango.
+Kur tu {atsisėsi|atsisėsti} — prie lango ar prie durų?
+Svečiai {atsisėdo|atsisėsti} prie stalo.
+Rytoj mes {susitiksime|susitikti} kavinėje.
+Vakar aš {susitikau|susitikti} su senu draugu.
+{Susitikime|susitikti} prie teatro septintą!
+Malonu {susipažinti|susipažinti}!
+Mes {susipažinome|susipažinti} universitete.
+Kur jūs {susipažinote|susipažinti}?
+{Susipažinkite|susipažinti}, tai mano draugė Ona.
+{Pasiimk|pasiimti} skėtį, lis!
+Ar tu {pasiėmei|pasiimti} raktus?
+Rytoj aš {pasiimsiu|pasiimti} vaikus iš darželio.
+Aš {pasiėmiau|pasiimti} tavo knygą — rytoj grąžinsiu.
+Kuo tu {užsiimi|užsiimti} laisvalaikiu?
+Jis jau dešimt metų {užsiima|užsiimti} sportu.
+Vakar aš {nusipirkau|nusipirkti} naujus batus.
+Ką tu {nusipirkai|nusipirkti} turguje?
+Kitą mėnesį mes {nusipirksime|nusipirkti} automobilį.
+Vakar aš {atsiguliau|atsigulti} labai vėlai.
+{Atsigulk|atsigulti} ir pailsėk.
+Šiandien aš {atsigulsiu|atsigulti} anksčiau.
+Ką jūs vakar {užsisakėte|užsisakyti} restorane?
+Tuoj {užsisakysiu|užsisakyti} taksi.
+Mes {užsisakėme|užsisakyti} staliuką dviem.
+{Atsiprašau|atsiprašyti}, kur yra stotis?
+Jis {atsiprašė|atsiprašyti} už vėlavimą.
+{Atsiprašyk|atsiprašyti} sesers!
+Vakar mes {išsimaudėme|išsimaudyti} ežere.
+Prieš miegą aš {išsimaudysiu|išsimaudyti} vonioje.
+Jis {įsimylėjo|įsimylėti} iš pirmo žvilgsnio.
+Aš {įsimylėjau|įsimylėti} Vilnių.
+Kur jūs {apsistojote|apsistoti}? — Viešbutyje centre.
+Šį kartą mes {apsistosime|apsistoti} pas draugus.
+Senamiestyje mes {pasiklydome|pasiklysti}.
+
+# --- ещё приставочные ---
+Kodėl jūs taip anksti {atsikėlėte|atsikelti}?
+Ji visada {atsikelia|atsikelti} pirma.
+{Atsikelkite|atsikelti}, pamoka prasideda!
+Mes {nusiprausėme|nusiprausti} ežere.
+{Nusiprauskite|nusiprausti} prieš vakarienę.
+Kaip tu šiandien gražiai {apsirengei|apsirengti}!
+Vaikai jau {apsirengė|apsirengti} ir laukia prie durų.
+{Apsirenk|apsirengti} šilčiau!
+Rytoj aš {apsirengsiu|apsirengti} kostiumą.
+{Atsisėsk|atsisėsti} šalia manęs.
+Mes {atsisėdome|atsisėsti} pirmoje eilėje.
+Rytoj aš {atsisėsiu|atsisėsti} prie lango.
+Kur jūs {susitikote|susitikti}?
+Kada {susitiksi|susitikti} su Jonu?
+Jie {susitinka|susitikti} kiekvieną penktadienį.
+Kitą savaitę {susipažinsime|susipažinti} su naujais kolegomis.
+Kur tu {susipažinai|susipažinti} su žmona?
+{Pasiimkite|pasiimti} lietpalčius!
+Ką {pasiimsi|pasiimti} į kelionę?
+Ji {pasiėmė|pasiimti} atostogų.
+Kuo jūs {užsiimate|užsiimti}?
+Vaikystėje aš {užsiėmiau|užsiimti} plaukimu.
+Ji {nusipirko|nusipirkti} naują paltą.
+{Nusipirk|nusipirkti} duonos, kai grįši.
+Ką {nusipirksi|nusipirkti} mamai gimtadienio proga?
+Vaikai jau {atsigulė|atsigulti}.
+{Atsigulkite|atsigulti} ant nugaros.
+{Užsisakyk|užsisakyti} staliuką restorane.
+Aš visada {užsisakau|užsisakyti} tą patį patiekalą.
+Aš {atsiprašiau|atsiprašyti}, bet ji vis tiek pyko.
+{Atsiprašome|atsiprašyti} už nepatogumus.
+Po darbo aš {išsimaudžiau|išsimaudyti} vonioje.
+Ar tu kada nors {įsimylėjai|įsimylėti}?
+Kur {apsistosite|apsistoti} Vilniuje?
+Vaikas {pasiklydo|pasiklysti} miške.
+
+# --- Отрицание: ne + si ---
+Ne, aš {nesimokau|mokytis} universitete, aš dirbu.
+Jis niekada {nesijuokia|juoktis}.
+{Nesijaudink|jaudintis}, viskas bus gerai!
+{Nesijuok|juoktis} iš manęs!
+Niekas {nesitikėjo|tikėtis} tokio rezultato.
+Jis piktas ir {nesisveikina|sveikintis} su niekuo.
+Vaikai, {nesimaudykite|maudytis} čia — gilu!
+Mes niekada {nesiskundžiame|skųstis}.
+Jis niekuo {nesidomi|domėtis}.
+Vakar aš visai {nesimokiau|mokytis}.
+Rytoj mes {nesikelsime|keltis} anksti — šeštadienis!
+Ji niekada {nesirengia|rengtis} juodai.
+Niekada {nesijaučiau|jaustis} tokia laiminga.
+{Nesisėsk|sėstis} ant šios kėdės — ji sulūžusi.
+Niekada {nesidžiauk|džiaugtis} kito nesėkme.
+Jis {nesiprausė|praustis} jau tris dienas.
+Ne, aš {nesinaudoju|naudotis} socialiniais tinklais.
+
+# --- ещё отрицание ---
+Aš {nesijaučiu|jaustis} gerai — man skauda galvą.
+Jis {nesidžiaugė|džiaugtis} dovana — ji jam nepatiko.
+Kodėl tu niekada {nesišypsai|šypsotis}?
+Rytoj aš {nesikelsiu|keltis} anksti.
+Šiandien vaikai {nesimaudys|maudytis} — per šalta.
+{Nesirūpink|rūpintis}, aš viską sutvarkysiu.
+{Nesiskųsk|skųstis}, viskas ne taip blogai.
+Niekada {nesinaudojau|naudotis} šia programa.
+Mes susipykome ir {nesikalbame|kalbėtis} jau savaitę.
+Jis nieko {nesimokė|mokytis} ir neišlaikė egzamino.
+{Nesielk|elgtis} kaip vaikas!
+Nė vienas {nesiruošė|ruoštis} egzaminui.
+
+# --- Отрицание с приставкой: ne + приставка + si ---
+Vaikai dar {neatsikėlė|atsikelti} — jie vis dar miega.
+Kodėl tu dar {neapsirengei|apsirengti}? Mes vėluojame!
+Mes jau dvejus metus {nesusitikome|susitikti}.
+Aš {nepasiėmiau|pasiimti} skėčio, todėl sušlapau.
+Ji dar {nenusipirko|nusipirkti} bilietų, o kasa jau uždaryta.
+Nebijok, čia tu {nepasiklysi|pasiklysti}.
+Ne, mes dar {nesusipažinome|susipažinti}.
+
+# --- ещё отрицание с приставкой ---
+Ji {neatsiprašė|atsiprašyti}, nors buvo kalta.
+Aš dar {nenusipirkau|nusipirkti} dovanos mamai.
+Jie vis dar {nesusipažino|susipažinti} su naujais kaimynais.
+Su žemėlapiu jūs {nepasiklysite|pasiklysti}.
+
+@subtopic: 6. Все вместе | тексты с разными формами
+@subtopic.be: 6. Усё разам | тэксты з рознымі формамі
+@subtopic.uk: 6. Усе разом | тексти з різними формами
+@subtopic.en: 6. All together | texts with different forms
+
+--- Mano rytas
+Kiekvieną rytą aš {keliuosi|keltis} septintą valandą.
+Pirmiausia {nusiprausiu|nusiprausti} ir {apsirengiu|apsirengti}.
+Paskui {atsisėdu|atsisėsti} prie stalo ir geriu kavą.
+Pusryčių metu mes su vyru {kalbamės|kalbėtis} apie dienos planus.
+Prieš išeidama {pasiimu|pasiimti} skėtį ir raktus.
+---
+
+--- Vakar
+Vakar aš {atsikėliau|atsikelti} labai vėlai.
+Greitai {apsirengiau|apsirengti} ir net {nenusiprausiau|nusiprausti} — nebuvo laiko.
+Darbe visą dieną {jaučiausi|jaustis} pavargęs.
+Vakare {susitikau|susitikti} su draugais, ir mes daug {juokėmės|juoktis}.
+---
+
+--- Atostogos
+Kitą vasarą mes {apsistosime|apsistoti} prie jūros.
+Kiekvieną dieną {maudysimės|maudytis} ir {ilsėsimės|ilsėtis}.
+Vaikai jau dabar {džiaugiasi|džiaugtis} kelione.
+Aš {tikiuosi|tikėtis}, kad oras bus geras.
+---
+
+--- Pas gydytoją
+— Laba diena, {sėskitės|sėstis}. Kuo {skundžiatės|skųstis}?
+— Jau savaitę blogai {jaučiuosi|jaustis}: skauda galvą.
+— {Nesijaudinkite|jaudintis}, tai tik peršalimas.
+— Daugiau {ilsėkitės|ilsėtis} ir gerkite arbatą su medumi.
+---
+
+--- Mūsų pažintis
+Mes su Tomu {susipažinome|susipažinti} prieš penkerius metus.
+Tada abu {mokėmės|mokytis} Vilniaus universitete.
+Iš pradžių mes tik {sveikinomės|sveikintis} koridoriuje.
+Vėliau pradėjome {kalbėtis|kalbėtis} per pertraukas.
+Ir vieną dieną aš supratau, kad {įsimylėjau|įsimylėti}.
+---
+
+--- Laiškas draugei
+Labas, Rūta!
+Jau mėnesį {mokausi|mokytis} lietuvių kalbos Vilniuje.
+Kiekvieną rytą {keliuosi|keltis} anksti ir einu į kursus.
+Vakar mes su grupe {susitikome|susitikti} su lietuvių studentais ir ilgai {kalbėjomės|kalbėtis}.
+Kitą savaitę {apsistosiu|apsistoti} pas vieną šeimą kaime.
+{Rūpinkis|rūpintis} savimi ir rašyk!
+---
+
+--- Šeštadienis
+Šeštadieniais mes niekur neskubame ir {nesikeliame|keltis} anksti.
+Pusryčiaujame ilgai, {kalbamės|kalbėtis} ir {juokiamės|juoktis}.
+Po pietų vaikai {maudosi|maudytis} baseine, o aš {ilsiuosi|ilsėtis}.
+Vakare {susitinkame|susitikti} su draugais.
+---
