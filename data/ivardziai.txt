@@ -14,7 +14,7 @@
 @title.en: Įvardžiai — pronouns
 @group.en: Declension
 @description.en: Personal, demonstrative, interrogative, relative and determinative pronouns
-@reference: ivardziai.md, kuris-koks.md
+@reference: ivardziai.md, ivardziai-kiti.md
 
 @subtopic: 1. Личные | aš, tu, jis, ji, mes, jūs, jie, jos, savęs
 @subtopic.be: 1. Асабовыя | aš, tu, jis, ji, mes, jūs, jie, jos, savęs
